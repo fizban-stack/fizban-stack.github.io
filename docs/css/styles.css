@@ -103,19 +103,16 @@ img.dibley {
 
 /*Carousel*/
 
-/* Set a fixed, responsive height for the entire carousel */
-#carousel {
-    height: 80vh; 
-    background-color: #333; 
-}
-
-/* Ensure the carousel item fills the new height */
-.carousel-item {
-    height: 100%;
-}
-
-/* Make the image cover the container without stretching */
 .carousel-item img {
-    height: 100%;
-    object-fit: cover; 
+    height: auto;
+    width: 100%; 
+}
+
+/* Style the caption box */
+.carousel-caption {
+    position: static; 
+    background-color: black;
+    color: white;
+    padding: 1.25rem;
+    text-align: left;
 }
