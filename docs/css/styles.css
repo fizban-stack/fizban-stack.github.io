@@ -136,3 +136,16 @@ img.dibley {
   background-color: #FF0000;
   opacity: 1; 
 }
+
+/*Cert-Carousels*/
+
+.badge-carousel .carousel-item {
+    text-align: center; /* Center the badge embed */
+    padding: 20px 0; /* Add some vertical space */
+    }
+/* Ensure the embedded badge container respects the desired size */
+.badge-carousel .carousel-item > div {
+    margin: 0 auto; /* Center the embed container */
+    max-width: 150px; /* Match the data-iframe-width from certs.txt */
+    height: 270px; /* Match the data-iframe-height from certs.txt */
+    }
