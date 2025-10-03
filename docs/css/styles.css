@@ -151,8 +151,8 @@ img.dibley {
     }
 /* Style for self-hosted images to fit the carousel slide */
 .other-certs-img {
-    max-height: 800px; /* Desired height */
-    max-width: 800px; /* Desired width */
+    max-height: 400px; /* Desired height */
+    max-width: 400px; /* Desired width */
     object-fit: contain; /* Ensures image fits within bounds without cropping */
     display: block;
     margin: 0 auto;
