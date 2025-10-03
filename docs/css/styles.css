@@ -147,11 +147,11 @@ img.dibley {
 .badge-carousel .carousel-item > div[data-share-badge-id] {
     margin: 0 auto; /* Center the embed container */
     width: 600px; /* Desired width */
-    height: 600px; /* Desired height */
+    height: 300px; /* Desired height */
     }
 /* Style for self-hosted images to fit the carousel slide */
 .other-certs-img {
-    max-height: 600px; /* Desired height */
+    max-height: 300px; /* Desired height */
     max-width: 600px; /* Desired width */
     object-fit: contain; /* Ensures image fits within bounds without cropping */
     display: block;
