@@ -136,3 +136,24 @@ img.dibley {
   background-color: #FF0000;
   opacity: 1; 
 }
+
+/*Cert-Carousels*/
+
+.badge-carousel .carousel-item {
+    text-align: center; /* Center the badge embed */
+    padding: 20px 0; /* Add some vertical space */
+    }
+/* Ensure the embedded badge container respects the desired size for Credly */
+.badge-carousel .carousel-item > div[data-share-badge-id] {
+    margin: 0 auto; /* Center the embed container */
+    width: 600px; /* Desired width */
+    height: 300px; /* Desired height */
+    }
+/* Style for self-hosted images to fit the carousel slide */
+.other-certs-img {
+    max-height: 300px; /* Desired height */
+    max-width: 600px; /* Desired width */
+    object-fit: contain; /* Ensures image fits within bounds without cropping */
+    display: block;
+    margin: 0 auto;
+    }
