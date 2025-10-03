@@ -146,7 +146,7 @@ img.dibley {
 /* Ensure the embedded badge container respects the desired size for Credly */
 .badge-carousel .carousel-item > div[data-share-badge-id] {
     margin: 0 auto; /* Center the embed container */
-    width: 800px; /* Desired width */
+    width: 1200px; /* Desired width */
     height: 800px; /* Desired height */
     }
 /* Style for self-hosted images to fit the carousel slide */
