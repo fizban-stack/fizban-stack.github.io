@@ -64,7 +64,7 @@
 
         // Step one - Create a React element
         const heading = <h1>{user.name}</h1>;
-        const image = <img src={user.imageUrl} alt="James Wells Resume Picture" style={{ width: '300px', marginBottom: '24px' }} />;
+        const image = <img src={user.imageUrl} alt="James Wells Resume Picture" style={{ width: '200px', marginBottom: '24px' }} />;
         const bio = user.bio.split('\n\n').map((paragraph, index) => (
         <p key={index} style={{ fontSize: '14px' }}>
             {paragraph}
