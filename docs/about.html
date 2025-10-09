@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Lastname Firstname: 225</title>
+    <title>Wells James: 225</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
     <!-- Bootstrap core CSS -->
     <link href="css/styles.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Firstname Lastname</a>
+    <a class="navbar-brand" href="#">James Wells</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,7 +33,7 @@
                 <a class="nav-link" href="grid.html">Grid</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="carousel.html">Carousel</a>
+                <a class="nav-link" href="carousel.html">Self-Hosted</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -52,15 +52,20 @@
 
     <script>
         const user = {
-            name: '',
-            imageUrl: '',
-            bio: ''
+            name: 'James Wells',
+            imageUrl: './images/resume.png',
+            bio: 'My name is James Wells.  I am currently working at RBR Alliance in a sysadmin style job.  My responsibilities include managing two Microsoft 365 tenants and three Active Directory domains.  They also seem to include maintaining, troubleshooting, and fixing all manner of devices, from phones to servers. I am the father of three children.  In the free time I have outside of work and family, I have become an home lab enthusiast or as my children refer to me "a tinkerer".  I have brought down our network enough times that they always look at me as the culprit when there is an internet outage.  A few years ago, I began my homelab with an outdated HP computer and TrueNAS scale.  Since then I have spent more time and money than I like to admit on it.  I found that eBay is a great place to buy testing equipment, but it is essential to buy at least hard drives new.  When I started building my home lab, I had no Linux experience at all, but now I am as comfortable in Linux terminal as I am in the Windows GUI.  Sometimes, I am working on a Windows computer and think I would already have this done by now if I was working in Linux terminal.  Because of this I have been spending more time learning PowerShell, so that I am as proficient in Windows as I am in Linux.  I never thought that I would find it easier to create and modify a file on a terminal than in a GUI.  I also enjoy going on walks, basketball, and skateboarding, though I have found out that skateboarding hurts a lot worse than I remember.'
         };
 
         // Step one - Create a React element
+        const heading = <h1>{user.name}</h1>;
+        const image = <img src={user.imageUrl} alt="James Wells Resume Picture" style={{width: '150px'}} />;
+        const bio = <p>{user.bio}</p>;
 
         // Step 2: Render the React element
-
+        ReactDOM.render(heading, document.getElementById('h1'));
+        ReactDOM.render(image, document.getElementById('img'));
+        ReactDOM.render(bio, document.getElementById('content'));
     </script>
 
 </main><!-- /.container -->
