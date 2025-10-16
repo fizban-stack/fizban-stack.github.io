@@ -2,122 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Carousel: James Wells</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
-    <!-- Bootstrap core CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A portfolio of self-hosted applications run by James Wells.">
+    <title>Self-Hosted Apps: James Wells</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">James Wells</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="grid.html">Grid</a>
-            </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="carousel.html">Self-Hosted</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="cert.html">Certifications</a>
-      </li>
-        </ul>
-    </div>
-</nav>
+<div id="navbar-placeholder"></div>
 
 <main role="main" class="container-fluid">
-    <h2>Self-Hosted Apps</h2>
+    <h2 class="mt-4">Self-Hosted Apps</h2>
       <div id="carousel" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Beszel"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2: Booklore"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3: Forgejo"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4: Grafana"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5: Karakeep"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6: Pairdrop"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 7: Proxmox"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="7" aria-label="Slide 8: Trillium"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="8" aria-label="Slide 9: Web-check"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="9" aria-label="Slide 10: Traefik"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/beszel.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><a href="https://github.com/henrygd/beszel" target="_blank" class="btn btn-dark w-100">Beszel</a></h5>
+            <img src="images/self-hosted/beszel.webp" class="d-block w-100" alt="Screenshot of the Beszel server monitoring dashboard.">
+            <div class="carousel-caption">
+              <h5><a href="https://github.com/henrygd/beszel" target="_blank" class="btn btn-dark w-100" aria-label="View Beszel on GitHub">Beszel</a></h5>
               <p>Server monitoring software.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/booklore.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><a href="https://github.com/booklore-app/booklore" target="_blank" class="btn btn-dark w-100">Booklore</a></h5>
+            <img loading="lazy" src="images/self-hosted/booklore.webp" class="d-block w-100" alt="Screenshot of the Booklore application for managing ebooks.">
+            <div class="carousel-caption">
+              <h5><a href="https://github.com/booklore-app/booklore" target="_blank" class="btn btn-dark w-100" aria-label="View Booklore on GitHub">Booklore</a></h5>
               <p>Managing and Reading Ebooks and PDFs.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/forgejo.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><a href="https://codeberg.org/forgejo" target="_blank" class="btn btn-dark w-100">Forgejo</a></h5>
-              <p>Github Alternative</p>
+            <img loading="lazy" src="images/self-hosted/forgejo.webp" class="d-block w-100" alt="Screenshot of the Forgejo code repository interface.">
+            <div class="carousel-caption">
+              <h5><a href="https://codeberg.org/forgejo" target="_blank" class="btn btn-dark w-100" aria-label="View Forgejo on Codeberg">Forgejo</a></h5>
+              <p>GitHub Alternative</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/grafana.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><a href="https://github.com/grafana/grafana" target="_blank" class="btn btn-dark w-100">Grafana</a></h5>
+            <img loading="lazy" src="images/self-hosted/grafana.webp" class="d-block w-100" alt="Screenshot of a Grafana dashboard with data visualizations.">
+            <div class="carousel-caption">
+              <h5><a href="https://github.com/grafana/grafana" target="_blank" class="btn btn-dark w-100" aria-label="View Grafana on GitHub">Grafana</a></h5>
               <p>Data visualization and monitoring.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/karakeep.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><a href="https://github.com/karakeep-app/karakeep" target="_blank" class="btn btn-dark w-100">Karakeep</a></h5>
+            <img loading="lazy" src="images/self-hosted/karakeep.webp" class="d-block w-100" alt="Screenshot of the Karakeep note management application.">
+            <div class="carousel-caption">
+              <h5><a href="https://github.com/karakeep-app/karakeep" target="_blank" class="btn btn-dark w-100" aria-label="View Karakeep on GitHub">Karakeep</a></h5>
               <p>Self-hosted bookmark and note management tool.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/pairdrop.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><a href="https://github.com/schlagmichdoch/PairDrop" target="_blank" class="btn btn-dark w-100">Pairdrop</a></h5>
-              <p>Cross platform local file sharing in your browser.</p>
+            <img loading="lazy" src="images/self-hosted/pairdrop.webp" class="d-block w-100" alt="Screenshot of the Pairdrop interface for local file sharing.">
+            <div class="carousel-caption">
+              <h5><a href="https://github.com/schlagmichdoch/PairDrop" target="_blank" class="btn btn-dark w-100" aria-label="View Pairdrop on GitHub">Pairdrop</a></h5>
+              <p>Cross-platform local file sharing in your browser.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/proxmox.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><a href="https://github.com/proxmox" target="_blank" class="btn btn-dark w-100">Proxmox</a></h5>
+            <img loading="lazy" src="images/self-hosted/proxmox.webp" class="d-block w-100" alt="Screenshot of the Proxmox server virtualization management dashboard.">
+            <div class="carousel-caption">
+              <h5><a href="https://github.com/proxmox" target="_blank" class="btn btn-dark w-100" aria-label="View Proxmox on GitHub">Proxmox</a></h5>
               <p>Open-source server virtualization management.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/trillium.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><a href="https://github.com/TriliumNext/Trilium" target="_blank" class="btn btn-dark w-100">Trillium</a></h5>
+            <img loading="lazy" src="images/self-hosted/trillium.webp" class="d-block w-100" alt="Screenshot of the Trillium hierarchical note-taking application.">
+            <div class="carousel-caption">
+              <h5><a href="https://github.com/TriliumNext/Trilium" target="_blank" class="btn btn-dark w-100" aria-label="View Trillium on GitHub">Trillium</a></h5>
               <p>Hierarchical note-taking application.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/web-check.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><a href="https://github.com/Lissy93/web-check" target="_blank" class="btn btn-dark w-100">Web-check</a></h5>
+            <img loading="lazy" src="images/self-hosted/web-check.webp" class="d-block w-100" alt="Screenshot of the Web-check OSINT tool analyzing a website.">
+            <div class="carousel-caption">
+              <h5><a href="https://github.com/Lissy93/web-check" target="_blank" class="btn btn-dark w-100" aria-label="View Web-check on GitHub">Web-check</a></h5>
               <p>OSINT tool for analyzing websites.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img loading="lazy" src="images/self-hosted/traefik.webp" class="d-block w-100" alt="Diagram showing how the Traefik reverse proxy works.">
+            <div class="carousel-caption">
+              <h5><a href="https://github.com/traefik/traefik" target="_blank" class="btn btn-dark w-100" aria-label="View Traefik on GitHub">Traefik</a></h5>
+              <p>Modern Cloud Native Reverse Proxy.</p>
             </div>
           </div>
         </div>
@@ -130,15 +108,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+</main>
 
-</main><!-- /.container -->
+<div id="footer-placeholder"></div>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-</main><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js" defer></script>
 
 </body>
 </html>
