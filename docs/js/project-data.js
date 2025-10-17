@@ -25,7 +25,7 @@ const projectData = [
       { text: "Docker", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://www.blog.wellslabs.org/..."
+     // blog: "https://www.blog.wellslabs.org/..."
     }
   }
 ];
