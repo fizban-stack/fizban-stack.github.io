@@ -30,4 +30,3 @@ const projectData = [
   }
 ];
 
-// To add a new project, just copy one of the blocks above and paste it here.
