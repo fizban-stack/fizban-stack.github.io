@@ -1,6 +1,6 @@
 const projectData = [
   {
-    image: "images/projects/raspberry-pi5",
+    image: "images/projects/raspberry-pi5.webp",
     alt: "Raspberry Pi 5",
     title: "Raspberry Pi 5: Attack Box",
     description: "A Raspberry Pi 5 that I setup to connect to any machine via USB and attack.",
@@ -15,7 +15,7 @@ const projectData = [
     }
   },
   {
-    image: "images/projects/project-2.png",
+    image: "images/projects/raspberry-pi-zero2w.webp",
     alt: "Screenshot of Home Lab Dashboard",
     title: "Home Lab Dashboard",
     description: "A custom dashboard built in React to monitor my Proxmox and Docker services in real-time.",
