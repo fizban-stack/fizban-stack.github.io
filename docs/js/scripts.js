@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // NAVBAR
   const navbarHTML = `
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top">
       <a class="navbar-brand" href="index.html">
-        <img src="images/icons/favicon.webp" alt="Site Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
+        <img src="images/favicon.ico" alt="Site Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
         James Wells
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,16 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="grid.html">Grid</a></li>
           <li class="nav-item"><a class="nav-link" href="carousel.html">Self-Hosted</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="cert.html">Certifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="timeline.html">Learning Timeline</a></li>
+          <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
         </ul>
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link" href="https://www.blog.wellslabs.org" target="_blank" rel="noopener noreferrer">My Blog</a>
+                <a class="nav-link" href="https://www.blog.wellslabs.org" target="_blank" rel="noopener noreferrer">Blog</a>
             </li>
         </ul>
       </div>
@@ -37,25 +38,17 @@ document.addEventListener("DOMContentLoaded", function() {
   const footerHTML = `
     <footer class="footer mt-auto py-3">
       <div class="container">
-        <div class="d-flex justify-content-end align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
             <div>
                 <a href="https://www.blog.wellslabs.org" target="_blank" rel="noopener noreferrer" class="footer-link">My Blog</a>
             </div>
-            <a href="mailto:james@wellslabs.org" class="footer-icon-box" aria-label="Email James Wells">
-                <img src="images/icons/zoho-mail.svg" alt="Email" width="24" height="24">
-            </a>
-            <a href="https://www.linkedin.com/in/james-wells-122170164/" target="_blank" rel="noopener noreferrer" class="footer-icon-box" aria-label="View James Wells on LinkedIn">
-                <img src="images/icons/linkedin.svg" alt="LinkedIn" width="24" height="24">
-            </a>
-            <a href="https://twitter.com/fizbanstack" target="_blank" rel="noopener noreferrer" class="footer-icon-box" aria-label="View James Wells on X">
-                <img src="images/icons/x.svg" alt="X" width="24" height="24">
-            </a>
-            <a href="https://discord.com/users/fizbanstack" target="_blank" rel="noopener noreferrer" class="footer-icon-box" aria-label="Contact James Wells on Discord">
-                <img src="images/icons/discord.svg" alt="Discord" width="24" height="24">
-            </a>
-            <a href="#" class="footer-icon-box" aria-label="View James Wells on GitHub">
-                <img src="images/icons/github-dark.svg" alt="GitHub" width="24" height="24">
-            </a>
+            <div>
+                <a href="mailto:james@wellslabs.org" class="footer-icon-box" title="Email"><img src="images/icons/zoho-mail.svg" alt="Email" width="24" height="24"></a>
+                <a href="https://www.linkedin.com/in/james-wells-122170164/" target="_blank" rel="noopener noreferrer" class="footer-icon-box" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn" width="24" height="24"></a>
+                <a href="https://twitter.com/fizbanstack" target="_blank" rel="noopener noreferrer" class="footer-icon-box" title="X"><img src="images/icons/x.svg" alt="X" width="24" height="24"></a>
+                <a href="#" class="footer-icon-box" title="Discord: fizban_stack"><img src="images/icons/discord.svg" alt="Discord" width="24" height="24"></a>
+                <a href="#" class="footer-icon-box" title="GitHub"><img src="images/icons/github.svg" alt="GitHub" width="24" height="24"></a>
+            </div>
         </div>
       </div>
     </footer>
@@ -64,21 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
   if (footerPlaceholder) {
     footerPlaceholder.innerHTML = footerHTML;
   }
-  
-  // SET ACTIVE NAV LINK
-  function setActiveNavLink() {
-    const currentPage = window.location.pathname.split("/").pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    navLinks.forEach(link => {
-        const linkPage = link.getAttribute('href');
-        if (linkPage === currentPage) {
-            link.classList.add('active');
-            link.setAttribute('aria-current', 'page');
-        }
-    });
-  }
-  
-  // DYNAMIC ACCORDION COUNT
+
+  // ACCORDION COUNT
   const accordionItems = document.querySelectorAll('.accordion-item');
   accordionItems.forEach(item => {
     const certLinksCount = item.querySelectorAll('.list-group-item').length;
@@ -88,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // DYNAMIC TIMELINE BUILDER
+  // TIMELINE BUILDER
   function buildTimeline() {
     const timelineContainer = document.getElementById('my-timeline');
     if (timelineContainer && typeof timelineEvents !== 'undefined') {
@@ -109,7 +89,49 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  buildTimeline();
-  setActiveNavLink();
+  // PROJECT BUILDER
+  function buildProjects() {
+    const projectContainer = document.getElementById('project-grid-placeholder');
+    if (!projectContainer || typeof projectData === 'undefined') return;
 
+    let projectsHTML = '';
+    projectData.forEach(project => {
+      // Build the tags
+      let tagsHTML = project.tags.map(tag => 
+        `<span class="badge ${tag.color} me-1 mb-1">${tag.text}</span>`
+      ).join('');
+
+      // Build the links (only if they exist)
+      let blogLink = project.links.blog ? 
+        `<a href="${project.links.blog}" target="_blank" class="btn btn-dark">Read Blog Post</a>` : '';
+      let githubLink = project.links.github ? 
+        `<a href="${project.links.github}" target="_blank" class="btn btn-outline-secondary ms-2">View on GitHub</a>` : '';
+
+      // Create the final card HTML
+      projectsHTML += `
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="card project-card h-100 d-flex flex-column">
+                <img src="${project.image}" class="card-img-top" alt="${project.alt}">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">${project.title}</h5>
+                    <p class="card-text">${project.description}</p>
+                    <div class="card-tags mb-3">
+                        ${tagsHTML}
+                    </div>
+                    <div class="mt-auto">
+                        ${blogLink}
+                        ${githubLink}
+                    </div>
+                </div>
+            </div>
+        </div>
+      `;
+    });
+
+    projectContainer.innerHTML = projectsHTML;
+  }
+
+  // Call builder functions
+  buildTimeline();
+  buildProjects();
 });
