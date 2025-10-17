@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const navbarHTML = `
     <nav class="navbar navbar-dark navbar-expand-md fixed-top">
       <a class="navbar-brand" href="index.html">
-        <img src="images/favicon.webp" alt="Site Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
+        <img src="images/icons/favicon.webp" alt="Site Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
         James Wells
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
