@@ -1,6 +1,6 @@
 const projectData = [
   {
-    image: "images/projects/raspberry-pi5",
+    image: "images/projects/raspberry-pi5.webp",
     alt: "Raspberry Pi 5",
     title: "Raspberry Pi 5: Tools",
     description: "A Raspberry Pi 5 that I setup with various tools and a remote connection.  It allows me to plug into any network and have access to installed tools.",
