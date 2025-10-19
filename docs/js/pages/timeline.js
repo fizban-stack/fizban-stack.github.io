@@ -1,3 +1,4 @@
+// Timeline page - data and rendering logic
 const timelineEvents = [
   {
     date: "Summer 2022",
@@ -42,3 +43,30 @@ const timelineEvents = [
     description: "This was the first time I experience a cyber attack in real-time."
     }
 ];
+
+// Build timeline
+function buildTimeline() {
+  const timelineContainer = document.getElementById('my-timeline');
+  if (!timelineContainer) return;
+
+  let timelineHTML = '';
+  timelineEvents.forEach(event => {
+    timelineHTML += `
+      <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">${event.date}</div>
+          <div class="timeline-content">
+              <h3><a href="${event.link}" target="_blank">${event.title}</a></h3>
+              <p>${event.description}</p>
+          </div>
+      </div>
+    `;
+  });
+
+  timelineContainer.innerHTML = timelineHTML;
+}
+
+// Initialize on page load
+document.addEventListener("DOMContentLoaded", function() {
+  buildTimeline();
+});
