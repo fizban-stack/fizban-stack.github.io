@@ -3,15 +3,19 @@
  * Counts and displays the number of items in each accordion section
  */
 
-export function initAccordionCounter() {
-  const accordionItems = document.querySelectorAll('.accordion-item');
+(function() {
+  'use strict';
 
-  accordionItems.forEach(item => {
-    const certLinksCount = item.querySelectorAll('.list-group-item').length;
-    const countSpan = item.querySelector('.cert-count');
+  window.initAccordionCounter = function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
 
-    if (countSpan && certLinksCount > 0) {
-      countSpan.textContent = certLinksCount;
-    }
-  });
-}
+    accordionItems.forEach(item => {
+      const certLinksCount = item.querySelectorAll('.list-group-item').length;
+      const countSpan = item.querySelector('.cert-count');
+
+      if (countSpan && certLinksCount > 0) {
+        countSpan.textContent = certLinksCount;
+      }
+    });
+  };
+})();

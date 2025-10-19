@@ -1,23 +1,18 @@
 /**
  * Main entry point for the application
- * Imports and initializes all modules
+ * Initializes all modules when DOM is ready
+ *
+ * Note: Module files must be loaded before this script in HTML
  */
-
-import { initNavbar } from './modules/navbar.js';
-import { initFooter } from './modules/footer.js';
-import { initAccordionCounter } from './modules/accordion-counter.js';
-import { buildTimeline } from './modules/timeline-builder.js';
-import { buildProjects } from './modules/project-builder.js';
-import { buildTools } from './modules/tool-builder.js';
 
 document.addEventListener("DOMContentLoaded", function() {
   // Initialize components
-  initNavbar();
-  initFooter();
-  initAccordionCounter();
+  if (typeof initNavbar === 'function') initNavbar();
+  if (typeof initFooter === 'function') initFooter();
+  if (typeof initAccordionCounter === 'function') initAccordionCounter();
 
   // Build dynamic content
-  buildTimeline();
-  buildProjects();
-  buildTools();
+  if (typeof buildTimeline === 'function') buildTimeline();
+  if (typeof buildProjects === 'function') buildProjects();
+  if (typeof buildTools === 'function') buildTools();
 });
