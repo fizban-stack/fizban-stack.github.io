@@ -11,7 +11,7 @@ const projectData = [
     ],
     links: {
       blog: "https://www.blog.wellslabs.org/raspberry-pi-5/",
-      github: "#"
+     // github: "#"
     }
   },
   {
