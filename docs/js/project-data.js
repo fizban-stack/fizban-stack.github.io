@@ -29,7 +29,7 @@ const projectData = [
       github: "https://github.com/evilsocket/pwnagotchi"
     }
   },
-    {
+  {
     image: "images/projects/meshtastic.webp",
     alt: "Meshtastic Radios",
     title: "Meshtastic Radios",
@@ -44,7 +44,7 @@ const projectData = [
       github: "https://github.com/meshtastic"
     }
   },
-      {
+  {
     image: "images/projects/nethunter.webp",
     alt: "Kali Nethunter",
     title: "Kali Nethunter",
@@ -57,6 +57,51 @@ const projectData = [
     links: {
       blog: "https://www.blog.wellslabs.org/nethunter",
     }
-  }
+  },
+  {
+    image: "images/projects/nvidia-jetson-orin-nano.webp",
+    alt: "Nvidia Jetson Orin Nano Super",
+    title: "Nvidia Jetson Orin Nano Super",
+    description: "This is a Jetson Orin Nano developer kit that I purchased to mess around with machine learning.",
+    tags: [
+      { text: "Single Board Computer", color: "bg-success" },
+      { text: "Machine Learning", color: "bg-warning text-dark" },
+      { text: "Hardware", color: "bg-info text-dark" }
+    ],
+    links: {
+      //blog: "https://www.blog.wellslabs.org/meshtastic",
+      //github: "https://github.com/meshtastic"
+    }
+  },
+  {
+    image: "images/projects/omg-cable.webp",
+    alt: "OMG Cable",
+    title: "OMG Cable",
+    description: "This is an OMG cable that I purchase to practice penetration testing.  It allows me to run D",
+    tags: [
+      { text: "Single Board Computer", color: "bg-success" },
+      { text: "Communication", color: "bg-warning text-dark" },
+      { text: "Hardware", color: "bg-info text-dark" }
+    ],
+    links: {
+      //blog: "https://www.blog.wellslabs.org/meshtastic",
+      //github: "https://github.com/meshtastic"
+    }
+  },
+  {
+    image: "images/projects/raspberry-pi-zero2w.webp",
+    alt: "Raspberry Pi Zero 2W",
+    title: "Raspberry Pi Zero 2W",
+    description: "This is Raspberry Pi Zero 2W that I bought to for a web server.",
+    tags: [
+      { text: "Single Board Computer", color: "bg-success" },
+      { text: "Home Lab", color: "bg-warning text-dark" },
+      { text: "Hardware", color: "bg-info text-dark" }
+    ],
+    links: {
+      //blog: "https://www.blog.wellslabs.org/meshtastic",
+      //github: "https://github.com/meshtastic"
+    }
+  },
 ];
 
