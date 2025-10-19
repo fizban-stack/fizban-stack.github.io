@@ -1,0 +1,38 @@
+/* Tools Page */
+.tool-category-section {
+    margin-bottom: 3rem;
+}
+.category-title {
+    font-size: 1.75rem;
+    color: #00008B;
+    border-bottom: 3px solid #FFF9AF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.tool-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.tool-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+.tool-card .card-body {
+    padding: 1.5rem;
+}
+.tool-card .card-title {
+    color: #00008B;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.tool-card-actions {
+    background-color: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+}
+.tool-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
