@@ -25,7 +25,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://www.blog.wellslabs.org/bobby"
+      blog: "https://www.blog.wellslabs.org/bobby",
       github: "https://github.com/evilsocket/pwnagotchi"
     }
   },
@@ -40,7 +40,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://www.blog.wellslabs.org/meshtastic"
+      blog: "https://www.blog.wellslabs.org/meshtastic",
       github: "https://github.com/meshtastic"
     }
   },
@@ -55,7 +55,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://www.blog.wellslabs.org/nethunter"
+      blog: "https://www.blog.wellslabs.org/nethunter",
     }
   }
 ];
