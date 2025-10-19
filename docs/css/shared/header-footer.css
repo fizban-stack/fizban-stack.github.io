@@ -1,0 +1,40 @@
+/* Header and Footer Styles */
+
+/* Navbar */
+.navbar {
+    background-color: #00008B !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #FFF9AF !important;
+    font-weight: 500;
+}
+
+.nav-link.active,
+.navbar .nav-link:hover {
+    color: #FFFFFF !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+/* Footer */
+.footer {
+    background-color: #FFF9AF !important;
+}
+
+.footer-icon-box {
+    background-color: white;
+    padding: 6px;
+    margin-left: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-icon-box:hover {
+    transform: translateY(-2px);
+}
