@@ -6,6 +6,13 @@ const toolsData = [
     description: "Network protocol analyzer for packet inspection and troubleshooting. Essential for understanding network traffic.",
     category: "Network Analysis",
     blogLink: "https://www.blog.wellslabs.org/wireshark"
+  },
+  {
+    icon: "images/icons/wazuh.webp",
+    title: "Wazuh",
+    description: "Open-Source SIEM and EDR solution.  Provides a method of aggregating logs and managing configurations.",
+    category: "Endpoint Defence",
+    blogLink: "https://www.blog.wellslabs.org/wazuh"
   }
 ];
 
