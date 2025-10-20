@@ -19,7 +19,7 @@ function buildTools() {
     toolsHTML += `
       <div class="tool-item" data-aos="fade-up">
         <div class="tool-content">
-          <div class="tool-icon">${tool.icon}</div>
+          <div class="tool-icon"><img src="${tool.icon}" alt="${tool.title}"></div>
           <div class="tool-details">
             <span class="tool-category">${tool.category}</span>
             <h3>${tool.title}</h3>
