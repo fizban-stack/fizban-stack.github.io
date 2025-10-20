@@ -1,41 +1,6 @@
 // Tools page - data and rendering logic
 const toolsData = [
   {
-    icon: "🔒",
-    title: "Hashcat",
-    description: "Advanced password recovery utility supporting various hash algorithms. Essential for penetration testing and security audits.",
-    category: "Password Cracking",
-    blogLink: "https://www.blog.wellslabs.org/hashcat-basics"
-  },
-  {
-    icon: "📡",
-    title: "Aircrack-ng",
-    description: "Complete suite of tools for assessing WiFi network security. Includes packet capture, WEP/WPA/WPA2 cracking capabilities.",
-    category: "Wireless Security",
-    blogLink: "https://www.blog.wellslabs.org/wifi-security"
-  },
-  {
-    icon: "🔍",
-    title: "Nmap",
-    description: "Network exploration and security auditing tool. Discovers hosts, services, and potential vulnerabilities on networks.",
-    category: "Network Scanning",
-    blogLink: "https://www.blog.wellslabs.org/nmap-guide"
-  },
-  {
-    icon: "🌐",
-    title: "Burp Suite",
-    description: "Integrated platform for web application security testing. Includes proxy, scanner, and various manual testing tools.",
-    category: "Web Security",
-    blogLink: "https://www.blog.wellslabs.org/burp-suite"
-  },
-  {
-    icon: "💉",
-    title: "Metasploit",
-    description: "Framework for developing, testing, and executing exploits. Industry-standard penetration testing platform.",
-    category: "Exploitation",
-    blogLink: "https://www.blog.wellslabs.org/metasploit-intro"
-  },
-  {
     icon: "🔧",
     title: "Wireshark",
     description: "Network protocol analyzer for packet inspection and troubleshooting. Essential for understanding network traffic.",
