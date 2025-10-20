@@ -1,7 +1,7 @@
 // Tools page - data and rendering logic
 const toolsData = [
   {
-    icon: "🔧",
+    icon: "images/icons/wireshark.webp",
     title: "Wireshark",
     description: "Network protocol analyzer for packet inspection and troubleshooting. Essential for understanding network traffic.",
     category: "Network Analysis",
