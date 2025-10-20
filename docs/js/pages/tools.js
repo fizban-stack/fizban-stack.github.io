@@ -5,7 +5,7 @@ const toolsData = [
     title: "Wireshark",
     description: "Network protocol analyzer for packet inspection and troubleshooting. Essential for understanding network traffic.",
     category: "Network Analysis",
-    blogLink: "https://www.blog.wellslabs.org/wireshark-basics"
+    blogLink: "https://www.blog.wellslabs.org/wireshark"
   }
 ];
 
