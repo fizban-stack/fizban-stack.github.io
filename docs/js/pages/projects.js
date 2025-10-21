@@ -105,10 +105,10 @@ const projectData = [
     }
   },
   {
-    image: "images/projects/proxmox.webp",
+    image: "images/self-hosted/proxmox.webp",
     alt: "Proxmox",
     title: "Proxmox Virtual Environment",
-    description: "This wasn't the first virtualization platform that I tried, but it is the one that I will continue to you.  It is open-source, feature-rich, and free for personal and business use.",
+    description: "This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use.  It is open-source, feature-rich, and free for personal and business use.",
     tags: [
       { text: "Type 1 Hypervisor", color: "bg-success" },
       { text: "Home Lab", color: "bg-warning text-dark" },
