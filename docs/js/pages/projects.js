@@ -104,6 +104,21 @@ const projectData = [
       //github: "https://github.com/meshtastic"
     }
   },
+  {
+    image: "images/projects/proxmox.webp",
+    alt: "Proxmox",
+    title: "Proxmox Virtual Environment",
+    description: "This wasn't the first virtualization platform that I tried, but it is the one that I will continue to you.  It is open-source, feature-rich, and free for personal and business use.",
+    tags: [
+      { text: "Type 1 Hypervisor", color: "bg-success" },
+      { text: "Home Lab", color: "bg-warning text-dark" },
+      { text: "Virtualization", color: "bg-info text-dark" }
+    ],
+    links: {
+      blog: "https://www.blog.wellslabs.org/proxmox-virtual-environment/",
+      github: "https://github.com/proxmox"
+    }
+  },
 ];
 
 // Build projects grid
