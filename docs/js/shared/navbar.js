@@ -18,7 +18,7 @@ function initNavbar() {
           <li class="nav-item"><a class="nav-link" href="cert.html">Certifications</a></li>
           <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
           <li class="nav-item"><a class="nav-link" href="carousel.html">Self-Hosted</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.blog.wellslabs.org" target="_blank" rel="noopener noreferrer">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://blog.wellslabs.org" target="_blank" rel="noopener noreferrer">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
