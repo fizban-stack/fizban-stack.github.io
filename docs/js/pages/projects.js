@@ -11,7 +11,7 @@ const projectData = [
       { text: "Hardware", color: "bg-secondary" }
     ],
     links: {
-      blog: "https://www.blog.wellslabs.org/raspberry-pi-5/",
+      blog: "https://blog.wellslabs.org/raspberry-pi-5/",
      // github: "#"
     }
   },
@@ -26,7 +26,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://www.blog.wellslabs.org/bobby",
+      blog: "https://blog.wellslabs.org/bobby",
       github: "https://github.com/evilsocket/pwnagotchi"
     }
   },
@@ -41,7 +41,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://www.blog.wellslabs.org/meshtastic",
+      blog: "https://blog.wellslabs.org/meshtastic",
       github: "https://github.com/meshtastic"
     }
   },
@@ -56,7 +56,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://www.blog.wellslabs.org/nethunter",
+      blog: "https://blog.wellslabs.org/nethunter",
     }
   },
   {
@@ -70,7 +70,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      //blog: "https://www.blog.wellslabs.org/meshtastic",
+      //blog: "https://blog.wellslabs.org/meshtastic",
       //github: "https://github.com/meshtastic"
     }
   },
@@ -85,7 +85,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      //blog: "https://www.blog.wellslabs.org/meshtastic",
+      //blog: "https://blog.wellslabs.org/meshtastic",
       //github: "https://github.com/meshtastic"
     }
   },
@@ -100,7 +100,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      //blog: "https://www.blog.wellslabs.org/meshtastic",
+      //blog: "https://blog.wellslabs.org/meshtastic",
       //github: "https://github.com/meshtastic"
     }
   },
@@ -115,7 +115,7 @@ const projectData = [
       { text: "Virtualization", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://www.blog.wellslabs.org/proxmox-virtual-environment/",
+      blog: "https://blog.wellslabs.org/proxmox-virtual-environment/",
       github: "https://github.com/proxmox"
     }
   },
