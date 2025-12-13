@@ -5,7 +5,7 @@ function initFooter() {
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <div>
-                <a href="https://www.blog.wellslabs.org" target="_blank" rel="noopener noreferrer" class="footer-link">My Blog</a>
+                <a href="https://blog.wellslabs.org" target="_blank" rel="noopener noreferrer" class="footer-link">My Blog</a>
             </div>
             <div>
                 <a href="mailto:james@wellslabs.org" class="footer-icon-box" title="Email"><img src="images/icons/zoho-mail.svg" alt="Email" width="24" height="24"></a>
