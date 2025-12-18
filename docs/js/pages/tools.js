@@ -5,14 +5,14 @@ const toolsData = [
     title: "Wireshark",
     description: "Network protocol analyzer for packet inspection and troubleshooting. Essential for understanding network traffic.",
     category: "Network Analysis",
-    blogLink: "https://blog.wellslabs.org/wireshark"
+    blogLink: "blog-post.html?slug=wireshark"
   },
   {
     icon: "images/icons/wazuh.webp",
     title: "Wazuh",
     description: "Open-Source SIEM and EDR solution.  Provides a method of aggregating logs and managing configurations.",
     category: "Endpoint Defence",
-    blogLink: "https://blog.wellslabs.org/wazuh"
+    blogLink: "blog-post.html?slug=wazuh"
   }
 ];
 
@@ -31,7 +31,7 @@ function buildTools() {
             <span class="tool-category">${tool.category}</span>
             <h3>${tool.title}</h3>
             <p>${tool.description}</p>
-            <a href="${tool.blogLink}" target="_blank" class="btn btn-dark btn-sm">Read More</a>
+            <a href="${tool.blogLink}" class="btn btn-dark btn-sm">Read More</a>
           </div>
         </div>
       </div>

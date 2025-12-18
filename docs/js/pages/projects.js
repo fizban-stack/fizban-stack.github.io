@@ -11,7 +11,7 @@ const projectData = [
       { text: "Hardware", color: "bg-secondary" }
     ],
     links: {
-      blog: "https://blog.wellslabs.org/raspberry-pi-5/",
+      blog: "blog-post.html?slug=raspberry-pi-5",
      // github: "#"
     }
   },
@@ -26,7 +26,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://blog.wellslabs.org/bobby",
+      blog: "blog-post.html?slug=my-pwnagotchi-aka-bobby",
       github: "https://github.com/evilsocket/pwnagotchi"
     }
   },
@@ -41,7 +41,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://blog.wellslabs.org/meshtastic",
+      blog: "blog-post.html?slug=meshtastic",
       github: "https://github.com/meshtastic"
     }
   },
@@ -56,7 +56,7 @@ const projectData = [
       { text: "Hardware", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://blog.wellslabs.org/nethunter",
+      // blog: "blog-post.html?slug=nethunter", // No matching blog post found
     }
   },
   {
@@ -115,7 +115,7 @@ const projectData = [
       { text: "Virtualization", color: "bg-info text-dark" }
     ],
     links: {
-      blog: "https://blog.wellslabs.org/proxmox-virtual-environment/",
+      blog: "blog-post.html?slug=proxmox-virtual-environment",
       github: "https://github.com/proxmox"
     }
   },
@@ -135,7 +135,7 @@ function buildProjects() {
 
     // Build the links (only if they exist)
     let blogLink = project.links.blog ?
-      `<a href="${project.links.blog}" target="_blank" class="btn btn-dark">Read Blog Post</a>` : '';
+      `<a href="${project.links.blog}" class="btn btn-dark">Read Blog Post</a>` : '';
     let githubLink = project.links.github ?
       `<a href="${project.links.github}" target="_blank" class="btn btn-outline-secondary ms-2">View on GitHub</a>` : '';
 

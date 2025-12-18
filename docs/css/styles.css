@@ -8,6 +8,7 @@
 @import url('shared/header-footer.css');
 
 /* Page-Specific Styles (only loaded when needed) */
+@import url('pages/blog.css');
 @import url('pages/carousel.css');
 @import url('pages/certifications.css');
 @import url('pages/timeline.css');
