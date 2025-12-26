@@ -13,7 +13,6 @@ function initNavbar() {
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="tools.html">Tools</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="cert.html">Certifications</a></li>
           <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>

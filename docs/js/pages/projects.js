@@ -1,6 +1,34 @@
 // Projects page - data and rendering logic
 const projectData = [
   {
+    image: "images/icons/wireshark.webp",
+    alt: "Wireshark",
+    title: "Wireshark",
+    description: "Network protocol analyzer for packet inspection and troubleshooting. Essential for understanding network traffic.",
+    tags: [
+      { text: "Network Analysis", color: "bg-primary" },
+      { text: "Cybersecurity", color: "bg-info text-dark" },
+      { text: "Security Tools", color: "bg-secondary" }
+    ],
+    links: {
+      blog: "https://blog.wellslabs.org/wireshark"
+    }
+  },
+  {
+    image: "images/icons/wazuh.webp",
+    alt: "Wazuh",
+    title: "Wazuh",
+    description: "Open-Source SIEM and EDR solution. Provides a method of aggregating logs and managing configurations.",
+    tags: [
+      { text: "Endpoint Defence", color: "bg-danger" },
+      { text: "Cybersecurity", color: "bg-info text-dark" },
+      { text: "Security Tools", color: "bg-secondary" }
+    ],
+    links: {
+      blog: "https://blog.wellslabs.org/wazuh"
+    }
+  },
+  {
     image: "images/projects/raspberry-pi5.webp",
     alt: "Raspberry Pi 5",
     title: "Raspberry Pi 5: Tools",
