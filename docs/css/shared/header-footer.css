@@ -11,6 +11,29 @@
     font-weight: 500;
 }
 
+/* Add visual separation between nav items */
+.navbar-nav .nav-item {
+    border-right: 1px solid rgba(255, 249, 175, 0.3);
+    padding: 0 0.75rem;
+}
+
+.navbar-nav .nav-item:last-child {
+    border-right: none;
+}
+
+/* Remove border on mobile */
+@media (max-width: 767px) {
+    .navbar-nav .nav-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 249, 175, 0.3);
+        padding: 0.5rem 0;
+    }
+
+    .navbar-nav .nav-item:last-child {
+        border-bottom: none;
+    }
+}
+
 .nav-link.active,
 .navbar .nav-link:hover {
     color: #FFFFFF !important;
