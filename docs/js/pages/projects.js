@@ -106,7 +106,7 @@ const projectData = [
     image: "images/projects/omg-cable.webp",
     alt: "OMG Cable",
     title: "OMG Cable",
-    description: "This is an OMG cable that I purchase to practice penetration testing.  It allows me to run D",
+    description: "This is an OMG cable that I purchased to practice penetration testing.",
     tags: [
       { text: "Single Board Computer", color: "bg-success" },
       { text: "Communication", color: "bg-warning text-dark" },
@@ -121,7 +121,7 @@ const projectData = [
     image: "images/projects/raspberry-pi-zero2w.webp",
     alt: "Raspberry Pi Zero 2W",
     title: "Raspberry Pi Zero 2W",
-    description: "This is Raspberry Pi Zero 2W that I bought to for a web server.",
+    description: "This is Raspberry Pi Zero 2W that I bought for a web server. I have also experimented with using it as a VPN gateway with a PoE hat.",
     tags: [
       { text: "Single Board Computer", color: "bg-success" },
       { text: "Home Lab", color: "bg-warning text-dark" },
