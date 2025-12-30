@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <h4 class="alert-heading">Post Not Found</h4>
         <p>The requested post could not be found.</p>
         <hr>
-        <p class="mb-0"><a href="carousel.html" class="alert-link">Return to Self-Hosted Apps</a></p>
+        <p class="mb-0"><a href="self-hosted.html" class="alert-link">Return to Self-Hosted Apps</a></p>
       </div>
     `;
     return;
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
 
           <div class="mt-4">
-            <a href="carousel.html" class="btn btn-outline-secondary">← Back to Self-Hosted Apps</a>
+            <a href="self-hosted.html" class="btn btn-outline-secondary">← Back to Self-Hosted Apps</a>
           </div>
         </div>
       </div>

@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Self-hosted service details">
-    <meta name="author" content="James Wells">
-    <title>Post - James Wells</title>
+    <meta name="description" content="A portfolio of self-hosted applications run by James Wells.">
+    <title>Self-Hosted Apps - James Wells</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -15,30 +15,25 @@
 
 <main role="main" class="container-fluid">
     <div class="container mt-4">
-        <!-- Back button -->
-        <div class="mb-3">
-            <a href="self-hosted.html" class="btn btn-outline-secondary">← Back to Self-Hosted Apps</a>
-        </div>
+        <h1 class="text-center mb-5">Self-Hosted Apps</h1>
 
-        <!-- Post content will be dynamically loaded here -->
-        <div id="post-content">
-            <div class="text-center mt-5">
-                <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
-            </div>
-        </div>
+        <div class="row g-4" id="self-hosted-grid-placeholder"></div>
+
     </div>
 </main>
 
 <div id="footer-placeholder"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/shared/navbar.js"></script>
 <script src="js/shared/footer.js"></script>
 <script src="js/init.js" defer></script>
 <script src="js/posts/self-hosted-data.js"></script>
-<script src="js/posts/post-loader.js"></script>
+<script src="js/pages/self-hosted.js" defer></script>
+<script>
+  AOS.init(); // Initialize the AOS library
+</script>
 
 </body>
 </html>
