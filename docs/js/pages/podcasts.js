@@ -4,7 +4,7 @@ const podcastData = [
     image: "images/podcasts/critical-thinking.webp",
     alt: "Critical Thinking",
     title: "Critical Thinking",
-    description: "A podcast focused on critical thinking and cybersecurity topics.",    links: {
+    description: "A podcast focused on the technical details of bug bounty.",    links: {
       // website: "#"
     }
   },
@@ -52,7 +52,7 @@ const podcastData = [
     image: "images/podcasts/security-noise.webp",
     alt: "Security Noise",
     title: "Security Noise",
-    description: "Cutting through the noise in cybersecurity.",    links: {
+    description: "Cutting through the noise in cybersecurity with TrustedSec.",    links: {
       // website: "#"
     }
   },
@@ -164,7 +164,7 @@ const podcastData = [
     image: "images/podcasts/unsupervised-learning.webp",
     alt: "Unsupervised Learning",
     title: "Unsupervised Learning",
-    description: "Security, technology, and society analysis.",    links: {
+    description: "Security, technology, and artificial intelligence.",    links: {
       // website: "#"
     }
   }
