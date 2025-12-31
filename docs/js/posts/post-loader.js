@@ -45,14 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
     metaDescription.setAttribute('content', post.description);
   }
 
-  // Build tags HTML (only if tags exist)
-  let tagsHTML = '';
-  if (post.tags && post.tags.length > 0) {
-    tagsHTML = post.tags.map(tag =>
-      `<span class="badge ${tag.color} me-1 mb-2">${tag.text}</span>`
-    ).join('');
-  }
-
   // Build links HTML
   let linksHTML = '';
   if (post.links.official) {
@@ -76,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function() {
       <header class="mb-4">
         <h1 class="display-4">${post.title}</h1>
         <p class="lead text-muted">${post.subtitle}</p>
-        ${tagsHTML ? `<div class="mb-3">${tagsHTML}</div>` : ''}
       </header>
 
       <div class="row mb-4">
