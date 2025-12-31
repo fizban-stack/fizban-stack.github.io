@@ -22,13 +22,7 @@ const selfHostedServices = {
 
       <h3>Installation Notes</h3>
       <p>I run Beszel in a Docker container on my Proxmox environment. It's incredibly easy to set up and requires minimal configuration.</p>
-    `,
-    tags: [
-      { text: "Monitoring", color: "bg-primary" },
-      { text: "Dashboard", color: "bg-info text-dark" },
-      { text: "Docker", color: "bg-secondary" }
-    ],
-    links: {
+    `,    links: {
       github: "https://github.com/henrygd/beszel",
       official: "https://beszel.dev"
     }
@@ -54,13 +48,7 @@ const selfHostedServices = {
 
       <h3>Why I Use It</h3>
       <p>Having a centralized location for all my technical documentation and ebooks makes it easy to access reference materials from any device in my home lab.</p>
-    `,
-    tags: [
-      { text: "Ebook", color: "bg-success" },
-      { text: "Library", color: "bg-info text-dark" },
-      { text: "Docker", color: "bg-secondary" }
-    ],
-    links: {
+    `,    links: {
       github: "https://github.com/booklore-app/booklore"
     }
   },
@@ -85,13 +73,7 @@ const selfHostedServices = {
 
       <h3>Why I Use It</h3>
       <p>Forgejo gives me complete control over my code repositories. It's perfect for keeping private projects secure while still having all the features of platforms like GitHub.</p>
-    `,
-    tags: [
-      { text: "Git", color: "bg-danger" },
-      { text: "Code Hosting", color: "bg-warning text-dark" },
-      { text: "Self-Hosted", color: "bg-secondary" }
-    ],
-    links: {
+    `,    links: {
       official: "https://codeberg.org/forgejo"
     }
   },
@@ -116,13 +98,7 @@ const selfHostedServices = {
 
       <h3>Why I Use It</h3>
       <p>Grafana is essential for visualizing data from my various monitoring systems. It creates beautiful, informative dashboards that help me understand what's happening in my infrastructure.</p>
-    `,
-    tags: [
-      { text: "Monitoring", color: "bg-primary" },
-      { text: "Visualization", color: "bg-info text-dark" },
-      { text: "Analytics", color: "bg-success" }
-    ],
-    links: {
+    `,    links: {
       github: "https://github.com/grafana/grafana",
       official: "https://grafana.com"
     }
@@ -148,13 +124,7 @@ const selfHostedServices = {
 
       <h3>Why I Use It</h3>
       <p>Instead of relying on browser bookmarks or proprietary note-taking services, Karakeep gives me full control over my data while providing excellent organization tools.</p>
-    `,
-    tags: [
-      { text: "Bookmarks", color: "bg-warning text-dark" },
-      { text: "Notes", color: "bg-info text-dark" },
-      { text: "Productivity", color: "bg-primary" }
-    ],
-    links: {
+    `,    links: {
       github: "https://github.com/karakeep-app/karakeep"
     }
   },
@@ -179,13 +149,7 @@ const selfHostedServices = {
 
       <h3>Why I Use It</h3>
       <p>Pairdrop makes it incredibly easy to share files between my devices without using cloud services or USB drives. Perfect for quickly moving files between my laptop, phone, and workstation.</p>
-    `,
-    tags: [
-      { text: "File Sharing", color: "bg-success" },
-      { text: "P2P", color: "bg-primary" },
-      { text: "Privacy", color: "bg-info text-dark" }
-    ],
-    links: {
+    `,    links: {
       github: "https://github.com/schlagmichdoch/PairDrop"
     }
   },
@@ -211,13 +175,7 @@ const selfHostedServices = {
 
       <h3>Why I Use It</h3>
       <p>This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use. Proxmox is the foundation of my entire home lab infrastructure.</p>
-    `,
-    tags: [
-      { text: "Hypervisor", color: "bg-danger" },
-      { text: "Virtualization", color: "bg-primary" },
-      { text: "Infrastructure", color: "bg-secondary" }
-    ],
-    links: {
+    `,    links: {
       github: "https://github.com/proxmox",
       official: "https://www.proxmox.com"
     }
@@ -244,13 +202,7 @@ const selfHostedServices = {
 
       <h3>Why I Use It</h3>
       <p>Trillium helps me organize my technical notes and documentation in a structured way. The hierarchical system makes it easy to create a personal wiki of everything I learn.</p>
-    `,
-    tags: [
-      { text: "Notes", color: "bg-info text-dark" },
-      { text: "Knowledge Base", color: "bg-success" },
-      { text: "Productivity", color: "bg-primary" }
-    ],
-    links: {
+    `,    links: {
       github: "https://github.com/TriliumNext/Trilium"
     }
   },
@@ -276,13 +228,7 @@ const selfHostedServices = {
 
       <h3>Why I Use It</h3>
       <p>Web-check is an excellent tool for reconnaissance and security analysis. It helps me understand website infrastructure and identify potential security issues.</p>
-    `,
-    tags: [
-      { text: "OSINT", color: "bg-danger" },
-      { text: "Security", color: "bg-warning text-dark" },
-      { text: "Analysis", color: "bg-info text-dark" }
-    ],
-    links: {
+    `,    links: {
       github: "https://github.com/Lissy93/web-check"
     }
   },
@@ -308,13 +254,7 @@ const selfHostedServices = {
 
       <h3>Why I Use It</h3>
       <p>Traefik automatically manages routing and SSL certificates for all my self-hosted services. The automatic service discovery makes adding new services incredibly simple.</p>
-    `,
-    tags: [
-      { text: "Reverse Proxy", color: "bg-primary" },
-      { text: "Load Balancer", color: "bg-success" },
-      { text: "Docker", color: "bg-secondary" }
-    ],
-    links: {
+    `,    links: {
       github: "https://github.com/traefik/traefik",
       official: "https://traefik.io"
     }
