@@ -28,7 +28,7 @@ const trainingData = [
     image: "images/training/underthewire.webp",
     alt: "UnderTheWire",
     title: "UnderTheWire",
-    description: "Wargames that help you learn and practice security concepts through fun challenges and games.",    links: {
+    description: "Wargames that help you learn and practice PowerShell and security concepts through fun challenges and games.",    links: {
       website: "https://underthewire.tech/wargames/"
     }
   },
@@ -100,7 +100,7 @@ const trainingData = [
     image: "images/training/yeswehack.webp",
     alt: "YesWeHack",
     title: "YesWeHack",
-    description: "European bug bounty platform and vulnerability coordination platform for ethical hackers. YesWeHack Dojo provides training opprotunities for bug hunters.",    links: {
+    description: "European bug bounty platform and vulnerability coordination platform for ethical hackers. YesWeHack Dojo provides training opportunities for bug hunters.",    links: {
       website: "https://www.dojo-yeswehack.com"
     }
   },
@@ -148,7 +148,7 @@ const trainingData = [
     image: "images/training/tcmsecurity.webp",
     alt: "TCM Security Academy",
     title: "TCM Security Academy",
-    description: "Practical penetration testing and security training with hands-on courses.",    links: {
+    description: "Practical penetration testing and security training with hands-on courses that is affordable.",    links: {
       website: "https://academy.tcm-sec.com"
     }
   },
@@ -164,7 +164,7 @@ const trainingData = [
     image: "images/training/buildcyber.webp",
     alt: "Build Cyber",
     title: "Build Cyber",
-    description: "Resources and guidance for building a career in cybersecurity with practical advice.",    links: {
+    description: "Resources and guidance for building a career in cybersecurity with practical advice. Includes vouchers for individuals in need to receive free training courses including, Hack the Box certifications, the Offsec OSCP, and many more.",    links: {
       website: "https://www.buildcyber.com"
     }
   },
@@ -188,7 +188,7 @@ const trainingData = [
     image: "images/training/redteamleaders.webp",
     alt: "Red Team Leaders",
     title: "Red Team Leaders",
-    description: "Resources for red team professionals and offensive security practitioners.",    links: {
+    description: "Resources for red team professionals and offensive security practitioners. Contains detailed, technical content and most of the courses are free. Certifications are offered as well and most cost under $20.",    links: {
       website: "https://courses.redteamleaders.com"
     }
   },

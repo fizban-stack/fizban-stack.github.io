@@ -16,7 +16,7 @@ const timelineEvents = [
     date: "Summer 2023",
     title: "First Comptia Certifications",
     link: "https://blog.wellslabs.org/first-comptia-certifications/",
-    description: "This was the beginning of me purchasing my own certification vouchers and my home lab obsession."
+    description: "This was when I decided I needed to invest my more of my own money into certification vouchers and my home lab obsession."
   },
     {
     date: "Fall 2023",
@@ -40,7 +40,7 @@ const timelineEvents = [
     date: "Fall 2025",
     title: "My First Incident",
     link: "https://blog.wellslabs.org/my-first-incident/",
-    description: "This was the first time I experience a cyber attack in real-time."
+    description: "This was the first time I experienced a cyber attack in real-time."
     }
 ];
 

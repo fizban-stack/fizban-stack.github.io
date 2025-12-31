@@ -29,7 +29,7 @@ const projectData = [
     image: "images/projects/pwnagotchi.webp",
     alt: "Pwnagotchi",
     title: "Pwnagotchi aka Bobby",
-    description: "Pwnagotchi is a wifi hacking tool created with a Raspberry Pi Zero 2W.  My Children came up with the name Bobby.",    links: {
+    description: "Pwnagotchi is a wifi hacking tool created with a Raspberry Pi Zero 2W.  My children came up with the name Bobby.",    links: {
       blog: "https://blog.wellslabs.org/bobby",
       github: "https://github.com/evilsocket/pwnagotchi"
     }
@@ -38,7 +38,7 @@ const projectData = [
     image: "images/projects/meshtastic.webp",
     alt: "Meshtastic Radios",
     title: "Meshtastic Radios",
-    description: "These radios use long range wireless communication (LoRa) to send messages between devices without any other connections.",    links: {
+    description: "These radios use long range wireless communication (LoRa) to send messages between devices without using other services such as cellular or Wi-Fi.",    links: {
       blog: "https://blog.wellslabs.org/meshtastic",
       github: "https://github.com/meshtastic"
     }
@@ -47,7 +47,7 @@ const projectData = [
     image: "images/projects/nethunter.webp",
     alt: "Kali Nethunter",
     title: "Kali Nethunter",
-    description: "This is a old phone that I rooted and installed Kali Nethunter on.",    links: {
+    description: "This is a old phone that I rooted and installed Kali NetHunter on.",    links: {
       blog: "https://blog.wellslabs.org/nethunter",
     }
   },

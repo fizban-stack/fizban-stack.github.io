@@ -132,7 +132,7 @@ const podcastData = [
     image: "images/podcasts/offsec-podcast.webp",
     alt: "OffSec Podcast",
     title: "OffSec Podcast",
-    description: "Offensive Security's podcast covering penetration testing and security.",    links: {
+    description: "Offensive Security's podcast covering penetration testing and security. This podcast has not produced any new episodes in a few years, but I found that the content is still applicable.",    links: {
       // website: "#"
     }
   },
@@ -140,7 +140,7 @@ const podcastData = [
     image: "images/podcasts/self-hosted.webp",
     alt: "Self-Hosted",
     title: "Self-Hosted",
-    description: "A podcast about self-hosting, privacy, and taking control of your data.",    links: {
+    description: "A podcast about self-hosting, privacy, and taking control of your data. This podcast has stopped producing episodes, but I have always found it had great content and it was one of the things that inspired me to create my own homelab.",    links: {
       // website: "#"
     }
   },
@@ -156,7 +156,7 @@ const podcastData = [
     image: "images/podcasts/the-homelab-show.webp",
     alt: "The Homelab Show",
     title: "The Homelab Show",
-    description: "Everything about building and maintaining your homelab.",    links: {
+    description: "Everything about building and maintaining your homelab. This podcast has also stopped producing new episodes, but much like the Self-Hosted Podcast this show help to inspire my homelab journey.",    links: {
       // website: "#"
     }
   },
