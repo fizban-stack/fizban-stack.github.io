@@ -1,6 +1,15 @@
 // Projects page - data and rendering logic
 const projectData = [
   {
+    image: "images/self-hosted/snipeit.webp",
+    alt: "Snipe-IT",
+    title: "Snipe-IT",
+    description: "Open-source IT asset management system that helps track hardware, software licenses, accessories, and consumables across my home lab.",    links: {
+      blog: "https://blog.wellslabs.org/snipe-it/",
+      github: "https://github.com/snipe/snipe-it"
+    }
+  },
+  {
     image: "images/icons/wireshark.webp",
     alt: "Wireshark",
     title: "Wireshark",

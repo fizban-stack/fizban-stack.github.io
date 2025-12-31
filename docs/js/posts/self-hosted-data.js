@@ -181,6 +181,37 @@ const selfHostedServices = {
     }
   },
 
+  snipeit: {
+    id: "snipeit",
+    title: "Snipe-IT",
+    subtitle: "IT Asset Management",
+    image: "images/self-hosted/snipeit.webp",
+    description: "Open-source IT asset management system.",
+    fullDescription: `
+      <p>Snipe-IT is a free, open-source IT asset management system that helps track hardware, software licenses, accessories, consumables, and more.</p>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li>Asset tracking and inventory</li>
+        <li>Check-in/check-out system</li>
+        <li>License management</li>
+        <li>Maintenance tracking</li>
+        <li>Custom fields and reports</li>
+        <li>Email notifications</li>
+        <li>QR code generation</li>
+      </ul>
+
+      <h3>Why I Use It</h3>
+      <p>Snipe-IT keeps track of all my hardware and software assets in one place. It's especially useful for managing equipment across my home lab and knowing what's deployed where.</p>
+
+      <h3>Installation Notes</h3>
+      <p>I run Snipe-IT in a Docker container with MySQL as the database backend. The web interface is clean and intuitive, making it easy to manage assets.</p>
+    `,    links: {
+      github: "https://github.com/snipe/snipe-it",
+      official: "https://snipeitapp.com"
+    }
+  },
+
   trillium: {
     id: "trillium",
     title: "Trillium",

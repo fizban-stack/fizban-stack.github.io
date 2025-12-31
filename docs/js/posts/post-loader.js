@@ -6,6 +6,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const postContainer = document.getElementById('post-content');
 
+  // Check if selfHostedServices is loaded
+  if (typeof selfHostedServices === 'undefined') {
+    console.error('selfHostedServices is not loaded');
+    postContainer.innerHTML = `
+      <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Error Loading Data</h4>
+        <p>The service data could not be loaded. Please try refreshing the page.</p>
+        <hr>
+        <p class="mb-0"><a href="self-hosted.html" class="alert-link">Return to Self-Hosted Apps</a></p>
+      </div>
+    `;
+    return;
+  }
+
   if (!postId || !selfHostedServices[postId]) {
     // Post not found
     postContainer.innerHTML = `
@@ -31,10 +45,13 @@ document.addEventListener("DOMContentLoaded", function() {
     metaDescription.setAttribute('content', post.description);
   }
 
-  // Build tags HTML
-  let tagsHTML = post.tags.map(tag =>
-    `<span class="badge ${tag.color} me-1 mb-2">${tag.text}</span>`
-  ).join('');
+  // Build tags HTML (only if tags exist)
+  let tagsHTML = '';
+  if (post.tags && post.tags.length > 0) {
+    tagsHTML = post.tags.map(tag =>
+      `<span class="badge ${tag.color} me-1 mb-2">${tag.text}</span>`
+    ).join('');
+  }
 
   // Build links HTML
   let linksHTML = '';
@@ -59,9 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <header class="mb-4">
         <h1 class="display-4">${post.title}</h1>
         <p class="lead text-muted">${post.subtitle}</p>
-        <div class="mb-3">
-          ${tagsHTML}
-        </div>
+        ${tagsHTML ? `<div class="mb-3">${tagsHTML}</div>` : ''}
       </header>
 
       <div class="row mb-4">
