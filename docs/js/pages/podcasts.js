@@ -5,7 +5,7 @@ const podcastData = [
     alt: "Critical Thinking",
     title: "Critical Thinking",
     description: "A podcast focused on the technical details of bug bounty.",    links: {
-      // website: "#"
+      website: "https://www.criticalthinkingpodcast.io/"
     }
   },
   {
@@ -13,7 +13,7 @@ const podcastData = [
     alt: "Darknet Diaries",
     title: "Darknet Diaries",
     description: "True stories from the dark side of the Internet.",    links: {
-      // website: "#"
+      website: "https://darknetdiaries.com"
     }
   },
   {
@@ -29,7 +29,7 @@ const podcastData = [
     alt: "Paul's Security Weekly",
     title: "Paul's Security Weekly",
     description: "Weekly discussion on the latest security news and tools.",    links: {
-      // website: "#"
+      website: "https://www.scworld.com/podcast-show/pauls-security-weekly"
     }
   },
   {
@@ -37,7 +37,7 @@ const podcastData = [
     alt: "David Bombal",
     title: "David Bombal",
     description: "Networking, cybersecurity, and IT career advice.",    links: {
-      // website: "#"
+      website: "https://davidbombal.com"
     }
   },
   {
@@ -45,7 +45,7 @@ const podcastData = [
     alt: "Insecure Agents",
     title: "Insecure Agents",
     description: "A podcast about security, privacy, and technology.",    links: {
-      // website: "#"
+      website: "https://insecureagents.com/"
     }
   },
   {
@@ -53,7 +53,7 @@ const podcastData = [
     alt: "Security Noise",
     title: "Security Noise",
     description: "Cutting through the noise in cybersecurity with TrustedSec.",    links: {
-      // website: "#"
+      website: "https://trustedsec.com/resources"
     }
   },
   {
@@ -61,7 +61,7 @@ const podcastData = [
     alt: "LINUX Unplugged",
     title: "LINUX Unplugged",
     description: "The Linux Action Show for the community, by the community.",    links: {
-      // website: "#"
+      website: "https://linuxunplugged.com"
     }
   },
   {
@@ -69,7 +69,7 @@ const podcastData = [
     alt: "What the Hack?",
     title: "What the Hack?",
     description: "A podcast exploring hacking and cybersecurity topics.",    links: {
-      // website: "#"
+      website: "https://whatthehack.show/"
     }
   },
   {
@@ -77,7 +77,7 @@ const podcastData = [
     alt: "Across the Pondcast",
     title: "Across the Pondcast",
     description: "UK-based cybersecurity podcast covering news and trends.",    links: {
-      // website: "#"
+      website: "https://www.acrossthepondcast.net/"
     }
   },
   {
@@ -85,7 +85,7 @@ const podcastData = [
     alt: "Blue Security",
     title: "Blue Security",
     description: "Defensive security strategies and blue team tactics.",    links: {
-      // website: "#"
+      website: "https://bluesecuritypod.com"
     }
   },
   {
@@ -93,7 +93,7 @@ const podcastData = [
     alt: "Hacker Valley Studio",
     title: "Hacker Valley Studio",
     description: "Stories from the cybersecurity community.",    links: {
-      // website: "#"
+      website: "https://hackervalley.com/podcast"
     }
   },
   {
@@ -101,7 +101,7 @@ const podcastData = [
     alt: "The Hacker's Cache",
     title: "The Hacker's Cache",
     description: "A podcast about hacking, security, and technology.",    links: {
-      // website: "#"
+      website: "https://podcast.kyserclark.com/"
     }
   },
   {
@@ -109,7 +109,7 @@ const podcastData = [
     alt: "Bug Bounty Reports Explained",
     title: "Bug Bounty Reports Explained",
     description: "Breaking down real bug bounty reports and vulnerabilities.",    links: {
-      // website: "#"
+      website: "https://www.bugbountyexplained.com/"
     }
   },
   {
@@ -117,7 +117,7 @@ const podcastData = [
     alt: "Cyber Work",
     title: "Cyber Work",
     description: "Career advice and insights for cybersecurity professionals.",    links: {
-      // website: "#"
+      website: "https://www.infosecinstitute.com/podcast/"
     }
   },
   {
@@ -125,7 +125,7 @@ const podcastData = [
     alt: "Hacked",
     title: "Hacked",
     description: "Stories of hacking incidents and security breaches.",    links: {
-      // website: "#"
+      website: "https://linktr.ee/hackedpodcast"
     }
   },
   {
@@ -133,7 +133,7 @@ const podcastData = [
     alt: "OffSec Podcast",
     title: "OffSec Podcast",
     description: "Offensive Security's podcast covering penetration testing and security. This podcast has not produced any new episodes in a few years, but I found that the content is still applicable.",    links: {
-      // website: "#"
+      website: "https://www.offsec.com/podcast/"
     }
   },
   {
@@ -141,7 +141,7 @@ const podcastData = [
     alt: "Self-Hosted",
     title: "Self-Hosted",
     description: "A podcast about self-hosting, privacy, and taking control of your data. This podcast has stopped producing episodes, but I have always found it had great content and it was one of the things that inspired me to create my own homelab.",    links: {
-      // website: "#"
+      website: "https://selfhosted.show"
     }
   },
   {
@@ -149,7 +149,7 @@ const podcastData = [
     alt: "Simply Offensive",
     title: "Simply Offensive",
     description: "Offensive security topics made simple.",    links: {
-      // website: "#"
+      website: "https://thehackermaker.com/simply-offensive/"
     }
   },
   {
@@ -157,7 +157,7 @@ const podcastData = [
     alt: "The Homelab Show",
     title: "The Homelab Show",
     description: "Everything about building and maintaining your homelab. This podcast has also stopped producing new episodes, but much like the Self-Hosted Podcast this show help to inspire my homelab journey.",    links: {
-      // website: "#"
+      website: "https://thehomelab.show"
     }
   },
   {
@@ -165,7 +165,7 @@ const podcastData = [
     alt: "Unsupervised Learning",
     title: "Unsupervised Learning",
     description: "Security, technology, and artificial intelligence.",    links: {
-      // website: "#"
+      website: "https://danielmiessler.com/"
     }
   }
 ];
