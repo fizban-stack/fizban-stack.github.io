@@ -19,7 +19,7 @@ function initNavbar() {
           <li class="nav-item"><a class="nav-link" href="self-hosted.html">Self-Hosted</a></li>
           <li class="nav-item"><a class="nav-link" href="training.html">Free Cyber Security Training</a></li>
           <li class="nav-item"><a class="nav-link" href="podcasts.html">Recommended Podcasts</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://blog.wellslabs.org" target="_blank" rel="noopener noreferrer">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
