@@ -70,14 +70,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
       ${post.image ? `
       <div class="row mb-4">
-        <div class="col-lg-10 mx-auto">
+        <div class="col-12 blog-post-container mx-auto">
           <img src="${post.image}" class="img-fluid rounded shadow-sm mb-4" alt="${post.title}">
         </div>
       </div>
       ` : ''}
 
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-12 blog-post-container mx-auto">
           <div class="blog-post-body">
             ${post.fullContent}
           </div>

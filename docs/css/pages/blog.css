@@ -1,0 +1,59 @@
+/* Blog-specific styles - Responsive layout for blog posts */
+
+/* Blog post content - responsive width */
+.blog-post-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.blog-post-body p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Responsive container widths for blog posts */
+/* Desktop: Use nearly full width */
+@media (min-width: 1200px) {
+    .blog-post-container {
+        max-width: 95%;
+    }
+}
+
+/* Large tablets/small desktops: Use most of the width */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog-post-container {
+        max-width: 90%;
+    }
+}
+
+/* Tablets: Use moderate width */
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-post-container {
+        max-width: 85%;
+    }
+
+    .blog-post-body {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile: Use full width with padding */
+@media (max-width: 767px) {
+    .blog-post-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .blog-post-body {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
