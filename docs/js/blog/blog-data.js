@@ -7,8 +7,12 @@ const blogPostRegistry = {
     'first-comptia-certifications',
     'first-frustration'
   ],
-  cybersecurity: [],
-  homelab: [],
+  cybersecurity: [
+    'nethunter'
+  ],
+  homelab: [
+    'snipe-it'
+  ],
   hardware: []
 };
 

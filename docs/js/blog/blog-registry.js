@@ -8,10 +8,10 @@ const blogPostRegistry = {
     'first-frustration'
   ],
   cybersecurity: [
-    // Add cybersecurity post IDs here
+    'nethunter'
   ],
   homelab: [
-    // Add homelab post IDs here
+    'snipe-it'
   ],
   hardware: [
     // Add hardware post IDs here

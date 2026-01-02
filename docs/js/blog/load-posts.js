@@ -8,8 +8,12 @@ const postRegistry = {
     'first-frustration',
     'securityx-and-beyond'
   ],
-  cybersecurity: [],
-  homelab: [],
+  cybersecurity: [
+    'nethunter'
+  ],
+  homelab: [
+    'snipe-it'
+  ],
   hardware: []
 };
 
