@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Blog</h1>
+        <p>Articles, tutorials, and thoughts on technology and self-hosting</p>
+    
+        <div class="search-container">
+            <input type="text" id="blog-search" placeholder="Search by title, tag, or content..." onkeyup="filterPosts()">
+        </div>
+    </header>
+
+    <main id="blog-container">
+        <div class="column-wrapper" id="main-view">
+            <div class="column">
+                <h2>Cybersecurity</h2>
+                <div id="cybersecurity-posts"></div>
+            </div>
+            <div class="column">
+                <h2>Home Lab</h2>
+                <div id="homelab-posts"></div>
+            </div>
+            <div class="column">
+                <h2>Personal Growth</h2>
+                <div id="personal-posts"></div>
+            </div>
+        </div>
+
+        <div id="post-view" class="hidden">
+            <button onclick="showMainView()">← Back to Blog</button>
+            <article id="post-content"></article>
+        </div>
+    </main>
+
+    <script src="posts.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
