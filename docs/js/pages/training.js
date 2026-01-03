@@ -199,6 +199,14 @@ const trainingData = [
     description: "Security training platform with hands-on labs and cybersecurity challenges.",    links: {
       website: "https://www.hackinghub.io"
     }
+  },
+  {
+    image: "images/training/websploit.webp",
+    alt: "Websploit Labs",
+    title: "Websploit Labs",
+    description: "A collection of vulnerable docker containers assembled by Omar Santos containing several labs including, OWASP Juice Shop and DVWA(Damn Vulnerable Web App).",    links: {
+      website: "https://github.com/The-Art-of-Hacking/websploit"
+    }
   }
 ];
 
