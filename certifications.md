@@ -1,0 +1,100 @@
+---
+layout: default
+title: Certifications
+description: A comprehensive list of professional certifications held by James Wells, including CompTIA, Cisco, Microsoft, and other industry credentials.
+---
+
+# Certifications
+
+<div class="accordion" id="certificationsAccordion">
+
+  <!-- CompTIA Certifications -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompTIA">
+        <img src="{{ '/assets/images/icons/comptia.svg' | relative_url }}" alt="CompTIA" class="brand-logo me-2">
+        CompTIA
+        <span class="badge bg-secondary ms-2">10</span>
+      </button>
+    </h2>
+    <div id="collapseCompTIA" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+      <div class="accordion-body">
+        <div class="list-group">
+          <a href="https://www.credly.com/badges/fb99ce8a-3df3-4a3e-8164-4e61f03982c6" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA Secure Infrastructure Expert</a>
+          <a href="https://www.credly.com/badges/975a311a-e8f8-40c2-9b10-8f15940e73c2" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA Security Analytics Professional</a>
+          <a href="https://www.credly.com/badges/bb2ef8e4-a269-44ef-bc66-60d005200e61" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA Security Analytics Expert</a>
+          <a href="https://www.credly.com/badges/60ce21c5-fbf2-4128-bed8-b6067b2cdc8f" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA Network Vulnerability Assessment Professional</a>
+          <a href="https://www.credly.com/badges/2cee5c13-ba9c-42cf-8fad-e0dec20f3151" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA Network Security Professional</a>
+          <a href="https://www.credly.com/badges/e81f6733-01fa-4132-b0e8-985d516a98a0" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA Network+</a>
+          <a href="https://www.credly.com/badges/f00e3b4a-911d-4643-9cae-b09a19617750" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA Security+</a>
+          <a href="https://www.credly.com/badges/90987b06-4628-4fc5-830e-9f3fc83d1e19" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA SecurityX (formerly CASP+)</a>
+          <a href="https://www.credly.com/badges/7bbedcad-790f-48e7-83cd-77c374204411" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA CySA+</a>
+          <a href="https://www.credly.com/badges/bdd61a04-2b48-406b-9dcd-714ce6bc1508" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">CompTIA PenTest+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cisco Certifications -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCisco">
+        <img src="{{ '/assets/images/icons/cisco.svg' | relative_url }}" alt="Cisco" class="brand-logo me-2">
+        Cisco
+        <span class="badge bg-secondary ms-2">4</span>
+      </button>
+    </h2>
+    <div id="collapseCisco" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+      <div class="accordion-body">
+        <div class="list-group">
+          <a href="https://www.credly.com/badges/4cb5a621-a72a-4313-b905-6bb888295ca1" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">Cisco Junior Cybersecurity Analyst Career Path</a>
+          <a href="https://www.credly.com/badges/491f56a3-6699-4fc7-b586-0cc266200b50" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">Cisco Introduction to Cybersecurity</a>
+          <a href="https://www.credly.com/badges/8194a179-fe6a-4017-bf89-e6402ee090d0" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">Cisco Cyber Threat Management</a>
+          <a href="https://www.credly.com/badges/cc095fda-1239-4f51-b126-7657f7299a97" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">Cisco Networking Basics</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Microsoft Certifications -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMicrosoft">
+        <img src="{{ '/assets/images/icons/microsoft.svg' | relative_url }}" alt="Microsoft" class="brand-logo me-2">
+        Microsoft
+        <span class="badge bg-secondary ms-2">3</span>
+      </button>
+    </h2>
+    <div id="collapseMicrosoft" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+      <div class="accordion-body">
+        <div class="list-group">
+          <a href="https://www.credly.com/badges/f4b9fcf5-d2b6-462f-b0d9-dbd8ad7cada1" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">Microsoft Certified: Security, Compliance, and Identity Fundamentals</a>
+          <a href="https://www.credly.com/badges/54f4716b-aebf-4ac3-9ff2-9bee78fbc3f0" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">Microsoft Certified: Azure AI Fundamentals</a>
+          <a href="https://www.credly.com/badges/10b3c050-aa38-4952-b855-1bce1c54e26d" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">Microsoft Certified: Power Platform Fundamentals</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other Certifications -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOther">
+        Other Certifications
+        <span class="badge bg-secondary ms-2">5</span>
+      </button>
+    </h2>
+    <div id="collapseOther" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+      <div class="accordion-body">
+        <div class="list-group">
+          <a href="https://www.credly.com/badges/64c1e2ee-e83b-4c72-b067-e69dc4cf313d" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">OPSWAT Introduction to Critical Infrastructure Protection (ICIP)</a>
+          <a href="https://www.credly.com/badges/7c813d6c-ecce-49df-bf52-645f9270d7f7" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">ISC2 Certified in Cybersecurity (CC)</a>
+          <a href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/159080425" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">TCM Security - Practical Web Penetration Associate (PWPA)</a>
+          <a href="https://www.freecodecamp.org/certification/jameswells1988/responsive-web-design" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">FreeCodeCamp - Responsive Web Design</a>
+          <a href="https://www.freecodecamp.org/certification/jameswells1988/javascript-algorithms-and-data-structures" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">FreeCodeCamp - JavaScript Algorithms and Data Structures</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

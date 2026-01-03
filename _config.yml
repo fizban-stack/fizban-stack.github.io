@@ -1,0 +1,71 @@
+# Jekyll Configuration for GitHub Pages
+# Ethical Hacker Portfolio Site - James Wells
+
+# Site settings
+title: James Wells
+tagline: Cybersecurity Professional & Ethical Hacker
+description: >-
+  Personal portfolio of James Wells, an aspiring cybersecurity practitioner
+  and home lab enthusiast. Explore projects, certifications, and my professional journey.
+baseurl: ""
+url: "https://fizban-stack.github.io"
+
+# Author information
+author:
+  name: James Wells
+  email: contact@wellslabs.org
+  bio: Information Technology Security Professional at RBR Alliance
+
+# Social links
+social:
+  blog: https://blog.wellslabs.org
+  github: fizban-stack
+  linkedin: # Add your LinkedIn if desired
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - docs/
+  - .claude/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Permalink structure
+permalink: pretty
+
+# Sass/SCSS configuration
+sass:
+  sass_dir: assets/css
+  style: compressed

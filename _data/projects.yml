@@ -1,0 +1,55 @@
+- title: Snipe-IT
+  image: self-hosted/snipeit.webp
+  description: Open-source IT asset management system that helps track hardware, software licenses, accessories, and consumables across my home lab.
+  blog: https://blog.wellslabs.org/snipe-it/
+  github: https://github.com/snipe/snipe-it
+
+- title: Wireshark
+  image: icons/wireshark.webp
+  description: Network protocol analyzer for packet inspection and troubleshooting. Essential for understanding network traffic.
+  blog: https://blog.wellslabs.org/wireshark
+
+- title: Wazuh
+  image: icons/wazuh.webp
+  description: Open-Source SIEM and EDR solution. Provides a method of aggregating logs and managing configurations.
+  blog: https://blog.wellslabs.org/wazuh
+
+- title: "Raspberry Pi 5: Tools"
+  image: projects/raspberry-pi5.webp
+  description: A Raspberry Pi 5 that I setup with various tools and a remote connection. It allows me to plug into any network and have access to installed tools.
+  blog: https://blog.wellslabs.org/raspberry-pi-5/
+
+- title: Pwnagotchi aka Bobby
+  image: projects/pwnagotchi.webp
+  description: Pwnagotchi is a wifi hacking tool created with a Raspberry Pi Zero 2W. My children came up with the name Bobby.
+  blog: https://blog.wellslabs.org/bobby
+  github: https://github.com/evilsocket/pwnagotchi
+
+- title: Meshtastic Radios
+  image: projects/meshtastic.webp
+  description: These radios use long range wireless communication (LoRa) to send messages between devices without using other services such as cellular or Wi-Fi.
+  blog: https://blog.wellslabs.org/meshtastic
+  github: https://github.com/meshtastic
+
+- title: Kali Nethunter
+  image: projects/nethunter.webp
+  description: This is a old phone that I rooted and installed Kali NetHunter on.
+  blog: https://blog.wellslabs.org/nethunter
+
+- title: Nvidia Jetson Orin Nano Super
+  image: projects/nvidia-jetson-orin-nano.webp
+  description: This is a Jetson Orin Nano developer kit that I purchased to mess around with machine learning.
+
+- title: OMG Cable
+  image: projects/omg-cable.webp
+  description: This is an OMG cable that I purchased to practice penetration testing.
+
+- title: Raspberry Pi Zero 2W
+  image: projects/raspberry-pi-zero2w.webp
+  description: This is Raspberry Pi Zero 2W that I bought for a web server. I have also experimented with using it as a VPN gateway with a PoE hat.
+
+- title: Proxmox Virtual Environment
+  image: self-hosted/proxmox.webp
+  description: This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use.
+  blog: https://blog.wellslabs.org/proxmox-virtual-environment/
+  github: https://github.com/proxmox

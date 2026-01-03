@@ -1,0 +1,45 @@
+<nav class="navbar navbar-dark navbar-expand-md fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/icons/favicon.webp' | relative_url }}" alt="Site Logo" width="80" height="80" class="d-inline-block align-text-top me-2">
+      {{ site.title }}
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains '/projects' %}active{% endif %}" href="{{ '/projects' | relative_url }}">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains '/about' %}active{% endif %}" href="{{ '/about' | relative_url }}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains '/certifications' %}active{% endif %}" href="{{ '/certifications' | relative_url }}">Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains '/timeline' %}active{% endif %}" href="{{ '/timeline' | relative_url }}">Timeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains '/self-hosted' %}active{% endif %}" href="{{ '/self-hosted' | relative_url }}">Self-Hosted</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains '/training' %}active{% endif %}" href="{{ '/training' | relative_url }}">Training</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains '/podcasts' %}active{% endif %}" href="{{ '/podcasts' | relative_url }}">Podcasts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.social.blog }}" target="_blank" rel="noopener noreferrer">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains '/contact' %}active{% endif %}" href="{{ '/contact' | relative_url }}">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

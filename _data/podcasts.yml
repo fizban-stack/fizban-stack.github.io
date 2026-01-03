@@ -1,0 +1,103 @@
+- title: Critical Thinking
+  image: podcasts/critical-thinking.webp
+  description: A podcast focused on the technical details of bug bounty.
+  website: https://www.criticalthinkingpodcast.io/
+
+- title: Darknet Diaries
+  image: podcasts/darknet-diaries.webp
+  description: True stories from the dark side of the Internet.
+  website: https://darknetdiaries.com
+
+- title: Behind the Binary
+  image: podcasts/behind-the-binary.webp
+  description: Exploring technology and Reverse Engineering.
+
+- title: Paul's Security Weekly
+  image: podcasts/pauls-security-weekly.webp
+  description: Weekly discussion on the latest security news and tools.
+  website: https://www.scworld.com/podcast-show/pauls-security-weekly
+
+- title: David Bombal
+  image: podcasts/david-bombal.webp
+  description: Networking, cybersecurity, and IT career advice.
+  website: https://davidbombal.com
+
+- title: Insecure Agents
+  image: podcasts/insecure-agents.webp
+  description: A podcast about security, privacy, and technology.
+  website: https://insecureagents.com/
+
+- title: Security Noise
+  image: podcasts/security-noise.webp
+  description: Cutting through the noise in cybersecurity with TrustedSec.
+  website: https://trustedsec.com/resources
+
+- title: LINUX Unplugged
+  image: podcasts/linux-unplugged.webp
+  description: The Linux Action Show for the community, by the community.
+  website: https://linuxunplugged.com
+
+- title: What the Hack?
+  image: podcasts/what-the-hack.webp
+  description: A podcast exploring hacking and cybersecurity topics.
+  website: https://whatthehack.show/
+
+- title: Across the Pondcast
+  image: podcasts/across-the-pondcast.webp
+  description: UK-based cybersecurity podcast covering news and trends.
+  website: https://www.acrossthepondcast.net/
+
+- title: Blue Security
+  image: podcasts/blue-security-podcast.webp
+  description: Defensive security strategies and blue team tactics.
+  website: https://bluesecuritypod.com
+
+- title: Hacker Valley Studio
+  image: podcasts/hacker-valley-studio.webp
+  description: Stories from the cybersecurity community.
+  website: https://hackervalley.com/podcast
+
+- title: The Hacker's Cache
+  image: podcasts/the-hackers-cache.webp
+  description: A podcast about hacking, security, and technology.
+  website: https://podcast.kyserclark.com/
+
+- title: Bug Bounty Reports Explained
+  image: podcasts/bug-bounty-reports-explained.webp
+  description: Breaking down real bug bounty reports and vulnerabilities.
+  website: https://www.bugbountyexplained.com/
+
+- title: Cyber Work
+  image: podcasts/cyber-work.webp
+  description: Career advice and insights for cybersecurity professionals.
+  website: https://www.infosecinstitute.com/podcast/
+
+- title: Hacked
+  image: podcasts/hacked.webp
+  description: Stories of hacking incidents and security breaches.
+  website: https://linktr.ee/hackedpodcast
+
+- title: OffSec Podcast
+  image: podcasts/offsec-podcast.webp
+  description: Offensive Security's podcast covering penetration testing and security. This podcast has not produced any new episodes in a few years, but I found that the content is still applicable.
+  website: https://www.offsec.com/podcast/
+
+- title: Self-Hosted
+  image: podcasts/self-hosted.webp
+  description: A podcast about self-hosting, privacy, and taking control of your data. This podcast has stopped producing episodes, but I have always found it had great content and it was one of the things that inspired me to create my own homelab.
+  website: https://selfhosted.show
+
+- title: Simply Offensive
+  image: podcasts/simply-offensive.webp
+  description: Offensive security topics made simple.
+  website: https://thehackermaker.com/simply-offensive/
+
+- title: The Homelab Show
+  image: podcasts/the-homelab-show.webp
+  description: Everything about building and maintaining your homelab. This podcast has also stopped producing new episodes, but much like the Self-Hosted Podcast this show help to inspire my homelab journey.
+  website: https://thehomelab.show
+
+- title: Unsupervised Learning
+  image: podcasts/unsupervised-learning.webp
+  description: Security, technology, and artificial intelligence.
+  website: https://danielmiessler.com/
