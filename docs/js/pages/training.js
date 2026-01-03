@@ -201,6 +201,14 @@ const trainingData = [
     }
   },
   {
+    image: "images/training/pentest-ground.webp",
+    alt: "Pentest-Ground",
+    title: "Pentest-Ground",
+    description: "A free playground with deployed vulnerable web applications and network services.",    links: {
+      website: "https://www.pentest-ground.com"
+    }
+  },
+  {
     image: "images/training/websploit.webp",
     alt: "Websploit Labs",
     title: "Websploit Labs",
