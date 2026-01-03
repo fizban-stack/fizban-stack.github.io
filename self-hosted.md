@@ -9,14 +9,11 @@ description: Self-hosted applications and services used by James Wells in his ho
 This page showcases some of my favorite self-hosted applications that I use in my home lab. These tools help me manage infrastructure, learn new technologies, and maintain my homelab environment.
 
 <article>
-  <h2>Why Self-Host?</h2>
-  <p>Self-hosting gives you complete control over your data, helps you learn system administration, and provides hands-on experience with technologies used in enterprise environments. It's an essential part of my cybersecurity learning journey.</p>
+  <h4>Why Self-Host?</h4>
+  <p>Self-hosting gives you complete control over your data, helps you learn system administration, and provides hands-on experience with technologies used in enterprise environments. It has been essential part of my cybersecurity learning journey.</p>
 </article>
 
-<article>
-  <h2>My Setup</h2>
-  <p>I run these applications primarily on Proxmox VE using Docker containers. Each application serves a specific purpose in my lab environment, from monitoring and asset management to security testing and development.</p>
-</article>
+
 
 <div class="row g-4 mt-4">
 {% for app in site.data.selfhosted %}
