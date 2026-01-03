@@ -14,7 +14,29 @@ This page showcases some of my favorite self-hosted applications that I use in m
 </article>
 
 <article>
-  <h2>Featured Applications</h2>
+  <h2>My Setup</h2>
   <p>I run these applications primarily on Proxmox VE using Docker containers. Each application serves a specific purpose in my lab environment, from monitoring and asset management to security testing and development.</p>
-  <p>For detailed information about each application, including setup guides and my experiences, check out my <a href="https://blog.wellslabs.org" target="_blank">blog</a>.</p>
 </article>
+
+<div class="row g-4 mt-4">
+{% for app in site.data.selfhosted %}
+  <div class="col-md-6 col-lg-4">
+    <div class="card project-card h-100 d-flex flex-column">
+      <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">{{ app.title }}</h5>
+        <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0.75rem;">{{ app.subtitle }}</p>
+        <p class="card-text">{{ app.description }}</p>
+        <div class="mt-auto">
+          <a href="{{ '/self-hosted/' | append: app.id | relative_url }}" class="btn btn-dark">Learn More</a>
+          {% if app.github %}
+          <a href="{{ app.github }}" target="_blank" class="btn btn-outline-secondary ms-2">GitHub</a>
+          {% elsif app.official %}
+          <a href="{{ app.official }}" target="_blank" class="btn btn-outline-secondary ms-2">Official Site</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>

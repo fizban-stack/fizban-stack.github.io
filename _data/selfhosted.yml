@@ -1,0 +1,165 @@
+- id: beszel
+  title: Beszel
+  subtitle: Lightweight Server Monitoring Dashboard
+  image: self-hosted/beszel.webp
+  description: Server monitoring software.
+  github: https://github.com/henrygd/beszel
+  official: https://beszel.dev
+  features:
+    - Real-time server monitoring
+    - Resource usage tracking (CPU, RAM, Disk)
+    - Clean and intuitive dashboard
+    - Lightweight and efficient
+  why: Beszel provides a simple way to keep track of all my servers in one place. The lightweight nature means it doesn't consume resources while monitoring them.
+  notes: I run Beszel in a Docker container on my Proxmox environment. It's incredibly easy to set up and requires minimal configuration.
+
+- id: booklore
+  title: Booklore
+  subtitle: Self-Hosted Ebook Management
+  image: self-hosted/booklore.webp
+  description: Managing and Reading Ebooks and PDFs.
+  github: https://github.com/booklore-app/booklore
+  features:
+    - Ebook library management
+    - PDF reader integration
+    - Metadata organization
+    - Web-based reading interface
+    - Support for multiple formats
+  why: Having a centralized location for all my technical documentation and ebooks makes it easy to access reference materials from any device in my home lab.
+
+- id: forgejo
+  title: Forgejo
+  subtitle: Self-Hosted Git Service
+  image: self-hosted/forgejo.webp
+  description: GitHub Alternative
+  official: https://codeberg.org/forgejo
+  features:
+    - Git repository hosting
+    - Issue tracking
+    - Pull requests and code review
+    - Wiki and documentation
+    - CI/CD integration
+  why: Forgejo gives me complete control over my code repositories. It's perfect for keeping private projects secure while still having all the features of platforms like GitHub.
+
+- id: grafana
+  title: Grafana
+  subtitle: Data Visualization Platform
+  image: self-hosted/grafana.webp
+  description: Data visualization and monitoring.
+  github: https://github.com/grafana/grafana
+  official: https://grafana.com
+  features:
+    - Beautiful dashboards
+    - Multiple data source support
+    - Alerting capabilities
+    - Customizable visualizations
+    - Plugin ecosystem
+  why: Grafana is essential for visualizing data from my various monitoring systems. It creates beautiful, informative dashboards that help me understand what's happening in my infrastructure.
+
+- id: karakeep
+  title: Karakeep
+  subtitle: Bookmark and Note Manager
+  image: self-hosted/karakeep.webp
+  description: Self-hosted bookmark and note management tool.
+  github: https://github.com/karakeep-app/karakeep
+  features:
+    - Bookmark management
+    - Note-taking capabilities
+    - Tag organization
+    - Search functionality
+    - Privacy-focused
+  why: Instead of relying on browser bookmarks or proprietary note-taking services, Karakeep gives me full control over my data while providing excellent organization tools.
+
+- id: pairdrop
+  title: Pairdrop
+  subtitle: Local File Sharing
+  image: self-hosted/pairdrop.webp
+  description: Cross-platform local file sharing in your browser.
+  github: https://github.com/schlagmichdoch/PairDrop
+  features:
+    - No account required
+    - Browser-based file sharing
+    - Works across all platforms
+    - Local network transfer
+    - End-to-end encryption
+  why: Pairdrop makes it incredibly easy to share files between my devices without using cloud services or USB drives. Perfect for quickly moving files between my laptop, phone, and workstation.
+
+- id: proxmox
+  title: Proxmox Virtual Environment
+  subtitle: Enterprise Virtualization Platform
+  image: self-hosted/proxmox.webp
+  description: Open-source server virtualization management.
+  github: https://github.com/proxmox
+  official: https://www.proxmox.com
+  features:
+    - KVM and LXC support
+    - Web-based management interface
+    - High availability clustering
+    - Built-in backup solutions
+    - Software-defined storage
+    - Network virtualization
+  why: This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use. Proxmox is the foundation of my entire home lab infrastructure.
+
+- id: snipeit
+  title: Snipe-IT
+  subtitle: IT Asset Management
+  image: self-hosted/snipeit.webp
+  description: Open-source IT asset management system.
+  github: https://github.com/snipe/snipe-it
+  official: https://snipeitapp.com
+  features:
+    - Asset tracking and inventory
+    - Check-in/check-out system
+    - License management
+    - Maintenance tracking
+    - Custom fields and reports
+    - Email notifications
+    - QR code generation
+  why: Snipe-IT keeps track of all my hardware and software assets in one place. It's especially useful for managing equipment across my home lab and knowing what's deployed where.
+  notes: I run Snipe-IT in a Docker container with MySQL as the database backend. The web interface is clean and intuitive, making it easy to manage assets.
+
+- id: trillium
+  title: Trillium
+  subtitle: Hierarchical Note-Taking
+  image: self-hosted/trillium.webp
+  description: Hierarchical note-taking application.
+  github: https://github.com/TriliumNext/Trilium
+  features:
+    - Hierarchical note organization
+    - Note linking and relationships
+    - Full-text search
+    - Note versioning
+    - Encryption support
+    - Scripting and automation
+  why: Trillium helps me organize my technical notes and documentation in a structured way. The hierarchical system makes it easy to create a personal wiki of everything I learn.
+
+- id: webcheck
+  title: Web-check
+  subtitle: Website Analysis Tool
+  image: self-hosted/web-check.webp
+  description: OSINT tool for analyzing websites.
+  github: https://github.com/Lissy93/web-check
+  features:
+    - DNS and WHOIS lookup
+    - SSL/TLS analysis
+    - Security headers check
+    - Performance metrics
+    - Technology detection
+    - Server information
+  why: Web-check is an excellent tool for reconnaissance and security analysis. It helps me understand website infrastructure and identify potential security issues.
+
+- id: traefik
+  title: Traefik
+  subtitle: Modern Reverse Proxy
+  image: self-hosted/traefik.webp
+  description: Modern Cloud Native Reverse Proxy.
+  github: https://github.com/traefik/traefik
+  official: https://traefik.io
+  features:
+    - Automatic service discovery
+    - Let's Encrypt integration
+    - Load balancing
+    - Multiple backend support
+    - Metrics and monitoring
+    - WebSocket support
+  why: Traefik automatically manages routing and SSL certificates for all my self-hosted services. The automatic service discovery makes adding new services incredibly simple.
