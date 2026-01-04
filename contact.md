@@ -25,11 +25,6 @@ description: Get in touch with James Wells.
           <li><a href="https://twitter.com/fizbanstack" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
         </ul>
       </div>
-
-      <div class="mt-4">
-        <h3>Blog</h3>
-        <p>Check out my technical blog at <a href="https://blog.wellslabs.org" target="_blank" rel="noopener noreferrer">blog.wellslabs.org</a></p>
-      </div>
     </article>
   </div>
 </div>

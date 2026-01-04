@@ -10,12 +10,12 @@ description: The personal portfolio of James Wells, an aspiring cybersecurity pr
       <img src="{{ '/assets/images/resume.webp' | relative_url }}" class="rounded img-fluid d-block dibley" alt="Headshot of James Wells">
     </div>
     <div class="col-md-6">
-      <h1>Welcome to my GitHub site.</h1>
+      <h1>Welcome to my site.</h1>
     </div>
   </div>
 </div>
 
-Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, father of three, and home lab enthusiast. I have dedicated a large amount of time and money over the last five years to these projects and plan on using this space to present them. I want to do this not only to help my career, but also for my own learning documentation. I started a blog using Ghost a little while ago. Links are available in the navigation bar and the footer.
+Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, father of three, and home lab enthusiast. I have dedicated a large amount of time and money over the last five years to these projects and plan on using this space to present them. I want to do this not only to help my career, but also for my own learning documentation. I started a blog using Ghost a little while ago, but recently transitioned to hosting my posts on this site. I hope that you can gain something from this site. It might be a new training platform or podcast that really has nothing to do with my site, but I want to help build a better cybersecurity community, especially in my area where there is not any kind of technical community.
 
 <article>
   <h2>Self-Hosted</h2>
@@ -30,4 +30,9 @@ Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, fath
 <article>
   <h2>Recommended Podcasts</h2>
   <p>This might be the last page that I add to my site. It is a list of some of my favorite podcasts related to IT or cybersecurity. They are also not ordered in any specific way. Most of them are technical and I have to admit that when I was just learning, I had no idea what they were talking about. As I continued to grow and learn, I would spend time learning a topic like cross-site request forgery and then I would remember hearing about it in the Critical Thinking Podcast, go back and listen to that episode, and it would help to build my understanding of more complex topics that textbooks don't often teach. Critical Thinking Podcast is one of my favorite because they full-time bug bounty hunters, some of the best in the world, and they don't just give you a quick breakdown of a topic, they dive into the technical details. Listening to these podcasts also helped me to become familiar with a lot of the industry language and terminology and find topics that I was interested in learning more about. I spend a lot of time driving around for my job and I like to listen to podcasts instead of music because I feel like my time is to valuable to not spend it learning and growing. This isn't to say that I don't like or listen to music. I have a massive music collection from almost every genre, but I prefer to listen to music when I am learning with my hands and eyes, while doing chores around the house, or when I am feeling some type of way.</p>
+</article>
+
+<article>
+  <h2>Changes to Blog</h2>
+  <p>I had been using the Ghost blogging platform to write some short blog posts, but I was not using any of the features except posting and publishing pages. For those reasons, I decided it would better fit my needs to add the blog functionality to my GitHub page. I have transitioned all of my published posts to this site now and am working on finishing the unpublished ones and transferring them. When this is complete, I will be shutting down my blog located at blog.wellslabs.org. I have been using various methods to put this blog on the internet including Tailscale Funnel, Pangolin hosted on a VPS, and Cloudflare tunnels. While each of these solutions worked for me, they all relied on my home internet being online. If my ISP had an outage, than all of my sites would become unavailable. This was fine for programs that I personally used or that my family used, but I thought it could be detrimental to my professional brand. If I link my blog in social media and then someone wants to take a look at it, it could potentially hurt my brand if it is offline.</p>
 </article>
