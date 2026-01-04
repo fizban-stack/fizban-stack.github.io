@@ -36,8 +36,9 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
 </div>
 
 <style>
-  .project-card.hidden {
-    display: none;
+  .col-md-6.hidden,
+  .col-lg-4.hidden {
+    display: none !important;
   }
 </style>
 

@@ -36,8 +36,9 @@ description: Free cybersecurity training sites and resources curated by James We
 </div>
 
 <style>
-  .project-card.hidden {
-    display: none;
+  .col-md-6.hidden,
+  .col-lg-4.hidden {
+    display: none !important;
   }
 </style>
 

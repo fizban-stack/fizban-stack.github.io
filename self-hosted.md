@@ -45,8 +45,9 @@ This page showcases some of my favorite self-hosted applications that I use in m
 </div>
 
 <style>
-  .project-card.hidden {
-    display: none;
+  .col-md-6.hidden,
+  .col-lg-4.hidden {
+    display: none !important;
   }
 </style>
 
