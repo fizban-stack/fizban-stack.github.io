@@ -163,3 +163,610 @@
     - Metrics and monitoring
     - WebSocket support
   why: Traefik automatically manages routing and SSL certificates for all my self-hosted services. The automatic service discovery makes adding new services incredibly simple.
+
+- id: apprise
+  title: Apprise
+  subtitle: Universal Notification System
+  image: self-hosted/apprise.webp
+  description: Push notifications to multiple platforms simultaneously.
+  github: https://github.com/caronc/apprise
+  features:
+    - Support for 90+ notification services
+    - Unified notification interface
+    - Web API for easy integration
+    - CLI and Python library support
+    - Template customization
+    - Attachment support
+  why: Apprise consolidates all my notification needs into one service. Instead of configuring each application separately, I can send alerts to Discord, email, Slack, and more through a single endpoint.
+
+- id: audiobookshelf
+  title: Audiobookshelf
+  subtitle: Audiobook and Podcast Server
+  image: self-hosted/audiobookshelf.webp
+  description: Self-hosted audiobook and podcast library manager.
+  github: https://github.com/advplyr/audiobookshelf
+  official: https://www.audiobookshelf.org
+  features:
+    - Audiobook library organization
+    - Podcast management and streaming
+    - Progress tracking across devices
+    - Mobile apps for iOS and Android
+    - Metadata management
+    - Multi-user support
+  why: Audiobookshelf gives me complete control over my audiobook collection. I can listen to my library from any device while tracking progress seamlessly across all of them.
+
+- id: bentopdf
+  title: BentoPDF
+  subtitle: PDF Tool Collection
+  image: self-hosted/bentopdf.webp
+  description: Web-based PDF manipulation toolkit.
+  github: https://github.com/stirling-labs/Stirling-PDF
+  features:
+    - PDF merging and splitting
+    - Page rotation and organization
+    - Image to PDF conversion
+    - PDF compression
+    - Watermarking
+    - OCR support
+  why: BentoPDF provides all the PDF tools I need without uploading sensitive documents to third-party services. Everything stays local and private.
+
+- id: changedetection
+  title: ChangeDetection.io
+  subtitle: Website Change Monitor
+  image: self-hosted/changedetection.webp
+  description: Monitor websites for changes and get notified.
+  github: https://github.com/dgtlmoon/changedetection.io
+  official: https://changedetection.io
+  features:
+    - Visual and text change detection
+    - XPath and CSS selector support
+    - Notification integrations
+    - Screenshot comparisons
+    - Scheduled monitoring
+    - API access
+  why: ChangeDetection helps me track important updates on websites that don't offer RSS feeds or notifications. Perfect for monitoring price changes, stock availability, or content updates.
+
+- id: convertx
+  title: ConvertX
+  subtitle: File Conversion Service
+  image: self-hosted/convertx.webp
+  description: Universal file format converter.
+  github: https://github.com/C4illin/ConvertX
+  features:
+    - Multi-format support
+    - Batch conversion
+    - Web-based interface
+    - Audio and video conversion
+    - Image format conversion
+    - Document conversion
+  why: ConvertX handles all my file conversion needs locally. No need to upload files to online converters or worry about file size limits.
+
+- id: cyberchef
+  title: CyberChef
+  subtitle: The Cyber Swiss Army Knife
+  image: self-hosted/cyberchef.webp
+  description: Web app for encryption, encoding, compression, and data analysis.
+  github: https://github.com/gchq/CyberChef
+  official: https://gchq.github.io/CyberChef
+  features:
+    - 300+ operations
+    - Drag-and-drop recipe builder
+    - Base64, hex, binary encoding
+    - Encryption and hashing
+    - Data format conversion
+    - Network analysis tools
+  why: CyberChef is essential for CTF challenges and security work. The recipe system makes complex data transformations simple, and hosting it locally ensures sensitive data stays private.
+
+- id: file-explorer-quantum
+  title: File Explorer Quantum
+  subtitle: Modern Web File Manager
+  image: self-hosted/file-explorer-quantum.webp
+  description: Feature-rich web-based file browser and manager.
+  github: https://github.com/quantumsheep/file-explorer
+  features:
+    - Drag-and-drop file upload
+    - Multiple file selection
+    - File preview support
+    - Directory navigation
+    - Search functionality
+    - Responsive design
+  why: File Explorer Quantum provides a clean web interface for browsing and managing files on my servers. It's perfect for quick file access without needing SSH or FTP.
+
+- id: freshrss
+  title: FreshRSS
+  subtitle: Self-Hosted RSS Aggregator
+  image: self-hosted/freshrss.webp
+  description: Free and self-hostable RSS feed aggregator.
+  github: https://github.com/FreshRSS/FreshRSS
+  official: https://freshrss.org
+  features:
+    - RSS and Atom feed support
+    - Article filtering and tagging
+    - Keyboard shortcuts
+    - Mobile-friendly interface
+    - Multi-user support
+    - API for mobile apps
+  why: FreshRSS keeps me updated on blogs, news, and content without relying on algorithms or third-party services. I control what I read and how I organize it.
+
+- id: ghost
+  title: Ghost
+  subtitle: Professional Publishing Platform
+  image: self-hosted/ghost.webp
+  description: Modern publishing platform for creating content.
+  github: https://github.com/TryGhost/Ghost
+  official: https://ghost.org
+  features:
+    - Beautiful editor interface
+    - Built-in SEO tools
+    - Newsletter functionality
+    - Membership and subscription support
+    - Custom themes
+    - Analytics dashboard
+  why: Ghost provides a professional publishing platform for blogging and content creation. The clean interface and built-in features make it easy to focus on writing.
+
+- id: gotify
+  title: Gotify
+  subtitle: Simple Notification Server
+  image: self-hosted/gotify.webp
+  description: Self-hosted push notification service.
+  github: https://github.com/gotify/server
+  official: https://gotify.net
+  features:
+    - REST API for sending messages
+    - WebSocket real-time delivery
+    - Android app support
+    - Message priorities
+    - Application tokens
+    - Plugin support
+  why: Gotify delivers push notifications from my scripts and services directly to my phone. It's simple, lightweight, and doesn't rely on third-party services like Firebase.
+
+- id: graylog
+  title: Graylog
+  subtitle: Log Management Platform
+  image: self-hosted/graylog.webp
+  description: Centralized log management and analysis.
+  github: https://github.com/Graylog2/graylog2-server
+  official: https://graylog.org
+  features:
+    - Log aggregation and parsing
+    - Full-text search
+    - Real-time alerting
+    - Dashboard creation
+    - Stream processing
+    - Archive and compliance
+  why: Graylog centralizes logs from all my servers and applications, making troubleshooting and monitoring much easier. The powerful search and alerting features help me catch issues quickly.
+
+- id: guacamole
+  title: Apache Guacamole
+  subtitle: Clientless Remote Desktop
+  image: self-hosted/guacamole.webp
+  description: Clientless remote desktop gateway supporting VNC, RDP, and SSH.
+  github: https://github.com/apache/guacamole-server
+  official: https://guacamole.apache.org
+  features:
+    - Browser-based access
+    - VNC, RDP, SSH, and Telnet support
+    - Multi-factor authentication
+    - Session recording
+    - File transfer capabilities
+    - Connection sharing
+  why: Guacamole lets me access all my servers and desktops through a web browser without installing client software. Perfect for accessing my lab from any device.
+
+- id: home-assistant
+  title: Home Assistant
+  subtitle: Smart Home Automation
+  image: self-hosted/home-assistant.webp
+  description: Open-source home automation platform.
+  github: https://github.com/home-assistant/core
+  official: https://www.home-assistant.io
+  features:
+    - Device and service integration
+    - Automation and scripting
+    - Voice control support
+    - Mobile app for iOS and Android
+    - Energy monitoring
+    - Customizable dashboards
+  why: Home Assistant centralizes control of all my smart home devices with local processing and no cloud dependencies. The automation capabilities are incredibly powerful.
+
+- id: homepage
+  title: Homepage
+  subtitle: Application Dashboard
+  image: self-hosted/homepage.webp
+  description: Customizable application dashboard with service monitoring.
+  github: https://github.com/gethomepage/homepage
+  official: https://gethomepage.dev
+  features:
+    - Service status monitoring
+    - Widget support for common apps
+    - Docker integration
+    - Custom API integrations
+    - Bookmarks and shortcuts
+    - Responsive design
+  why: Homepage provides a beautiful dashboard for accessing all my self-hosted services. The service integration widgets show me at-a-glance status of everything in my homelab.
+
+- id: immich
+  title: Immich
+  subtitle: Self-Hosted Photo Management
+  image: self-hosted/immich.webp
+  description: High-performance photo and video backup solution.
+  github: https://github.com/immich-app/immich
+  official: https://immich.app
+  features:
+    - Automatic photo backup
+    - Machine learning for face detection
+    - Mobile apps for iOS and Android
+    - Timeline and album organization
+    - Shared albums
+    - Video support
+  why: Immich is my Google Photos replacement. It automatically backs up photos from my phone while keeping everything private and under my control.
+
+- id: influxdb
+  title: InfluxDB
+  subtitle: Time-Series Database
+  image: self-hosted/influxdb.webp
+  description: Purpose-built time-series database for metrics and events.
+  github: https://github.com/influxdata/influxdb
+  official: https://www.influxdata.com
+  features:
+    - High-performance time-series storage
+    - SQL-like query language
+    - Data retention policies
+    - Continuous queries
+    - Built-in web interface
+    - Integration with Grafana
+  why: InfluxDB stores all my time-series data from monitoring systems. It handles high-frequency metrics efficiently and integrates perfectly with Grafana for visualization.
+
+- id: it-tools
+  title: IT-Tools
+  subtitle: Developer Tools Collection
+  image: self-hosted/it-tools.webp
+  description: Collection of handy online tools for developers.
+  github: https://github.com/CorentinTh/it-tools
+  features:
+    - Encoding and decoding tools
+    - Text manipulation
+    - Network utilities
+    - Cryptography tools
+    - Data generators
+    - All client-side processing
+  why: IT-Tools provides quick access to common developer utilities without leaving my browser. Everything runs client-side so sensitive data never leaves my machine.
+
+- id: jellyfin
+  title: Jellyfin
+  subtitle: Free Media System
+  image: self-hosted/jellyfin.webp
+  description: Free software media system for managing and streaming media.
+  github: https://github.com/jellyfin/jellyfin
+  official: https://jellyfin.org
+  features:
+    - Movie and TV show libraries
+    - Live TV and DVR support
+    - Music streaming
+    - Mobile and TV apps
+    - Hardware transcoding
+    - No premium features or paywalls
+  why: Jellyfin is my completely free alternative to Plex. It streams all my media to any device without tracking, ads, or subscription fees.
+
+- id: nessus
+  title: Nessus
+  subtitle: Vulnerability Scanner
+  image: self-hosted/nessus.webp
+  description: Industry-leading vulnerability assessment solution.
+  official: https://www.tenable.com/products/nessus
+  features:
+    - Comprehensive vulnerability scanning
+    - Configuration auditing
+    - Malware detection
+    - Compliance checking
+    - Detailed reporting
+    - Plugin updates
+  why: Nessus helps me identify security vulnerabilities in my infrastructure. Regular scans ensure my systems stay secure and compliant with best practices.
+
+- id: nextgba
+  title: nextGBA
+  subtitle: Game Boy Advance Emulator
+  image: self-hosted/nextGBA.webp
+  description: Web-based Game Boy Advance emulator.
+  github: https://github.com/kevinresol/next-gba
+  features:
+    - Browser-based emulation
+    - Save state support
+    - ROM loading
+    - Touch and keyboard controls
+    - No installation required
+    - Cross-platform compatibility
+  why: nextGBA lets me play classic GBA games directly in my browser. It's a fun way to revisit nostalgic games without installing emulators on every device.
+
+- id: notediscovery
+  title: NoteDiscovery
+  subtitle: Note Organization System
+  image: self-hosted/notediscovery.webp
+  description: Intelligent note-taking and organization platform.
+  features:
+    - Smart note organization
+    - Full-text search
+    - Tag-based categorization
+    - Markdown support
+    - Link discovery
+    - Knowledge graph visualization
+  why: NoteDiscovery helps me organize my technical notes and discoveries. The intelligent linking and search features make it easy to find related information quickly.
+
+- id: open-webui-ollama
+  title: Open WebUI + Ollama
+  subtitle: Local AI Chat Interface
+  image: self-hosted/open-webui_ollama.webp
+  description: Self-hosted AI chat interface with local LLM support.
+  github: https://github.com/open-webui/open-webui
+  official: https://openwebui.com
+  features:
+    - ChatGPT-like interface
+    - Local LLM support via Ollama
+    - Multiple model support
+    - Chat history
+    - Document upload and analysis
+    - Complete privacy
+  why: Open WebUI with Ollama gives me a private AI assistant running entirely on my hardware. No data leaves my network and I have complete control over the models.
+
+- id: opnsense
+  title: OPNsense
+  subtitle: Open Source Firewall
+  image: self-hosted/opnsense.webp
+  description: Enterprise-grade open-source firewall and routing platform.
+  github: https://github.com/opnsense
+  official: https://opnsense.org
+  features:
+    - Firewall and routing
+    - VPN support (OpenVPN, WireGuard)
+    - Intrusion detection and prevention
+    - Traffic shaping
+    - Web filtering
+    - High availability
+  why: OPNsense secures my entire network with enterprise-grade features. The intuitive interface makes complex networking tasks manageable while keeping everything secure.
+
+- id: pangolin
+  title: Pangolin
+  subtitle: Laser Show Software
+  image: self-hosted/pangolin.webp
+  description: Professional laser show control and design software.
+  official: https://pangolin.com
+  features:
+    - Laser show design
+    - Real-time control
+    - Timeline editing
+    - Effects library
+    - Multiple laser support
+    - DMX integration
+  why: Pangolin controls laser shows and effects for events. While specialized, it demonstrates the versatility of self-hosted solutions for creative projects.
+
+- id: paperlessngx
+  title: Paperless-ngx
+  subtitle: Document Management System
+  image: self-hosted/paperlessngx.webp
+  description: Scan, index, and archive all your physical documents.
+  github: https://github.com/paperless-ngx/paperless-ngx
+  official: https://docs.paperless-ngx.com
+  features:
+    - OCR document scanning
+    - Automatic tagging and organization
+    - Full-text search
+    - Email import
+    - Mobile app support
+    - Workflow automation
+  why: Paperless-ngx digitizes and organizes all my documents. The OCR and automatic tagging make it easy to find any document instantly while going paperless.
+
+- id: plex
+  title: Plex
+  subtitle: Media Server Platform
+  image: self-hosted/plex.webp
+  description: Stream your media library to any device.
+  github: https://github.com/plexinc/plex-media-server
+  official: https://www.plex.tv
+  features:
+    - Media library organization
+    - Metadata and artwork fetching
+    - Hardware transcoding
+    - Mobile and TV apps
+    - Live TV and DVR
+    - Sharing with friends
+  why: Plex organizes and streams my entire media library beautifully. The metadata fetching and app ecosystem make it the most polished media server experience.
+
+- id: prometheus
+  title: Prometheus
+  subtitle: Monitoring and Alerting
+  image: self-hosted/prometheus.webp
+  description: Systems monitoring and alerting toolkit.
+  github: https://github.com/prometheus/prometheus
+  official: https://prometheus.io
+  features:
+    - Multi-dimensional data model
+    - Powerful query language (PromQL)
+    - Time-series database
+    - Service discovery
+    - Alerting with Alertmanager
+    - Extensive exporters
+  why: Prometheus collects metrics from all my services and infrastructure. Combined with Grafana, it provides comprehensive monitoring and alerting for my entire homelab.
+
+- id: proxmox-backup-server
+  title: Proxmox Backup Server
+  subtitle: Enterprise Backup Solution
+  image: self-hosted/proxmox-backup-server.webp
+  description: Backup solution for VMs, containers, and physical hosts.
+  github: https://github.com/proxmox/proxmox-backup
+  official: https://www.proxmox.com/en/proxmox-backup-server
+  features:
+    - Incremental and deduplication
+    - VM and container backups
+    - Encryption support
+    - Web-based management
+    - Verification and restore
+    - Tape backup support
+  why: Proxmox Backup Server protects my entire virtual infrastructure. The deduplication and incremental backups save storage while ensuring I can recover from any disaster.
+
+- id: proxmox-datacenter-manager
+  title: Proxmox Datacenter Manager
+  subtitle: Centralized Cluster Management
+  image: self-hosted/proxmox-datacenter-manager.webp
+  description: Centralized management for multiple Proxmox clusters.
+  official: https://www.proxmox.com/en/proxmox-datacenter-manager
+  features:
+    - Multi-cluster management
+    - Centralized monitoring
+    - Role-based access control
+    - Resource optimization
+    - Unified dashboard
+    - Cross-cluster migration
+  why: Proxmox Datacenter Manager gives me a single pane of glass for managing multiple Proxmox clusters. Essential for scaling beyond a single cluster.
+
+- id: pulse
+  title: Pulse
+  subtitle: Server Monitoring Dashboard
+  image: self-hosted/pulse.webp
+  description: Simple and elegant server monitoring dashboard.
+  features:
+    - Real-time server metrics
+    - Clean UI design
+    - Resource usage tracking
+    - Alert notifications
+    - Multi-server support
+    - Minimal resource footprint
+  why: Pulse provides a clean, at-a-glance view of my server health. The minimal design makes it perfect for displaying on a dedicated monitoring screen.
+
+- id: pwndrop
+  title: PwnDrop
+  subtitle: Self-Deployable File Hosting
+  image: self-hosted/pwndrop.webp
+  description: File hosting service for red team assessments.
+  github: https://github.com/kgretzky/pwndrop
+  features:
+    - File upload and sharing
+    - Custom download URLs
+    - Access logging
+    - File expiration
+    - Password protection
+    - Lightweight and portable
+  why: PwnDrop provides a simple way to host and share files during security assessments. The access logging helps track file downloads during engagements.
+
+- id: searxng
+  title: SearXNG
+  subtitle: Privacy-Respecting Metasearch
+  image: self-hosted/searxng.webp
+  description: Privacy-respecting metasearch engine.
+  github: https://github.com/searxng/searxng
+  official: https://docs.searxng.org
+  features:
+    - Aggregates results from 70+ search engines
+    - No tracking or profiling
+    - Highly customizable
+    - API support
+    - Multiple search categories
+    - Self-contained deployment
+  why: SearXNG gives me private search results without tracking. It aggregates results from multiple engines while keeping my searches completely anonymous.
+
+- id: semaphore
+  title: Ansible Semaphore
+  subtitle: Modern Ansible UI
+  image: self-hosted/semaphore.webp
+  description: Modern UI for Ansible automation.
+  github: https://github.com/ansible-semaphore/semaphore
+  official: https://www.ansible-semaphore.com
+  features:
+    - Web-based Ansible interface
+    - Playbook execution and scheduling
+    - Role-based access control
+    - Real-time task output
+    - Inventory management
+    - Notification integrations
+  why: Semaphore makes running Ansible playbooks easier with a clean web interface. The scheduling and RBAC features are perfect for team collaboration.
+
+- id: synology
+  title: Synology DSM
+  subtitle: NAS Operating System
+  image: self-hosted/synology.webp
+  description: Feature-rich NAS operating system.
+  official: https://www.synology.com
+  features:
+    - File sharing and storage
+    - Docker container support
+    - Backup and replication
+    - Surveillance station
+    - Package ecosystem
+    - Mobile apps
+  why: Synology DSM provides enterprise-grade storage with a polished interface. The extensive package ecosystem turns a NAS into a complete self-hosting platform.
+
+- id: technitium
+  title: Technitium DNS Server
+  subtitle: Advanced DNS Server
+  image: self-hosted/technitium.webp
+  description: Self-hosted DNS server with web interface.
+  github: https://github.com/TechnitiumSoftware/DnsServer
+  official: https://technitium.com/dns
+  features:
+    - DNS server with web UI
+    - Ad blocking and filtering
+    - DHCP server support
+    - DNS-over-HTTPS and DNS-over-TLS
+    - Conditional forwarding
+    - Query logging and analytics
+  why: Technitium gives me complete control over DNS for my network. The ad blocking and query logging help me understand and secure network traffic.
+
+- id: unifi-network-controller
+  title: UniFi Network Controller
+  subtitle: Network Management Platform
+  image: self-hosted/unifi-network-controller.webp
+  description: Centralized management for UniFi network devices.
+  github: https://github.com/jacobalberty/unifi-docker
+  official: https://ui.com
+  features:
+    - Network device management
+    - Guest portal and vouchers
+    - Deep packet inspection
+    - Network topology mapping
+    - Performance analytics
+    - VLAN management
+  why: UniFi Controller manages all my UniFi network equipment from a single interface. The insights and control it provides are essential for maintaining my network.
+
+- id: vaultwarden
+  title: Vaultwarden
+  subtitle: Self-Hosted Password Manager
+  image: self-hosted/vaultwarden.webp
+  description: Lightweight Bitwarden server implementation.
+  github: https://github.com/dani-garcia/vaultwarden
+  features:
+    - Password vault storage
+    - Browser extensions
+    - Mobile apps for iOS and Android
+    - Two-factor authentication
+    - Secure sharing
+    - Self-host with low resources
+  why: Vaultwarden is my self-hosted password manager. Having complete control over my passwords while maintaining Bitwarden compatibility gives me security and convenience.
+
+- id: vs-code
+  title: VS Code Server
+  subtitle: Browser-Based IDE
+  image: self-hosted/vs-code.webp
+  description: Visual Studio Code running in the browser.
+  github: https://github.com/coder/code-server
+  official: https://coder.com
+  features:
+    - Full VS Code experience
+    - Extension marketplace
+    - Terminal access
+    - Git integration
+    - Multi-language support
+    - Accessible from anywhere
+  why: VS Code Server lets me code from any device with just a browser. Perfect for working on projects when away from my main workstation.
+
+- id: zoraxy
+  title: Zoraxy
+  subtitle: Reverse Proxy Manager
+  image: self-hosted/zoraxy.webp
+  description: General purpose reverse proxy and forwarding tool.
+  github: https://github.com/tobychui/zoraxy
+  features:
+    - Reverse proxy with GUI
+    - SSL certificate management
+    - Access control and authentication
+    - Load balancing
+    - WebSocket support
+    - Easy configuration
+  why: Zoraxy provides an intuitive interface for managing reverse proxies. The built-in access control and SSL management make securing services straightforward.
