@@ -3,6 +3,10 @@ layout: default
 ---
 
 <article class="blog-post">
+  <nav class="post-nav-top">
+    <a href="{{ '/blog' | relative_url }}" class="back-to-blog">← Back to Blog</a>
+  </nav>
+
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
 
@@ -35,7 +39,12 @@ layout: default
 <style>
   .blog-post {
     margin-top: 2rem;
-    max-width: 800px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .post-nav-top {
+    margin-bottom: 1.5rem;
   }
 
   .post-header {
@@ -79,6 +88,7 @@ layout: default
   .post-content {
     line-height: 1.8;
     margin-bottom: 3rem;
+    max-width: 100%;
   }
 
   .post-content h2 {
@@ -139,6 +149,7 @@ layout: default
     height: auto;
     border-radius: 0.5rem;
     margin: 1rem 0;
+    display: block;
   }
 
   .post-content ul, .post-content ol {
@@ -159,9 +170,50 @@ layout: default
     color: #00ff00;
     text-decoration: none;
     font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 0.25rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
   }
 
   .back-to-blog:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-color: rgba(0, 255, 0, 0.6);
+    background-color: rgba(0, 255, 0, 0.1);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blog-post {
+      margin-top: 1rem;
+    }
+
+    .post-content {
+      font-size: 0.95rem;
+    }
+
+    .post-title {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .post-nav-top {
+      margin-bottom: 1rem;
+    }
+
+    .post-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .post-title {
+      font-size: 1.5rem;
+    }
+
+    .post-meta {
+      font-size: 0.85rem;
+    }
   }
 </style>
