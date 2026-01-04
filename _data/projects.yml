@@ -1,40 +1,40 @@
 - title: Snipe-IT
   image: self-hosted/snipeit.webp
   description: Open-source IT asset management system that helps track hardware, software licenses, accessories, and consumables across my home lab.
-  blog: /2025/12/31/snipeit/
+  blog: /homelab/2025/12/31/snipeit/
   github: https://github.com/snipe/snipe-it
 
 - title: Wireshark
   image: icons/wireshark.webp
   description: Network protocol analyzer for packet inspection and troubleshooting. Essential for understanding network traffic.
-  blog: /2025/10/20/wireshark/
+  blog: /cybersecurity/2025/10/20/wireshark/
 
 - title: Wazuh
   image: icons/wazuh.webp
   description: Open-Source SIEM and EDR solution. Provides a method of aggregating logs and managing configurations.
-  blog: /2025/10/20/wazuh/
+  blog: /cybersecurity/2025/10/20/wazuh/
 
 - title: "Raspberry Pi 5: Tools"
   image: projects/raspberry-pi5.webp
   description: A Raspberry Pi 5 that I setup with various tools and a remote connection. It allows me to plug into any network and have access to installed tools.
-  blog: /2025/10/18/raspberry-pi-5/
+  blog: /homelab/2025/10/18/raspberry-pi-5/
 
 - title: Pwnagotchi aka Bobby
   image: projects/pwnagotchi.webp
   description: Pwnagotchi is a wifi hacking tool created with a Raspberry Pi Zero 2W. My children came up with the name Bobby.
-  blog: /2025/10/18/my-pwnagotchi-aka-bobby/
+  blog: /cybersecurity/2025/10/18/my-pwnagotchi-aka-bobby/
   github: https://github.com/evilsocket/pwnagotchi
 
 - title: Meshtastic Radios
   image: projects/meshtastic.webp
   description: These radios use long range wireless communication (LoRa) to send messages between devices without using other services such as cellular or Wi-Fi.
-  blog: /2025/10/18/meshtastic/
+  blog: /homelab/2025/10/18/meshtastic/
   github: https://github.com/meshtastic
 
 - title: Kali Nethunter
   image: projects/nethunter.webp
   description: This is a old phone that I rooted and installed Kali NetHunter on.
-  blog: /2025/12/30/nethunter/
+  blog: /cybersecurity/2025/12/30/nethunter/
 
 - title: Nvidia Jetson Orin Nano Super
   image: projects/nvidia-jetson-orin-nano.webp
@@ -51,5 +51,5 @@
 - title: Proxmox Virtual Environment
   image: self-hosted/proxmox.webp
   description: This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use.
-  blog: /2025/10/21/proxmox-virtual-environment/
+  blog: /homelab/2025/10/21/proxmox-virtual-environment/
   github: https://github.com/proxmox
