@@ -23,8 +23,3 @@ Thumbs.db
 *.swo
 *~
 
-# Old docs directory (to be removed)
-docs/
-
-# Claude
-.claude/

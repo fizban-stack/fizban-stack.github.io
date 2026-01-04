@@ -43,6 +43,7 @@
 - title: OMG Cable
   image: projects/omg-cable.webp
   description: This is an OMG cable that I purchased to practice penetration testing.
+  blog: /cybersecurity/2025/11/22/omg-cable/
 
 - title: Raspberry Pi Zero 2W
   image: projects/raspberry-pi-zero2w.webp
