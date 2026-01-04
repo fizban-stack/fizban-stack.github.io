@@ -6,6 +6,8 @@ description: Self-hosted applications and services used by James Wells in his ho
 
 # Self-Hosted Applications
 
+{% include search-box.html id="selfhosted-search" placeholder="Search self-hosted apps..." %}
+
 This page showcases some of my favorite self-hosted applications that I use in my home lab. These tools help me manage infrastructure, learn new technologies, and maintain my homelab environment.
 
 <article>
@@ -15,7 +17,7 @@ This page showcases some of my favorite self-hosted applications that I use in m
 
 
 
-<div class="row g-4 mt-4">
+<div class="row g-4 mt-4" id="selfhosted-grid">
 {% for app in site.data.selfhosted %}
   <div class="col-md-6 col-lg-4">
     <div class="card project-card h-100 d-flex flex-column">
@@ -37,3 +39,59 @@ This page showcases some of my favorite self-hosted applications that I use in m
   </div>
 {% endfor %}
 </div>
+
+<div id="no-selfhosted-results" class="no-results" style="display: none; text-align: center; padding: 3rem; color: var(--text-secondary);">
+  No applications found matching your search.
+</div>
+
+<style>
+  .project-card.hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  (function() {
+    const searchInput = document.getElementById('selfhosted-search');
+    const clearBtn = document.getElementById('selfhosted-search-clear');
+    const appCards = document.querySelectorAll('#selfhosted-grid .project-card');
+    const noResults = document.getElementById('no-selfhosted-results');
+
+    function performSearch() {
+      const query = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      if (query === '') {
+        appCards.forEach(card => card.parentElement.classList.remove('hidden'));
+        clearBtn.style.display = 'none';
+        noResults.style.display = 'none';
+        return;
+      }
+
+      clearBtn.style.display = 'block';
+
+      appCards.forEach(card => {
+        const title = card.querySelector('.card-title').textContent.toLowerCase();
+        const subtitle = card.querySelector('.text-muted')?.textContent.toLowerCase() || '';
+        const description = card.querySelector('.card-text').textContent.toLowerCase();
+
+        if (title.includes(query) || subtitle.includes(query) || description.includes(query)) {
+          card.parentElement.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.parentElement.classList.add('hidden');
+        }
+      });
+
+      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    searchInput.addEventListener('input', performSearch);
+
+    clearBtn.addEventListener('click', function() {
+      searchInput.value = '';
+      performSearch();
+      searchInput.focus();
+    });
+  })();
+</script>

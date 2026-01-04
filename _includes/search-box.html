@@ -1,0 +1,57 @@
+<div class="search-container">
+  <input
+    type="text"
+    id="{{ include.id }}"
+    class="search-input"
+    placeholder="{{ include.placeholder | default: 'Search...' }}"
+    aria-label="Search"
+  >
+  <div id="{{ include.id }}-clear" class="search-clear" style="display: none;">&times;</div>
+</div>
+
+<style>
+  .search-container {
+    position: relative;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    background: rgba(30, 37, 65, 0.8);
+    border: 1px solid rgba(0, 255, 65, 0.3);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: var(--accent-green);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+  }
+
+  .search-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+  }
+
+  .search-clear {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-green);
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+
+  .search-clear:hover {
+    color: var(--accent-cyan);
+  }
+</style>

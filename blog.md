@@ -7,6 +7,8 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 <div class="blog-index">
   <h1>Blog</h1>
 
+  {% include search-box.html id="blog-search" placeholder="Search blog posts..." %}
+
   {% assign posts_by_category = site.posts | group_by: "category" | sort: "name" %}
 
   <!-- Category Navigation -->
@@ -206,4 +208,72 @@ description: Technical blog posts about cybersecurity, home labs, and technology
       text-align: center;
     }
   }
+
+  .post-preview.hidden {
+    display: none;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-secondary);
+    display: none;
+  }
+
+  .no-results.show {
+    display: block;
+  }
 </style>
+
+<script>
+  (function() {
+    const searchInput = document.getElementById('blog-search');
+    const clearBtn = document.getElementById('blog-search-clear');
+    const posts = document.querySelectorAll('.post-preview');
+    const noResults = document.createElement('div');
+    noResults.className = 'no-results';
+    noResults.textContent = 'No posts found matching your search.';
+    document.querySelector('.posts-grid').appendChild(noResults);
+
+    function performSearch() {
+      const query = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      if (query === '') {
+        posts.forEach(post => post.classList.remove('hidden'));
+        clearBtn.style.display = 'none';
+        noResults.classList.remove('show');
+        return;
+      }
+
+      clearBtn.style.display = 'block';
+
+      posts.forEach(post => {
+        const title = post.querySelector('h3 a').textContent.toLowerCase();
+        const excerpt = post.querySelector('.post-excerpt')?.textContent.toLowerCase() || '';
+        const category = post.querySelector('.post-category')?.textContent.toLowerCase() || '';
+
+        if (title.includes(query) || excerpt.includes(query) || category.includes(query)) {
+          post.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          post.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResults.classList.add('show');
+      } else {
+        noResults.classList.remove('show');
+      }
+    }
+
+    searchInput.addEventListener('input', performSearch);
+
+    clearBtn.addEventListener('click', function() {
+      searchInput.value = '';
+      performSearch();
+      searchInput.focus();
+    });
+  })();
+</script>
