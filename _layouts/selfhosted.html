@@ -24,66 +24,149 @@
   {% include navbar.html %}
 
   <main role="main" class="container-fluid main-content">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
+    <article class="selfhosted-page">
+      <!-- Back to Self-Hosted at top -->
+      <nav class="page-nav-top">
+        <a href="{{ '/self-hosted' | relative_url }}" class="back-to-selfhosted">← Back to Self-Hosted Apps</a>
+      </nav>
 
-        <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb" style="margin-bottom: 2rem;">
-          <ol class="breadcrumb" style="background: var(--bg-secondary); padding: 0.75rem 1rem; border-radius: 4px;">
-            <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{{ '/self-hosted' | relative_url }}">Self-Hosted</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
-          </ol>
-        </nav>
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" style="margin-bottom: 2rem;">
+        <ol class="breadcrumb" style="background: var(--bg-secondary); padding: 0.75rem 1rem; border-radius: 4px;">
+          <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li class="breadcrumb-item"><a href="{{ '/self-hosted' | relative_url }}">Self-Hosted</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+        </ol>
+      </nav>
 
-        <!-- Header -->
-        <div style="margin-bottom: 2rem;">
-          <h1 style="margin-bottom: 0.5rem;">{{ page.title }}</h1>
-          <p class="lead" style="color: var(--accent-cyan); margin-bottom: 1.5rem;">{{ page.subtitle }}</p>
+      <!-- Header -->
+      <div style="margin-bottom: 2rem;">
+        <h1 style="margin-bottom: 0.5rem;">{{ page.title }}</h1>
+        <p class="lead" style="color: var(--accent-cyan); margin-bottom: 1.5rem;">{{ page.subtitle }}</p>
 
-          <!-- Links -->
-          <div class="d-flex gap-2 flex-wrap">
-            {% if page.github %}
-            <a href="{{ page.github }}" target="_blank" class="btn btn-dark">
-              <svg width="16" height="16" fill="currentColor" class="me-1" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-              </svg>
-              GitHub
-            </a>
-            {% endif %}
-            {% if page.official %}
-            <a href="{{ page.official }}" target="_blank" class="btn btn-outline-secondary">Official Website</a>
-            {% endif %}
-          </div>
-        </div>
-
-        <!-- Image -->
-        {% if page.image %}
-        <div style="margin-bottom: 2rem;">
-          <img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid" style="border-radius: 8px; border: 1px solid var(--border-color); width: 100%; max-height: 400px; object-fit: cover;">
-        </div>
-        {% endif %}
-
-        <!-- Content -->
-        <article>
-          {{ content }}
-        </article>
-
-        <!-- Back button -->
-        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
-          <a href="{{ '/self-hosted' | relative_url }}" class="btn btn-outline-secondary">
-            ← Back to Self-Hosted Apps
+        <!-- Links -->
+        <div class="d-flex gap-2 flex-wrap">
+          {% if page.github %}
+          <a href="{{ page.github }}" target="_blank" class="btn btn-dark">
+            <svg width="16" height="16" fill="currentColor" class="me-1" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            GitHub
           </a>
+          {% endif %}
+          {% if page.official %}
+          <a href="{{ page.official }}" target="_blank" class="btn btn-outline-secondary">Official Website</a>
+          {% endif %}
         </div>
-
       </div>
-    </div>
+
+      <!-- Image -->
+      {% if page.image %}
+      <div style="margin-bottom: 2rem;">
+        <img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid" style="border-radius: 8px; border: 1px solid var(--border-color); width: 100%; max-height: 400px; object-fit: cover;">
+      </div>
+      {% endif %}
+
+      <!-- Content -->
+      <div class="page-content">
+        {{ content }}
+      </div>
+
+      <!-- Back button at bottom -->
+      <footer class="page-footer">
+        <a href="{{ '/self-hosted' | relative_url }}" class="back-to-selfhosted">← Back to Self-Hosted Apps</a>
+      </footer>
+
+    </article>
   </main>
 
   {% include footer.html %}
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <style>
+    .selfhosted-page {
+      margin-top: 2rem;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .page-nav-top {
+      margin-bottom: 1.5rem;
+    }
+
+    .page-content {
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      max-width: 100%;
+    }
+
+    .page-content h2 {
+      color: #00ff00;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .page-content h3 {
+      color: #00cc00;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .page-content p {
+      margin-bottom: 1rem;
+    }
+
+    .page-content ul, .page-content ol {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+    }
+
+    .page-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .page-footer {
+      padding-top: 2rem;
+      border-top: 1px solid rgba(0, 255, 0, 0.2);
+    }
+
+    .back-to-selfhosted {
+      color: #00ff00;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(0, 255, 0, 0.3);
+      border-radius: 0.25rem;
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .back-to-selfhosted:hover {
+      text-decoration: none;
+      border-color: rgba(0, 255, 0, 0.6);
+      background-color: rgba(0, 255, 0, 0.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .selfhosted-page {
+        margin-top: 1rem;
+      }
+
+      .page-content {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .page-nav-top {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
 
 </body>
 </html>
