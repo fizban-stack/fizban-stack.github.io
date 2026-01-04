@@ -9,10 +9,19 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 
   {% assign posts_by_category = site.posts | group_by: "category" | sort: "name" %}
 
+  <!-- Category Navigation -->
+  <nav class="category-nav">
+    {% for category_group in posts_by_category %}
+      <a href="#{{ category_group.name | default: 'uncategorized' | slugify }}" class="category-nav-link">
+        {{ category_group.name | default: "Uncategorized" }}
+      </a>
+    {% endfor %}
+  </nav>
+
   {% if posts_by_category.size > 0 %}
     <div class="categories-grid">
       {% for category_group in posts_by_category %}
-        <section class="category-column">
+        <section class="category-column" id="{{ category_group.name | default: 'uncategorized' | slugify }}">
           <h2 class="category-title">{{ category_group.name | default: "Uncategorized" }}</h2>
 
           <div class="posts-list">
@@ -52,12 +61,38 @@ description: Technical blog posts about cybersecurity, home labs, and technology
   }
 
   .blog-index h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .category-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+  }
+
+  .category-nav-link {
+    padding: 0.5rem 1rem;
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 0.25rem;
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .category-nav-link:hover {
+    background: rgba(0, 255, 0, 0.2);
+    border-color: rgba(0, 255, 0, 0.5);
+    transform: translateY(-2px);
   }
 
   .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     width: 100%;
   }
@@ -147,9 +182,16 @@ description: Technical blog posts about cybersecurity, home labs, and technology
   }
 
   /* Responsive breakpoints */
+  @media (max-width: 1400px) {
+    .categories-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
   @media (max-width: 992px) {
     .categories-grid {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
     }
   }
@@ -163,6 +205,10 @@ description: Technical blog posts about cybersecurity, home labs, and technology
     .category-title {
       position: static;
     }
+
+    .category-nav {
+      justify-content: center;
+    }
   }
 
   @media (max-width: 576px) {
@@ -172,6 +218,11 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 
     .post-preview h3 {
       font-size: 1.1rem;
+    }
+
+    .category-nav-link {
+      flex: 1 1 calc(50% - 0.5rem);
+      text-align: center;
     }
   }
 </style>
