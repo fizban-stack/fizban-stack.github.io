@@ -1,29 +1,31 @@
 ---
 layout: default
-title: Blog
-description: Technical blog posts about cybersecurity, home labs, and technology
+title: Homelab - Blog
+description: Blog posts about home lab setups, self-hosted services, and infrastructure
+permalink: /blog/homelab/
 ---
 
-<div class="blog-index">
-  <h1>Blog</h1>
-
-  {% assign posts_by_category = site.posts | group_by: "category" | sort: "name" %}
+<div class="blog-category">
+  <h1>Homelab</h1>
 
   <!-- Category Navigation -->
   <nav class="category-nav">
+    <a href="/blog/" class="category-nav-link">All Posts</a>
+    {% assign posts_by_category = site.posts | group_by: "category" | sort: "name" %}
     {% for category_group in posts_by_category %}
-      <a href="/blog/{{ category_group.name | default: 'uncategorized' | slugify }}/" class="category-nav-link">
-        {{ category_group.name | default: "Uncategorized" }}
-      </a>
+      {% if category_group.name != "Homelab" %}
+        <a href="/blog/{{ category_group.name | default: 'uncategorized' | slugify }}/" class="category-nav-link">
+          {{ category_group.name | default: "Uncategorized" }}
+        </a>
+      {% endif %}
     {% endfor %}
   </nav>
 
-  <!-- Recent Posts -->
-  <h2 class="section-title">Recent Posts</h2>
+  {% assign category_posts = site.posts | where: "category", "Homelab" %}
 
-  {% if site.posts.size > 0 %}
+  {% if category_posts.size > 0 %}
     <div class="posts-grid">
-      {% for post in site.posts limit:12 %}
+      {% for post in category_posts %}
         <article class="post-preview">
           <h3>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -32,9 +34,6 @@ description: Technical blog posts about cybersecurity, home labs, and technology
             <time datetime="{{ post.date | date_to_xmlschema }}">
               {{ post.date | date: "%B %d, %Y" }}
             </time>
-            {% if post.category %}
-              <span class="post-category">{{ post.category }}</span>
-            {% endif %}
           </div>
           {% if post.excerpt %}
             <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
@@ -44,19 +43,20 @@ description: Technical blog posts about cybersecurity, home labs, and technology
       {% endfor %}
     </div>
   {% else %}
-    <p class="no-posts">No blog posts yet. Check back soon!</p>
+    <p class="no-posts">No homelab posts yet. Check back soon!</p>
   {% endif %}
 </div>
 
 <style>
-  .blog-index {
+  .blog-category {
     margin-top: 2rem;
     width: 100%;
     max-width: 100%;
   }
 
-  .blog-index h1 {
+  .blog-category h1 {
     margin-bottom: 1.5rem;
+    color: #00ff00;
   }
 
   .category-nav {
@@ -83,12 +83,6 @@ description: Technical blog posts about cybersecurity, home labs, and technology
     background: rgba(0, 255, 0, 0.2);
     border-color: rgba(0, 255, 0, 0.5);
     transform: translateY(-2px);
-  }
-
-  .section-title {
-    color: #00ff00;
-    margin-bottom: 2rem;
-    font-size: 1.75rem;
   }
 
   .posts-grid {
@@ -130,17 +124,6 @@ description: Technical blog posts about cybersecurity, home labs, and technology
     color: #888;
     font-size: 0.85rem;
     margin-bottom: 0.75rem;
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-  }
-
-  .post-category {
-    padding: 0.125rem 0.5rem;
-    background: rgba(0, 255, 0, 0.15);
-    border-radius: 0.25rem;
-    font-size: 0.75rem;
-    color: #00ff00;
   }
 
   .post-excerpt {
