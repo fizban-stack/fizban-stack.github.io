@@ -2,7 +2,7 @@
 layout: post
 title: "Nethunter"
 date: 2025-12-30
-category: cybersecurity
+category: Cybersecurity
 author: James Wells
 ---
 
