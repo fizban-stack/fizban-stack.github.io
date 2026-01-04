@@ -45,7 +45,7 @@ description: Explore the cybersecurity and homelab projects of James Wells.
 </style>
 
 <script>
-  (function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('projects-search');
     const clearBtn = document.getElementById('projects-search-clear');
     const projectCards = document.querySelectorAll('.project-card');
@@ -86,5 +86,5 @@ description: Explore the cybersecurity and homelab projects of James Wells.
       performSearch();
       searchInput.focus();
     });
-  })();
+  });
 </script>

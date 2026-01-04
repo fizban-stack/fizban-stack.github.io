@@ -42,7 +42,7 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
 </style>
 
 <script>
-  (function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('podcasts-search');
     const clearBtn = document.getElementById('podcasts-search-clear');
     const podcastCards = document.querySelectorAll('#podcasts-grid .project-card');
@@ -83,5 +83,5 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
       performSearch();
       searchInput.focus();
     });
-  })();
+  });
 </script>

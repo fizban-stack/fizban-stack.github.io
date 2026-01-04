@@ -42,7 +42,7 @@ description: Free cybersecurity training sites and resources curated by James We
 </style>
 
 <script>
-  (function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('training-search');
     const clearBtn = document.getElementById('training-search-clear');
     const trainingCards = document.querySelectorAll('#training-grid .project-card');
@@ -83,5 +83,5 @@ description: Free cybersecurity training sites and resources curated by James We
       performSearch();
       searchInput.focus();
     });
-  })();
+  });
 </script>

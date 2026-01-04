@@ -51,7 +51,7 @@ This page showcases some of my favorite self-hosted applications that I use in m
 </style>
 
 <script>
-  (function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('selfhosted-search');
     const clearBtn = document.getElementById('selfhosted-search-clear');
     const appCards = document.querySelectorAll('#selfhosted-grid .project-card');
@@ -93,5 +93,5 @@ This page showcases some of my favorite self-hosted applications that I use in m
       performSearch();
       searchInput.focus();
     });
-  })();
+  });
 </script>
