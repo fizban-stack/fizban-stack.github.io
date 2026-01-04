@@ -5,6 +5,9 @@ description: Free cybersecurity training sites and resources curated by James We
 ---
 
 # Free Cybersecurity Training
+<article>
+<p>These training programs are not listed in any particular order. Over the last few years, I have spent a considerable amount of time searching for and engaging with as much free cybersecurity content as possible. I thought it would be helpful to provide a list for anyone else that is searching through the vastness of the internet for quality cybersecurity training. The training programs vary from deeply technical to general knowledge, but I found all of them engaging and insightful in their own ways.</p>
+</article>
 
 <div class="row g-4">
 {% for training in site.data.training %}

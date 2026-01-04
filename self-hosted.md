@@ -10,7 +10,7 @@ This page showcases some of my favorite self-hosted applications that I use in m
 
 <article>
   <h4>Why Self-Host?</h4>
-  <p>Self-hosting gives you complete control over your data, helps you learn system administration, and provides hands-on experience with technologies used in enterprise environments. It has been essential part of my cybersecurity learning journey.</p>
+  <p>Self-hosting gives you complete control over your data, helps you learn system administration, and provides hands-on experience with technologies used in enterprise environments. It has been an essential part of my cybersecurity learning journey.</p>
 </article>
 
 

@@ -5,6 +5,9 @@ description: Explore the cybersecurity and homelab projects of James Wells.
 ---
 
 # Projects
+<article>
+<p>This is a list of some of the projects that I have built or taken a deep dive into. I have a blog post for most of these, but wanted a page that only listed project related topics. If I need to rebuild a service or relearn how something works after a few years, I want to be able to quickly come to this page and locate that project.</p>
+</article>
 
 <div class="row g-4">
 {% for project in site.data.projects %}
