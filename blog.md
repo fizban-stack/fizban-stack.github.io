@@ -226,46 +226,97 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 </style>
 
 <script>
-  (function() {
+  document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('blog-search');
     const clearBtn = document.getElementById('blog-search-clear');
-    const posts = document.querySelectorAll('.post-preview');
+    const postsGrid = document.querySelector('.posts-grid');
     const noResults = document.createElement('div');
     noResults.className = 'no-results';
     noResults.textContent = 'No posts found matching your search.';
-    document.querySelector('.posts-grid').appendChild(noResults);
+    postsGrid.appendChild(noResults);
+
+    // All posts data from Jekyll
+    const allPosts = [
+      {% for post in site.posts %}
+      {
+        title: {{ post.title | jsonify }},
+        url: {{ post.url | relative_url | jsonify }},
+        date: {{ post.date | date: "%B %d, %Y" | jsonify }},
+        datetime: {{ post.date | date_to_xmlschema | jsonify }},
+        category: {{ post.category | default: "" | jsonify }},
+        excerpt: {{ post.excerpt | strip_html | truncatewords: 30 | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    function renderPosts(postsToShow) {
+      // Clear existing posts but keep noResults
+      const existingPosts = postsGrid.querySelectorAll('.post-preview');
+      existingPosts.forEach(post => post.remove());
+
+      if (postsToShow.length === 0) {
+        noResults.classList.add('show');
+        return;
+      }
+
+      noResults.classList.remove('show');
+
+      postsToShow.forEach(post => {
+        const article = document.createElement('article');
+        article.className = 'post-preview';
+
+        let html = `
+          <h3>
+            <a href="${post.url}">${post.title}</a>
+          </h3>
+          <div class="post-meta">
+            <time datetime="${post.datetime}">
+              ${post.date}
+            </time>`;
+
+        if (post.category) {
+          html += `
+            <span class="post-category">${post.category}</span>`;
+        }
+
+        html += `
+          </div>`;
+
+        if (post.excerpt) {
+          html += `
+          <p class="post-excerpt">${post.excerpt}</p>`;
+        }
+
+        html += `
+          <a href="${post.url}" class="read-more">Read more →</a>`;
+
+        article.innerHTML = html;
+        postsGrid.insertBefore(article, noResults);
+      });
+    }
 
     function performSearch() {
       const query = searchInput.value.toLowerCase().trim();
-      let visibleCount = 0;
 
       if (query === '') {
-        posts.forEach(post => post.classList.remove('hidden'));
+        // Show recent 12 posts (default view)
+        renderPosts(allPosts.slice(0, 12));
         clearBtn.style.display = 'none';
-        noResults.classList.remove('show');
         return;
       }
 
       clearBtn.style.display = 'block';
 
-      posts.forEach(post => {
-        const title = post.querySelector('h3 a').textContent.toLowerCase();
-        const excerpt = post.querySelector('.post-excerpt')?.textContent.toLowerCase() || '';
-        const category = post.querySelector('.post-category')?.textContent.toLowerCase() || '';
+      // Search through all posts
+      const matchedPosts = allPosts.filter(post => {
+        const title = post.title.toLowerCase();
+        const excerpt = post.excerpt.toLowerCase();
+        const category = post.category.toLowerCase();
 
-        if (title.includes(query) || excerpt.includes(query) || category.includes(query)) {
-          post.classList.remove('hidden');
-          visibleCount++;
-        } else {
-          post.classList.add('hidden');
-        }
+        return title.includes(query) || excerpt.includes(query) || category.includes(query);
       });
 
-      if (visibleCount === 0) {
-        noResults.classList.add('show');
-      } else {
-        noResults.classList.remove('show');
-      }
+      renderPosts(matchedPosts);
     }
 
     searchInput.addEventListener('input', performSearch);
@@ -275,5 +326,5 @@ description: Technical blog posts about cybersecurity, home labs, and technology
       performSearch();
       searchInput.focus();
     });
-  })();
+  });
 </script>
