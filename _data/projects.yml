@@ -1,3 +1,9 @@
+- title: Graylog
+  image: self-hosted/graylog.webp
+  description: Open-source log management and SIEM platform for centralized log aggregation, analysis, and monitoring. Configured with custom extractors for Opnsense and network device syslog parsing.
+  blog: /cybersecurity/2025/12/25/graylog/
+  github: https://github.com/Graylog2/graylog2-server
+
 - title: Snipe-IT
   image: self-hosted/snipeit.webp
   description: Open-source IT asset management system that helps track hardware, software licenses, accessories, and consumables across my home lab.
