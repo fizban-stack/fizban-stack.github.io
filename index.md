@@ -15,7 +15,7 @@ description: The personal portfolio of James Wells, an aspiring cybersecurity pr
   </div>
 </div>
 
-Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, father of three, and home lab enthusiast. I have dedicated a large amount of time and money over the last five years to these projects and plan on using this space to present them. I want to do this not only to help my career, but also for my own learning documentation. I started a blog using Ghost a little while ago, but recently transitioned to hosting my posts on this site. I hope that you can gain something from this site. It might be a new training platform or podcast that really has nothing to do with my site, but I want to help build a better cybersecurity community, especially in my area where there is not any kind of technical community. A link to my resume can be found on my <a href="about.md">about</a> page.
+Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, father of three, and home lab enthusiast. I have dedicated a large amount of time and money over the last five years to these projects and plan on using this space to present them. I want to do this not only to help my career, but also for my own learning documentation. I started a blog using Ghost a little while ago, but recently transitioned to hosting my posts on this site. I hope that you can gain something from this site. It might be a new training platform or podcast that really has nothing to do with my site, but I want to help build a better cybersecurity community, especially in my area where there is not any kind of technical community. A link to my resume can be found on my <a href="/contact/">contact</a> page.
 
 <article>
   <h2>Self-Hosted</h2>
