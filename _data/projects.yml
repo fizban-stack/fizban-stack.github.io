@@ -45,6 +45,7 @@
 - title: Nvidia Jetson Orin Nano Super
   image: projects/nvidia-jetson-orin-nano.webp
   description: This is a Jetson Orin Nano developer kit that I purchased to mess around with machine learning.
+  blog: /cybersecurity/2026/01/05/jetson-orin-netflow-ml/
 
 - title: OMG Cable
   image: projects/omg-cable.webp
