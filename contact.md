@@ -18,6 +18,11 @@ description: Get in touch with James Wells.
       </div>
 
       <div class="mt-4">
+        <h3>Resume</h3>
+        <p><a href="/assets/documents/resume.pdf" >Download my resume (PDF)</a></p>
+      </div>
+
+      <div class="mt-4">
         <h3>Social Media</h3>
         <ul>
           <li><a href="https://www.linkedin.com/in/james-wells-122170164/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
