@@ -1,3 +1,9 @@
+- title: OPNsense
+  image: self-hosted/opnsense.webp
+  description: Open-source FreeBSD-based firewall and routing platform with advanced networking features, intrusion detection, and VPN capabilities. Provides enterprise-grade security and network management for my home lab.
+  blog: /homelab/2026/01/07/opnsense/
+  github: https://github.com/opnsense/core
+
 - title: Graylog
   image: self-hosted/graylog.webp
   description: Open-source log management and SIEM platform for centralized log aggregation, analysis, and monitoring. Configured with custom extractors for Opnsense and network device syslog parsing.
