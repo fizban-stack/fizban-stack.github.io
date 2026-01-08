@@ -80,7 +80,7 @@
 
 - id: juice-shop
   title: OWASP Juice Shop
-  image: vulnerable-labs/juice-shop.webp
+  image: vulnerable-labs/juiceshop.webp
   type: Container
   category: Web Applications
   focus: Modern web application security (Node.js/Angular/Express)
@@ -90,7 +90,7 @@
 
 - id: broken-crystals
   title: Broken-Crystals
-  image: vulnerable-labs/broken-crystals.webp
+  image: vulnerable-labs/brokencrystals.webp
   type: Container
   category: Web Applications
   focus: React/TypeScript application security
@@ -130,7 +130,7 @@
 
 - id: tiredful-api
   title: Tiredful API
-  image: vulnerable-labs/tiredful-api.webp
+  image: vulnerable-labs/tiredfulapi.webp
   type: Container
   category: API Security
   focus: REST API vulnerabilities
@@ -170,7 +170,7 @@
 
 - id: security-shepherd
   title: OWASP Security Shepherd
-  image: vulnerable-labs/security-shepherd.webp
+  image: vulnerable-labs/security-sheperd.webp
   type: VM/Container
   category: Training Platform
   focus: Gamified web and mobile security training
@@ -190,7 +190,7 @@
 
 - id: vulnerableapp4apisecurity
   title: VulnerableApp4APISecurity
-  image: vulnerable-labs/vulnerableapp4apisecurity.webp
+  image: vulnerable-labs/vulnerableapp4security.webp
   type: Container
   category: API Security
   focus: REST API vulnerabilities and testing

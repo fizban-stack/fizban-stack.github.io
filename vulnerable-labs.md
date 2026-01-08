@@ -10,15 +10,11 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
 
 <article>
 <p>A curated collection of modern, self-hostable vulnerable machines and containers for security research, penetration testing practice, and training. When I started learning about cybersecurity, I did not realize how many free, easily deployable vulnerable test machines there were. I wanted to put this list together to help anyone else that is looking for a free way to learn about cybersecurity. Some of these have not been updated in a couple of years, but I have used a few and thought it was a great learning experience. These resources cover cloud security, web applications, Active Directory, APIs, Android, and specialized security domains. Over time I will be writing blogs posts to discuss my journey through them.</p>
-
-<div class="alert alert-warning" role="alert" style="background-color: var(--warning-bg, #fff3cd); border: 1px solid var(--warning-border, #ffc107); border-radius: 6px; padding: 1rem; margin-bottom: 1.5rem; color: var(--text-primary);">
-  <strong>⚠️ Security Notice:</strong> These applications are intentionally vulnerable. Only deploy in isolated lab environments. Never expose to the internet or production networks.
-</div>
 </article>
 
 <!-- Category Filter Pills -->
 <div class="category-filters mb-4" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-  <button class="filter-pill active" data-category="all" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--accent-color); color: var(--bg-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
+  <button class="filter-pill active" data-category="all" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--accent-green); color: #0a0e27; cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
     All Labs
   </button>
   <button class="filter-pill" data-category="Web Applications" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
@@ -53,12 +49,12 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
       <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem;">
           <h5 class="card-title" style="margin: 0; flex: 1;">{{ lab.title }}</h5>
-          <span class="lab-type-badge" style="background: var(--accent-color); color: var(--bg-primary); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; margin-left: 0.5rem;">
+          <span class="lab-type-badge" style="background: var(--accent-green); color: #0a0e27; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; margin-left: 0.5rem;">
             {{ lab.type }}
           </span>
         </div>
 
-        <div class="lab-focus" style="color: var(--accent-color); font-size: 0.85rem; font-weight: 500; margin-bottom: 0.75rem;">
+        <div class="lab-focus" style="color: var(--accent-green); font-size: 0.85rem; font-weight: 500; margin-bottom: 0.75rem;">
           {{ lab.focus }}
         </div>
 
@@ -112,13 +108,13 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
 
   /* Filter pill hover effects */
   .filter-pill:hover {
-    border-color: var(--accent-color) !important;
+    border-color: var(--accent-green) !important;
   }
 
   .filter-pill.active {
-    background: var(--accent-color) !important;
-    color: var(--bg-primary) !important;
-    border-color: var(--accent-color) !important;
+    background: var(--accent-green) !important;
+    color: #0a0e27 !important;
+    border-color: var(--accent-green) !important;
   }
 
   /* Responsive adjustments */
