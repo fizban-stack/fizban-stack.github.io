@@ -15,23 +15,37 @@ This page showcases some of my favorite self-hosted applications that I use in m
   <p>Self-hosting gives you complete control over your data, helps you learn system administration, and provides hands-on experience with technologies used in enterprise environments. It has been an essential part of my cybersecurity learning journey.</p>
 </article>
 
-
+<!-- Category Filter Pills -->
+<div class="category-filters mb-4">
+  <button class="filter-pill active" data-category="all">All Apps</button>
+  <button class="filter-pill" data-category="Infrastructure">Infrastructure</button>
+  <button class="filter-pill" data-category="Security">Security</button>
+  <button class="filter-pill" data-category="Media">Media</button>
+  <button class="filter-pill" data-category="Productivity">Productivity</button>
+  <button class="filter-pill" data-category="Development">Development</button>
+  <button class="filter-pill" data-category="Monitoring">Monitoring</button>
+</div>
 
 <div class="row g-4 mt-4" id="selfhosted-grid">
 {% for app in site.data.selfhosted %}
-  <div class="col-md-6 col-lg-4">
-    <div class="card project-card h-100 d-flex flex-column">
-      <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}">
-      <div class="card-body d-flex flex-column">
+  <div class="col-md-6 col-lg-4" data-category="{{ app.category }}">
+    <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
+      <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}" style="height: 200px; object-fit: cover;">
+      <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
         <h5 class="card-title">{{ app.title }}</h5>
         <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0.75rem;">{{ app.subtitle }}</p>
-        <p class="card-text">{{ app.description }}</p>
-        <div class="mt-auto">
-          <a href="{{ '/self-hosted/' | append: app.id | relative_url }}" class="btn btn-dark">Learn More</a>
+        <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ app.description }}</p>
+
+        <div class="app-category" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
+          <strong>Category:</strong> {{ app.category }}
+        </div>
+
+        <div class="mt-auto d-flex gap-2" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="{{ '/self-hosted/' | append: app.id | relative_url }}" class="btn btn-dark" style="flex: 1 1 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Learn More</a>
           {% if app.github %}
-          <a href="{{ app.github }}" target="_blank" class="btn btn-outline-secondary ms-2">GitHub</a>
+          <a href="{{ app.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">GitHub</a>
           {% elsif app.official %}
-          <a href="{{ app.official }}" target="_blank" class="btn btn-outline-secondary ms-2">Official Site</a>
+          <a href="{{ app.official }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Official Site</a>
           {% endif %}
         </div>
       </div>
@@ -40,59 +54,19 @@ This page showcases some of my favorite self-hosted applications that I use in m
 {% endfor %}
 </div>
 
-<div id="no-selfhosted-results" class="no-results" style="display: none; text-align: center; padding: 3rem; color: var(--text-secondary);">
-  No applications found matching your search.
+<div id="no-selfhosted-results" class="no-results" style="display: none;">
+  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No applications found</p>
+  <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
 </div>
 
-<style>
-  .col-md-6.hidden,
-  .col-lg-4.hidden {
-    display: none !important;
-  }
-</style>
-
+<script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('selfhosted-search');
-    const clearBtn = document.getElementById('selfhosted-search-clear');
-    const appCards = document.querySelectorAll('#selfhosted-grid .project-card');
-    const noResults = document.getElementById('no-selfhosted-results');
-
-    function performSearch() {
-      const query = searchInput.value.toLowerCase().trim();
-      let visibleCount = 0;
-
-      if (query === '') {
-        appCards.forEach(card => card.parentElement.classList.remove('hidden'));
-        clearBtn.style.display = 'none';
-        noResults.style.display = 'none';
-        return;
-      }
-
-      clearBtn.style.display = 'block';
-
-      appCards.forEach(card => {
-        const title = card.querySelector('.card-title').textContent.toLowerCase();
-        const subtitle = card.querySelector('.text-muted')?.textContent.toLowerCase() || '';
-        const description = card.querySelector('.card-text').textContent.toLowerCase();
-
-        if (title.includes(query) || subtitle.includes(query) || description.includes(query)) {
-          card.parentElement.classList.remove('hidden');
-          visibleCount++;
-        } else {
-          card.parentElement.classList.add('hidden');
-        }
-      });
-
-      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-    }
-
-    searchInput.addEventListener('input', performSearch);
-
-    clearBtn.addEventListener('click', function() {
-      searchInput.value = '';
-      performSearch();
-      searchInput.focus();
-    });
+  initFilterSearch({
+    searchInputId: 'selfhosted-search',
+    clearBtnId: 'selfhosted-search-clear',
+    cardSelector: '.project-card',
+    containerSelector: '#selfhosted-grid > div[data-category]',
+    noResultsId: 'no-selfhosted-results',
+    filterPillSelector: '.filter-pill'
   });
 </script>

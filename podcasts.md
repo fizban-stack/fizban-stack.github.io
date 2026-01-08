@@ -12,17 +12,31 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
 <p>These podcasts are not listed in any particular order. Over the last few years, I have spent a considerable amount of time listening to them while driving for work. I even got to the point that I would listen to them on long trips with my family. I got to listen to educational content and they got to sleep and not argue. The podcasts vary from deeply technical to general knowledge, but I found all of them engaging.</p>
 </article>
 
+<!-- Category Filter Pills -->
+<div class="category-filters mb-4">
+  <button class="filter-pill active" data-category="all">All Podcasts</button>
+  <button class="filter-pill" data-category="Technical">Technical</button>
+  <button class="filter-pill" data-category="General Knowledge">General Knowledge</button>
+  <button class="filter-pill" data-category="News & Updates">News & Updates</button>
+  <button class="filter-pill" data-category="Educational">Educational</button>
+</div>
+
 <div class="row g-4" id="podcasts-grid">
 {% for podcast in site.data.podcasts %}
-  <div class="col-md-6 col-lg-4">
-    <div class="card project-card h-100 d-flex flex-column">
-      <img src="{{ '/assets/images/' | append: podcast.image | relative_url }}" class="card-img-top" alt="{{ podcast.title }}">
-      <div class="card-body d-flex flex-column">
+  <div class="col-md-6 col-lg-4" data-category="{{ podcast.category }}">
+    <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
+      <img src="{{ '/assets/images/' | append: podcast.image | relative_url }}" class="card-img-top" alt="{{ podcast.title }}" style="height: 200px; object-fit: cover;">
+      <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
         <h5 class="card-title">{{ podcast.title }}</h5>
-        <p class="card-text">{{ podcast.description }}</p>
+        <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ podcast.description }}</p>
+
+        <div class="podcast-category" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
+          <strong>Category:</strong> {{ podcast.category }}
+        </div>
+
         <div class="mt-auto">
           {% if podcast.website %}
-          <a href="{{ podcast.website }}" target="_blank" class="btn btn-dark">Visit Website</a>
+          <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-dark" style="width: 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem;">Visit Website</a>
           {% endif %}
         </div>
       </div>
@@ -31,58 +45,19 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
 {% endfor %}
 </div>
 
-<div id="no-podcasts-results" class="no-results" style="display: none; text-align: center; padding: 3rem; color: var(--text-secondary);">
-  No podcasts found matching your search.
+<div id="no-podcasts-results" class="no-results" style="display: none;">
+  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No podcasts found</p>
+  <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
 </div>
 
-<style>
-  .col-md-6.hidden,
-  .col-lg-4.hidden {
-    display: none !important;
-  }
-</style>
-
+<script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('podcasts-search');
-    const clearBtn = document.getElementById('podcasts-search-clear');
-    const podcastCards = document.querySelectorAll('#podcasts-grid .project-card');
-    const noResults = document.getElementById('no-podcasts-results');
-
-    function performSearch() {
-      const query = searchInput.value.toLowerCase().trim();
-      let visibleCount = 0;
-
-      if (query === '') {
-        podcastCards.forEach(card => card.parentElement.classList.remove('hidden'));
-        clearBtn.style.display = 'none';
-        noResults.style.display = 'none';
-        return;
-      }
-
-      clearBtn.style.display = 'block';
-
-      podcastCards.forEach(card => {
-        const title = card.querySelector('.card-title').textContent.toLowerCase();
-        const description = card.querySelector('.card-text').textContent.toLowerCase();
-
-        if (title.includes(query) || description.includes(query)) {
-          card.parentElement.classList.remove('hidden');
-          visibleCount++;
-        } else {
-          card.parentElement.classList.add('hidden');
-        }
-      });
-
-      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-    }
-
-    searchInput.addEventListener('input', performSearch);
-
-    clearBtn.addEventListener('click', function() {
-      searchInput.value = '';
-      performSearch();
-      searchInput.focus();
-    });
+  initFilterSearch({
+    searchInputId: 'podcasts-search',
+    clearBtnId: 'podcasts-search-clear',
+    cardSelector: '.project-card',
+    containerSelector: '#podcasts-grid > div[data-category]',
+    noResultsId: 'no-podcasts-results',
+    filterPillSelector: '.filter-pill'
   });
 </script>

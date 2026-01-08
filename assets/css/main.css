@@ -598,3 +598,473 @@ img {
 .navbar-brand {
   animation: glow 3s ease-in-out infinite;
 }
+
+/* Category Filter Pills - Shared across multiple pages */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-pill {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.filter-pill:hover {
+  border-color: var(--accent-green) !important;
+}
+
+.filter-pill.active {
+  background: var(--accent-green) !important;
+  color: #0a0e27 !important;
+  border-color: var(--accent-green) !important;
+}
+
+/* Hide filtered cards */
+.col-md-6.hidden,
+.col-lg-4.hidden {
+  display: none !important;
+}
+
+/* Type badges for categorized items */
+.lab-type-badge,
+.app-type-badge,
+.podcast-type-badge,
+.training-type-badge,
+.project-type-badge {
+  background: var(--accent-green);
+  color: #0a0e27;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Category display within cards */
+.lab-category,
+.app-category,
+.podcast-category,
+.training-category,
+.project-category {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* No results message */
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+}
+
+/* Responsive adjustments for filter pills */
+@media (max-width: 768px) {
+  .category-filters {
+    justify-content: center;
+  }
+
+  .filter-pill {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.8rem !important;
+  }
+}
+
+/* ============================================
+   Blog Category Navigation - Shared across blog pages
+   ============================================ */
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.category-nav-link {
+  padding: 0.5rem 1rem;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  border-radius: 0.25rem;
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.category-nav-link:hover {
+  background: rgba(0, 255, 0, 0.2);
+  border-color: rgba(0, 255, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.post-preview {
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.post-preview:hover {
+  border-color: rgba(0, 255, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+  .posts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-nav {
+    justify-content: center;
+  }
+}
+
+/* ============================================
+   Page/Post Content Styling - Shared across layout files
+   ============================================ */
+.page-content,
+.post-content {
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  max-width: 100%;
+}
+
+.page-content h2,
+.post-content h2 {
+  color: #00ff00;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page-content h3,
+.post-content h3 {
+  color: #00cc00;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.page-content p,
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+.page-content a,
+.post-content a {
+  color: #00ff00;
+}
+
+.page-content a:hover,
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+.page-content code,
+.post-content code {
+  background: rgba(0, 255, 0, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+.page-content pre,
+.post-content pre {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.page-content pre code,
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.page-content blockquote,
+.post-content blockquote {
+  border-left: 4px solid #00ff00;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #ccc;
+  font-style: italic;
+}
+
+.page-content img,
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  display: block;
+}
+
+.page-content ul,
+.page-content ol,
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.page-content li,
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   Back Navigation Buttons - Shared across layout files
+   ============================================ */
+.back-to-blog,
+.back-to-selfhosted,
+.back-to-labs {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  border-radius: 0.25rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-blog:hover,
+.back-to-selfhosted:hover,
+.back-to-labs:hover {
+  text-decoration: none;
+  border-color: rgba(0, 255, 0, 0.6);
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* ============================================
+   Blog Post Layout Shared Styles
+   ============================================ */
+.blog-post {
+  margin-top: 2rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+.post-nav-top {
+  margin-bottom: 1.5rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 255, 0, 0.3);
+}
+
+.post-title {
+  color: #00ff00;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.post-author {
+  margin-left: 1rem;
+}
+
+.post-category {
+  margin-left: 1rem;
+}
+
+.post-category::before {
+  content: "• ";
+  margin-right: 0.5rem;
+}
+
+.post-category a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.post-category a:hover {
+  text-decoration: underline;
+}
+
+.post-footer,
+.page-footer {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+/* Responsive adjustments for blog/page content */
+@media (max-width: 768px) {
+  .blog-post {
+    margin-top: 1rem;
+  }
+
+  .page-content,
+  .post-content {
+    font-size: 0.95rem;
+  }
+
+  .post-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-nav-top {
+    margin-bottom: 1rem;
+  }
+
+  .post-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  .post-meta {
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================================
+   Blog Index & Category Pages - Additional Styles
+   ============================================ */
+.blog-index,
+.blog-category {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.blog-index h1,
+.blog-category h1 {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  color: #00ff00;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+
+.post-preview h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.post-preview h3 a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.post-preview h3 a:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.post-category {
+  padding: 0.125rem 0.5rem;
+  background: rgba(0, 255, 0, 0.15);
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  color: #00ff00;
+}
+
+.post-excerpt {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.read-more {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.no-posts {
+  text-align: center;
+  padding: 3rem;
+  color: #888;
+}
+
+.post-preview.hidden {
+  display: none;
+}
+
+.no-results.show {
+  display: block;
+}
+
+/* Responsive breakpoints for blog grids */
+@media (max-width: 1400px) {
+  .posts-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-preview {
+    padding: 1rem;
+  }
+
+  .post-preview h3 {
+    font-size: 1.1rem;
+  }
+
+  .category-nav-link {
+    flex: 1 1 calc(50% - 0.5rem);
+    text-align: center;
+  }
+}

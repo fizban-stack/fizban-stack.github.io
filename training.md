@@ -12,17 +12,34 @@ description: Free cybersecurity training sites and resources curated by James We
 <p>These training programs are not listed in any particular order. Over the last few years, I have spent a considerable amount of time searching for and engaging with as much free cybersecurity content as possible. I thought it would be helpful to provide a list for anyone else that is searching through the vastness of the internet for quality cybersecurity training. The training programs vary from deeply technical to general knowledge, but I found all of them engaging and insightful in their own ways.</p>
 </article>
 
+<!-- Category Filter Pills -->
+<div class="category-filters mb-4">
+  <button class="filter-pill active" data-category="all">All Training</button>
+  <button class="filter-pill" data-category="Hands-on Labs">Hands-on Labs</button>
+  <button class="filter-pill" data-category="Video Courses">Video Courses</button>
+  <button class="filter-pill" data-category="Wargames">Wargames</button>
+  <button class="filter-pill" data-category="CTF Challenges">CTF Challenges</button>
+  <button class="filter-pill" data-category="Bug Bounty Training">Bug Bounty</button>
+  <button class="filter-pill" data-category="Educational Resources">Educational</button>
+  <button class="filter-pill" data-category="Write-ups & Guides">Write-ups</button>
+</div>
+
 <div class="row g-4" id="training-grid">
 {% for training in site.data.training %}
-  <div class="col-md-6 col-lg-4">
-    <div class="card project-card h-100 d-flex flex-column">
-      <img src="{{ '/assets/images/' | append: training.image | relative_url }}" class="card-img-top" alt="{{ training.title }}">
-      <div class="card-body d-flex flex-column">
+  <div class="col-md-6 col-lg-4" data-category="{{ training.category }}">
+    <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
+      <img src="{{ '/assets/images/' | append: training.image | relative_url }}" class="card-img-top" alt="{{ training.title }}" style="height: 200px; object-fit: cover;">
+      <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
         <h5 class="card-title">{{ training.title }}</h5>
-        <p class="card-text">{{ training.description }}</p>
+        <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ training.description }}</p>
+
+        <div class="training-category" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
+          <strong>Category:</strong> {{ training.category }}
+        </div>
+
         <div class="mt-auto">
           {% if training.website %}
-          <a href="{{ training.website }}" target="_blank" class="btn btn-dark">Visit Website</a>
+          <a href="{{ training.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-dark" style="width: 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem;">Visit Website</a>
           {% endif %}
         </div>
       </div>
@@ -31,58 +48,19 @@ description: Free cybersecurity training sites and resources curated by James We
 {% endfor %}
 </div>
 
-<div id="no-training-results" class="no-results" style="display: none; text-align: center; padding: 3rem; color: var(--text-secondary);">
-  No training programs found matching your search.
+<div id="no-training-results" class="no-results" style="display: none;">
+  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No training programs found</p>
+  <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
 </div>
 
-<style>
-  .col-md-6.hidden,
-  .col-lg-4.hidden {
-    display: none !important;
-  }
-</style>
-
+<script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('training-search');
-    const clearBtn = document.getElementById('training-search-clear');
-    const trainingCards = document.querySelectorAll('#training-grid .project-card');
-    const noResults = document.getElementById('no-training-results');
-
-    function performSearch() {
-      const query = searchInput.value.toLowerCase().trim();
-      let visibleCount = 0;
-
-      if (query === '') {
-        trainingCards.forEach(card => card.parentElement.classList.remove('hidden'));
-        clearBtn.style.display = 'none';
-        noResults.style.display = 'none';
-        return;
-      }
-
-      clearBtn.style.display = 'block';
-
-      trainingCards.forEach(card => {
-        const title = card.querySelector('.card-title').textContent.toLowerCase();
-        const description = card.querySelector('.card-text').textContent.toLowerCase();
-
-        if (title.includes(query) || description.includes(query)) {
-          card.parentElement.classList.remove('hidden');
-          visibleCount++;
-        } else {
-          card.parentElement.classList.add('hidden');
-        }
-      });
-
-      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-    }
-
-    searchInput.addEventListener('input', performSearch);
-
-    clearBtn.addEventListener('click', function() {
-      searchInput.value = '';
-      performSearch();
-      searchInput.focus();
-    });
+  initFilterSearch({
+    searchInputId: 'training-search',
+    clearBtnId: 'training-search-clear',
+    cardSelector: '.project-card',
+    containerSelector: '#training-grid > div[data-category]',
+    noResultsId: 'no-training-results',
+    filterPillSelector: '.filter-pill'
   });
 </script>

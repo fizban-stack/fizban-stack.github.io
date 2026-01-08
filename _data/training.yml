@@ -1,134 +1,188 @@
 - title: TryHackMe
+  type: "Training"
+  category: "Hands-on Labs"
   image: training/tryhackme.webp
   description: Interactive cybersecurity training platform with hands-on labs covering penetration testing, security operations, and more.
   website: https://tryhackme.com
 
 - title: Hack The Box
+  type: "Training"
+  category: "Hands-on Labs"
   image: training/htb.webp
   description: Platform for penetration testing training with realistic vulnerable machines and capture the flag challenges.
   website: https://www.hackthebox.com
 
 - title: OverTheWire
+  type: "Training"
+  category: "Wargames"
   image: training/overthewire.webp
   description: Wargames that help you learn and practice security concepts through fun challenges and games.
   website: https://overthewire.org/wargames/
 
 - title: UnderTheWire
+  type: "Training"
+  category: "Wargames"
   image: training/underthewire.webp
   description: Wargames that help you learn and practice PowerShell and security concepts through fun challenges and games.
   website: https://underthewire.tech/wargames/
 
 - title: picoCTF
+  type: "Training"
+  category: "CTF Challenges"
   image: training/picoctf.webp
   description: Free computer security education program with year-round practice challenges for students and beginners.
   website: https://picoctf.org
 
 - title: Cybrary
+  type: "Training"
+  category: "Video Courses"
   image: training/cybrary.webp
   description: Offers free cybersecurity courses covering various topics from beginner to advanced levels.
   website: https://www.cybrary.it
 
 - title: LetsDefend
+  type: "Training"
+  category: "Hands-on Labs"
   image: training/letsdefend.webp
   description: Blue team training platform with hands-on SOC analyst experience and incident response scenarios.
   website: https://letsdefend.io
 
 - title: PortSwigger Web Security Academy
+  type: "Training"
+  category: "Hands-on Labs"
   image: training/portswigger.webp
   description: Free online training from the creators of Burp Suite, covering web security vulnerabilities and exploitation.
   website: https://portswigger.net/web-security
 
 - title: OWASP
+  type: "Training"
+  category: "Educational Resources"
   image: training/owasp.webp
   description: Open Web Application Security Project with free resources, tools, and documentation for application security.
   website: https://owasp.org
 
 - title: HackerOne
+  type: "Training"
+  category: "Bug Bounty Training"
   image: training/hackerone.webp
   description: Bug bounty platform with a training site where you can practice vulnerability research on real programs and earn rewards.
   website: https://www.hacker101.com
 
 - title: Bugcrowd
+  type: "Training"
+  category: "Bug Bounty Training"
   image: training/bugcrowd.webp
   description: Crowdsourced security platform offering bug bounty programs and security testing opportunities. Has a training site as well.
   website: https://www.bugcrowd.com/resources/levelup/introduction-to-bugcrowd-university/
 
 - title: Intigriti
+  type: "Training"
+  category: "Bug Bounty Training"
   image: training/intigriti.webp
   description: European bug bounty and security platform connecting ethical hackers with companies and providing training for people trying to get into bug bounty.
   website: https://www.intigriti.com/researchers/hackademy
 
 - title: YesWeHack
+  type: "Training"
+  category: "Bug Bounty Training"
   image: training/yeswehack.webp
   description: European bug bounty platform and vulnerability coordination platform for ethical hackers. YesWeHack Dojo provides training opportunities for bug hunters.
   website: https://www.dojo-yeswehack.com
 
 - title: HackTricks
+  type: "Training"
+  category: "Educational Resources"
   image: training/hacktricks.webp
   description: Comprehensive wiki with penetration testing techniques, methodologies, and security knowledge.
   website: https://book.hacktricks.xyz
 
 - title: 0xdf Hacks Stuff
+  type: "Training"
+  category: "Write-ups & Guides"
   image: training/0xdf.webp
   description: Detailed walkthroughs and write-ups for HackTheBox machines and CTF challenges.
   website: https://0xdf.gitlab.io
 
 - title: Cisco Networking Academy
+  type: "Training"
+  category: "Video Courses"
   image: training/cisco.webp
   description: Free networking and cybersecurity courses from Cisco, including cybersecurity essentials.
   website: https://www.netacad.com
 
 - title: Microsoft Learn
+  type: "Training"
+  category: "Video Courses"
   image: training/microsoft.webp
   description: Free learning platform with cybersecurity training paths and Azure security content.
   website: https://learn.microsoft.com
 
 - title: Antisyphon Training
+  type: "Training"
+  category: "Video Courses"
   image: training/antisyphon.webp
   description: Pay-What-You-Can security training with live instruction from industry professionals.
   website: https://www.antisyphontraining.com
 
 - title: TCM Security Academy
+  type: "Training"
+  category: "Video Courses"
   image: training/tcmsecurity.webp
   description: Practical penetration testing and security training with hands-on courses that is affordable.
   website: https://academy.tcm-sec.com
 
 - title: Simply Cyber
+  type: "Training"
+  category: "Educational Resources"
   image: training/simplycyber.webp
   description: Cybersecurity career guidance, training resources, and community support for beginners.
   website: https://www.simplycyber.io
 
 - title: Build Cyber
+  type: "Training"
+  category: "Educational Resources"
   image: training/buildcyber.webp
   description: Resources and guidance for building a career in cybersecurity with practical advice. Includes vouchers for individuals in need to receive free training courses including, Hack the Box certifications, the Offsec OSCP, and many more.
   website: https://www.buildcyber.com
 
 - title: Hack Smarter
+  type: "Training"
+  category: "Educational Resources"
   image: training/hacksmarter.webp
   description: Security training and resources focused on practical hacking skills and career development.
   website: https://www.hacksmarter.org
 
 - title: Executive Offense
+  type: "Training"
+  category: "Educational Resources"
   image: training/executiveoffense.webp
   description: Advanced offensive security training and resources for security professionals.
   website: https://executiveoffense.beehiiv.com/
 
 - title: Red Team Leaders
+  type: "Training"
+  category: "Educational Resources"
   image: training/redteamleaders.webp
   description: Resources for red team professionals and offensive security practitioners. Contains detailed, technical content and most of the courses are free. Certifications are offered as well and most cost under $20.
   website: https://courses.redteamleaders.com
 
 - title: Hacking Hub
+  type: "Training"
+  category: "Hands-on Labs"
   image: training/hackinghub.webp
   description: Security training platform with hands-on labs and cybersecurity challenges.
   website: https://www.hackinghub.io
 
 - title: Pentest-Ground
+  type: "Training"
+  category: "Hands-on Labs"
   image: training/pentest-ground.webp
   description: A free playground with deployed vulnerable web applications and network services.
   website: https://www.pentest-ground.com
 
 - title: Websploit Labs
+  type: "Training"
+  category: "Hands-on Labs"
   image: training/websploit.webp
   description: A collection of vulnerable docker containers assembled by Omar Santos containing several labs including, OWASP Juice Shop and DVWA(Damn Vulnerable Web App).
   website: https://github.com/The-Art-of-Hacking/websploit

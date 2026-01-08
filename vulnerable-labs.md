@@ -13,31 +13,15 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
 </article>
 
 <!-- Category Filter Pills -->
-<div class="category-filters mb-4" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-  <button class="filter-pill active" data-category="all" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
-    All Labs
-  </button>
-  <button class="filter-pill" data-category="Web Applications" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
-    Web Applications
-  </button>
-  <button class="filter-pill" data-category="Cloud & Infrastructure" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
-    Cloud & Infrastructure
-  </button>
-  <button class="filter-pill" data-category="Enterprise & Active Directory" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
-    Enterprise & AD
-  </button>
-  <button class="filter-pill" data-category="API Security" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
-    API Security
-  </button>
-  <button class="filter-pill" data-category="Android Security" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
-    Android Security
-  </button>
-  <button class="filter-pill" data-category="CVE Collection" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
-    CVE Collection
-  </button>
-  <button class="filter-pill" data-category="Training Platform" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
-    Training Platform
-  </button>
+<div class="category-filters mb-4">
+  <button class="filter-pill active" data-category="all">All Labs</button>
+  <button class="filter-pill" data-category="Web Applications">Web Applications</button>
+  <button class="filter-pill" data-category="Cloud & Infrastructure">Cloud & Infrastructure</button>
+  <button class="filter-pill" data-category="Enterprise & Active Directory">Enterprise & AD</button>
+  <button class="filter-pill" data-category="API Security">API Security</button>
+  <button class="filter-pill" data-category="Android Security">Android Security</button>
+  <button class="filter-pill" data-category="CVE Collection">CVE Collection</button>
+  <button class="filter-pill" data-category="Training Platform">Training Platform</button>
 </div>
 
 <!-- Labs Grid -->
@@ -88,164 +72,19 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
 </div>
 
 <!-- No Results Message -->
-<div id="no-labs-results" class="no-results" style="display: none; text-align: center; padding: 3rem; color: var(--text-secondary);">
+<div id="no-labs-results" class="no-results" style="display: none;">
   <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No labs found</p>
   <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
 </div>
 
-<style>
-  /* Hide filtered cards */
-  .col-md-6.hidden,
-  .col-lg-4.hidden {
-    display: none !important;
-  }
-
-  /* Card hover effects */
-  .lab-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  }
-
-  /* Filter pill hover effects */
-  .filter-pill:hover {
-    border-color: var(--accent-green) !important;
-  }
-
-  .filter-pill.active {
-    background: var(--accent-green) !important;
-    color: #0a0e27 !important;
-    border-color: var(--accent-green) !important;
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .category-filters {
-      justify-content: center;
-    }
-
-    .filter-pill {
-      font-size: 0.8rem !important;
-      padding: 0.4rem 0.8rem !important;
-    }
-  }
-
-  /* Terminal-style accent for cybersecurity aesthetic */
-  .alert-warning strong {
-    font-family: 'Courier New', monospace;
-  }
-</style>
-
+<script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('labs-search');
-    const clearBtn = document.getElementById('labs-search-clear');
-    const labCards = document.querySelectorAll('.lab-card');
-    const labContainers = document.querySelectorAll('#labs-grid > div[data-category]');
-    const noResults = document.getElementById('no-labs-results');
-    const filterPills = document.querySelectorAll('.filter-pill');
-
-    let currentCategory = 'all';
-    let currentSearchQuery = '';
-
-    /**
-     * Performs combined search and filter operation
-     * Filters labs based on both category selection and search query
-     */
-    function performFilter() {
-      const query = currentSearchQuery.toLowerCase().trim();
-      let visibleCount = 0;
-
-      labContainers.forEach((container, index) => {
-        const card = labCards[index];
-        const category = container.getAttribute('data-category');
-        const title = card.querySelector('.card-title').textContent.toLowerCase();
-        const description = card.querySelector('.card-text').textContent.toLowerCase();
-        const focus = card.querySelector('.lab-focus').textContent.toLowerCase();
-        const type = card.querySelector('.lab-type-badge').textContent.toLowerCase();
-
-        // Check category filter
-        const categoryMatch = currentCategory === 'all' || category === currentCategory;
-
-        // Check search query (searches across title, description, focus, and type)
-        const searchMatch = query === '' ||
-                           title.includes(query) ||
-                           description.includes(query) ||
-                           focus.includes(query) ||
-                           type.includes(query) ||
-                           category.toLowerCase().includes(query);
-
-        // Show only if both category and search match
-        if (categoryMatch && searchMatch) {
-          container.classList.remove('hidden');
-          visibleCount++;
-        } else {
-          container.classList.add('hidden');
-        }
-      });
-
-      // Show/hide no results message
-      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-
-      // Update clear button visibility
-      if (clearBtn) {
-        clearBtn.style.display = query === '' ? 'none' : 'block';
-      }
-    }
-
-    /**
-     * Handle search input changes
-     */
-    searchInput.addEventListener('input', function() {
-      currentSearchQuery = this.value;
-      performFilter();
-    });
-
-    /**
-     * Handle search clear button
-     */
-    if (clearBtn) {
-      clearBtn.addEventListener('click', function() {
-        searchInput.value = '';
-        currentSearchQuery = '';
-        performFilter();
-        searchInput.focus();
-      });
-    }
-
-    /**
-     * Handle category filter pill clicks
-     */
-    filterPills.forEach(pill => {
-      pill.addEventListener('click', function() {
-        // Update active state
-        filterPills.forEach(p => p.classList.remove('active'));
-        this.classList.add('active');
-
-        // Update current category
-        currentCategory = this.getAttribute('data-category');
-
-        // Perform filter
-        performFilter();
-      });
-    });
-
-    /**
-     * Keyboard accessibility for filter pills
-     */
-    filterPills.forEach(pill => {
-      pill.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          this.click();
-        }
-      });
-
-      // Make pills keyboard focusable
-      pill.setAttribute('tabindex', '0');
-      pill.setAttribute('role', 'button');
-    });
-
-    // Initialize with all labs visible
-    performFilter();
+  initFilterSearch({
+    searchInputId: 'labs-search',
+    clearBtnId: 'labs-search-clear',
+    cardSelector: '.lab-card',
+    containerSelector: '#labs-grid > div[data-category]',
+    noResultsId: 'no-labs-results',
+    filterPillSelector: '.filter-pill'
   });
 </script>
