@@ -14,7 +14,7 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
 
 <!-- Category Filter Pills -->
 <div class="category-filters mb-4" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-  <button class="filter-pill active" data-category="all" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--accent-green); color: #0a0e27; cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
+  <button class="filter-pill active" data-category="all" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
     All Labs
   </button>
   <button class="filter-pill" data-category="Web Applications" style="padding: 0.5rem 1rem; border-radius: 20px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-primary); cursor: pointer; font-size: 0.9rem; transition: all 0.2s;">
