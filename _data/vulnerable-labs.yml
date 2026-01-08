@@ -46,7 +46,6 @@
   focus: Azure security and exploitation
   description: A vulnerable Azure infrastructure setup for learning Azure security, covering storage misconfigurations, identity issues, and cloud-native vulnerabilities.
   github: https://github.com/ine-labs/AzureGoat
-  website: https://github.com/ine-labs/AzureGoat
 
 - id: metasploitable3
   title: Metasploitable3
@@ -56,7 +55,6 @@
   focus: Enterprise server and Active Directory vulnerabilities
   description: Rapid7's third generation vulnerable VM supporting Windows and Ubuntu, designed for testing Metasploit and practicing enterprise penetration testing.
   github: https://github.com/rapid7/metasploitable3
-  website: https://github.com/rapid7/metasploitable3
 
 - id: vulnerable-ad
   title: Vulnerable-AD
@@ -66,7 +64,6 @@
   focus: Active Directory security and exploitation
   description: A fully configured Active Directory lab with multiple vulnerabilities including Kerberoasting, credential dumping, lateral movement, and domain privilege escalation paths.
   github: https://github.com/WazeHell/vulnerable-AD
-  website: https://github.com/WazeHell/vulnerable-AD
 
 - id: detectionlab
   title: DetectionLab
@@ -96,7 +93,6 @@
   focus: React/TypeScript application security
   description: A modern vulnerable web application built with React and TypeScript, featuring API security issues, authentication flaws, and client-side vulnerabilities.
   github: https://github.com/NeuraLegion/brokencrystals
-  website: https://github.com/NeuraLegion/brokencrystals
 
 - id: dvna
   title: DVNA
@@ -106,7 +102,6 @@
   focus: Node.js security vulnerabilities
   description: Damn Vulnerable NodeJS Application demonstrating OWASP Top 10 vulnerabilities in Node.js applications with a focus on backend security issues.
   github: https://github.com/appsecco/dvna
-  website: https://github.com/appsecco/dvna
 
 - id: webgoat
   title: OWASP WebGoat
@@ -126,7 +121,6 @@
   focus: Node.js/Express security
   description: OWASP NodeGoat project teaching the OWASP Top 10 security risks in the context of Node.js and MongoDB applications with hands-on tutorials.
   github: https://github.com/OWASP/NodeGoat
-  website: https://github.com/OWASP/NodeGoat
 
 - id: tiredful-api
   title: Tiredful API
@@ -136,7 +130,6 @@
   focus: REST API vulnerabilities
   description: A vulnerable REST API for learning about API security issues including broken authentication, excessive data exposure, and injection vulnerabilities.
   github: https://github.com/payatu/Tiredful-API
-  website: https://github.com/payatu/Tiredful-API
 
 - id: pixi
   title: Pixi
@@ -146,7 +139,6 @@
   focus: MEAN stack and microservices security
   description: A vulnerable photo sharing application built with the MEAN stack, demonstrating API security issues and microservices vulnerabilities.
   github: https://github.com/DevSlop/Pixi
-  website: https://github.com/DevSlop/Pixi
 
 - id: vulhub
   title: Vulhub
@@ -166,7 +158,6 @@
   focus: AWS Lambda and serverless security
   description: Damn Vulnerable Serverless Application demonstrating serverless-specific vulnerabilities in AWS Lambda, API Gateway, DynamoDB, and other serverless services.
   github: https://github.com/OWASP/DVSA
-  website: https://github.com/OWASP/DVSA
 
 - id: security-shepherd
   title: OWASP Security Shepherd
@@ -186,7 +177,6 @@
   focus: API security vulnerabilities and OWASP API Top 10
   description: Vulnerable API made with Flask to practice API security testing covering OWASP API Security Top 10 vulnerabilities with a simple bookstore API.
   github: https://github.com/erev0s/VAmPI
-  website: https://github.com/erev0s/VAmPI
 
 - id: vulnerableapp4apisecurity
   title: VulnerableApp4APISecurity
@@ -196,7 +186,6 @@
   focus: REST API vulnerabilities and testing
   description: A vulnerable REST API application designed to help security testers practice API penetration testing with multiple vulnerability categories.
   github: https://github.com/SasanLabs/VulnerableApp-facade
-  website: https://github.com/SasanLabs/VulnerableApp-facade
 
 - id: crapi
   title: crAPI
@@ -216,7 +205,6 @@
   focus: WebSocket security vulnerabilities
   description: Damn Vulnerable Web Sockets Node demonstrating WebSocket security issues including authentication bypass, XSS, and command injection via WebSockets.
   github: https://github.com/interference-security/DVWS-node
-  website: https://github.com/interference-security/DVWS-node
 
 - id: vapi
   title: vAPI
@@ -226,7 +214,6 @@
   focus: API security testing and OWASP API Top 10
   description: Vulnerable Adversely Programmed Interface with realistic scenarios based on OWASP API Security Top 10 for practicing API penetration testing.
   github: https://github.com/roottusk/vapi
-  website: https://github.com/roottusk/vapi
 
 - id: goad
   title: Game of Active Directory
@@ -236,7 +223,6 @@
   focus: Active Directory attack and defense techniques
   description: A fully automated AD lab deployment with multiple domains and forests, featuring 150+ attack paths for advanced AD security training.
   github: https://github.com/Orange-Cyberdefense/GOAD
-  website: https://github.com/Orange-Cyberdefense/GOAD
 
 - id: vulnerable-mobile-apps
   title: Vulnerable Mobile Apps for Penetration Testing
@@ -266,7 +252,6 @@
   focus: OWASP Mobile Top 10 vulnerabilities
   description: Comprehensive vulnerable Android application covering all OWASP Mobile Top 10 vulnerabilities with 14 different security challenges for mobile penetration testing practice.
   github: https://github.com/t0thkr1s/allsafe
-  website: https://github.com/t0thkr1s/allsafe
 
 - id: damn-vulnerable-bank
   title: Damn Vulnerable Bank
@@ -276,7 +261,6 @@
   focus: Mobile banking security and API vulnerabilities
   description: Intentionally vulnerable Android banking application with backend API demonstrating mobile-specific vulnerabilities and backend API security issues for financial applications.
   github: https://github.com/rewanthtammana/Damn-Vulnerable-Bank
-  website: https://github.com/rewanthtammana/Damn-Vulnerable-Bank
 
 - id: vulnerable-android-app
   title: Vulnerable Android Application
@@ -286,4 +270,3 @@
   focus: Android security fundamentals and exploitation
   description: Educational vulnerable Android app covering basic to advanced Android security concepts including reversing, runtime manipulation, and common mobile vulnerabilities.
   github: https://github.com/Lance0312/VulnerableAndroidAppOracle
-  website: https://github.com/Lance0312/VulnerableAndroidAppOracle
