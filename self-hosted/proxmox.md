@@ -21,4 +21,4 @@ Proxmox VE is a complete open-source platform for enterprise virtualization that
 
 ## Why I Use It
 
-This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use. Proxmox is the foundation of my entire home lab infrastructure.
+This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use. Proxmox is the foundation of my entire homelab infrastructure.

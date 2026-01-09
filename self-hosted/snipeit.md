@@ -22,7 +22,7 @@ Snipe-IT is a free, open-source IT asset management system that helps track hard
 
 ## Why I Use It
 
-Snipe-IT keeps track of all my hardware and software assets in one place. It's especially useful for managing equipment across my home lab and knowing what's deployed where.
+Snipe-IT keeps track of all my hardware and software assets in one place. It's especially useful for managing equipment across my homelab and knowing what's deployed where.
 
 ## Installation Notes
 

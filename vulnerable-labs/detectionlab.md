@@ -29,7 +29,7 @@ Unlike purely offensive labs, DetectionLab focuses on the defensive side, provid
 - **Elastic Stack**: Alternative SIEM option
 - **Sysmon**: Advanced system monitoring
 - **osquery**: Endpoint visibility
-- **Zeek (Bro)**: Network security monitoring
+- **Zeek**: Network security monitoring
 - **Suricata**: IDS/IPS
 - **Velociraptor**: Endpoint visibility and hunting
 

@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Self-Hosted Applications
-description: Self-hosted applications and services used by James Wells in his home lab.
+description: Self-hosted applications and services used by James Wells in his homelab.
 ---
 
 # Self-Hosted Applications
 
 {% include search-box.html id="selfhosted-search" placeholder="Search self-hosted apps..." %}
 
-This page showcases some of my favorite self-hosted applications that I use in my home lab. These tools help me manage infrastructure, learn new technologies, and maintain my homelab environment.
+This page showcases some of my favorite self-hosted applications that I use in my homelab. These tools help me manage infrastructure, learn new technologies, and maintain my homelab environment.
 
 <article>
   <h4>Why Self-Host?</h4>

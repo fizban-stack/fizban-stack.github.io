@@ -10,7 +10,7 @@ github: https://github.com/juice-shop/juice-shop
 website: https://owasp.org/www-project-juice-shop/
 ---
 
-OWASP Juice Shop is probably the most modern and sophisticated insecure web application available for security training. It's a fully functional e-commerce application built with modern technologies that contains a wide variety of security vulnerabilities.
+OWASP Juice Shop is one of the most modern and sophisticated insecure web applications available for security training. It's a fully functional e-commerce application built with modern technologies that contains a wide variety of security vulnerabilities.
 
 ## Overview
 

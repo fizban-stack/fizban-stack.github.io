@@ -19,4 +19,4 @@ Booklore is a modern ebook management system that allows you to organize, manage
 
 ## Why I Use It
 
-Having a centralized location for all my technical documentation and ebooks makes it easy to access reference materials from any device in my home lab.
+Having a centralized location for all my technical documentation and ebooks makes it easy to access reference materials from any device in my homelab.
