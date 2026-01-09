@@ -16,7 +16,7 @@ description: Free cybersecurity training sites and resources curated by James We
         <p class="card-text">{{ training.description }}</p>
         <div class="mt-auto">
           {% if training.website %}
-          <a href="{{ training.website }}" target="_blank" class="btn btn-dark">Visit Website</a>
+          <a href="{{ training.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Visit Website</a>
           {% endif %}
         </div>
       </div>

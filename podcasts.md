@@ -16,7 +16,7 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
         <p class="card-text">{{ podcast.description }}</p>
         <div class="mt-auto">
           {% if podcast.website %}
-          <a href="{{ podcast.website }}" target="_blank" class="btn btn-dark">Visit Website</a>
+          <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Visit Website</a>
           {% endif %}
         </div>
       </div>

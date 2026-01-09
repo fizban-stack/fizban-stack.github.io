@@ -568,6 +568,47 @@ pre::before {
   color: var(--text-secondary);
 }
 
+/* Self-hosted page specific styles */
+.selfhosted-breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.selfhosted-header {
+  margin-bottom: 2rem;
+}
+
+.selfhosted-title {
+  margin-bottom: 0.5rem;
+}
+
+.selfhosted-subtitle {
+  color: var(--accent-cyan);
+  margin-bottom: 1.5rem;
+}
+
+.selfhosted-image-container {
+  margin-bottom: 2rem;
+}
+
+.selfhosted-image {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.selfhosted-back-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.selfhosted-subtitle-text {
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
 /* Loading animation for images */
 img {
   animation: fadeIn 0.5s ease-in;

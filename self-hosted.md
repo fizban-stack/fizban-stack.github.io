@@ -22,14 +22,14 @@ This page showcases some of my favorite self-hosted applications that I use in m
       <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}">
       <div class="card-body d-flex flex-column">
         <h5 class="card-title">{{ app.title }}</h5>
-        <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0.75rem;">{{ app.subtitle }}</p>
+        <p class="text-muted selfhosted-subtitle-text">{{ app.subtitle }}</p>
         <p class="card-text">{{ app.description }}</p>
         <div class="mt-auto">
           <a href="{{ '/self-hosted/' | append: app.id | relative_url }}" class="btn btn-dark">Learn More</a>
           {% if app.github %}
-          <a href="{{ app.github }}" target="_blank" class="btn btn-outline-secondary ms-2">GitHub</a>
+          <a href="{{ app.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary ms-2">GitHub</a>
           {% elsif app.official %}
-          <a href="{{ app.official }}" target="_blank" class="btn btn-outline-secondary ms-2">Official Site</a>
+          <a href="{{ app.official }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary ms-2">Official Site</a>
           {% endif %}
         </div>
       </div>

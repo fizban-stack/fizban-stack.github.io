@@ -16,10 +16,10 @@ description: Explore the cybersecurity and homelab projects of James Wells.
         <p class="card-text">{{ project.description }}</p>
         <div class="mt-auto d-flex gap-2">
           {% if project.blog %}
-          <a href="{{ project.blog }}" target="_blank" class="btn btn-dark">Read Blog Post</a>
+          <a href="{{ project.blog }}" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Read Blog Post</a>
           {% endif %}
           {% if project.github %}
-          <a href="{{ project.github }}" target="_blank" class="btn btn-outline-secondary">View on GitHub</a>
+          <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">View on GitHub</a>
           {% endif %}
         </div>
       </div>
