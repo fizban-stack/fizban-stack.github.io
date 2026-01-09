@@ -597,16 +597,16 @@
   title: Pangolin
   subtitle: Laser Show Software
   image: self-hosted/pangolin.webp
-  description: Professional laser show control and design software.
-  official: https://pangolin.com
+  description: A security-focused self-hosted reverse proxy with built-in WireGuard support.
+  official: https://pangolin.net
   features:
-    - Laser show design
-    - Real-time control
-    - Timeline editing
-    - Effects library
-    - Multiple laser support
-    - DMX integration
-  why: Pangolin controls laser shows and effects for events. While specialized, it demonstrates the versatility of self-hosted solutions for creative projects.
+    - Automated SSL/TLS
+    - Wireguard Integration
+    - Access Control Lists
+    - Single Sign-On
+    - intuitive Dashboard
+    - Docker Native
+  why: Pangolin leverages WireGuard tunnels rather than just opening ports. It utilizes Traefik reverse proxy for quick routing.
 
 - id: paperlessngx
   type: "Self-Hosted"
