@@ -25,7 +25,7 @@ description: Explore the cybersecurity and homelab projects of James Wells.
 {% for project in site.data.projects %}
   <div class="col-md-6 col-lg-4" data-category="{{ project.category }}">
     <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="{{ '/assets/images/' | append: project.image | relative_url }}" class="card-img-top" alt="{{ project.title }}" style="height: 200px; object-fit: cover;">
+      <img src="{{ '/assets/images/' | append: project.image | relative_url }}" class="card-img-top" alt="{{ project.title }}" style="height: 200px; object-fit: cover;" loading="lazy">
       <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
         <h5 class="card-title">{{ project.title }}</h5>
         <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ project.description }}</p>

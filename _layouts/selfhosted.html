@@ -18,6 +18,30 @@
 
   <!-- Favicon -->
   <link rel="icon" href="{{ '/assets/images/icons/favicon.webp' | relative_url }}" type="image/webp">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description }}",
+    "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author.name }}",
+      "url": "{{ site.url }}{{ site.baseurl }}"
+    },
+    {% if page.image %}
+    "image": "{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.image }}",
+    {% endif %}
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' | default: '2024-01-01' }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    }
+  }
+  </script>
 </head>
 <body class="hacker-theme">
 
@@ -63,7 +87,7 @@
       <!-- Image -->
       {% if page.image %}
       <div style="margin-bottom: 2rem;">
-        <img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid" style="border-radius: 8px; border: 1px solid var(--border-color); width: 100%; max-height: 400px; object-fit: cover;">
+        <img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid" style="border-radius: 8px; border: 1px solid var(--border-color); width: 100%; max-height: 400px; object-fit: cover;" loading="lazy">
       </div>
       {% endif %}
 

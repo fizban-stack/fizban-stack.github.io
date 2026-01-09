@@ -6,7 +6,7 @@ description: Learn more about James Wells, a systems administrator, father, and 
 
 # James Wells
 
-<img src="{{ '/assets/images/resume.webp' | relative_url }}" alt="Headshot of James Wells" style="width: 200px; margin-bottom: 24px; border-radius: 8px;">
+<img src="{{ '/assets/images/resume.webp' | relative_url }}" alt="Headshot of James Wells" style="width: 200px; margin-bottom: 24px; border-radius: 8px;" loading="lazy">
 
 My name is James Wells. I am currently working at RBR Alliance in my first security job. The position, Information Technology Security Professional, was created after an incident and I am the first person to fill it. My responsibilities include managing two Microsoft 365 tenants and three Active Directory domains. My old position included maintaining, troubleshooting, and fixing all manner of devices, from phones to servers. My new position gives me responsibility for the security of the organization. My first projects are to create a centralized syslog server, upgrade older Cisco ASA firewalls to newer Cisco Meraki firewalls, and create a more comprehensive asset documentation, including create network maps and security documentation.
 

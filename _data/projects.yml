@@ -1,5 +1,4 @@
 - title: OPNsense
-  type: "Project"
   category: "Networking"
   image: self-hosted/opnsense.webp
   description: Open-source FreeBSD-based firewall and routing platform with advanced networking features, intrusion detection, and VPN capabilities. Provides enterprise-grade security and network management for my home lab.
@@ -7,7 +6,6 @@
   github: https://github.com/opnsense/core
 
 - title: Graylog
-  type: "Project"
   category: "Security"
   image: self-hosted/graylog.webp
   description: Open-source log management and SIEM platform for centralized log aggregation, analysis, and monitoring. Configured with custom extractors for Opnsense and network device syslog parsing.
@@ -15,7 +13,6 @@
   github: https://github.com/Graylog2/graylog2-server
 
 - title: Snipe-IT
-  type: "Project"
   category: "Infrastructure"
   image: self-hosted/snipeit.webp
   description: Open-source IT asset management system that helps track hardware, software licenses, accessories, and consumables across my home lab.
@@ -23,14 +20,12 @@
   github: https://github.com/snipe/snipe-it
 
 - title: Wireshark
-  type: "Project"
   category: "Security"
   image: icons/wireshark.webp
   description: Network protocol analyzer for packet inspection and troubleshooting. Essential for understanding network traffic.
   blog: /cybersecurity/2025/10/20/wireshark/
 
 - title: Wazuh
-  type: "Project"
   category: "Security"
   image: icons/wazuh.webp
   description: Open-Source SIEM and EDR solution. Provides a method of aggregating logs and managing configurations.
@@ -42,7 +37,6 @@
   blog: /homelab/2025/10/18/raspberry-pi-5/
 
 - title: Pwnagotchi aka Bobby
-  type: "Project"
   category: "Hardware"
   image: projects/pwnagotchi.webp
   description: Pwnagotchi is a wifi hacking tool created with a Raspberry Pi Zero 2W. My children came up with the name Bobby.
@@ -50,7 +44,6 @@
   github: https://github.com/evilsocket/pwnagotchi
 
 - title: Meshtastic Radios
-  type: "Project"
   category: "Hardware"
   image: projects/meshtastic.webp
   description: These radios use long range wireless communication (LoRa) to send messages between devices without using other services such as cellular or Wi-Fi.
@@ -58,34 +51,29 @@
   github: https://github.com/meshtastic
 
 - title: Kali Nethunter
-  type: "Project"
   category: "Security"
   image: projects/nethunter.webp
   description: This is a old phone that I rooted and installed Kali NetHunter on.
   blog: /cybersecurity/2025/12/30/nethunter/
 
 - title: Nvidia Jetson Orin Nano Super
-  type: "Project"
   category: "Hardware"
   image: projects/nvidia-jetson-orin-nano.webp
   description: This is a Jetson Orin Nano developer kit that I purchased to mess around with machine learning.
   blog: /cybersecurity/2026/01/05/jetson-orin-netflow-ml/
 
 - title: OMG Cable
-  type: "Project"
   category: "Hardware"
   image: projects/omg-cable.webp
   description: This is an OMG cable that I purchased to practice penetration testing.
   blog: /cybersecurity/2025/11/22/omg-cable/
 
 - title: Raspberry Pi Zero 2W
-  type: "Project"
   category: "Hardware"
   image: projects/raspberry-pi-zero2w.webp
   description: This is Raspberry Pi Zero 2W that I bought for a web server. I have also experimented with using it as a VPN gateway with a PoE hat.
 
 - title: Proxmox Virtual Environment
-  type: "Project"
   category: "Infrastructure"
   image: self-hosted/proxmox.webp
   description: This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use.

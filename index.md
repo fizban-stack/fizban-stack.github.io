@@ -7,7 +7,7 @@ description: The personal portfolio of James Wells, an aspiring cybersecurity pr
 <div class="container home_2col">
   <div class="row align-items-center">
     <div class="col-md-6">
-      <img src="{{ '/assets/images/resume.webp' | relative_url }}" class="rounded img-fluid d-block dibley" alt="Headshot of James Wells">
+      <img src="{{ '/assets/images/resume.webp' | relative_url }}" class="rounded img-fluid d-block dibley" alt="Headshot of James Wells" loading="lazy">
     </div>
     <div class="col-md-6">
       <h1>Welcome to my site.</h1>
