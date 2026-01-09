@@ -12,7 +12,7 @@ description: A comprehensive list of professional certifications held by James W
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompTIA">
-        <img src="{{ '/assets/images/icons/comptia.svg' | relative_url }}" alt="CompTIA" class="brand-logo me-2">
+        <img src="{{ '/assets/images/icons/comptia.svg' | relative_url }}" alt="CompTIA" class="brand-logo me-2" loading="lazy">
         CompTIA
         <span class="badge bg-secondary ms-2">10</span>
       </button>
@@ -39,7 +39,7 @@ description: A comprehensive list of professional certifications held by James W
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCisco">
-        <img src="{{ '/assets/images/icons/cisco.svg' | relative_url }}" alt="Cisco" class="brand-logo me-2">
+        <img src="{{ '/assets/images/icons/cisco.svg' | relative_url }}" alt="Cisco" class="brand-logo me-2" loading="lazy">
         Cisco
         <span class="badge bg-secondary ms-2">4</span>
       </button>
@@ -60,7 +60,7 @@ description: A comprehensive list of professional certifications held by James W
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMicrosoft">
-        <img src="{{ '/assets/images/icons/microsoft.svg' | relative_url }}" alt="Microsoft" class="brand-logo me-2">
+        <img src="{{ '/assets/images/icons/microsoft.svg' | relative_url }}" alt="Microsoft" class="brand-logo me-2" loading="lazy">
         Microsoft
         <span class="badge bg-secondary ms-2">3</span>
       </button>

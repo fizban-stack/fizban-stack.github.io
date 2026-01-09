@@ -1,0 +1,41 @@
+{% comment %}
+  Usage: {% include structured-data-itemlist.html list_name="Projects" items=site.data.projects item_type="SoftwareApplication" %}
+{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "{{ include.list_name }}",
+  "description": "{{ page.description | default: site.description }}",
+  "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "numberOfItems": {{ include.items.size }},
+  "itemListElement": [
+    {% for item in include.items %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "{{ include.item_type | default: 'Thing' }}",
+        "name": "{{ item.title }}",
+        "description": "{{ item.description | escape }}",
+        {% if item.image %}
+        "image": "{{ site.url }}{{ site.baseurl }}/assets/images/{{ item.image }}",
+        {% endif %}
+        {% if item.github %}
+        "codeRepository": "{{ item.github }}",
+        {% endif %}
+        {% if item.website %}
+        "url": "{{ item.website }}",
+        {% elsif item.official %}
+        "url": "{{ item.official }}",
+        {% elsif item.blog %}
+        "url": "{{ item.blog }}",
+        {% elsif item.id and page.url contains '/self-hosted' %}
+        "url": "{{ site.url }}{{ site.baseurl }}/self-hosted/{{ item.id }}"
+        {% endif %}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

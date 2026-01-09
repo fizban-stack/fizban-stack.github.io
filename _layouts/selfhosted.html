@@ -42,7 +42,7 @@
         <!-- Image -->
         {% if page.image %}
         <div class="selfhosted-image-container">
-          <img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid selfhosted-image">
+          <img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid selfhosted-image" loading="lazy">
         </div>
         {% endif %}
 

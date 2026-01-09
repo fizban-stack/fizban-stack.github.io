@@ -20,4 +20,13 @@
   {% if page.extra_css %}
   <link href="{{ page.extra_css | relative_url }}" rel="stylesheet">
   {% endif %}
+
+  <!-- Structured Data -->
+  {% include structured-data-person.html %}
+  {% include structured-data-website.html %}
+  {% if page.layout == 'selfhosted' %}
+  {% include structured-data-article.html %}
+  {% else %}
+  {% include structured-data-webpage.html %}
+  {% endif %}
 </head>

@@ -1,0 +1,30 @@
+{% comment %}
+  Usage: For self-hosted app detail pages
+{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description }}",
+  "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}{{ site.baseurl }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  },
+  {% if page.image %}
+  "image": "{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.image }}",
+  {% endif %}
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' | default: '2024-01-01' }}",
+  "dateModified": "{{ page.last_modified_at | date: '%Y-%m-%d' | default: page.date | date: '%Y-%m-%d' | default: '2024-01-01' }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+  }
+}
+</script>

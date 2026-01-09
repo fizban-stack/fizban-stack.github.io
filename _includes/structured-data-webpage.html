@@ -1,0 +1,21 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{ page.title | default: site.title }}",
+  "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "description": "{{ page.description | default: site.description }}",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}{{ site.baseurl }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  },
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' | default: '2024-01-01' }}",
+  "dateModified": "{{ page.last_modified_at | date: '%Y-%m-%d' | default: page.date | date: '%Y-%m-%d' | default: '2024-01-01' }}"
+}
+</script>

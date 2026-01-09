@@ -6,11 +6,13 @@ description: Explore the cybersecurity and homelab projects of James Wells.
 
 # Projects
 
+{% include structured-data-itemlist.html list_name="Projects" items=site.data.projects item_type="SoftwareApplication" %}
+
 <div class="row g-4">
 {% for project in site.data.projects %}
   <div class="col-md-6 col-lg-4">
     <div class="card project-card h-100 d-flex flex-column">
-      <img src="{{ '/assets/images/' | append: project.image | relative_url }}" class="card-img-top" alt="{{ project.title }}">
+      <img src="{{ '/assets/images/' | append: project.image | relative_url }}" class="card-img-top" alt="{{ project.title }}" loading="lazy">
       <div class="card-body d-flex flex-column">
         <h5 class="card-title">{{ project.title }}</h5>
         <p class="card-text">{{ project.description }}</p>

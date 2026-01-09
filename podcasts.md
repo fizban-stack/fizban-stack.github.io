@@ -6,11 +6,13 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
 
 # Recommended Podcasts
 
+{% include structured-data-itemlist.html list_name="Recommended Podcasts" items=site.data.podcasts item_type="PodcastSeries" %}
+
 <div class="row g-4">
 {% for podcast in site.data.podcasts %}
   <div class="col-md-6 col-lg-4">
     <div class="card project-card h-100 d-flex flex-column">
-      <img src="{{ '/assets/images/' | append: podcast.image | relative_url }}" class="card-img-top" alt="{{ podcast.title }}">
+      <img src="{{ '/assets/images/' | append: podcast.image | relative_url }}" class="card-img-top" alt="{{ podcast.title }}" loading="lazy">
       <div class="card-body d-flex flex-column">
         <h5 class="card-title">{{ podcast.title }}</h5>
         <p class="card-text">{{ podcast.description }}</p>

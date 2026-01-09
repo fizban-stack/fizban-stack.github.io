@@ -15,11 +15,13 @@ This page showcases some of my favorite self-hosted applications that I use in m
 
 
 
+{% include structured-data-itemlist.html list_name="Self-Hosted Applications" items=site.data.selfhosted item_type="SoftwareApplication" %}
+
 <div class="row g-4 mt-4">
 {% for app in site.data.selfhosted %}
   <div class="col-md-6 col-lg-4">
     <div class="card project-card h-100 d-flex flex-column">
-      <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}">
+      <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}" loading="lazy">
       <div class="card-body d-flex flex-column">
         <h5 class="card-title">{{ app.title }}</h5>
         <p class="text-muted selfhosted-subtitle-text">{{ app.subtitle }}</p>
