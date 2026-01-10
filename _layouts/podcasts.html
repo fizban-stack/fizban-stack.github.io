@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="author" content="{{ site.author.name }}">
+
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.tagline }}{% endif %}</title>
+
+  {% seo %}
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ '/assets/images/icons/favicon.webp' | relative_url }}" type="image/webp">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description }}",
+    "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author.name }}",
+      "url": "{{ site.url }}{{ site.baseurl }}"
+    },
+    {% if page.image %}
+    "image": "{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.image }}",
+    {% endif %}
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' | default: '2024-01-01' }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+    }
+  }
+  </script>
+</head>
+<body class="hacker-theme">
+
+  {% include navbar.html %}
+
+  <main role="main" class="container-fluid main-content">
+    <article class="selfhosted-page">
+      <!-- Back to Podcasts at top -->
+      <nav class="page-nav-top">
+        <a href="{{ '/podcasts' | relative_url }}" class="back-to-selfhosted">← Back to Podcasts</a>
+      </nav>
+
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" style="margin-bottom: 2rem;">
+        <ol class="breadcrumb" style="background: var(--bg-secondary); padding: 0.75rem 1rem; border-radius: 4px;">
+          <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li class="breadcrumb-item"><a href="{{ '/podcasts' | relative_url }}">Podcasts</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+        </ol>
+      </nav>
+
+      <!-- Header -->
+      <div style="margin-bottom: 2rem;">
+        <h1 style="margin-bottom: 0.5rem;">{{ page.title }}</h1>
+        <p class="lead" style="color: var(--accent-cyan); margin-bottom: 1.5rem;">{{ page.subtitle }}</p>
+
+        <!-- Links -->
+        <div class="d-flex gap-2 flex-wrap">
+          {% if page.website %}
+          <a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Visit Website</a>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Image -->
+      {% if page.image %}
+      <div style="margin-bottom: 2rem;">
+        <img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid" style="border-radius: 8px; border: 1px solid var(--border-color); width: 100%; max-height: 400px; object-fit: cover;" loading="lazy">
+      </div>
+      {% endif %}
+
+      <!-- Content -->
+      <div class="page-content">
+        {{ content }}
+      </div>
+
+      <!-- Back button at bottom -->
+      <footer class="page-footer">
+        <a href="{{ '/podcasts' | relative_url }}" class="back-to-selfhosted">← Back to Podcasts</a>
+      </footer>
+
+    </article>
+  </main>
+
+  {% include footer.html %}
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

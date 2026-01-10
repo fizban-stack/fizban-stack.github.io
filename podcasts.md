@@ -34,9 +34,10 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
           <strong>Category:</strong> {{ podcast.category }}
         </div>
 
-        <div class="mt-auto">
+        <div class="mt-auto d-flex gap-2" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="{{ '/podcasts/' | append: podcast.id | relative_url }}" class="btn btn-dark" style="flex: 1 1 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Learn More</a>
           {% if podcast.website %}
-          <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-dark" style="width: 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem;">Visit Website</a>
+          <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Visit Website</a>
           {% endif %}
         </div>
       </div>
