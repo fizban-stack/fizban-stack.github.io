@@ -24,20 +24,20 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
 <div class="row g-4" id="podcasts-grid">
 {% for podcast in site.data.podcasts %}
   <div class="col-md-6 col-lg-4" data-category="{{ podcast.category }}">
-    <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="{{ '/assets/images/' | append: podcast.image | relative_url }}" class="card-img-top" alt="{{ podcast.title }}" style="height: 200px; object-fit: cover;" loading="lazy">
-      <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
+    <div class="card project-card h-100 d-flex flex-column">
+      <img src="{{ '/assets/images/' | append: podcast.image | relative_url }}" class="card-img-top" alt="{{ podcast.title }}" loading="lazy">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title">{{ podcast.title }}</h5>
-        <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ podcast.description }}</p>
+        <p class="card-text flex-grow-1">{{ podcast.description }}</p>
 
-        <div class="podcast-category" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
+        <div class="podcast-category">
           <strong>Category:</strong> {{ podcast.category }}
         </div>
 
-        <div class="mt-auto d-flex gap-2" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          <a href="{{ '/podcasts/' | append: podcast.id | relative_url }}" class="btn btn-dark" style="flex: 1 1 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Learn More</a>
+        <div class="mt-auto d-flex gap-2 flex-wrap">
+          <a href="{{ '/podcasts/' | append: podcast.id | relative_url }}" class="btn btn-dark flex-fill">Learn More</a>
           {% if podcast.website %}
-          <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Visit Website</a>
+          <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary flex-fill">Visit Website</a>
           {% endif %}
         </div>
       </div>
@@ -46,9 +46,9 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
 {% endfor %}
 </div>
 
-<div id="no-podcasts-results" class="no-results" style="display: none;">
-  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No podcasts found</p>
-  <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
+<div id="no-podcasts-results" class="no-results">
+  <p class="fs-5 mb-2">No podcasts found</p>
+  <p class="small">Try adjusting your search or filter criteria</p>
 </div>
 
 <script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>

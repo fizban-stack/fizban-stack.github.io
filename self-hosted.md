@@ -29,23 +29,23 @@ This page showcases some of my favorite self-hosted applications that I use in m
 <div class="row g-4 mt-4" id="selfhosted-grid">
 {% for app in site.data.selfhosted %}
   <div class="col-md-6 col-lg-4" data-category="{{ app.category }}">
-    <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}" style="height: 200px; object-fit: cover;" loading="lazy">
-      <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
+    <div class="card project-card h-100 d-flex flex-column">
+      <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}" loading="lazy">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title">{{ app.title }}</h5>
-        <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0.75rem;">{{ app.subtitle }}</p>
-        <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ app.description }}</p>
+        <p class="text-muted small mb-3">{{ app.subtitle }}</p>
+        <p class="card-text flex-grow-1">{{ app.description }}</p>
 
-        <div class="app-category" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
+        <div class="app-category">
           <strong>Category:</strong> {{ app.category }}
         </div>
 
-        <div class="mt-auto d-flex gap-2" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          <a href="{{ '/self-hosted/' | append: app.id | relative_url }}" class="btn btn-dark" style="flex: 1 1 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Learn More</a>
+        <div class="mt-auto d-flex gap-2 flex-wrap">
+          <a href="{{ '/self-hosted/' | append: app.id | relative_url }}" class="btn btn-dark flex-fill">Learn More</a>
           {% if app.github %}
-          <a href="{{ app.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">GitHub</a>
+          <a href="{{ app.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary flex-fill">GitHub</a>
           {% elsif app.official %}
-          <a href="{{ app.official }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Official Site</a>
+          <a href="{{ app.official }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary flex-fill">Official Site</a>
           {% endif %}
         </div>
       </div>
@@ -54,9 +54,9 @@ This page showcases some of my favorite self-hosted applications that I use in m
 {% endfor %}
 </div>
 
-<div id="no-selfhosted-results" class="no-results" style="display: none;">
-  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No applications found</p>
-  <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
+<div id="no-selfhosted-results" class="no-results">
+  <p class="fs-5 mb-2">No applications found</p>
+  <p class="small">Try adjusting your search or filter criteria</p>
 </div>
 
 <script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>

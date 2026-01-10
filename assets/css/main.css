@@ -13,6 +13,7 @@
   --bg-tertiary: #1e2541;
   --text-primary: #e0e0e0;
   --text-secondary: #a0aec0;
+  --text-tertiary: #718096;
   --accent-green: #00ff41;
   --accent-cyan: #00d9ff;
   --accent-red: #ff0040;
@@ -1067,4 +1068,171 @@ img {
     flex: 1 1 calc(50% - 0.5rem);
     text-align: center;
   }
+}
+
+/* ============================================
+   Detail Page Styles (Unified for all collections)
+   ============================================ */
+
+.detail-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-nav-top {
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--accent-green);
+  text-decoration: underline;
+}
+
+.page-breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.page-breadcrumb .breadcrumb {
+  background: var(--bg-secondary);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.page-header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header-title h1 {
+  margin: 0;
+  flex: 1;
+}
+
+.lab-type-badge {
+  background: var(--accent-green);
+  color: #0a0e27;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.page-lead {
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.page-meta {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.page-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.page-image {
+  margin-bottom: 2rem;
+}
+
+.page-image img {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.page-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Card Styles for collection index pages */
+.lab-card,
+.project-card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lab-card:hover,
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 255, 65, 0.2);
+}
+
+.lab-card .card-img-top,
+.project-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.lab-card .card-body,
+.project-card .card-body {
+  padding: 1.5rem;
+}
+
+.lab-focus,
+.app-category,
+.lab-category,
+.training-category,
+.podcast-category {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.lab-focus {
+  color: var(--accent-green);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  border-top: none;
+  padding-top: 0;
+}
+
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+}
+
+.no-results.show {
+  display: block;
+}
+
+/* Card text styling */
+.card-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
