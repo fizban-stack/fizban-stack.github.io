@@ -24,28 +24,23 @@ description: Free cybersecurity training sites and resources curated by James We
   <button class="filter-pill" data-category="Write-ups & Guides">Write-ups</button>
 </div>
 
-<div class="row g-4" id="training-grid">
+<div class="posts-grid" id="training-grid">
 {% for training in site.data.training %}
-  <div class="col-md-6 col-lg-4" data-category="{{ training.category }}">
-    <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="{{ '/assets/images/' | append: training.image | relative_url }}" class="card-img-top" alt="{{ training.title }}" style="height: 200px; object-fit: cover;" loading="lazy">
-      <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
-        <h5 class="card-title">{{ training.title }}</h5>
-        <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ training.description }}</p>
-
-        <div class="training-category" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
-          <strong>Category:</strong> {{ training.category }}
-        </div>
-
-        <div class="mt-auto d-flex gap-2" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          <a href="{{ '/training/' | append: training.id | relative_url }}" class="btn btn-dark" style="flex: 1 1 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Learn More</a>
-          {% if training.website %}
-          <a href="{{ training.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Visit Website</a>
-          {% endif %}
-        </div>
-      </div>
+  <article class="post-preview" data-category="{{ training.category }}">
+    <h3>
+      <a href="{{ '/training/' | append: training.id | relative_url }}">{{ training.title }}</a>
+    </h3>
+    <div class="post-meta">
+      <span class="post-category">{{ training.category }}</span>
     </div>
-  </div>
+    <p class="post-excerpt">{{ training.description }}</p>
+    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+      <a href="{{ '/training/' | append: training.id | relative_url }}" class="read-more">Learn More →</a>
+      {% if training.website %}
+      <a href="{{ training.website }}" target="_blank" rel="noopener noreferrer" class="read-more">Visit Website →</a>
+      {% endif %}
+    </div>
+  </article>
 {% endfor %}
 </div>
 
@@ -59,8 +54,8 @@ description: Free cybersecurity training sites and resources curated by James We
   initFilterSearch({
     searchInputId: 'training-search',
     clearBtnId: 'training-search-clear',
-    cardSelector: '.project-card',
-    containerSelector: '#training-grid > div[data-category]',
+    cardSelector: '.post-preview',
+    containerSelector: '#training-grid > .post-preview[data-category]',
     noResultsId: 'no-training-results',
     filterPillSelector: '.filter-pill'
   });

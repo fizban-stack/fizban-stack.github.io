@@ -21,30 +21,25 @@ description: Explore the cybersecurity and homelab projects of James Wells.
   <button class="filter-pill" data-category="Hardware">Hardware</button>
 </div>
 
-<div class="row g-4" id="projects-grid">
+<div class="posts-grid" id="projects-grid">
 {% for project in site.data.projects %}
-  <div class="col-md-6 col-lg-4" data-category="{{ project.category }}">
-    <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="{{ '/assets/images/' | append: project.image | relative_url }}" class="card-img-top" alt="{{ project.title }}" style="height: 200px; object-fit: cover;" loading="lazy">
-      <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
-        <h5 class="card-title">{{ project.title }}</h5>
-        <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ project.description }}</p>
-
-        <div class="project-category" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
-          <strong>Category:</strong> {{ project.category }}
-        </div>
-
-        <div class="mt-auto d-flex gap-2" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          {% if project.blog %}
-          <a href="{{ project.blog }}" target="_blank" rel="noopener noreferrer" class="btn btn-dark" style="flex: 1 1 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">Read Blog Post</a>
-          {% endif %}
-          {% if project.github %}
-          <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">View on GitHub</a>
-          {% endif %}
-        </div>
-      </div>
+  <article class="post-preview" data-category="{{ project.category }}">
+    <h3>
+      <a href="{% if project.blog %}{{ project.blog }}{% else %}#{% endif %}">{{ project.title }}</a>
+    </h3>
+    <div class="post-meta">
+      <span class="post-category">{{ project.category }}</span>
     </div>
-  </div>
+    <p class="post-excerpt">{{ project.description }}</p>
+    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+      {% if project.blog %}
+      <a href="{{ project.blog }}" target="_blank" rel="noopener noreferrer" class="read-more">Read Blog Post →</a>
+      {% endif %}
+      {% if project.github %}
+      <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer" class="read-more">View on GitHub →</a>
+      {% endif %}
+    </div>
+  </article>
 {% endfor %}
 </div>
 
@@ -58,8 +53,8 @@ description: Explore the cybersecurity and homelab projects of James Wells.
   initFilterSearch({
     searchInputId: 'projects-search',
     clearBtnId: 'projects-search-clear',
-    cardSelector: '.project-card',
-    containerSelector: '#projects-grid > div[data-category]',
+    cardSelector: '.post-preview',
+    containerSelector: '#projects-grid > .post-preview[data-category]',
     noResultsId: 'no-projects-results',
     filterPillSelector: '.filter-pill'
   });

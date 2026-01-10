@@ -25,49 +25,30 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
 </div>
 
 <!-- Labs Grid -->
-<div class="row g-4" id="labs-grid">
+<div class="posts-grid" id="labs-grid">
 {% for lab in site.data.vulnerable-labs %}
-  <div class="col-md-6 col-lg-4" data-category="{{ lab.category }}">
-    <div class="card lab-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="{{ '/assets/images/' | append: lab.image | relative_url }}" class="card-img-top" alt="{{ lab.title }}" style="height: 200px; object-fit: cover;">
-      <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
-        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem;">
-          <h5 class="card-title" style="margin: 0; flex: 1;">{{ lab.title }}</h5>
-          <span class="lab-type-badge" style="background: var(--accent-green); color: #0a0e27; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; margin-left: 0.5rem;">
-            {{ lab.type }}
-          </span>
-        </div>
-
-        <div class="lab-focus" style="color: var(--accent-green); font-size: 0.85rem; font-weight: 500; margin-bottom: 0.75rem;">
-          {{ lab.focus }}
-        </div>
-
-        <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">
-          {{ lab.description }}
-        </p>
-
-        <div class="lab-category" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color);">
-          <strong>Category:</strong> {{ lab.category }}
-        </div>
-
-        <div class="mt-auto d-flex gap-2" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          <a href="{{ '/vulnerable-labs/' | append: lab.id | relative_url }}" class="btn btn-dark" style="flex: 1 1 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">
-            Learn More
-          </a>
-          {% if lab.github %}
-          <a href="{{ lab.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">
-            GitHub
-          </a>
-          {% endif %}
-          {% if lab.website %}
-          <a href="{{ lab.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="flex: 1; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; min-width: fit-content;">
-            Website
-          </a>
-          {% endif %}
-        </div>
-      </div>
+  <article class="post-preview" data-category="{{ lab.category }}">
+    <h3>
+      <a href="{{ '/vulnerable-labs/' | append: lab.id | relative_url }}">{{ lab.title }}</a>
+    </h3>
+    <div class="post-meta">
+      <span class="lab-type-badge">{{ lab.type }}</span>
+      <span class="post-category">{{ lab.category }}</span>
     </div>
-  </div>
+    {% if lab.focus %}
+    <p style="color: var(--accent-green); font-size: 0.9rem; font-weight: 500; margin-bottom: 0.5rem;">{{ lab.focus }}</p>
+    {% endif %}
+    <p class="post-excerpt">{{ lab.description }}</p>
+    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+      <a href="{{ '/vulnerable-labs/' | append: lab.id | relative_url }}" class="read-more">Learn More →</a>
+      {% if lab.github %}
+      <a href="{{ lab.github }}" target="_blank" rel="noopener noreferrer" class="read-more">GitHub →</a>
+      {% endif %}
+      {% if lab.website %}
+      <a href="{{ lab.website }}" target="_blank" rel="noopener noreferrer" class="read-more">Website →</a>
+      {% endif %}
+    </div>
+  </article>
 {% endfor %}
 </div>
 
@@ -82,8 +63,8 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
   initFilterSearch({
     searchInputId: 'labs-search',
     clearBtnId: 'labs-search-clear',
-    cardSelector: '.lab-card',
-    containerSelector: '#labs-grid > div[data-category]',
+    cardSelector: '.post-preview',
+    containerSelector: '#labs-grid > .post-preview[data-category]',
     noResultsId: 'no-labs-results',
     filterPillSelector: '.filter-pill'
   });
