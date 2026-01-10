@@ -13,7 +13,7 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
 </article>
 
 <!-- Category Filter Pills -->
-<div class="category-filters mb-4">
+<div class="category-filters">
   <button class="filter-pill active" data-category="all">All Labs</button>
   <button class="filter-pill" data-category="Web Applications">Web Applications</button>
   <button class="filter-pill" data-category="Cloud & Infrastructure">Cloud & Infrastructure</button>
@@ -31,41 +31,21 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
     <h3>
       <a href="{{ '/vulnerable-labs/' | append: lab.id | relative_url }}">{{ lab.title }}</a>
     </h3>
-    <div class="post-meta">
-      <span class="lab-type-badge">{{ lab.type }}</span>
-      <span class="post-category">{{ lab.category }}</span>
-    </div>
     {% if lab.focus %}
-    <p style="color: var(--accent-green); font-size: 0.9rem; font-weight: 500; margin-bottom: 0.5rem;">{{ lab.focus }}</p>
+    <p class="card-focus">{{ lab.focus }}</p>
     {% endif %}
     <p class="post-excerpt">{{ lab.description }}</p>
-    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-      <a href="{{ '/vulnerable-labs/' | append: lab.id | relative_url }}" class="read-more">Learn More →</a>
-      {% if lab.github %}
-      <a href="{{ lab.github }}" target="_blank" rel="noopener noreferrer" class="read-more">GitHub →</a>
-      {% endif %}
-      {% if lab.website %}
-      <a href="{{ lab.website }}" target="_blank" rel="noopener noreferrer" class="read-more">Website →</a>
-      {% endif %}
-    </div>
+    <a href="{{ '/vulnerable-labs/' | append: lab.id | relative_url }}" class="read-more">Learn More →</a>
+    {% if lab.github %}
+    <a href="{{ lab.github }}" target="_blank" rel="noopener noreferrer" class="read-more" class="read-more secondary-link">GitHub →</a>
+    {% endif %}
+    {% if lab.website %}
+    <a href="{{ lab.website }}" target="_blank" rel="noopener noreferrer" class="read-more" class="read-more secondary-link">Website →</a>
+    {% endif %}
   </article>
 {% endfor %}
 </div>
 
-<!-- No Results Message -->
-<div id="no-labs-results" class="no-results" style="display: none;">
-  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No labs found</p>
-  <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
-</div>
+{% include no-results.html id="no-labs-results" message="No labs found" %}
 
-<script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>
-<script>
-  initFilterSearch({
-    searchInputId: 'labs-search',
-    clearBtnId: 'labs-search-clear',
-    cardSelector: '.post-preview',
-    containerSelector: '#labs-grid > .post-preview[data-category]',
-    noResultsId: 'no-labs-results',
-    filterPillSelector: '.filter-pill'
-  });
-</script>
+{% include filter-init.html search_id="labs-search" grid_id="labs-grid" no_results_id="no-labs-results" %}

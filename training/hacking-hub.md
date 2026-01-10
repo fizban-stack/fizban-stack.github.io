@@ -1,5 +1,8 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_parent: Training
 title: Hacking Hub
 subtitle: Security Training Platform
 description: Security training platform with hands-on labs and cybersecurity challenges.

@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: Hacker Valley Studio
 subtitle: Stories from the Cybersecurity Community
 description: Stories from the cybersecurity community.

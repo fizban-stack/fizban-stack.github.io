@@ -1,5 +1,8 @@
 ---
-layout: vulnerable-lab
+layout: detail-page
+back_url: /vulnerable-labs
+back_text: Back to Vulnerable Labs
+breadcrumb_parent: Vulnerable Labs
 title: AllSafe - Intentionally Vulnerable Android App
 focus: OWASP Mobile Top 10 vulnerabilities
 type: Android APK

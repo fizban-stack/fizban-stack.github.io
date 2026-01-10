@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: Nessus
 subtitle: Vulnerability Scanner
 description: Industry-leading vulnerability assessment solution.

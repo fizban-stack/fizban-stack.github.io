@@ -1,0 +1,12 @@
+<!-- Filter and Search Initialization -->
+<script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>
+<script>
+  initFilterSearch({
+    searchInputId: '{{ include.search_id }}',
+    clearBtnId: '{{ include.search_id }}-clear',
+    cardSelector: '.post-preview',
+    containerSelector: '#{{ include.grid_id }} > .post-preview[data-category]',
+    noResultsId: '{{ include.no_results_id }}',
+    filterPillSelector: '.filter-pill'
+  });
+</script>

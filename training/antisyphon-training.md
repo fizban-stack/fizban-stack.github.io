@@ -1,5 +1,8 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_parent: Training
 title: Antisyphon Training
 subtitle: Pay-What-You-Can Security Training
 description: Pay-What-You-Can security training with live instruction from industry professionals.

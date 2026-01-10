@@ -1,5 +1,8 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_parent: Training
 title: Hack Smarter
 subtitle: Practical Hacking Skills Training
 description: Security training and resources focused on practical hacking skills and career development.

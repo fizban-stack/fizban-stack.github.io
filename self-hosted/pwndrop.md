@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: PwnDrop
 subtitle: Self-Deployable File Hosting
 description: File hosting service for red team assessments.

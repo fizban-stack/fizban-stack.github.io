@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: OPNsense
 subtitle: Open Source Firewall
 description: Enterprise-grade open-source firewall and routing platform.

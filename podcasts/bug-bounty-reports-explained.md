@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: Bug Bounty Reports Explained
 subtitle: Real Bug Bounty Report Breakdowns
 description: Breaking down real bug bounty reports and vulnerabilities.

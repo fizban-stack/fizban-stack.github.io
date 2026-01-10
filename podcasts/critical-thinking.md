@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: Critical Thinking
 subtitle: Bug Bounty Technical Deep Dives
 description: A podcast focused on the technical details of bug bounty.

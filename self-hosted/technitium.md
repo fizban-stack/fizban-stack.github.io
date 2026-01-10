@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: Technitium DNS Server
 subtitle: Advanced DNS Server
 description: Self-hosted DNS server with web interface.

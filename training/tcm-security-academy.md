@@ -1,5 +1,8 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_parent: Training
 title: TCM Security Academy
 subtitle: Practical Penetration Testing Training
 description: Practical penetration testing and security training with hands-on courses that is affordable.

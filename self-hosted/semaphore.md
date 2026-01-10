@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: Ansible Semaphore
 subtitle: Modern Ansible UI
 description: Modern UI for Ansible automation.

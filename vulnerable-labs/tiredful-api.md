@@ -1,5 +1,8 @@
 ---
-layout: vulnerable-lab
+layout: detail-page
+back_url: /vulnerable-labs
+back_text: Back to Vulnerable Labs
+breadcrumb_parent: Vulnerable Labs
 title: Tiredful API
 focus: REST API security and OWASP API Top 10
 type: Container

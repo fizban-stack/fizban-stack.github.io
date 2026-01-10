@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: Unsupervised Learning
 subtitle: Security, Technology, and AI
 description: Security, technology, and artificial intelligence.

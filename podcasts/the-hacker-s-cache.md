@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: The Hacker's Cache
 subtitle: Decrypting the Secrets of Offensive Cybersecurity
 description: The show that decrypts the secrets of offensive cybersecurity, one byte at a time.

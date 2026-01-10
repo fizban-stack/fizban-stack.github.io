@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: Audiobookshelf
 subtitle: Audiobook and Podcast Server
 description: Self-hosted audiobook and podcast library manager.

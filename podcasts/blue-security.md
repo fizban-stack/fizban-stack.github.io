@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: Blue Security
 subtitle: Defensive Security Strategies
 description: Defensive security strategies and blue team tactics.

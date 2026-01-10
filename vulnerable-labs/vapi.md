@@ -1,5 +1,8 @@
 ---
-layout: vulnerable-lab
+layout: detail-page
+back_url: /vulnerable-labs
+back_text: Back to Vulnerable Labs
+breadcrumb_parent: Vulnerable Labs
 title: vAPI
 focus: API security testing and OWASP API Top 10
 type: Container

@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: Proxmox Datacenter Manager
 subtitle: Centralized Cluster Management
 description: Centralized management for multiple Proxmox clusters.

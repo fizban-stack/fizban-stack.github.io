@@ -1,5 +1,8 @@
 ---
-layout: vulnerable-lab
+layout: detail-page
+back_url: /vulnerable-labs
+back_text: Back to Vulnerable Labs
+breadcrumb_parent: Vulnerable Labs
 title: Vulnerable Mobile Apps for Penetration Testing
 focus: Comprehensive collection of vulnerable Android applications
 type: Android APK Collection

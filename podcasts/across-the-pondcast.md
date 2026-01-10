@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: Across the Pondcast
 subtitle: UK Cybersecurity News and Trends
 description: UK-based cybersecurity podcast covering news and trends.

@@ -16,7 +16,7 @@ This page showcases some of my favorite self-hosted applications that I use in m
 </article>
 
 <!-- Category Filter Pills -->
-<div class="category-filters mb-4">
+<div class="category-filters">
   <button class="filter-pill active" data-category="all">All Apps</button>
   <button class="filter-pill" data-category="Infrastructure">Infrastructure</button>
   <button class="filter-pill" data-category="Security">Security</button>
@@ -36,34 +36,19 @@ This page showcases some of my favorite self-hosted applications that I use in m
       <span class="post-category">{{ app.category }}</span>
     </div>
     {% if app.subtitle %}
-    <p style="color: var(--accent-cyan); font-size: 0.9rem; margin-bottom: 0.5rem;">{{ app.subtitle }}</p>
+    <p class="card-subtitle">{{ app.subtitle }}</p>
     {% endif %}
     <p class="post-excerpt">{{ app.description }}</p>
-    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-      <a href="{{ '/self-hosted/' | append: app.id | relative_url }}" class="read-more">Learn More →</a>
-      {% if app.github %}
-      <a href="{{ app.github }}" target="_blank" rel="noopener noreferrer" class="read-more">GitHub →</a>
-      {% elsif app.official %}
-      <a href="{{ app.official }}" target="_blank" rel="noopener noreferrer" class="read-more">Official Site →</a>
-      {% endif %}
-    </div>
+    <a href="{{ '/self-hosted/' | append: app.id | relative_url }}" class="read-more">Learn More →</a>
+    {% if app.github %}
+    <a href="{{ app.github }}" target="_blank" rel="noopener noreferrer" class="read-more secondary-link">GitHub →</a>
+    {% elsif app.official %}
+    <a href="{{ app.official }}" target="_blank" rel="noopener noreferrer" class="read-more secondary-link">Official Site →</a>
+    {% endif %}
   </article>
 {% endfor %}
 </div>
 
-<div id="no-selfhosted-results" class="no-results" style="display: none;">
-  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No applications found</p>
-  <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
-</div>
+{% include no-results.html id="no-selfhosted-results" message="No applications found" %}
 
-<script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>
-<script>
-  initFilterSearch({
-    searchInputId: 'selfhosted-search',
-    clearBtnId: 'selfhosted-search-clear',
-    cardSelector: '.post-preview',
-    containerSelector: '#selfhosted-grid > .post-preview[data-category]',
-    noResultsId: 'no-selfhosted-results',
-    filterPillSelector: '.filter-pill'
-  });
-</script>
+{% include filter-init.html search_id="selfhosted-search" grid_id="selfhosted-grid" no_results_id="no-selfhosted-results" %}

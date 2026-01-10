@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: Pairdrop
 subtitle: Local File Sharing
 description: Cross-platform local file sharing in your browser.

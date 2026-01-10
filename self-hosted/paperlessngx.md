@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: Paperless-ngx
 subtitle: Document Management System
 description: Scan, index, and archive all your physical documents.

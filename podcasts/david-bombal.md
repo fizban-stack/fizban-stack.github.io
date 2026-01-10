@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: David Bombal
 subtitle: Networking and Cybersecurity Education
 description: Networking, cybersecurity, and IT career advice.

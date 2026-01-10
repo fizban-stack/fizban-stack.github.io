@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: CyberChef
 subtitle: The Cyber Swiss Army Knife
 description: Web app for encryption, encoding, compression, and data analysis.

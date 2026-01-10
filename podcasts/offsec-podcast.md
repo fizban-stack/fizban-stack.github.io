@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: OffSec Podcast
 subtitle: Penetration Testing and Security
 description: Offensive Security's podcast covering penetration testing and security. This podcast has not produced any new episodes in a few years, but I found that the content is still applicable.

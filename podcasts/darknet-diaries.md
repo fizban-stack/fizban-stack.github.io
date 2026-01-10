@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: Darknet Diaries
 subtitle: True Stories from the Dark Side
 description: True stories from the dark side of the Internet.

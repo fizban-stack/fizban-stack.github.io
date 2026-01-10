@@ -1,5 +1,8 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_parent: Training
 title: 0xdf Hacks Stuff
 subtitle: HackTheBox Write-ups and Guides
 description: Detailed walkthroughs and write-ups for HackTheBox machines and CTF challenges.

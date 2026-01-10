@@ -32,23 +32,21 @@ function initFilterSearch(config) {
       const query = currentSearchQuery.toLowerCase().trim();
       let visibleCount = 0;
 
-      containers.forEach((container, index) => {
-        const card = cards[index];
+      containers.forEach((container) => {
         const category = container.getAttribute('data-category');
-        const title = card.querySelector('.card-title').textContent.toLowerCase();
-        const subtitle = card.querySelector('.text-muted')?.textContent.toLowerCase() || '';
-        const description = card.querySelector('.card-text').textContent.toLowerCase();
-        const focus = card.querySelector('.lab-focus')?.textContent.toLowerCase() || '';
-        const type = card.querySelector('.lab-type-badge')?.textContent.toLowerCase() || '';
+        const title = container.querySelector('h3')?.textContent.toLowerCase() || '';
+        const description = container.querySelector('.post-excerpt')?.textContent.toLowerCase() || '';
+        const categoryText = container.querySelector('.post-category')?.textContent.toLowerCase() || '';
+        const focus = container.querySelector('p[style*="accent-green"]')?.textContent.toLowerCase() || '';
+        const type = container.querySelector('.lab-type-badge')?.textContent.toLowerCase() || '';
 
         const categoryMatch = currentCategory === 'all' || category === currentCategory;
         const searchMatch = query === '' ||
                            title.includes(query) ||
-                           subtitle.includes(query) ||
                            description.includes(query) ||
                            focus.includes(query) ||
                            type.includes(query) ||
-                           category.toLowerCase().includes(query);
+                           categoryText.includes(query);
 
         if (categoryMatch && searchMatch) {
           container.classList.remove('hidden');

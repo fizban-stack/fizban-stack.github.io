@@ -1,5 +1,8 @@
 ---
-layout: vulnerable-lab
+layout: detail-page
+back_url: /vulnerable-labs
+back_text: Back to Vulnerable Labs
+breadcrumb_parent: Vulnerable Labs
 title: TerraGoat
 focus: Terraform security scanning and IaC vulnerabilities
 type: Infrastructure as Code

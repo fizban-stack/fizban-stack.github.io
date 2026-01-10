@@ -1,5 +1,8 @@
 ---
-layout: vulnerable-lab
+layout: detail-page
+back_url: /vulnerable-labs
+back_text: Back to Vulnerable Labs
+breadcrumb_parent: Vulnerable Labs
 title: DVSA - Damn Vulnerable Serverless Application
 focus: AWS serverless security and Lambda exploitation
 type: Serverless

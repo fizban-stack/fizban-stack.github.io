@@ -599,38 +599,89 @@ img {
   animation: glow 3s ease-in-out infinite;
 }
 
+/* Search Container - Shared component */
+.search-container {
+  position: relative;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  background: rgba(30, 37, 65, 0.8);
+  border: 1px solid rgba(0, 255, 65, 0.3);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-green);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.search-clear {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent-green);
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.search-clear:hover {
+  color: var(--accent-cyan);
+}
+
 /* Category Filter Pills - Shared across multiple pages */
 .category-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 255, 0, 0.2);
 }
 
 .filter-pill {
   padding: 0.5rem 1rem;
-  border-radius: 20px;
-  border: 1px solid var(--border-color);
-  background: var(--card-bg);
-  color: var(--text-primary);
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  border-radius: 0.25rem;
+  color: #00ff00;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: all 0.2s;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .filter-pill:hover {
-  border-color: var(--accent-green) !important;
+  background: rgba(0, 255, 0, 0.2);
+  border-color: rgba(0, 255, 0, 0.5);
+  transform: translateY(-2px);
 }
 
 .filter-pill.active {
-  background: var(--accent-green) !important;
-  color: #0a0e27 !important;
-  border-color: var(--accent-green) !important;
+  background: rgba(0, 255, 0, 0.2);
+  border-color: rgba(0, 255, 0, 0.5);
 }
 
 /* Hide filtered cards */
 .col-md-6.hidden,
-.col-lg-4.hidden {
+.col-lg-4.hidden,
+.post-preview.hidden {
   display: none !important;
 }
 
@@ -669,6 +720,15 @@ img {
   color: var(--text-secondary);
 }
 
+.no-results-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.no-results-hint {
+  font-size: 0.9rem;
+}
+
 /* Responsive adjustments for filter pills */
 @media (max-width: 768px) {
   .category-filters {
@@ -676,8 +736,8 @@ img {
   }
 
   .filter-pill {
-    font-size: 0.8rem !important;
-    padding: 0.4rem 0.8rem !important;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
   }
 }
 
@@ -753,54 +813,84 @@ img {
 }
 
 /* ============================================
+   Detail Page Layout Components
+   ============================================ */
+.detail-breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.detail-breadcrumb .breadcrumb {
+  background: var(--bg-secondary);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+}
+
+.detail-header {
+  margin-bottom: 2rem;
+}
+
+.detail-title {
+  margin-bottom: 0.5rem;
+}
+
+.detail-subtitle {
+  color: var(--accent-cyan);
+  margin-bottom: 1.5rem;
+}
+
+.detail-image-container {
+  margin-bottom: 2rem;
+}
+
+.detail-image {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* ============================================
    Page/Post Content Styling - Shared across layout files
    ============================================ */
-.page-content,
-.post-content {
+.page-content {
   line-height: 1.8;
   margin-bottom: 3rem;
   max-width: 100%;
 }
 
-.page-content h2,
-.post-content h2 {
+.page-content h2 {
   color: #00ff00;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.page-content h3,
-.post-content h3 {
+.page-content h3 {
   color: #00cc00;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
 
-.page-content p,
-.post-content p {
+.page-content p {
   margin-bottom: 1rem;
 }
 
-.page-content a,
-.post-content a {
+.page-content a {
   color: #00ff00;
 }
 
-.page-content a:hover,
-.post-content a:hover {
+.page-content a:hover {
   text-decoration: underline;
 }
 
-.page-content code,
-.post-content code {
+.page-content code {
   background: rgba(0, 255, 0, 0.1);
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
   font-size: 0.9em;
 }
 
-.page-content pre,
-.post-content pre {
+.page-content pre {
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 255, 0, 0.3);
   padding: 1rem;
@@ -809,14 +899,12 @@ img {
   margin-bottom: 1rem;
 }
 
-.page-content pre code,
-.post-content pre code {
+.page-content pre code {
   background: none;
   padding: 0;
 }
 
-.page-content blockquote,
-.post-content blockquote {
+.page-content blockquote {
   border-left: 4px solid #00ff00;
   padding-left: 1rem;
   margin-left: 0;
@@ -824,8 +912,7 @@ img {
   font-style: italic;
 }
 
-.page-content img,
-.post-content img {
+.page-content img {
   max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
@@ -834,24 +921,19 @@ img {
 }
 
 .page-content ul,
-.page-content ol,
-.post-content ul,
-.post-content ol {
+.page-content ol {
   margin-bottom: 1rem;
   padding-left: 2rem;
 }
 
-.page-content li,
-.post-content li {
+.page-content li {
   margin-bottom: 0.5rem;
 }
 
 /* ============================================
    Back Navigation Buttons - Shared across layout files
    ============================================ */
-.back-to-blog,
-.back-to-selfhosted,
-.back-to-labs {
+.back-link {
   color: #00ff00;
   text-decoration: none;
   font-weight: 500;
@@ -863,9 +945,7 @@ img {
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-.back-to-blog:hover,
-.back-to-selfhosted:hover,
-.back-to-labs:hover {
+.back-link:hover {
   text-decoration: none;
   border-color: rgba(0, 255, 0, 0.6);
   background-color: rgba(0, 255, 0, 0.1);
@@ -934,8 +1014,7 @@ img {
     margin-top: 1rem;
   }
 
-  .page-content,
-  .post-content {
+  .page-content {
     font-size: 0.95rem;
   }
 
@@ -1030,6 +1109,26 @@ img {
 
 .read-more:hover {
   text-decoration: underline;
+}
+
+/* Stacked links in cards */
+.read-more.secondary-link {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Subtitle/focus text in cards */
+.card-subtitle {
+  color: var(--accent-cyan);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-focus {
+  color: var(--accent-green);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .no-posts {

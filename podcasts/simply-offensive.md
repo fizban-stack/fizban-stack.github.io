@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: Simply Offensive
 subtitle: Offensive Security Made Simple
 description: Offensive security topics made simple.

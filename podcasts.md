@@ -13,7 +13,7 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
 </article>
 
 <!-- Category Filter Pills -->
-<div class="category-filters mb-4">
+<div class="category-filters">
   <button class="filter-pill active" data-category="all">All Podcasts</button>
   <button class="filter-pill" data-category="Technical">Technical</button>
   <button class="filter-pill" data-category="General Knowledge">General Knowledge</button>
@@ -31,29 +31,14 @@ description: Cybersecurity and technology podcasts recommended by James Wells.
       <span class="post-category">{{ podcast.category }}</span>
     </div>
     <p class="post-excerpt">{{ podcast.description }}</p>
-    <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-      <a href="{{ '/podcasts/' | append: podcast.id | relative_url }}" class="read-more">Learn More →</a>
-      {% if podcast.website %}
-      <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer" class="read-more">Visit Website →</a>
-      {% endif %}
-    </div>
+    <a href="{{ '/podcasts/' | append: podcast.id | relative_url }}" class="read-more">Learn More →</a>
+    {% if podcast.website %}
+    <a href="{{ podcast.website }}" target="_blank" rel="noopener noreferrer" class="read-more secondary-link">Visit Website →</a>
+    {% endif %}
   </article>
 {% endfor %}
 </div>
 
-<div id="no-podcasts-results" class="no-results" style="display: none;">
-  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No podcasts found</p>
-  <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
-</div>
+{% include no-results.html id="no-podcasts-results" message="No podcasts found" %}
 
-<script src="{{ '/assets/js/filter-search.js' | relative_url }}"></script>
-<script>
-  initFilterSearch({
-    searchInputId: 'podcasts-search',
-    clearBtnId: 'podcasts-search-clear',
-    cardSelector: '.post-preview',
-    containerSelector: '#podcasts-grid > .post-preview[data-category]',
-    noResultsId: 'no-podcasts-results',
-    filterPillSelector: '.filter-pill'
-  });
-</script>
+{% include filter-init.html search_id="podcasts-search" grid_id="podcasts-grid" no_results_id="no-podcasts-results" %}

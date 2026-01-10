@@ -1,5 +1,8 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_parent: Podcasts
 title: Hacked
 subtitle: Stories of Security Breaches
 description: Stories of hacking incidents and security breaches.

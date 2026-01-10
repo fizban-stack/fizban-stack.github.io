@@ -1,5 +1,8 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted
+breadcrumb_parent: Self-Hosted
 title: Zoraxy
 subtitle: Reverse Proxy Manager
 description: General purpose reverse proxy and forwarding tool.
