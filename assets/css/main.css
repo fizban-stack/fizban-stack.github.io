@@ -711,47 +711,6 @@ img {
   transform: translateY(-2px);
 }
 
-.posts-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  width: 100%;
-}
-
-.post-preview {
-  padding: 1.5rem;
-  border: 1px solid rgba(0, 255, 0, 0.2);
-  border-radius: 0.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  transition: border-color 0.3s ease, transform 0.2s ease;
-}
-
-.post-preview:hover {
-  border-color: rgba(0, 255, 0, 0.5);
-  transform: translateY(-2px);
-}
-
-@media (max-width: 1200px) {
-  .posts-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 992px) {
-  .posts-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  .posts-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .category-nav {
-    justify-content: center;
-  }
-}
 
 /* ============================================
    Page/Post Content Styling - Shared across layout files
@@ -850,9 +809,7 @@ img {
 /* ============================================
    Back Navigation Buttons - Shared across layout files
    ============================================ */
-.back-to-blog,
-.back-to-selfhosted,
-.back-to-labs {
+.back-to-blog {
   color: #00ff00;
   text-decoration: none;
   font-weight: 500;
@@ -984,25 +941,9 @@ img {
   font-size: 1.75rem;
 }
 
-.post-preview h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-}
-
-.post-preview h3 a {
-  color: #00ff00;
-  text-decoration: none;
-}
-
-.post-preview h3 a:hover {
-  text-decoration: underline;
-}
-
 .post-meta {
   color: #888;
   font-size: 0.85rem;
-  margin-bottom: 0.75rem;
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
@@ -1014,12 +955,6 @@ img {
   border-radius: 0.25rem;
   font-size: 0.75rem;
   color: #00ff00;
-}
-
-.post-excerpt {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-  font-size: 0.95rem;
 }
 
 .read-more {
@@ -1039,31 +974,7 @@ img {
   color: #888;
 }
 
-.post-preview.hidden {
-  display: none;
-}
-
-.no-results.show {
-  display: block;
-}
-
-/* Responsive breakpoints for blog grids */
-@media (max-width: 1400px) {
-  .posts-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-}
-
 @media (max-width: 576px) {
-  .post-preview {
-    padding: 1rem;
-  }
-
-  .post-preview h3 {
-    font-size: 1.1rem;
-  }
-
   .category-nav-link {
     flex: 1 1 calc(50% - 0.5rem);
     text-align: center;
@@ -1235,4 +1146,27 @@ img {
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+/* Card image placeholder for posts/items without images */
+.card-img-placeholder {
+  height: 200px;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-placeholder::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
 }

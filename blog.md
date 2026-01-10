@@ -24,25 +24,34 @@ description: Technical blog posts about cybersecurity, home labs, and technology
   <h2 class="section-title">Recent Posts</h2>
 
   {% if site.posts.size > 0 %}
-    <div class="posts-grid">
+    <div class="row g-4" id="posts-grid">
       {% for post in site.posts limit:12 %}
-        <article class="post-preview">
-          <h3>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          <div class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date: "%B %d, %Y" }}
-            </time>
-            {% if post.category %}
-              <span class="post-category">{{ post.category }}</span>
+        <div class="col-md-6 col-lg-4">
+          <article class="card project-card h-100 d-flex flex-column">
+            {% if post.image %}
+            <img src="{{ '/assets/images/' | append: post.image | relative_url }}" class="card-img-top" alt="{{ post.title }}" loading="lazy">
+            {% else %}
+            <div class="card-img-top card-img-placeholder"></div>
             {% endif %}
-          </div>
-          {% if post.excerpt %}
-            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-          {% endif %}
-          <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
-        </article>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+              <div class="post-meta mb-3">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: "%B %d, %Y" }}
+                </time>
+                {% if post.category %}
+                  <span class="post-category">{{ post.category }}</span>
+                {% endif %}
+              </div>
+              {% if post.excerpt %}
+                <p class="card-text flex-grow-1">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+              {% endif %}
+              <a href="{{ post.url | relative_url }}" class="read-more mt-auto">Read more →</a>
+            </div>
+          </article>
+        </div>
       {% endfor %}
     </div>
   {% else %}
@@ -50,15 +59,17 @@ description: Technical blog posts about cybersecurity, home labs, and technology
   {% endif %}
 </div>
 
+<div id="no-blog-results" class="no-results">
+  <p class="fs-5 mb-2">No posts found</p>
+  <p class="small">Try adjusting your search criteria</p>
+</div>
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('blog-search');
     const clearBtn = document.getElementById('blog-search-clear');
-    const postsGrid = document.querySelector('.posts-grid');
-    const noResults = document.createElement('div');
-    noResults.className = 'no-results';
-    noResults.textContent = 'No posts found matching your search.';
-    postsGrid.appendChild(noResults);
+    const postsGrid = document.getElementById('posts-grid');
+    const noResults = document.getElementById('no-blog-results');
 
     // All posts data from Jekyll
     const allPosts = [
@@ -69,14 +80,15 @@ description: Technical blog posts about cybersecurity, home labs, and technology
         date: {{ post.date | date: "%B %d, %Y" | jsonify }},
         datetime: {{ post.date | date_to_xmlschema | jsonify }},
         category: {{ post.category | default: "" | jsonify }},
-        excerpt: {{ post.excerpt | strip_html | truncatewords: 30 | jsonify }}
+        excerpt: {{ post.excerpt | strip_html | truncatewords: 30 | jsonify }},
+        image: {{ post.image | default: "" | jsonify }}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
 
     function renderPosts(postsToShow) {
-      // Clear existing posts but keep noResults
-      const existingPosts = postsGrid.querySelectorAll('.post-preview');
+      // Clear existing posts
+      const existingPosts = postsGrid.querySelectorAll('.col-md-6');
       existingPosts.forEach(post => post.remove());
 
       if (postsToShow.length === 0) {
@@ -87,36 +99,43 @@ description: Technical blog posts about cybersecurity, home labs, and technology
       noResults.classList.remove('show');
 
       postsToShow.forEach(post => {
-        const article = document.createElement('article');
-        article.className = 'post-preview';
+        const col = document.createElement('div');
+        col.className = 'col-md-6 col-lg-4';
 
-        let html = `
-          <h3>
-            <a href="${post.url}">${post.title}</a>
-          </h3>
-          <div class="post-meta">
-            <time datetime="${post.datetime}">
-              ${post.date}
-            </time>`;
+        let imageHtml = '';
+        if (post.image) {
+          imageHtml = `<img src="/assets/images/${post.image}" class="card-img-top" alt="${post.title}" loading="lazy">`;
+        } else {
+          imageHtml = `<div class="card-img-top card-img-placeholder"></div>`;
+        }
 
+        let categoryHtml = '';
         if (post.category) {
-          html += `
-            <span class="post-category">${post.category}</span>`;
+          categoryHtml = `<span class="post-category">${post.category}</span>`;
         }
 
-        html += `
-          </div>`;
-
+        let excerptHtml = '';
         if (post.excerpt) {
-          html += `
-          <p class="post-excerpt">${post.excerpt}</p>`;
+          excerptHtml = `<p class="card-text flex-grow-1">${post.excerpt}</p>`;
         }
 
-        html += `
-          <a href="${post.url}" class="read-more">Read more →</a>`;
+        col.innerHTML = `
+          <article class="card project-card h-100 d-flex flex-column">
+            ${imageHtml}
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">
+                <a href="${post.url}">${post.title}</a>
+              </h3>
+              <div class="post-meta mb-3">
+                <time datetime="${post.datetime}">${post.date}</time>
+                ${categoryHtml}
+              </div>
+              ${excerptHtml}
+              <a href="${post.url}" class="read-more mt-auto">Read more →</a>
+            </div>
+          </article>`;
 
-        article.innerHTML = html;
-        postsGrid.insertBefore(article, noResults);
+        postsGrid.appendChild(col);
       });
     }
 
@@ -124,7 +143,6 @@ description: Technical blog posts about cybersecurity, home labs, and technology
       const query = searchInput.value.toLowerCase().trim();
 
       if (query === '') {
-        // Show recent 12 posts (default view)
         renderPosts(allPosts.slice(0, 12));
         clearBtn.style.display = 'none';
         return;
@@ -132,12 +150,10 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 
       clearBtn.style.display = 'block';
 
-      // Search through all posts
       const matchedPosts = allPosts.filter(post => {
         const title = post.title.toLowerCase();
         const excerpt = post.excerpt.toLowerCase();
         const category = post.category.toLowerCase();
-
         return title.includes(query) || excerpt.includes(query) || category.includes(query);
       });
 

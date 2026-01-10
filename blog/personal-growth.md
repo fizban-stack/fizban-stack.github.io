@@ -24,22 +24,31 @@ permalink: /blog/personal-growth/
   {% assign category_posts = site.posts | where: "category", "Personal Growth" %}
 
   {% if category_posts.size > 0 %}
-    <div class="posts-grid">
+    <div class="row g-4">
       {% for post in category_posts %}
-        <article class="post-preview">
-          <h3>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          <div class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date: "%B %d, %Y" }}
-            </time>
-          </div>
-          {% if post.excerpt %}
-            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-          {% endif %}
-          <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
-        </article>
+        <div class="col-md-6 col-lg-4">
+          <article class="card project-card h-100 d-flex flex-column">
+            {% if post.image %}
+            <img src="{{ '/assets/images/' | append: post.image | relative_url }}" class="card-img-top" alt="{{ post.title }}" loading="lazy">
+            {% else %}
+            <div class="card-img-top card-img-placeholder"></div>
+            {% endif %}
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+              <div class="post-meta mb-3">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: "%B %d, %Y" }}
+                </time>
+              </div>
+              {% if post.excerpt %}
+                <p class="card-text flex-grow-1">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+              {% endif %}
+              <a href="{{ post.url | relative_url }}" class="read-more mt-auto">Read more →</a>
+            </div>
+          </article>
+        </div>
       {% endfor %}
     </div>
   {% else %}
