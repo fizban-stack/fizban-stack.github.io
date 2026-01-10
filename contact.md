@@ -19,7 +19,7 @@ description: Get in touch with James Wells.
 
       <div class="mt-4">
         <h3>Resume</h3>
-        <p><a href="/assets/documents/resume.pdf" >Download my resume (PDF)</a></p>
+        <p><a href="/assets/documents/resume.pdf" >My resume (PDF)</a></p>
       </div>
 
       <div class="mt-4">
