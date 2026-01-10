@@ -4,6 +4,7 @@ title: "My Pwnagotchi aka Bobby"
 date: 2025-10-18
 category: Cybersecurity
 author: James Wells
+image: pwnagotchi.webp
 ---
 
 I recently set up a Pwnagotchi, an AI-powered Wi-Fi security research tool that runs on a Raspberry Pi Zero W. Built by Simone Margaritelli (evilsocket), Pwnagotchi uses deep reinforcement learning to learn from its Wi-Fi environment and autonomously capture WPA handshakes from nearby networks. Think of it as a Tamagotchi, but instead of feeding it, you're training an AI to become better at WiFi reconnaissance. The project displays adorable ASCII faces that change based on its mood and success rate, making security research surprisingly endearing.

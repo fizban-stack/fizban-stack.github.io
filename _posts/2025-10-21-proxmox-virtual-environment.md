@@ -4,6 +4,7 @@ title: "Proxmox Virtual Environment"
 date: 2025-10-21
 category: Homelab
 author: James Wells
+../../self-hosted/proxmox.webp
 ---
 
 Proxmox Virtual Environment (VE) is an open-source server management platform designed for enterprise virtualization. Based on Debian GNU/Linux, it allows you to easily manage virtual machines (VMs) and containers from a single, centralized web-based interface. It integrates two powerful virtualization technologies: KVM (Kernel-based Virtual Machine) for managing heavyweight, full-hardware virtual machines, and LXC (Linux Containers) for lightweight, operating-system-level virtualization.

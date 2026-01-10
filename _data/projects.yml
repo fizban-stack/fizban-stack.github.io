@@ -32,45 +32,45 @@
   blog: /cybersecurity/2025/10/20/wazuh/
 
 - title: "Raspberry Pi 5: Tools"
-  image: projects/raspberry-pi5.webp
+  image: blog/raspberry-pi/raspberry-pi5.webp
   description: A Raspberry Pi 5 that I setup with various tools and a remote connection. It allows me to plug into any network and have access to installed tools.
   blog: /homelab/2025/10/18/raspberry-pi-5/
 
 - title: Pwnagotchi aka Bobby
   category: "Hardware"
-  image: projects/pwnagotchi.webp
+  image: blog/pwnagotchi/pwnagotchi.webp
   description: Pwnagotchi is a wifi hacking tool created with a Raspberry Pi Zero 2W. My children came up with the name Bobby.
   blog: /cybersecurity/2025/10/18/my-pwnagotchi-aka-bobby/
   github: https://github.com/evilsocket/pwnagotchi
 
 - title: Meshtastic Radios
   category: "Hardware"
-  image: projects/meshtastic.webp
+  image: blog/meshtastic/meshtastic.webp
   description: These radios use long range wireless communication (LoRa) to send messages between devices without using other services such as cellular or Wi-Fi.
   blog: /homelab/2025/10/18/meshtastic/
   github: https://github.com/meshtastic
 
 - title: Kali Nethunter
   category: "Security"
-  image: projects/nethunter.webp
+  image: blog/nethunter/nethunter.webp
   description: This is a old phone that I rooted and installed Kali NetHunter on.
   blog: /cybersecurity/2025/12/30/nethunter/
 
 - title: Nvidia Jetson Orin Nano Super
   category: "Hardware"
-  image: projects/nvidia-jetson-orin-nano.webp
+  image: blog/nvidia-jetson/nvidia-jetson-orin-nano.webp
   description: This is a Jetson Orin Nano developer kit that I purchased to mess around with machine learning.
   blog: /cybersecurity/2026/01/05/jetson-orin-netflow-ml/
 
 - title: OMG Cable
   category: "Hardware"
-  image: projects/omg-cable.webp
+  image: blog/omgCable/omg-cable.webp
   description: This is an OMG cable that I purchased to practice penetration testing.
   blog: /cybersecurity/2025/11/22/omg-cable/
 
 - title: Raspberry Pi Zero 2W
   category: "Hardware"
-  image: projects/raspberry-pi-zero2w.webp
+  image: blog/raspberry-pi-zero2w/raspberry-pi-zero2w.webp
   description: This is Raspberry Pi Zero 2W that I bought for a web server. I have also experimented with using it as a VPN gateway with a PoE hat.
 
 - title: Proxmox Virtual Environment

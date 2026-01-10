@@ -4,6 +4,7 @@ title: "Raspberry Pi 5"
 date: 2025-10-18
 category: Homelab
 author: James Wells
+image: raspberry-pi5.webp
 ---
 
 ## Initial Configuration

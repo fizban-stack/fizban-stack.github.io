@@ -4,12 +4,13 @@ title: "Phillips Hue Bridge"
 date: 2025-10-11
 category: Homelab
 author: James Wells
+image: hue-bridge.webp
 ---
 
 I was practicing my Wireshark analysis skills when i came across my Phillips Hue bridge in the capture. I noticed that it had an http endpoint that I had never seen or used. The index.html page lists all of the open source software that the hue bridge uses with links to the GitHub pages for each.
 
 Then looking deeper into the pcap, I noticed the description.xml endpoint. When I went to this endpoint, I was an information about the device.
-![Hue Bridge XML Schema](/assets/images/blog/hueBridge/hue-xml.webp)
+![Hue Bridge XML Schema](/assets/images/blog/phillips-hue-bridge/hue-xml.webp)
 
 I had the idea then to check for API endpoints. The /api endpoint did not allow GET requests. Then i looked to see if i could find any documentation for the REST API. I found out that you have to push the button on the Hue bridge and then send a request within 20 seconds. This is what the process for adding the bridge to different applications. Each application gets a username that it then uses to send requests to the different endpoints that perform different functions, such as turning on and off the lights. So I prepared the following request and pushed the Hue bridge button before sending it.
 

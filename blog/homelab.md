@@ -29,7 +29,8 @@ permalink: /blog/homelab/
         <div class="col-md-6 col-lg-4">
           <article class="card project-card h-100 d-flex flex-column">
             {% if post.image %}
-            <img src="{{ '/assets/images/' | append: post.image | relative_url }}" class="card-img-top" alt="{{ post.title }}" loading="lazy">
+            {% assign post_slug = post.url | split: '/' | last | remove: '.html' %}
+            <img src="{{ '/assets/images/blog/' | append: post_slug | append: '/' | append: post.image | relative_url }}" class="card-img-top" alt="{{ post.title }}" loading="lazy">
             {% else %}
             <div class="card-img-top card-img-placeholder"></div>
             {% endif %}

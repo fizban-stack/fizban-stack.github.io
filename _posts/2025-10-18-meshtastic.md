@@ -4,6 +4,7 @@ title: "Meshtastic"
 date: 2025-10-18
 category: Homelab
 author: James Wells
+image: meshtastic.webp
 ---
 
 Meshtastic is an open-source, off-grid communication platform that uses inexpensive LoRa (Long Range) radio modules to create decentralized mesh networks. Unlike traditional radios that require direct line-of-sight or cellular networks that depend on infrastructure, Meshtastic devices automatically relay messages through other nodes in the network, extending range significantly. Each radio can communicate several miles in open terrain, but by hopping through multiple devices, messages can travel much further. The system works completely offline with no monthly fees, making it ideal for hiking, camping, emergency preparedness, or any situation where cellular coverage is unreliable or unavailable.
