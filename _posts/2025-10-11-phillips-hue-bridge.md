@@ -6,6 +6,7 @@ category: Homelab
 author: James Wells
 ---
 
+![Hue Bridge](/assets/images/blog/hueBridge/hue-bridge.webp)
 I was practicing my Wireshark analysis skills when i came across my Phillips Hue bridge in the capture. I noticed that it had an http endpoint that I had never seen or used. The index.html page lists all of the open source software that the hue bridge uses with links to the GitHub pages for each.
 
 Then looking deeper into the pcap, I noticed the description.xml endpoint. When I went to this endpoint, I was an information about the device.

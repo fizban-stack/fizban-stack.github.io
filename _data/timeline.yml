@@ -30,5 +30,10 @@
 
 - date: Fall 2025
   title: My First Incident
-  link: https://blog.wellslabs.org/my-first-incident/
+  link: /cybersecurity/2025/10/19/my-first-incident/
   description: This was the first time I experienced a cyber attack in real-time.
+
+- date: Winter 2025
+  title: My First Security Job
+  link: /personal%20growth/2025/11/30/first-security-job/
+  description: This was my first cybersecurity job.
