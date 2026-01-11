@@ -5,6 +5,9 @@ description: A comprehensive list of professional certifications held by James W
 ---
 
 # Certifications
+<article>
+<p>These are the certifications that I have earned over the last few years. I sorted them based on the certifying body. Each listing includes a link to that certification on Credly or the certifying body's website.</p>
+</article>
 
 <div class="accordion" id="certificationsAccordion">
 

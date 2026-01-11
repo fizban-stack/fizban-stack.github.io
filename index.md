@@ -36,3 +36,8 @@ Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, fath
   <h2>Changes to Blog</h2>
   <p>I had been using the Ghost blogging platform to write some short blog posts, but I was not using any of the features except posting and publishing pages. For those reasons, I decided it would better fit my needs to add the blog functionality to my GitHub page. I have transitioned all of my published posts to this site now and am working on finishing the unpublished ones and transferring them. When this is complete, I will be shutting down my blog located at blog.wellslabs.org. I have been using various methods to put this blog on the internet including Tailscale Funnel, Pangolin hosted on a VPS, and Cloudflare tunnels. While each of these solutions worked for me, they all relied on my home internet being online. If my ISP had an outage, than all of my sites would become unavailable. This was fine for programs that I personally used or that my family used, but I thought it could be detrimental to my professional brand. If I link my blog in social media and then someone wants to take a look at it, it could potentially hurt my brand if it is offline.</p>
 </article>
+
+<article>
+  <h2>Vulnerable Labs</h2>
+  <p>I added a page with a list of vulnerable labs that can be hosted on your home computers. There are several sites like Hack the Box that host training platforms, but charge for access to them. I found that hosting the labs on my computers allows me to save money, but also the ability to customize the labs. I can add features or manipulate them in ways that allow me guide my own learning.</p>
+</article>

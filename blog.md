@@ -3,6 +3,9 @@ layout: default
 title: Blog
 description: Technical blog posts about cybersecurity, home labs, and technology
 ---
+<article>
+<p>This is my blog. Most of these posts are linked on other pages of the site, but after transferring them from my Ghost blog, I wanted to keep them in a centralized location. This allows me to add posts and link them in a similar way, but keep the entire site hosted on GitHub.</p>
+</article>
 
 <div class="blog-index">
   <h1>Blog</h1>
