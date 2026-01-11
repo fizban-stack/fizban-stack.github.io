@@ -30,12 +30,12 @@ description: Technical blog posts about cybersecurity, home labs, and technology
           <h3>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </h3>
-          <div class="post-meta">
+          <div class="content-meta">
             <time datetime="{{ post.date | date_to_xmlschema }}">
               {{ post.date | date: "%B %d, %Y" }}
             </time>
             {% if post.category %}
-              <span class="post-category">{{ post.category }}</span>
+              <span class="content-category">{{ post.category }}</span>
             {% endif %}
           </div>
           {% if post.excerpt %}
@@ -94,14 +94,14 @@ description: Technical blog posts about cybersecurity, home labs, and technology
           <h3>
             <a href="${post.url}">${post.title}</a>
           </h3>
-          <div class="post-meta">
+          <div class="content-meta">
             <time datetime="${post.datetime}">
               ${post.date}
             </time>`;
 
         if (post.category) {
           html += `
-            <span class="post-category">${post.category}</span>`;
+            <span class="content-category">${post.category}</span>`;
         }
 
         html += `

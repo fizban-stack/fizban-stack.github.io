@@ -23,16 +23,13 @@
   --card-bg: rgba(30, 37, 65, 0.8);
   --navbar-bg: rgba(10, 14, 39, 0.95);
 
-  /* Accent color with alpha variations */
-  --accent-green-10: var(--accent-green-10);
-  --accent-green-15: var(--accent-green-15);
-  --accent-green-20: var(--accent-green-20);
-  --accent-green-25: var(--accent-green-25);
-  --accent-green-30: var(--accent-green-30);
-  --accent-green-50: var(--accent-green-50);
-  --accent-green-60: var(--accent-green-60);
+  /* Accent color with alpha variations - Consolidated to essential shades */
+  --accent-green-10: rgba(0, 255, 65, 0.1);
+  --accent-green-20: rgba(0, 255, 65, 0.2);
+  --accent-green-30: rgba(0, 255, 65, 0.3);
+  --accent-green-50: rgba(0, 255, 65, 0.5);
 
-  --accent-cyan-30: var(--accent-cyan-30);
+  --accent-cyan-30: rgba(0, 217, 255, 0.3);
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -50,26 +47,30 @@
   --radius-pill: 20px;
   --radius-circle: 50%;
 
-  /* Shadows */
+  /* Shadows - Consolidated using merged alpha values */
   --shadow-sm: 0 2px 10px var(--accent-green-10);
   --shadow-md: 0 5px 15px var(--accent-green-20);
-  --shadow-lg: 0 8px 25px var(--accent-green-15);
+  --shadow-lg: 0 8px 25px var(--accent-green-20);
   --shadow-glow: 0 0 15px var(--accent-green-30);
+  --shadow-cyan-glow: 0 0 15px var(--accent-cyan-30);
 
   /* Transitions */
   --transition-fast: all 0.2s ease;
   --transition-standard: all 0.3s ease;
 
-  /* Font Sizes */
+  /* Transforms - Common hover effects */
+  --transform-lift-sm: translateY(-3px);
+  --transform-lift-md: translateY(-5px);
+  --transform-shift-right: translateX(5px);
+
+  /* Font Sizes - Consolidated similar sizes */
   --font-xs: 0.75rem;
   --font-sm: 0.85rem;
-  --font-md: 0.9rem;
   --font-base: 1rem;
-  --font-lg: 1.1rem;
-  --font-xl: 1.25rem;
-  --font-2xl: 1.5rem;
-  --font-3xl: 2rem;
-  --font-4xl: 2.5rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2rem;
+  --font-3xl: 2.5rem;
 
   /* Fonts */
   --font-mono: 'Fira Code', 'Courier New', monospace;
@@ -216,7 +217,7 @@ main.container-fluid {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: var(--transform-lift-md);
   border-color: var(--accent-green);
   box-shadow: var(--shadow-lg);
 }
@@ -273,7 +274,7 @@ main.container-fluid {
 .btn-outline-secondary:hover {
   background: var(--accent-cyan);
   color: var(--bg-primary);
-  box-shadow: 0 0 15px var(--accent-cyan-30);
+  box-shadow: var(--shadow-cyan-glow);
 }
 
 /* Home Page Two Column Layout */
@@ -402,7 +403,7 @@ article h2 {
 }
 
 .accordion-button:focus {
-  box-shadow: 0 0 0 0.25rem var(--accent-green-25);
+  box-shadow: 0 0 0 0.25rem var(--accent-green-30);
   border-color: var(--accent-green);
 }
 
@@ -436,7 +437,7 @@ article h2 {
   background: var(--bg-secondary);
   border-left: 3px solid var(--accent-cyan);
   color: var(--accent-cyan);
-  transform: translateX(5px);
+  transform: var(--transform-shift-right);
 }
 
 /* Footer Styling */
@@ -473,7 +474,7 @@ article h2 {
 .footer-icon-box:hover {
   border-color: var(--accent-green);
   background: var(--bg-tertiary);
-  transform: translateY(-3px);
+  transform: var(--transform-lift-sm);
   box-shadow: var(--shadow-md);
 }
 
@@ -668,8 +669,8 @@ img {
   background: var(--card-bg);
   color: var(--text-primary);
   cursor: pointer;
-  font-size: 0.9rem;
-  transition: all 0.2s;
+  font-size: var(--font-sm);
+  transition: var(--transition-fast);
 }
 
 .filter-pill:hover {
@@ -773,17 +774,20 @@ img {
   width: 100%;
 }
 
+/* Blog cards extend standard card styling for consistency - Consolidated */
 .post-preview {
-  padding: 1.5rem;
-  border: 1px solid var(--accent-green-20);
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  background: rgba(0, 0, 0, 0.3);
-  transition: border-color 0.3s ease, transform var(--transition-fast);
+  padding: var(--spacing-lg);
+  transition: var(--transition-standard);
+  backdrop-filter: blur(10px);
 }
 
 .post-preview:hover {
-  border-color: var(--accent-green-50);
-  transform: translateY(-2px);
+  transform: var(--transform-lift-md);
+  border-color: var(--accent-green);
+  box-shadow: var(--shadow-lg);
 }
 
 @media (max-width: 1200px) {
@@ -809,54 +813,46 @@ img {
 }
 
 /* ============================================
-   Page/Post Content Styling - Shared across layout files
+   Page/Post Content Styling - Consolidated single class
    ============================================ */
-.page-content,
-.post-content {
+.page-content {
   line-height: 1.8;
   margin-bottom: 3rem;
   max-width: 100%;
 }
 
-.page-content h2,
-.post-content h2 {
+.page-content h2 {
   color: var(--accent-green);
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.page-content h3,
-.post-content h3 {
+.page-content h3 {
   color: var(--accent-green);
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
 
-.page-content p,
-.post-content p {
+.page-content p {
   margin-bottom: 1rem;
 }
 
-.page-content a,
-.post-content a {
+.page-content a {
   color: var(--accent-green);
 }
 
-.page-content a:hover,
-.post-content a:hover {
+.page-content a:hover {
   text-decoration: underline;
 }
 
-.page-content code,
-.post-content code {
+.page-content code {
   background: var(--accent-green-10);
   padding: 0.2rem 0.4rem;
   border-radius: var(--radius-sm);
   font-size: 0.9em;
 }
 
-.page-content pre,
-.post-content pre {
+.page-content pre {
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid var(--accent-green-30);
   padding: 1rem;
@@ -865,14 +861,12 @@ img {
   margin-bottom: 1rem;
 }
 
-.page-content pre code,
-.post-content pre code {
+.page-content pre code {
   background: none;
   padding: 0;
 }
 
-.page-content blockquote,
-.post-content blockquote {
+.page-content blockquote {
   border-left: 4px solid var(--accent-green);
   padding-left: 1rem;
   margin-left: 0;
@@ -880,8 +874,7 @@ img {
   font-style: italic;
 }
 
-.page-content img,
-.post-content img {
+.page-content img {
   max-width: 100%;
   height: auto;
   border-radius: var(--radius-md);
@@ -890,20 +883,17 @@ img {
 }
 
 .page-content ul,
-.page-content ol,
-.post-content ul,
-.post-content ol {
+.page-content ol {
   margin-bottom: 1rem;
   padding-left: 2rem;
 }
 
-.page-content li,
-.post-content li {
+.page-content li {
   margin-bottom: 0.5rem;
 }
 
 /* ============================================
-   Back Navigation Buttons - Consolidated
+   Back Navigation Buttons - Consolidated single class
    ============================================ */
 .back-nav-link,
 .back-to-blog,
@@ -925,126 +915,142 @@ img {
 .back-to-selfhosted:hover,
 .back-to-labs:hover {
   text-decoration: none;
-  border-color: var(--accent-green-60);
+  border-color: var(--accent-green-50);
   background-color: var(--accent-green-10);
 }
 
 /* ============================================
-   Blog Post Layout Shared Styles
+   Content Pages - Unified Styles for Blog Posts and Detail Pages
    ============================================ */
-.blog-post {
-  margin-top: 2rem;
+
+/* Base container for all content pages */
+.content-page,
+.blog-post,
+.selfhosted-page,
+.vulnerable-lab-page {
+  margin-top: var(--spacing-xl);
   max-width: 100%;
   width: 100%;
 }
 
-.post-nav-top {
-  margin-bottom: 1.5rem;
+/* Top navigation area - Consolidated */
+.content-nav-top {
+  margin-bottom: var(--spacing-lg);
 }
 
-.post-header {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+/* Content header section - Consolidated */
+.content-header {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-md);
   border-bottom: 2px solid var(--accent-green-30);
 }
 
-.post-title {
+/* Content title styling - Consolidated */
+.content-title {
   color: var(--accent-green);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-xs);
 }
 
-.post-meta {
+/* Metadata section - Consolidated */
+.content-meta {
   color: var(--text-muted);
   font-size: 0.95rem;
 }
 
+/* Author info (blog-specific) */
 .post-author {
-  margin-left: 1rem;
+  margin-left: var(--spacing-md);
 }
 
-.post-category {
-  margin-left: 1rem;
+/* Category styling - Consolidated */
+.content-category {
+  margin-left: var(--spacing-md);
 }
 
-.post-category::before {
+.content-category::before {
   content: "• ";
-  margin-right: 0.5rem;
+  margin-right: var(--spacing-xs);
 }
 
-.post-category a {
+.content-category a {
   color: var(--accent-green);
   text-decoration: none;
 }
 
-.post-category a:hover {
+.content-category a:hover {
   text-decoration: underline;
 }
 
-.post-footer,
-.page-footer {
-  padding-top: 2rem;
+/* Footer area - Consolidated */
+.content-footer {
+  padding-top: var(--spacing-xl);
   border-top: 1px solid var(--accent-green-20);
 }
 
-/* Responsive adjustments for blog/page content */
+/* Responsive adjustments for content pages */
 @media (max-width: 768px) {
-  .blog-post {
-    margin-top: 1rem;
+  .content-page,
+  .blog-post,
+  .selfhosted-page {
+    margin-top: var(--spacing-md);
   }
 
-  .page-content,
-  .post-content {
+  .page-content {
     font-size: 0.95rem;
   }
 
-  .post-title {
+  .content-title {
     font-size: 1.75rem;
   }
 }
 
 @media (max-width: 576px) {
-  .post-nav-top {
-    margin-bottom: 1rem;
+  .content-nav-top {
+    margin-bottom: var(--spacing-md);
   }
 
-  .post-header {
-    margin-bottom: 1.5rem;
+  .content-header {
+    margin-bottom: var(--spacing-lg);
   }
 
-  .post-title {
-    font-size: 1.5rem;
+  .content-title {
+    font-size: var(--font-2xl);
   }
 
-  .post-meta {
-    font-size: 0.85rem;
+  .content-meta {
+    font-size: var(--font-sm);
   }
 }
 
 /* ============================================
-   Blog Index & Category Pages - Additional Styles
+   Blog Index & Category Pages - Blog-Specific Styles
    ============================================ */
+
+/* Blog listing pages */
 .blog-index,
 .blog-category {
-  margin-top: 2rem;
+  margin-top: var(--spacing-xl);
   width: 100%;
   max-width: 100%;
 }
 
 .blog-index h1,
 .blog-category h1 {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-lg);
 }
 
+/* Section headers */
 .section-title {
   color: var(--accent-green);
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-xl);
   font-size: 1.75rem;
 }
 
+/* Blog post preview cards */
 .post-preview h3 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-xl);
 }
 
 .post-preview h3 a {
@@ -1056,43 +1062,56 @@ img {
   text-decoration: underline;
 }
 
-.post-meta {
+/* Override general content-meta for blog index pages - Consolidated */
+.blog-index .content-meta,
+.blog-category .content-meta {
   color: var(--text-muted);
-  font-size: 0.85rem;
-  margin-bottom: 0.75rem;
+  font-size: var(--font-sm);
+  margin-bottom: var(--spacing-sm);
   display: flex;
-  gap: 0.75rem;
+  gap: var(--spacing-sm);
   flex-wrap: wrap;
 }
 
-.post-category {
-  padding: 0.125rem 0.5rem;
-  background: var(--accent-green-15);
+/* Category badge in blog listings - Consolidated */
+.blog-index .content-category,
+.blog-category .content-category {
+  padding: 0.125rem var(--spacing-xs);
+  background: var(--accent-green-20);
   border-radius: var(--radius-sm);
-  font-size: 0.75rem;
+  font-size: var(--font-xs);
   color: var(--accent-green);
+  margin-left: 0;
 }
 
+.blog-index .content-category::before,
+.blog-category .content-category::before {
+  content: none;
+}
+
+/* Post excerpt text */
 .post-excerpt {
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--spacing-sm);
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
+/* Read more links */
 .read-more {
   color: var(--accent-green);
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: var(--font-sm);
 }
 
 .read-more:hover {
   text-decoration: underline;
 }
 
+/* Empty state */
 .no-posts {
   text-align: center;
-  padding: 3rem;
+  padding: var(--spacing-2xl);
   color: var(--text-muted);
 }
 
@@ -1108,17 +1127,17 @@ img {
 @media (max-width: 1400px) {
   .posts-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: var(--spacing-lg);
   }
 }
 
 @media (max-width: 576px) {
   .post-preview {
-    padding: 1rem;
+    padding: var(--spacing-md);
   }
 
   .post-preview h3 {
-    font-size: 1.1rem;
+    font-size: var(--font-lg);
   }
 
   .category-nav-link {
@@ -1128,32 +1147,33 @@ img {
 }
 
 /* ============================================
-   Detail Pages - Unified styling for training, podcasts, self-hosted, vulnerable-labs
+   Detail Pages - Resource-Specific Styles (Training, Podcasts, Self-Hosted, Vulnerable Labs)
+   Note: These pages inherit from unified content-page classes above
    ============================================ */
 
 /* Breadcrumb container */
 .detail-breadcrumb {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-xl);
 }
 
 .detail-breadcrumb .breadcrumb {
   background: var(--bg-secondary);
-  padding: 0.75rem 1rem;
+  padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-sm);
 }
 
-/* Detail page header section */
+/* Detail page header extends content-header */
 .detail-header {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-xl);
 }
 
 .detail-header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-xs);
 }
 
 .detail-header .lead {
   color: var(--accent-cyan);
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-lg);
 }
 
 /* Detail page header with badge (for vulnerable labs) */
@@ -1162,8 +1182,8 @@ img {
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
 }
 
 .detail-header-with-badge h1 {
@@ -1175,9 +1195,9 @@ img {
 .detail-type-badge {
   background: var(--accent-green);
   color: var(--bg-primary);
-  padding: 0.5rem 1rem;
+  padding: var(--spacing-xs) var(--spacing-md);
   border-radius: var(--radius-xl);
-  font-size: 0.9rem;
+  font-size: var(--font-sm);
   font-weight: 600;
   white-space: nowrap;
 }
@@ -1185,17 +1205,17 @@ img {
 /* Detail page subtitle variations */
 .detail-subtitle {
   color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-xs);
 }
 
-/* Detail page metadata */
+/* Detail page metadata extends content-meta */
 .detail-meta {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-lg);
 }
 
 /* Detail page image container */
 .detail-image {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-xl);
 }
 
 .detail-image img {

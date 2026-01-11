@@ -50,8 +50,8 @@
   <main role="main" class="container-fluid main-content">
     <article class="selfhosted-page">
       <!-- Back navigation at top -->
-      <nav class="page-nav-top">
-        <a href="{{ page.back_url | default: '/' | relative_url }}" class="back-to-selfhosted">← {{ page.back_text | default: 'Back' }}</a>
+      <nav class="content-nav-top">
+        <a href="{{ page.back_url | default: '/' | relative_url }}" class="back-nav-link">← {{ page.back_text | default: 'Back' }}</a>
       </nav>
 
       <!-- Breadcrumb -->
@@ -120,8 +120,8 @@
       </div>
 
       <!-- Back button at bottom -->
-      <footer class="page-footer">
-        <a href="{{ page.back_url | default: '/' | relative_url }}" class="back-to-selfhosted">← {{ page.back_text | default: 'Back' }}</a>
+      <footer class="content-footer">
+        <a href="{{ page.back_url | default: '/' | relative_url }}" class="back-nav-link">← {{ page.back_text | default: 'Back' }}</a>
       </footer>
 
     </article>
