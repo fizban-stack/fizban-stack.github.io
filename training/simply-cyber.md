@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Simply Cyber
 subtitle: Cybersecurity Career Guidance
 description: Cybersecurity career guidance, training resources, and community support for beginners.

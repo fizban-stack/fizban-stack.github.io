@@ -1,5 +1,9 @@
 ---
-layout: vulnerable-lab
+layout: detail-page
+back_url: /vulnerable-labs
+back_text: Back to Vulnerable Labs
+breadcrumb_url: /vulnerable-labs
+breadcrumb_text: Vulnerable Labs
 title: Pixi
 focus: MEAN stack API security and web services
 type: Container

@@ -1,5 +1,9 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted Apps
+breadcrumb_url: /self-hosted
+breadcrumb_text: Self-Hosted
 title: Proxmox Backup Server
 subtitle: Enterprise Backup Solution
 description: Backup solution for VMs, containers, and physical hosts.

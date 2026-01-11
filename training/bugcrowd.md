@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Bugcrowd
 subtitle: Bug Bounty and Security Training
 description: Crowdsourced security platform offering bug bounty programs and security testing opportunities. Has a training site as well.

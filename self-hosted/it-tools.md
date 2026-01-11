@@ -1,5 +1,9 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted Apps
+breadcrumb_url: /self-hosted
+breadcrumb_text: Self-Hosted
 title: IT-Tools
 subtitle: Developer Tools Collection
 description: Collection of handy online tools for developers.

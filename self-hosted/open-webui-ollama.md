@@ -1,5 +1,9 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted Apps
+breadcrumb_url: /self-hosted
+breadcrumb_text: Self-Hosted
 title: Open WebUI + Ollama
 subtitle: Local AI Chat Interface
 description: Self-hosted AI chat interface with local LLM support.

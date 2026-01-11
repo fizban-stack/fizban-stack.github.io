@@ -690,23 +690,23 @@ img {
   gap: 1rem;
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 255, 65, 0.2);
 }
 
 .category-nav-link {
   padding: 0.5rem 1rem;
-  background: rgba(0, 255, 0, 0.1);
-  border: 1px solid rgba(0, 255, 0, 0.3);
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid rgba(0, 255, 65, 0.3);
   border-radius: 0.25rem;
-  color: #00ff00;
+  color: var(--accent-green);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .category-nav-link:hover {
-  background: rgba(0, 255, 0, 0.2);
-  border-color: rgba(0, 255, 0, 0.5);
+  background: rgba(0, 255, 65, 0.2);
+  border-color: rgba(0, 255, 65, 0.5);
   transform: translateY(-2px);
 }
 
@@ -719,14 +719,14 @@ img {
 
 .post-preview {
   padding: 1.5rem;
-  border: 1px solid rgba(0, 255, 0, 0.2);
+  border: 1px solid rgba(0, 255, 65, 0.2);
   border-radius: 0.5rem;
   background: rgba(0, 0, 0, 0.3);
   transition: border-color 0.3s ease, transform 0.2s ease;
 }
 
 .post-preview:hover {
-  border-color: rgba(0, 255, 0, 0.5);
+  border-color: rgba(0, 255, 65, 0.5);
   transform: translateY(-2px);
 }
 
@@ -764,14 +764,14 @@ img {
 
 .page-content h2,
 .post-content h2 {
-  color: #00ff00;
+  color: var(--accent-green);
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 .page-content h3,
 .post-content h3 {
-  color: #00cc00;
+  color: var(--accent-green);
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
@@ -783,7 +783,7 @@ img {
 
 .page-content a,
 .post-content a {
-  color: #00ff00;
+  color: var(--accent-green);
 }
 
 .page-content a:hover,
@@ -793,7 +793,7 @@ img {
 
 .page-content code,
 .post-content code {
-  background: rgba(0, 255, 0, 0.1);
+  background: rgba(0, 255, 65, 0.1);
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
   font-size: 0.9em;
@@ -802,7 +802,7 @@ img {
 .page-content pre,
 .post-content pre {
   background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(0, 255, 0, 0.3);
+  border: 1px solid rgba(0, 255, 65, 0.3);
   padding: 1rem;
   border-radius: 0.5rem;
   overflow-x: auto;
@@ -817,7 +817,7 @@ img {
 
 .page-content blockquote,
 .post-content blockquote {
-  border-left: 4px solid #00ff00;
+  border-left: 4px solid var(--accent-green);
   padding-left: 1rem;
   margin-left: 0;
   color: #ccc;
@@ -852,13 +852,13 @@ img {
 .back-to-blog,
 .back-to-selfhosted,
 .back-to-labs {
-  color: #00ff00;
+  color: var(--accent-green);
   text-decoration: none;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border: 1px solid rgba(0, 255, 0, 0.3);
+  border: 1px solid rgba(0, 255, 65, 0.3);
   border-radius: 0.25rem;
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
@@ -867,8 +867,8 @@ img {
 .back-to-selfhosted:hover,
 .back-to-labs:hover {
   text-decoration: none;
-  border-color: rgba(0, 255, 0, 0.6);
-  background-color: rgba(0, 255, 0, 0.1);
+  border-color: rgba(0, 255, 65, 0.6);
+  background-color: rgba(0, 255, 65, 0.1);
 }
 
 /* ============================================
@@ -887,11 +887,11 @@ img {
 .post-header {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid rgba(0, 255, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 255, 65, 0.3);
 }
 
 .post-title {
-  color: #00ff00;
+  color: var(--accent-green);
   margin-bottom: 0.5rem;
 }
 
@@ -914,7 +914,7 @@ img {
 }
 
 .post-category a {
-  color: #00ff00;
+  color: var(--accent-green);
   text-decoration: none;
 }
 
@@ -925,7 +925,7 @@ img {
 .post-footer,
 .page-footer {
   padding-top: 2rem;
-  border-top: 1px solid rgba(0, 255, 0, 0.2);
+  border-top: 1px solid rgba(0, 255, 65, 0.2);
 }
 
 /* Responsive adjustments for blog/page content */
@@ -978,7 +978,7 @@ img {
 }
 
 .section-title {
-  color: #00ff00;
+  color: var(--accent-green);
   margin-bottom: 2rem;
   font-size: 1.75rem;
 }
@@ -990,7 +990,7 @@ img {
 }
 
 .post-preview h3 a {
-  color: #00ff00;
+  color: var(--accent-green);
   text-decoration: none;
 }
 
@@ -1009,10 +1009,10 @@ img {
 
 .post-category {
   padding: 0.125rem 0.5rem;
-  background: rgba(0, 255, 0, 0.15);
+  background: rgba(0, 255, 65, 0.15);
   border-radius: 0.25rem;
   font-size: 0.75rem;
-  color: #00ff00;
+  color: var(--accent-green);
 }
 
 .post-excerpt {
@@ -1022,7 +1022,7 @@ img {
 }
 
 .read-more {
-  color: #00ff00;
+  color: var(--accent-green);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -1067,4 +1067,83 @@ img {
     flex: 1 1 calc(50% - 0.5rem);
     text-align: center;
   }
+}
+
+/* ============================================
+   Detail Pages - Unified styling for training, podcasts, self-hosted, vulnerable-labs
+   ============================================ */
+
+/* Breadcrumb container */
+.detail-breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.detail-breadcrumb .breadcrumb {
+  background: var(--bg-secondary);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+}
+
+/* Detail page header section */
+.detail-header {
+  margin-bottom: 2rem;
+}
+
+.detail-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.detail-header .lead {
+  color: var(--accent-cyan);
+  margin-bottom: 1.5rem;
+}
+
+/* Detail page header with badge (for vulnerable labs) */
+.detail-header-with-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-header-with-badge h1 {
+  margin: 0;
+  flex: 1;
+}
+
+/* Type badge for detail pages */
+.detail-type-badge {
+  background: var(--accent-green);
+  color: #0a0e27;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Detail page subtitle variations */
+.detail-subtitle {
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+}
+
+/* Detail page metadata */
+.detail-meta {
+  margin-bottom: 1.5rem;
+}
+
+/* Detail page image container */
+.detail-image {
+  margin-bottom: 2rem;
+}
+
+.detail-image img {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }

@@ -1,5 +1,9 @@
 ---
-layout: selfhosted
+layout: detail-page
+back_url: /self-hosted
+back_text: Back to Self-Hosted Apps
+breadcrumb_url: /self-hosted
+breadcrumb_text: Self-Hosted
 title: InfluxDB
 subtitle: Time-Series Database
 description: Purpose-built time-series database for metrics and events.

@@ -1,5 +1,9 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_url: /podcasts
+breadcrumb_text: Podcasts
 title: What the Hack?
 subtitle: Award-Winning True Cybercrime Podcast
 description: The award-winning true cybercrime podcast—the place to hear memorable stories and get good advice.

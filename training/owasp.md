@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: OWASP
 subtitle: Open Web Application Security Project
 description: Open Web Application Security Project with free resources, tools, and documentation for application security.

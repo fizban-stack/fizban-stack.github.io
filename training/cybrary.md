@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Cybrary
 subtitle: Cybersecurity Video Courses
 description: Offers free cybersecurity courses covering various topics from beginner to advanced levels.

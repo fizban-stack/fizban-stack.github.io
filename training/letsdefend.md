@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: LetsDefend
 subtitle: Blue Team Training Platform
 description: Blue team training platform with hands-on SOC analyst experience and incident response scenarios.

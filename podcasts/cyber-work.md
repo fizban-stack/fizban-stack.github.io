@@ -1,5 +1,9 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_url: /podcasts
+breadcrumb_text: Podcasts
 title: Cyber Work
 subtitle: Cybersecurity Career Advice
 description: Career advice and insights for cybersecurity professionals.

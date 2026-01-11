@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: PortSwigger Web Security Academy
 subtitle: Web Security Training
 description: Free online training from the creators of Burp Suite, covering web security vulnerabilities and exploitation.

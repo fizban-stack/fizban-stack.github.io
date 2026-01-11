@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Hack The Box
 subtitle: Penetration Testing Training Platform
 description: Platform for penetration testing training with realistic vulnerable machines and capture the flag challenges.

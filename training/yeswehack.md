@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: YesWeHack
 subtitle: Bug Bounty Platform and Dojo
 description: European bug bounty platform and vulnerability coordination platform for ethical hackers. YesWeHack Dojo provides training opportunities for bug hunters.

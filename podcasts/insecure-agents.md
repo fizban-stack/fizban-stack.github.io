@@ -1,5 +1,9 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_url: /podcasts
+breadcrumb_text: Podcasts
 title: Insecure Agents
 subtitle: The Best Conversations in AI Security
 description: A podcast featuring the best conversations in AI security.

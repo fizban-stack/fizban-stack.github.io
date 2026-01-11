@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: HackerOne
 subtitle: Bug Bounty Platform and Training
 description: Bug bounty platform with a training site where you can practice vulnerability research on real programs and earn rewards.

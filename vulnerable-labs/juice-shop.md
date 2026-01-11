@@ -1,5 +1,9 @@
 ---
-layout: vulnerable-lab
+layout: detail-page
+back_url: /vulnerable-labs
+back_text: Back to Vulnerable Labs
+breadcrumb_url: /vulnerable-labs
+breadcrumb_text: Vulnerable Labs
 title: OWASP Juice Shop
 focus: Modern web application security (Node.js/Angular/Express)
 type: Container

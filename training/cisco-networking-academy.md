@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Cisco Networking Academy
 subtitle: Free Networking and Security Courses
 description: Free networking and cybersecurity courses from Cisco, including cybersecurity essentials.

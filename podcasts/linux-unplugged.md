@@ -1,5 +1,9 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_url: /podcasts
+breadcrumb_text: Podcasts
 title: LINUX Unplugged
 subtitle: The Linux Action Show
 description: The Linux Action Show for the community, by the community.

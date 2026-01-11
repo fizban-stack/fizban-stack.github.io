@@ -1,5 +1,9 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_url: /podcasts
+breadcrumb_text: Podcasts
 title: Self-Hosted
 subtitle: Self-Hosting and Privacy
 description: A podcast about self-hosting, privacy, and taking control of your data. This podcast has stopped producing episodes, but I have always found it had great content and it was one of the things that inspired me to create my own homelab.

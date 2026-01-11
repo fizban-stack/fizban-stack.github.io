@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Build Cyber
 subtitle: Career Building Resources
 description: Resources and guidance for building a career in cybersecurity with practical advice. Includes vouchers for individuals in need to receive free training courses including, Hack the Box certifications, the Offsec OSCP, and many more.

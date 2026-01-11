@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: HackTricks
 subtitle: Penetration Testing Wiki
 description: Comprehensive wiki with penetration testing techniques, methodologies, and security knowledge.

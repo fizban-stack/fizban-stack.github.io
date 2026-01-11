@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: TryHackMe
 subtitle: Interactive Cybersecurity Training Platform
 description: Interactive cybersecurity training platform with hands-on labs covering penetration testing, security operations, and more.

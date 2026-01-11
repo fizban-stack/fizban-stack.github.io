@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: OverTheWire
 subtitle: Security Wargames
 description: Wargames that help you learn and practice security concepts through fun challenges and games.

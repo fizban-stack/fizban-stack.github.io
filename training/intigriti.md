@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Intigriti
 subtitle: European Bug Bounty Platform
 description: European bug bounty and security platform connecting ethical hackers with companies and providing training for people trying to get into bug bounty.

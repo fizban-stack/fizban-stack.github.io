@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Microsoft Learn
 subtitle: Free Learning Platform
 description: Free learning platform with cybersecurity training paths and Azure security content.

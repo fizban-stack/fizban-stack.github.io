@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Red Team Leaders
 subtitle: Red Team Training Resources
 description: Resources for red team professionals and offensive security practitioners. Contains detailed, technical content and most of the courses are free. Certifications are offered as well and most cost under $20.

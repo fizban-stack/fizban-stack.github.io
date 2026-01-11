@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: picoCTF
 subtitle: Free Computer Security Education
 description: Free computer security education program with year-round practice challenges for students and beginners.

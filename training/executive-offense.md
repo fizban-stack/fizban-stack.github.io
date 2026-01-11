@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Executive Offense
 subtitle: Advanced Offensive Security Training
 description: Advanced offensive security training and resources for security professionals.

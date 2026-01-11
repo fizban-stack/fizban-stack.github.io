@@ -1,5 +1,9 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_url: /podcasts
+breadcrumb_text: Podcasts
 title: The Homelab Show
 subtitle: Building and Maintaining Your Homelab
 description: Everything about building and maintaining your homelab. This podcast has also stopped producing new episodes, but much like the Self-Hosted Podcast this show help to inspire my homelab journey.

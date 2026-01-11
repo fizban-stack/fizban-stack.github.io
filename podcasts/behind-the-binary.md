@@ -1,5 +1,9 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_url: /podcasts
+breadcrumb_text: Podcasts
 title: Behind the Binary
 subtitle: People, Technology, and Tools in Reverse Engineering
 description: A podcast that introduces you to the fascinating people, technology, and tools driving the world of reverse engineering.

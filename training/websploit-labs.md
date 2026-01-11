@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: Websploit Labs
 subtitle: Vulnerable Docker Containers Collection
 description: A collection of vulnerable docker containers assembled by Omar Santos containing several labs including, OWASP Juice Shop and DVWA(Damn Vulnerable Web App).

@@ -1,5 +1,9 @@
 ---
-layout: training
+layout: detail-page
+back_url: /training
+back_text: Back to Training
+breadcrumb_url: /training
+breadcrumb_text: Training
 title: UnderTheWire
 subtitle: PowerShell Wargames
 description: Wargames that help you learn and practice PowerShell and security concepts through fun challenges and games.

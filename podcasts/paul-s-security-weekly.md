@@ -1,5 +1,9 @@
 ---
-layout: podcasts
+layout: detail-page
+back_url: /podcasts
+back_text: Back to Podcasts
+breadcrumb_url: /podcasts
+breadcrumb_text: Podcasts
 title: Paul's Security Weekly
 subtitle: Weekly Security News and Tools
 description: Weekly discussion on the latest security news and tools.
