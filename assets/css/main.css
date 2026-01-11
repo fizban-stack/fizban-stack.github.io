@@ -6,13 +6,15 @@
 /* Import Google Fonts - Monospace for that terminal feel */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;600;700&display=swap');
 
-/* Color Variables - Dark cybersecurity theme */
+/* CSS Variables - Dark cybersecurity theme */
 :root {
+  /* Colors */
   --bg-primary: #0a0e27;
   --bg-secondary: #151a2e;
   --bg-tertiary: #1e2541;
   --text-primary: #e0e0e0;
   --text-secondary: #a0aec0;
+  --text-muted: #888;
   --accent-green: #00ff41;
   --accent-cyan: #00d9ff;
   --accent-red: #ff0040;
@@ -20,6 +22,58 @@
   --border-color: #2d3748;
   --card-bg: rgba(30, 37, 65, 0.8);
   --navbar-bg: rgba(10, 14, 39, 0.95);
+
+  /* Accent color with alpha variations */
+  --accent-green-10: var(--accent-green-10);
+  --accent-green-15: var(--accent-green-15);
+  --accent-green-20: var(--accent-green-20);
+  --accent-green-25: var(--accent-green-25);
+  --accent-green-30: var(--accent-green-30);
+  --accent-green-50: var(--accent-green-50);
+  --accent-green-60: var(--accent-green-60);
+
+  --accent-cyan-30: var(--accent-cyan-30);
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 20px;
+  --radius-circle: 50%;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 10px var(--accent-green-10);
+  --shadow-md: 0 5px 15px var(--accent-green-20);
+  --shadow-lg: 0 8px 25px var(--accent-green-15);
+  --shadow-glow: 0 0 15px var(--accent-green-30);
+
+  /* Transitions */
+  --transition-fast: all 0.2s ease;
+  --transition-standard: all 0.3s ease;
+
+  /* Font Sizes */
+  --font-xs: 0.75rem;
+  --font-sm: 0.85rem;
+  --font-md: 0.9rem;
+  --font-base: 1rem;
+  --font-lg: 1.1rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 2rem;
+  --font-4xl: 2.5rem;
+
+  /* Fonts */
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* Global Styles */
@@ -28,7 +82,7 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-sans);
   background: var(--bg-primary);
   background-image:
     linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
@@ -41,7 +95,7 @@ body {
 }
 
 code, pre {
-  font-family: 'Fira Code', 'Courier New', monospace;
+  font-family: var(--font-mono);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,7 +131,7 @@ p {
 a {
   color: var(--accent-cyan);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: var(--transition-standard);
 }
 
 a:hover {
@@ -97,11 +151,11 @@ main.container-fluid {
   background: var(--navbar-bg) !important;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--accent-green);
-  box-shadow: 0 2px 10px rgba(0, 255, 65, 0.1);
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar-brand {
-  font-family: 'Fira Code', monospace;
+  font-family: var(--font-mono);
   font-weight: 600;
   color: var(--accent-green) !important;
   font-size: 1.5rem;
@@ -117,7 +171,7 @@ main.container-fluid {
   color: var(--text-secondary) !important;
   font-weight: 500;
   position: relative;
-  transition: all 0.3s ease;
+  transition: var(--transition-standard);
   padding: 0.5rem 1rem !important;
 }
 
@@ -134,7 +188,7 @@ main.container-fluid {
   width: 0;
   height: 2px;
   background: var(--accent-green);
-  transition: all 0.3s ease;
+  transition: var(--transition-standard);
   transform: translateX(-50%);
 }
 
@@ -155,16 +209,16 @@ main.container-fluid {
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: var(--transition-standard);
   backdrop-filter: blur(10px);
 }
 
 .card:hover {
   transform: translateY(-5px);
   border-color: var(--accent-green);
-  box-shadow: 0 8px 25px rgba(0, 255, 65, 0.15);
+  box-shadow: var(--shadow-lg);
 }
 
 .card-img-top {
@@ -191,9 +245,9 @@ main.container-fluid {
 /* Buttons */
 .btn {
   font-weight: 500;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   padding: 0.5rem 1.25rem;
-  transition: all 0.3s ease;
+  transition: var(--transition-standard);
   border: 1px solid transparent;
 }
 
@@ -207,7 +261,7 @@ main.container-fluid {
   background: transparent;
   color: var(--accent-green);
   border-color: var(--accent-green);
-  box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+  box-shadow: var(--shadow-glow);
 }
 
 .btn-outline-secondary {
@@ -219,7 +273,7 @@ main.container-fluid {
 .btn-outline-secondary:hover {
   background: var(--accent-cyan);
   color: var(--bg-primary);
-  box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+  box-shadow: 0 0 15px var(--accent-cyan-30);
 }
 
 /* Home Page Two Column Layout */
@@ -231,9 +285,9 @@ main.container-fluid {
 .home_2col img.dibley {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   border: 2px solid var(--accent-green);
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 20px var(--accent-green-20);
 }
 
 /* Article Styling */
@@ -243,7 +297,7 @@ article {
   border-left: 4px solid var(--accent-green);
   padding: 1.5rem;
   margin-bottom: 2rem;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
 }
 
 article h2 {
@@ -287,7 +341,7 @@ article h2 {
   height: 16px;
   background: var(--accent-green);
   border: 3px solid var(--bg-primary);
-  border-radius: 50%;
+  border-radius: var(--radius-circle);
   box-shadow: 0 0 15px var(--accent-green);
   z-index: 2;
 }
@@ -295,7 +349,7 @@ article h2 {
 .timeline-date {
   width: 40%;
   text-align: center;
-  font-family: 'Fira Code', monospace;
+  font-family: var(--font-mono);
   color: var(--accent-cyan);
   font-weight: 600;
 }
@@ -305,7 +359,7 @@ article h2 {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   border-left: 3px solid var(--accent-green);
 }
 
@@ -328,7 +382,7 @@ article h2 {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   margin-bottom: 1rem;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   overflow: hidden;
 }
 
@@ -348,7 +402,7 @@ article h2 {
 }
 
 .accordion-button:focus {
-  box-shadow: 0 0 0 0.25rem rgba(0, 255, 65, 0.25);
+  box-shadow: 0 0 0 0.25rem var(--accent-green-25);
   border-color: var(--accent-green);
 }
 
@@ -368,14 +422,14 @@ article h2 {
 .cert-count {
   background: var(--accent-green) !important;
   color: var(--bg-primary) !important;
-  font-family: 'Fira Code', monospace;
+  font-family: var(--font-mono);
 }
 
 .list-group-item {
   background: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   color: var(--text-secondary);
-  transition: all 0.3s ease;
+  transition: var(--transition-standard);
 }
 
 .list-group-item:hover {
@@ -396,7 +450,7 @@ article h2 {
 .footer-link {
   color: var(--accent-cyan);
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: var(--transition-standard);
 }
 
 .footer-link:hover {
@@ -412,15 +466,15 @@ article h2 {
   height: 40px;
   margin: 0 0.5rem;
   border: 1px solid var(--border-color);
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-standard);
 }
 
 .footer-icon-box:hover {
   border-color: var(--accent-green);
   background: var(--bg-tertiary);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 255, 65, 0.2);
+  box-shadow: var(--shadow-md);
 }
 
 .footer-icon-box img {
@@ -540,7 +594,7 @@ article h2 {
 pre {
   background: var(--bg-secondary);
   border: 1px solid var(--accent-green);
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   padding: 1rem;
   overflow-x: auto;
   position: relative;
@@ -555,7 +609,7 @@ pre::before {
 .breadcrumb {
   background: var(--bg-secondary);
   padding: 0.75rem 1rem;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
 }
 
@@ -609,7 +663,7 @@ img {
 
 .filter-pill {
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   border: 1px solid var(--border-color);
   background: var(--card-bg);
   color: var(--text-primary);
@@ -634,22 +688,24 @@ img {
   display: none !important;
 }
 
-/* Type badges for categorized items */
+/* Type badges for categorized items - Consolidated */
+.type-badge,
 .lab-type-badge,
 .app-type-badge,
 .podcast-type-badge,
 .training-type-badge,
 .project-type-badge {
   background: var(--accent-green);
-  color: #0a0e27;
+  color: var(--bg-primary);
   padding: 0.25rem 0.75rem;
-  border-radius: 12px;
-  font-size: 0.75rem;
+  border-radius: var(--radius-lg);
+  font-size: var(--font-xs);
   font-weight: 600;
   white-space: nowrap;
 }
 
-/* Category display within cards */
+/* Category display within cards - Consolidated */
+.item-category,
 .lab-category,
 .app-category,
 .podcast-category,
@@ -657,8 +713,8 @@ img {
 .project-category {
   font-size: 0.8rem;
   color: var(--text-tertiary);
-  margin-bottom: 1rem;
-  padding-top: 0.5rem;
+  margin-bottom: var(--spacing-md);
+  padding-top: var(--spacing-xs);
   border-top: 1px solid var(--border-color);
 }
 
@@ -690,23 +746,23 @@ img {
   gap: 1rem;
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(0, 255, 65, 0.2);
+  border-bottom: 1px solid var(--accent-green-20);
 }
 
 .category-nav-link {
   padding: 0.5rem 1rem;
-  background: rgba(0, 255, 65, 0.1);
-  border: 1px solid rgba(0, 255, 65, 0.3);
-  border-radius: 0.25rem;
+  background: var(--accent-green-10);
+  border: 1px solid var(--accent-green-30);
+  border-radius: var(--radius-sm);
   color: var(--accent-green);
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: var(--transition-standard);
 }
 
 .category-nav-link:hover {
-  background: rgba(0, 255, 65, 0.2);
-  border-color: rgba(0, 255, 65, 0.5);
+  background: var(--accent-green-20);
+  border-color: var(--accent-green-50);
   transform: translateY(-2px);
 }
 
@@ -719,14 +775,14 @@ img {
 
 .post-preview {
   padding: 1.5rem;
-  border: 1px solid rgba(0, 255, 65, 0.2);
-  border-radius: 0.5rem;
+  border: 1px solid var(--accent-green-20);
+  border-radius: var(--radius-md);
   background: rgba(0, 0, 0, 0.3);
-  transition: border-color 0.3s ease, transform 0.2s ease;
+  transition: border-color 0.3s ease, transform var(--transition-fast);
 }
 
 .post-preview:hover {
-  border-color: rgba(0, 255, 65, 0.5);
+  border-color: var(--accent-green-50);
   transform: translateY(-2px);
 }
 
@@ -793,18 +849,18 @@ img {
 
 .page-content code,
 .post-content code {
-  background: rgba(0, 255, 65, 0.1);
+  background: var(--accent-green-10);
   padding: 0.2rem 0.4rem;
-  border-radius: 0.25rem;
+  border-radius: var(--radius-sm);
   font-size: 0.9em;
 }
 
 .page-content pre,
 .post-content pre {
   background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(0, 255, 65, 0.3);
+  border: 1px solid var(--accent-green-30);
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
   overflow-x: auto;
   margin-bottom: 1rem;
 }
@@ -828,7 +884,7 @@ img {
 .post-content img {
   max-width: 100%;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
   margin: 1rem 0;
   display: block;
 }
@@ -847,8 +903,9 @@ img {
 }
 
 /* ============================================
-   Back Navigation Buttons - Shared across layout files
+   Back Navigation Buttons - Consolidated
    ============================================ */
+.back-nav-link,
 .back-to-blog,
 .back-to-selfhosted,
 .back-to-labs {
@@ -857,18 +914,19 @@ img {
   font-weight: 500;
   display: inline-flex;
   align-items: center;
-  padding: 0.5rem 1rem;
-  border: 1px solid rgba(0, 255, 65, 0.3);
-  border-radius: 0.25rem;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: 1px solid var(--accent-green-30);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-standard), background-color var(--transition-standard);
 }
 
+.back-nav-link:hover,
 .back-to-blog:hover,
 .back-to-selfhosted:hover,
 .back-to-labs:hover {
   text-decoration: none;
-  border-color: rgba(0, 255, 65, 0.6);
-  background-color: rgba(0, 255, 65, 0.1);
+  border-color: var(--accent-green-60);
+  background-color: var(--accent-green-10);
 }
 
 /* ============================================
@@ -887,7 +945,7 @@ img {
 .post-header {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid rgba(0, 255, 65, 0.3);
+  border-bottom: 2px solid var(--accent-green-30);
 }
 
 .post-title {
@@ -896,7 +954,7 @@ img {
 }
 
 .post-meta {
-  color: #888;
+  color: var(--text-muted);
   font-size: 0.95rem;
 }
 
@@ -925,7 +983,7 @@ img {
 .post-footer,
 .page-footer {
   padding-top: 2rem;
-  border-top: 1px solid rgba(0, 255, 65, 0.2);
+  border-top: 1px solid var(--accent-green-20);
 }
 
 /* Responsive adjustments for blog/page content */
@@ -999,7 +1057,7 @@ img {
 }
 
 .post-meta {
-  color: #888;
+  color: var(--text-muted);
   font-size: 0.85rem;
   margin-bottom: 0.75rem;
   display: flex;
@@ -1009,8 +1067,8 @@ img {
 
 .post-category {
   padding: 0.125rem 0.5rem;
-  background: rgba(0, 255, 65, 0.15);
-  border-radius: 0.25rem;
+  background: var(--accent-green-15);
+  border-radius: var(--radius-sm);
   font-size: 0.75rem;
   color: var(--accent-green);
 }
@@ -1035,7 +1093,7 @@ img {
 .no-posts {
   text-align: center;
   padding: 3rem;
-  color: #888;
+  color: var(--text-muted);
 }
 
 .post-preview.hidden {
@@ -1081,7 +1139,7 @@ img {
 .detail-breadcrumb .breadcrumb {
   background: var(--bg-secondary);
   padding: 0.75rem 1rem;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
 }
 
 /* Detail page header section */
@@ -1116,9 +1174,9 @@ img {
 /* Type badge for detail pages */
 .detail-type-badge {
   background: var(--accent-green);
-  color: #0a0e27;
+  color: var(--bg-primary);
   padding: 0.5rem 1rem;
-  border-radius: 16px;
+  border-radius: var(--radius-xl);
   font-size: 0.9rem;
   font-weight: 600;
   white-space: nowrap;
@@ -1141,7 +1199,7 @@ img {
 }
 
 .detail-image img {
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   width: 100%;
   max-height: 400px;
