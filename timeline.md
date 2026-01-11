@@ -15,7 +15,7 @@ description: The professional learning journey and timeline of James Wells.
     <div class="timeline-dot"></div>
     <div class="timeline-date">{{ event.date }}</div>
     <div class="timeline-content">
-      <h3><a href="{{ event.link }}" target="_blank">{{ event.title }}</a></h3>
+      <h3><a href="{{ event.link }}">{{ event.title }}</a></h3>
       <p>{{ event.description }}</p>
     </div>
   </div>
