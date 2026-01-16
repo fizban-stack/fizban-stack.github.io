@@ -14,9 +14,10 @@ rss_feed: https://little-canada.org/feeds/output/applesecurityresearch.rss
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://little-canada.org/feeds/output/applesecurityresearch.rss](https://little-canada.org/feeds/output/applesecurityresearch.rss)
-
+### Latest from the Blog
+{% include rss-fetcher.html %}
 ---
 
 The Apple Security Research blog provides an unprecedented look into the internals of one of the world's most hardened operating systems. 

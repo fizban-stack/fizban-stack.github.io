@@ -14,8 +14,10 @@ rss_feed: https://blog.talosintelligence.com/rss/
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://blog.talosintelligence.com/rss/](https://blog.talosintelligence.com/rss/)
+### Latest from the Blog
+{% include rss-fetcher.html %}
 
 ---
 

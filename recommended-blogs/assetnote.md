@@ -14,8 +14,10 @@ rss_feed: https://blog.assetnote.io/feed.xml
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://blog.assetnote.io/feed.xml](https://blog.assetnote.io/feed.xml)
+### Latest from the Blog
+{% include rss-fetcher.html %}
 
 ---
 

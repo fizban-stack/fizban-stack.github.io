@@ -14,9 +14,10 @@ rss_feed: https://medium.com/feed/@costin.raiu
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://medium.com/feed/@costin.raiu](https://medium.com/feed/@costin.raiu)
-
+### Latest from the Blog
+{% include rss-fetcher.html %}
 ---
 
 Costin Raiu, former director of Kaspersky's Global Research and Analysis Team (GReAT), brings decades of elite APT research experience to his independent writing. His insights into nation-state operations and sophisticated malware represent some of the most informed perspectives available.

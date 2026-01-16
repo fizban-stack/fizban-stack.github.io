@@ -14,8 +14,10 @@ rss_feed: https://research.checkpoint.com/feed/
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://research.checkpoint.com/feed/](https://research.checkpoint.com/feed/)
+### Latest from the Blog
+{% include rss-fetcher.html %}
 
 ---
 

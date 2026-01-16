@@ -14,8 +14,10 @@ rss_feed: https://citizenlab.ca/feed/
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://citizenlab.ca/feed/](https://citizenlab.ca/feed/)
+### Latest from the Blog
+{% include rss-fetcher.html %}
 
 ---
 

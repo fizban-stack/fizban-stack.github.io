@@ -14,8 +14,10 @@ rss_feed: https://rss.beehiiv.com/feeds/SQSpYiG1E1.xml
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://rss.beehiiv.com/feeds/SQSpYiG1E1.xml](https://rss.beehiiv.com/feeds/SQSpYiG1E1.xml)
+### Latest from the Blog
+{% include rss-fetcher.html %}
 
 ---
 

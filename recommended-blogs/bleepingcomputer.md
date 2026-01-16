@@ -14,8 +14,10 @@ rss_feed: https://www.bleepingcomputer.com/feed/
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://www.bleepingcomputer.com/feed/](https://www.bleepingcomputer.com/feed/)
+### Latest from the Blog
+{% include rss-fetcher.html %}
 
 ---
 

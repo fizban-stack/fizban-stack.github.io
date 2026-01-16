@@ -14,8 +14,10 @@ rss_feed: https://blog.cloudflare.com/rss/
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://blog.cloudflare.com/rss/](https://blog.cloudflare.com/rss/)
+### Latest from the Blog
+{% include rss-fetcher.html %}
 
 ---
 

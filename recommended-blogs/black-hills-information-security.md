@@ -14,8 +14,10 @@ rss_feed: https://www.blackhillsinfosec.com/feed/
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://www.blackhillsinfosec.com/feed/](https://www.blackhillsinfosec.com/feed/)
+### Latest from the Blog
+{% include rss-fetcher.html %}
 
 ---
 

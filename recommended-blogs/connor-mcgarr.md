@@ -14,8 +14,10 @@ rss_feed: https://connormcgarr.github.io/feed.xml
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://connormcgarr.github.io/feed.xml](https://connormcgarr.github.io/feed.xml)
+### Latest from the Blog
+{% include rss-fetcher.html %}
 
 ---
 
