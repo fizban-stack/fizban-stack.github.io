@@ -14,9 +14,23 @@ rss_feed: https://projectzero.google/feed.xml
 ---
 
 ## Subscribe
+**RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-**RSS Feed:** [https://projectzero.google/feed.xml](https://projectzero.google/feed.xml)
-
+### Latest Stories
+<ul>
+  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
+  {% if current_feed %}
+    {% for entry in current_feed.entries limit:5 %}
+      <li>
+        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
+        <br>
+        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
+      </li>
+    {% endfor %}
+  {% else %}
+    <li>Fetching latest stories... Check back soon.</li>
+  {% endif %}
+</ul>
 ---
 
 Google Project Zero represents the pinnacle of vulnerability research, consistently discovering and documenting some of the most sophisticated security flaws in widely-used software. Their blog serves as a masterclass in advanced exploitation and security research methodologies.

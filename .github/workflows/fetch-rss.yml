@@ -1,0 +1,85 @@
+name: Fetch RSS to Data
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+  workflow_dispatch: # Allows you to run it manually to test
+
+jobs:
+  fetch-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch RSS Feeds
+        uses: suisei-kit/rss-fetch-action@v1
+        with:
+          # List all your feed URLs here
+          feeds: |
+            https://portswigger.net/blog/rss
+            https://security.apple.com/blog/feed.rss
+            https://www.blackhillsinfosec.com/feed/
+            https://www.zerodayinitiative.com/blog?format=rss
+            https://security.lauritz-holtmann.de/index.xml
+            https://labs.watchtowr.com/rss/
+            https://danielmiessler.com/feed.rss
+            https://unit42.paloaltonetworks.com/feed/
+            https://trustedsec.com/feed.rss
+            https://feeds.feedburner.com/TroyHunt
+            https://blog.assetnote.io/feed.xml
+            https://blog.trailofbits.com/feed/
+            https://www.bleepingcomputer.com/feed/
+            https://research.checkpoint.com/feed/
+            https://rss.beehiiv.com/feeds/xgTKUmMmUm.xml
+            https://thedfirreport.com/feed/
+            https://th4ntis.com/feed.xml
+            https://www.tenable.com/blog/feed
+            https://www.synack.com/feed/
+            https://blog.stratumsecurity.com/rss/
+            https://starlabs.sg/blog/index.xml
+            https://spaceraccoon.dev/feed.xml
+            https://www.sophos.com/en-us/blog/feed
+            https://www.sentinelone.com/feed/
+            https://www.schneier.com/feed/atom/
+            https://isc.sans.edu/rssfeed_full.xml
+            https://samcurry.net/rss
+            https://rhinosecuritylabs.com/feed/
+            https://blog.projectdiscovery.io/rss/
+            https://www.praetorian.com/blog/feed/
+            https://pentesterlab.com/rss
+            https://blog.orange.tw/feed.xml
+            https://offsec.com/rss.xml
+            https://msrc.microsoft.com/blog/rss/
+            https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+            https://krebsonsecurity.com/feed/
+            https://jub0bs.com/posts/index.xml
+            https://josephthacker.com/feed.xml
+            https://joaxcar.com/blog/feed/
+            https://blog.intigriti.com/feed/
+            https://medium.com/feed/bugbountywriteup/tagged/bug-bounty
+            https://gynvael.coldwind.pl/rss
+            https://grahamcluley.com/feed/
+            https://projectzero.google/feed.xml
+            https://github.blog/tag/github-security-lab/feed/
+            https://filestore.fortinet.com/fortiguard/rss/threatsignal.xml
+            https://www.welivesecurity.com/en/rss/feed/
+            https://embracethered.com/blog/index.xml
+            https://doublepulsar.com/feed
+            https://www.darknavy.org/index.xml
+            https://www.crowdstrike.com/blog/feed/
+            https://rss.beehiiv.com/feeds/SQSpYiG1E1.xml
+            https://medium.com/feed/@costin.raiu
+            https://connormcgarr.github.io/feed.xml
+            https://blog.cloudflare.com/rss/
+            https://citizenlab.ca/feed/
+            https://blog.talosintelligence.com/rss/
+            https://flare.io/learn/resources/blog/feed/
+          target: _data/rss_feeds.json
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/rss_feeds.json
+          git commit -m "Update RSS feeds" || exit 0
+          git push

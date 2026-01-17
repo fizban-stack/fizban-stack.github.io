@@ -4,48 +4,72 @@
   image: recommended-blogs/trustedsec.webp
   category: Offensive Security & Advanced Research
   focus: Active Directory, social engineering, and post-exploitation
-  description: Expert research on Active Directory, social engineering, and post-exploitation techniques from one of the leading offensive security consultancies.
+  description: Expert research on Active Directory, social engineering, and post-exploitation techniques.
   website: https://www.trustedsec.com/blog/
+  rss_feed: https://trustedsec.com/feed.rss
 
 - id: black-hills-information-security
   title: Black Hills Information Security (BHIS)
   image: recommended-blogs/bhis.webp
   category: Offensive Security & Advanced Research
   focus: Practical offensive security and Kerberos abuse
-  description: Practical offensive security, "active defense," and Kerberos abuse content from the team behind many popular security tools and webcasts.
+  description: Practical offensive security, "active defense," and Kerberos abuse content.
   website: https://www.blackhillsinfosec.com/blog/
+  rss_feed: https://www.blackhillsinfosec.com/feed/
 
 - id: google-project-zero
   title: Google Project Zero
   image: recommended-blogs/project-zero.webp
   category: Offensive Security & Advanced Research
   focus: Zero-day vulnerabilities and memory corruption
-  description: High-level analysis of zero-day vulnerabilities and memory corruption from Google's elite vulnerability research team.
+  description: High-level analysis of zero-day vulnerabilities from Google's elite research team.
   website: https://googleprojectzero.blogspot.com/
+  rss_feed: https://projectzero.google/feed.xml
 
 - id: offsec-blog
   title: OffSec Blog
   image: recommended-blogs/offsec.webp
   category: Offensive Security & Advanced Research
   focus: Exploit development and offensive tactics
-  description: Practical technical content focused on exploit development and offensive tactics from the creators of Kali Linux and OSCP.
+  description: Practical technical content focused on exploit development from the creators of Kali Linux.
   website: https://www.offsec.com/blog/
+  rss_feed: https://offsec.com/rss.xml
 
 - id: check-point-research
   title: Check Point Research (CPR)
   image: recommended-blogs/checkpoint.webp
   category: Offensive Security & Advanced Research
   focus: Malware reverse-engineering and protocol analysis
-  description: Detailed malware reverse-engineering and protocol analysis from Check Point's dedicated threat research team.
+  description: Detailed malware reverse-engineering and protocol analysis.
   website: https://research.checkpoint.com/
+  rss_feed: https://research.checkpoint.com/feed/
 
 - id: github-security-lab
   title: GitHub Security Lab
   image: recommended-blogs/github-security-lab.webp
   category: Offensive Security & Advanced Research
   focus: Open-source supply chain vulnerabilities
-  description: Focuses on vulnerabilities within the open-source supply chain, CodeQL research, and responsible disclosure.
+  description: Focuses on vulnerabilities within the open-source supply chain and CodeQL research.
   website: https://securitylab.github.com/
+  rss_feed: https://github.blog/tag/github-security-lab/feed/
+
+- id: star-labs
+  title: STAR Labs
+  image: recommended-blogs/starlabs.webp
+  category: Offensive Security & Advanced Research
+  focus: Browser exploitation and virtualization
+  description: Elite research on browser internals and complex exploit chains.
+  website: https://starlabs.sg/blog/
+  rss_feed: https://starlabs.sg/blog/index.xml
+
+- id: orange-tsai
+  title: Orange Tsai
+  image: recommended-blogs/orange-tsai.webp
+  category: Offensive Security & Advanced Research
+  focus: Architectural quirks and RCE chains
+  description: Seminal work on chaining minor quirks into critical vulnerabilities.
+  website: https://blog.orange.tw/
+  rss_feed: https://blog.orange.tw/feed.xml
 
 # Threat Intelligence & Malware Analysis
 - id: the-dfir-report
@@ -53,152 +77,352 @@
   image: recommended-blogs/dfir-report.webp
   category: Threat Intelligence & Malware Analysis
   focus: Real-world intrusion walkthroughs
-  description: Comprehensive, "ground-truth" technical walkthroughs of real-world intrusions with full attack chain analysis.
+  description: Comprehensive technical walkthroughs of real-world intrusions.
   website: https://thedfirreport.com/
+  rss_feed: https://thedfirreport.com/feed/
 
 - id: unit-42
   title: Unit 42 (Palo Alto Networks)
   image: recommended-blogs/unit42.webp
   category: Threat Intelligence & Malware Analysis
   focus: Threat intelligence and IR forensics
-  description: World-class threat intelligence and detailed IR forensics reports from Palo Alto Networks' threat research team.
+  description: World-class threat intelligence and detailed IR forensics reports.
   website: https://unit42.paloaltonetworks.com/
+  rss_feed: https://unit42.paloaltonetworks.com/feed/
 
 - id: cisco-talos
   title: Cisco Talos Intelligence
   image: recommended-blogs/talos.webp
   category: Threat Intelligence & Malware Analysis
   focus: Global threat trends and emerging malware
-  description: Massive visibility into global threat trends and emerging malware from one of the largest threat intelligence teams.
+  description: Massive visibility into global threat trends and emerging malware.
   website: https://blog.talosintelligence.com/
-
-- id: mandiant
-  title: Mandiant (Google Cloud)
-  image: recommended-blogs/mandiant.webp
-  category: Threat Intelligence & Malware Analysis
-  focus: APT attribution and technical IOCs
-  description: The industry standard for APT attribution and technical IOCs from the pioneers of incident response.
-  website: https://www.mandiant.com/resources/blog
+  rss_feed: https://blog.talosintelligence.com/rss/
 
 - id: crowdstrike-blog
   title: CrowdStrike Blog
   image: recommended-blogs/crowdstrike.webp
   category: Threat Intelligence & Malware Analysis
   focus: Adversary toolsets and behaviors
-  description: Technical breakdowns of adversary toolsets and behaviors with detailed threat actor profiling.
+  description: Technical breakdowns of adversary toolsets and threat actor profiling.
   website: https://www.crowdstrike.com/blog/
+  rss_feed: https://www.crowdstrike.com/blog/feed/
 
 - id: sentinellabs
   title: SentinelLabs
   image: recommended-blogs/sentinellabs.webp
   category: Threat Intelligence & Malware Analysis
   focus: APT research for macOS and Linux
-  description: High-quality research into APT groups, specifically for macOS and Linux platforms.
+  description: High-quality research into APT groups across multiple platforms.
   website: https://www.sentinelone.com/labs/
+  rss_feed: https://www.sentinelone.com/feed/
 
 - id: eset-welivesecurity
   title: ESET WeLiveSecurity
   image: recommended-blogs/eset.webp
   category: Threat Intelligence & Malware Analysis
   focus: UEFI rootkits and mobile threats
-  description: Expert analysis of UEFI rootkits and sophisticated mobile threats from ESET's research team.
+  description: Expert analysis of UEFI rootkits and sophisticated mobile threats.
   website: https://www.welivesecurity.com/
+  rss_feed: https://www.welivesecurity.com/en/rss/feed/
 
 - id: costin-raiu
   title: Costin Raiu (Medium)
   image: recommended-blogs/costin-raiu.webp
   category: Threat Intelligence & Malware Analysis
   focus: Advanced APT toolkit analysis
-  description: Independent, advanced technical analysis of APT toolkits from the former director of Kaspersky's GReAT team.
+  description: Independent advanced technical analysis of APT toolsets.
   website: https://medium.com/@costinraiu
+  rss_feed: https://medium.com/feed/@costin.raiu
 
-# Security Engineering & Code Auditing
+- id: fortiguard-labs
+  title: FortiGuard Labs
+  image: recommended-blogs/fortiguard.webp
+  category: Threat Intelligence & Malware Analysis
+  focus: Global threat signals
+  description: Real-time intelligence on emerging malware and ransomware.
+  website: https://www.fortinet.com/fortiguard/labs
+  rss_feed: https://filestore.fortinet.com/fortiguard/rss/threatsignal.xml
+
+# Bug Bounty & Web Security Research
+- id: portswigger-research
+  title: PortSwigger Research
+  image: recommended-blogs/portswigger.webp
+  category: Bug Bounty & Web Security Research
+  focus: Novel web attack classes
+  description: Definitive source for research on HTTP smuggling and cache poisoning.
+  website: https://portswigger.net/research
+  rss_feed: https://portswigger.net/blog/rss
+
+- id: intigriti-bug-bytes
+  title: Intigriti Bug Bytes
+  image: recommended-blogs/intigriti.webp
+  category: Bug Bounty & Web Security Research
+  focus: Weekly technical digests
+  description: Consistent technical digest aggregating the best weekly write-ups.
+  website: https://blog.intigriti.com/
+  rss_feed: https://blog.intigriti.com/feed/
+
+- id: assetnote-blog
+  title: Assetnote Blog
+  image: recommended-blogs/assetnote.webp
+  category: Bug Bounty & Web Security Research
+  focus: Attack surface management and zero-days
+  description: Sophisticated research on enterprise software vulnerabilities.
+  website: https://blog.assetnote.io/
+  rss_feed: https://blog.assetnote.io/feed.xml
+
+- id: project-discovery
+  title: ProjectDiscovery Blog
+  image: recommended-blogs/projectdiscovery.webp
+  category: Bug Bounty & Web Security Research
+  focus: Modern recon pipelines and automation
+  description: Technical blueprints for building modern recon and automation.
+  website: https://blog.projectdiscovery.io/
+  rss_feed: https://blog.projectdiscovery.io/rss/
+
+- id: lauritz-holtmann
+  title: Lauritz Holtmann
+  image: recommended-blogs/lauritz-holtmann.webp
+  category: Bug Bounty & Web Security Research
+  focus: SSO, OAuth, and web application security
+  description: Detailed analysis of authentication and authorization flaws.
+  website: https://security.lauritz-holtmann.de/
+  rss_feed: https://security.lauritz-holtmann.de/index.xml
+
+- id: sam-curry
+  title: Sam Curry
+  image: recommended-blogs/sam-curry.webp
+  category: Bug Bounty & Web Security Research
+  focus: Wide-scope industry research
+  description: High-impact research targeting entire industries like automotive.
+  website: https://samcurry.net/
+  rss_feed: https://samcurry.net/rss
+
+- id: joaxcar
+  title: Johan Carlsson (joaxcar)
+  image: recommended-blogs/joaxcar.webp
+  category: Bug Bounty & Web Security Research
+  focus: GitLab and client-side JS
+  description: Meticulous research into modern JS frameworks and DevOps tools.
+  website: https://joaxcar.com/
+  rss_feed: https://joaxcar.com/blog/feed/
+
+- id: bug-bounty-writeups
+  title: Info-sec Writeups (Medium)
+  image: recommended-blogs/infosec-writeups.webp
+  category: Bug Bounty & Web Security Research
+  focus: Practical community write-ups
+  description: Curated collection of real-world bug bounty reports.
+  website: https://infosecwriteups.com/
+  rss_feed: https://medium.com/feed/bugbountywriteup/tagged/bug-bounty
+
+# Security Engineering & Platform Research
+- id: apple-security-research
+  title: Apple Security Research
+  image: recommended-blogs/apple-security.webp
+  category: Security Engineering & Platform Research
+  focus: iOS/macOS platform security
+  description: Official technical analysis of Apple's platform security architecture.
+  website: https://security.apple.com/blog/
+  rss_feed: https://security.apple.com/blog/feed.rss
+
 - id: microsoft-msrc
   title: Microsoft Security Response Center (MSRC)
   image: recommended-blogs/msrc.webp
-  category: Security Engineering & Code Auditing
-  focus: OS internals, memory safety, and AI security
-  description: Vital for understanding OS internals, memory safety, and AI security at scale from Microsoft's security team.
+  category: Security Engineering & Platform Research
+  focus: OS internals and memory safety
+  description: Vital for understanding OS internals and memory safety at scale.
   website: https://msrc.microsoft.com/blog/
+  rss_feed: https://msrc.microsoft.com/blog/rss/
 
 - id: trail-of-bits
   title: Trail of Bits
   image: recommended-blogs/trailofbits.webp
-  category: Security Engineering & Code Auditing
-  focus: Code auditing, formal verification, and cryptography
-  description: Elite research in code auditing, formal verification, and high-end cryptography from a leading security consultancy.
+  category: Security Engineering & Platform Research
+  focus: Code auditing and cryptography
+  description: Elite research in code auditing and formal verification.
   website: https://blog.trailofbits.com/
+  rss_feed: https://blog.trailofbits.com/feed/
 
 - id: cloudflare-blog
   title: Cloudflare Blog
   image: recommended-blogs/cloudflare.webp
-  category: Security Engineering & Code Auditing
-  focus: Networking, BGP security, and DDoS mitigation
-  description: Exceptional for networking, BGP security, and DDoS mitigation research with deep technical content.
+  category: Security Engineering & Platform Research
+  focus: Networking and DDoS mitigation
+  description: Exceptional research on networking and BGP security.
   website: https://blog.cloudflare.com/tag/security/
+  rss_feed: https://blog.cloudflare.com/rss/
 
-- id: tenable-research
-  title: Tenable Research
-  image: recommended-blogs/tenable.webp
-  category: Security Engineering & Code Auditing
-  focus: Attack surfaces and CVE mechanics
-  description: Deep technical context on modern attack surfaces and CVE mechanics from vulnerability management experts.
-  website: https://www.tenable.com/blog/search?field_blog_section_tid=49
+- id: zero-day-initiative
+  title: Zero Day Initiative (ZDI)
+  image: recommended-blogs/zdi.webp
+  category: Security Engineering & Platform Research
+  focus: Pwn2Own and vulnerability disclosure
+  description: Deep analysis of modern vulnerabilities and Pwn2Own competitions.
+  website: https://www.zerodayinitiative.com/blog/
+  rss_feed: https://www.zerodayinitiative.com/blog?format=rss
 
-# Strategic Analysis & Networking
+- id: darknavy
+  title: DarkNavy
+  image: recommended-blogs/darknavy.webp
+  category: Security Engineering & Platform Research
+  focus: Mobile and hardware research
+  description: Specialized research in hardware security and mobile OS exploitation.
+  website: https://www.darknavy.org/
+  rss_feed: https://www.darknavy.org/index.xml
+
+# Specialized Research & Niche Blogs
+- id: citizen-lab
+  title: The Citizen Lab
+  image: recommended-blogs/citizen-lab.webp
+  category: Specialized Research
+  focus: Spyware and human rights
+  description: Foremost research on commercial spyware like Pegasus.
+  website: https://citizenlab.ca/
+  rss_feed: https://citizenlab.ca/feed/
+
+- id: embrace-the-red
+  title: Embrace The Red
+  image: recommended-blogs/embrace-the-red.webp
+  category: Specialized Research
+  focus: AI security and Azure
+  description: Michael Selinger's research on AI safety and cloud offensive ops.
+  website: https://embracethered.com/blog/
+  rss_feed: https://embracethered.com/blog/index.xml
+
+- id: joseph-thacker
+  title: Joseph Thacker (rez0)
+  image: recommended-blogs/rez0.webp
+  category: Specialized Research
+  focus: AI and LLM security
+  description: Leading-edge research on hacking AI systems and LLMs.
+  website: https://josephthacker.com/
+  rss_feed: https://josephthacker.com/feed.xml
+
+- id: gynvael
+  title: Gynvael Coldwind
+  image: recommended-blogs/gynvael.webp
+  category: Specialized Research
+  focus: Binaries and low-level internals
+  description: Deep dives into firmware and virtualization layers.
+  website: https://gynvael.coldwind.pl/
+  rss_feed: https://gynvael.coldwind.pl/rss
+
+- id: connor-mcgarr
+  title: Connor McGarr
+  image: recommended-blogs/connor-mcgarr.webp
+  category: Specialized Research
+  focus: Windows internals and exploit dev
+  description: Masterclass in modern Windows exploit engineering.
+  website: https://connormcgarr.github.io/
+  rss_feed: https://connormcgarr.github.io/feed.xml
+
+- id: th4ntis
+  title: th4ntis blog
+  image: recommended-blogs/th4ntis.webp
+  category: Specialized Research
+  focus: AD and EDR evasion
+  description: Technical insights into modern Windows offensive operations.
+  website: https://th4ntis.com/
+  rss_feed: https://th4ntis.com/feed.xml
+
+# Strategic, News & Digests
 - id: unsupervised-learning
-  title: Unsupervised Learning (Daniel Miessler)
+  title: Daniel Miessler
   image: recommended-blogs/unsupervised-learning.webp
-  category: Strategic Analysis & Networking
+  category: Strategic & News
   focus: AI and security intersection
-  description: Technical analysis focusing on the intersection of AI and security with weekly newsletters and essays.
+  description: Analysis of the intersection between AI and security.
   website: https://danielmiessler.com/
+  rss_feed: https://danielmiessler.com/feed.rss
 
-- id: sans-isc
-  title: SANS Internet Storm Center (ISC)
-  image: recommended-blogs/sans-isc.webp
-  category: Strategic Analysis & Networking
-  focus: Suspicious traffic and exploit code updates
-  description: Daily updates on suspicious traffic and new exploit code from SANS' global sensor network.
-  website: https://isc.sans.edu/
+- id: tldr-sec
+  title: tldr sec
+  image: recommended-blogs/tldr-sec.webp
+  category: Strategic & News
+  focus: Curated AppSec intelligence
+  description: Industry standard for curated security research and tools.
+  website: https://tldrsec.com/
+  rss_feed: https://rss.beehiiv.com/feeds/xgTKUmMmUm.xml
 
-- id: schneier-on-security
-  title: Schneier on Security
-  image: recommended-blogs/schneier.webp
-  category: Strategic Analysis & Networking
-  focus: Security philosophy and long-term strategy
-  description: Deep technical philosophy and long-term security strategy from renowned cryptographer Bruce Schneier.
-  website: https://www.schneier.com/
-
-- id: doublepulsar
-  title: DoublePulsar (Kevin Beaumont)
-  image: recommended-blogs/doublepulsar.webp
-  category: Strategic Analysis & Networking
-  focus: Global cyber events analysis
-  description: Practical, technical analysis of major global cyber events from a well-known security researcher.
-  website: https://doublepulsar.com/
-
-# Web Security & Investigative News
-- id: bleepingcomputer
-  title: BleepingComputer
-  image: recommended-blogs/bleepingcomputer.webp
-  category: Web Security & Investigative News
-  focus: Ransomware and malware behavior
-  description: Technically accurate reporting on ransomware and malware behavior with breaking security news.
-  website: https://www.bleepingcomputer.com/
-
-- id: troy-hunt
-  title: Troy Hunt
-  image: recommended-blogs/troy-hunt.webp
-  category: Web Security & Investigative News
-  focus: Web security, API flaws, and data breaches
-  description: The primary resource for web security, API flaws, and data breach analysis from the creator of Have I Been Pwned.
-  website: https://www.troyhunt.com/
+- id: return-on-security
+  title: Return on Security
+  image: recommended-blogs/return-on-security.webp
+  category: Strategic & News
+  focus: Security business and venture
+  description: Analysis of the business side of the security industry.
+  website: https://www.returnonsecurity.com/
+  rss_feed: https://rss.beehiiv.com/feeds/SQSpYiG1E1.xml
 
 - id: krebs-on-security
   title: Krebs on Security
   image: recommended-blogs/krebs.webp
-  category: Web Security & Investigative News
-  focus: Cybercrime and underground economy
-  description: Investigative research into cybercrime syndicates and the underground economy from veteran journalist Brian Krebs.
+  category: Strategic & News
+  focus: Cybercrime investigative news
+  description: Deep investigative research into cybercrime syndicates.
   website: https://krebsonsecurity.com/
+  rss_feed: https://krebsonsecurity.com/feed/
+
+- id: bleepingcomputer
+  title: BleepingComputer
+  image: recommended-blogs/bleepingcomputer.webp
+  category: Strategic & News
+  focus: Breaking security news
+  description: Accurate reporting on ransomware and breaking news.
+  website: https://www.bleepingcomputer.com/
+  rss_feed: https://www.bleepingcomputer.com/feed/
+
+- id: troy-hunt
+  title: Troy Hunt
+  image: recommended-blogs/troy-hunt.webp
+  category: Strategic & News
+  focus: Web security and breaches
+  description: Analysis of data breaches and API flaws.
+  website: https://www.troyhunt.com/
+  rss_feed: https://feeds.feedburner.com/TroyHunt
+
+- id: graham-cluley
+  title: Graham Cluley
+  image: recommended-blogs/cluley.webp
+  category: Strategic & News
+  focus: Security news and human factor
+  description: Accessible news and opinion on the human side of security.
+  website: https://grahamcluley.com/
+  rss_feed: https://grahamcluley.com/feed/
+
+- id: schneier-on-security
+  title: Schneier on Security
+  image: recommended-blogs/schneier.webp
+  category: Strategic & News
+  focus: Security philosophy
+  description: Deep technical philosophy from Bruce Schneier.
+  website: https://www.schneier.com/
+  rss_feed: https://www.schneier.com/feed/atom/
+
+- id: sans-isc
+  title: SANS Internet Storm Center (ISC)
+  image: recommended-blogs/sans-isc.webp
+  category: Strategic & News
+  focus: Daily traffic updates
+  description: Daily updates on suspicious traffic and exploits.
+  website: https://isc.sans.edu/
+  rss_feed: https://isc.sans.edu/rssfeed_full.xml
+
+- id: doublepulsar
+  title: DoublePulsar (Kevin Beaumont)
+  image: recommended-blogs/doublepulsar.webp
+  category: Strategic & News
+  focus: Global cyber event analysis
+  description: Practical technical analysis of major global cyber events.
+  website: https://doublepulsar.com/
+  rss_feed: https://doublepulsar.com/feed
+
+- id: flare-blog
+  title: Flare.io Blog
+  image: recommended-blogs/flare.webp
+  category: Strategic & News
+  focus: Dark web and threat exposure
+  description: Intelligence on stolen credentials and dark web markets.
+  website: https://flare.io/learn/resources/blog/
+  rss_feed: https://flare.io/learn/resources/blog/feed/
