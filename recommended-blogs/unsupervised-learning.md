@@ -16,22 +16,6 @@ rss_feed: https://danielmiessler.com/feed.rss
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Daniel Miessler's Unsupervised Learning has become essential reading for security professionals navigating the intersection of artificial intelligence and cybersecurity. His unique blend of technical depth and strategic thinking helps readers understand how AI is transforming the security landscape.

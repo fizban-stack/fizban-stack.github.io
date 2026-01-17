@@ -16,22 +16,6 @@ rss_feed: https://isc.sans.edu/rssfeed_full.xml
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 The SANS Internet Storm Center (ISC) has been the internet's early warning system since 2001, providing daily updates on malicious activity observed across their global sensor network. Their "Handlers' Diary" offers real-time intelligence on emerging threats.

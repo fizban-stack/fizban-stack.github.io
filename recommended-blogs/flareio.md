@@ -16,22 +16,6 @@ rss_feed: https://flare.io/learn/resources/blog/feed/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Flare.io has emerged as a leader in Identity Intelligence and Threat Exposure Management (TEM). Their research team provides unmatched visibility into the cybercrime world, monitoring millions of stealer logs and illicit channels to detect threats before they escalate into full-scale breaches.

@@ -16,21 +16,6 @@ rss_feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
 ---
 
 Mandiant (now part of Google Cloud) has been at the forefront of threat intelligence and incident response for decades. Their APT naming conventions and attribution methodologies have become industry standards, and their research consistently reveals some of the most sophisticated threats facing organizations.
