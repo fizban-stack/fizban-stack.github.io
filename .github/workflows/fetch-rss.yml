@@ -17,7 +17,7 @@ jobs:
         uses: Promptly-Technologies-LLC/rss-fetch-action@v2
         with:
           # List all your feed URLs here
-          feeds: |
+          feed_url: |
             https://portswigger.net/blog/rss
             https://security.apple.com/blog/feed.rss
             https://www.blackhillsinfosec.com/feed/
@@ -76,7 +76,7 @@ jobs:
             https://citizenlab.ca/feed/
             https://blog.talosintelligence.com/rss/
             https://flare.io/learn/resources/blog/feed/
-          target: _data/rss_feeds.json
+          file_path: _data/rss_feeds.json
 
       - name: Commit and Push
         run: |
