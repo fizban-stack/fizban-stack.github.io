@@ -1,14 +1,4 @@
 feeds:
-  - https://portswigger.net/blog/rss
-  - https://security.apple.com/blog/feed.xml
-  - https://www.blackhillsinfosec.com/feed/
-  - https://www.zerodayinitiative.com/blog?format=rss
-  - https://security.lauritz-holtmann.de/index.xml
-  - https://labs.watchtowr.com/rss/
-  - https://danielmiessler.com/feed.rss
-  - https://unit42.paloaltonetworks.com/feed/
-  - https://trustedsec.com/feed.rss
-  - https://feeds.feedburner.com/TroyHunt
   - https://blog.assetnote.io/feed.xml
   - https://blog.trailofbits.com/feed/
   - https://www.bleepingcomputer.com/feed/
