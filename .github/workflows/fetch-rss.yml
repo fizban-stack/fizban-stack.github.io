@@ -14,8 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch RSS
-        uses: i-valchev/rss-to-json@main
+      - name: RSS to JSON
+        uses: I-Valchev/rss-to-json@1.0.0
         with:
           source: _data/feeds.yaml
           target: _data/rss_feeds.json
