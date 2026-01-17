@@ -19,6 +19,21 @@ jobs:
           # List all your feed URLs here
           feed_url: |
             https://portswigger.net/blog/rss
+            https://projectzero.google/feed.xml
+            https://github.blog/tag/github-security-lab/feed/
+            https://filestore.fortinet.com/fortiguard/rss/threatsignal.xml
+            https://www.welivesecurity.com/en/rss/feed/
+            https://embracethered.com/blog/index.xml
+            https://doublepulsar.com/feed
+            https://www.darknavy.org/index.xml
+            https://www.crowdstrike.com/blog/feed/
+            https://rss.beehiiv.com/feeds/SQSpYiG1E1.xml
+            https://medium.com/feed/@costin.raiu
+            https://connormcgarr.github.io/feed.xml
+            https://blog.cloudflare.com/rss/
+            https://citizenlab.ca/feed/
+            https://blog.talosintelligence.com/rss/
+            https://flare.io/learn/resources/blog/feed/
           file_path: _data/rss_feeds.json
 
       - name: Commit and Push
