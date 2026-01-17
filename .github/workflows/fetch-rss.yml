@@ -19,7 +19,6 @@ jobs:
           # List all your feed URLs here
           feed_url: |
             https://portswigger.net/blog/rss
-            https://security.apple.com/blog/feed.rss
             https://www.blackhillsinfosec.com/feed/
             https://www.zerodayinitiative.com/blog?format=rss
             https://security.lauritz-holtmann.de/index.xml
