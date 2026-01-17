@@ -19,7 +19,7 @@ jobs:
           # List all your feed URLs here
           feed_url: |
             https://portswigger.net/blog/rss
-            https://projectzero.google/feed.xml
+            https://flare.io/learn/resources/blog/feed/
           file_path: _data/rss_feeds.json
 
       - name: Commit and Push
