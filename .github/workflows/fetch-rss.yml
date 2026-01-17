@@ -1,9 +1,13 @@
 name: Fetch RSS to Data
 on:
+  push:
+    branches: [ "new-jekyll" ] # This forces it to run on your current branch
+  workflow_dispatch:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
-  workflow_dispatch: # Allows you to run it manually to test
+    - cron: '0 * * * *'
 
+permissions:
+  contents: write
 jobs:
   fetch-rss:
     runs-on: ubuntu-latest
