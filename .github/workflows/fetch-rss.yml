@@ -18,7 +18,6 @@ jobs:
         with:
           # List all your feed URLs here
           feed_url: |
-            https://portswigger.net/blog/rss
             https://flare.io/learn/resources/blog/feed/
           file_path: _data/rss_feeds.json
 
