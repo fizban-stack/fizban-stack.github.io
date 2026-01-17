@@ -76,7 +76,7 @@ Beaumont frequently provides:
 - First authoritative analysis
 - Breaking event coverage
 - Real-time updates
-- Practical guidance
+
 
 ### Technical Depth
 Analysis includes:
