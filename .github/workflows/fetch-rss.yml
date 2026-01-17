@@ -1,7 +1,5 @@
 name: Fetch RSS to Data
 on:
-  push:
-    branches: [ "new-jekyll" ] # This forces it to run on your current branch
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
@@ -16,7 +14,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Fetch RSS Feeds
-        uses: suisei-kit/rss-fetch-action@v1
+        uses: Promptly-Technologies-LLC/rss-fetch-action@v2
         with:
           # List all your feed URLs here
           feeds: |
