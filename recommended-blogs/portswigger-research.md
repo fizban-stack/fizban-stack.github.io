@@ -20,6 +20,26 @@ rss_feed: https://portswigger.net/blog/rss
 
 PortSwigger Research doesn't just find bugs; they define new classes of vulnerabilities. Their work fundamentally changes how the industry understands the relationship between web servers, proxies, and browsers.
 
+---
+
+## Recommended Posts
+
+- [The Fragile Lock: Novel Bypasses For SAML Authentication](https://portswigger.net/research/the-fragile-lock): Groundbreaking SAML authentication bypass research.
+
+- [Introducing the URL validation bypass cheat sheet](https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet): Comprehensive URL validation bypass techniques.
+
+- [Splitting the email atom: exploiting parsers to bypass access controls](https://portswigger.net/research/splitting-the-email-atom): Email parser exploitation techniques.
+
+- [Introducing HTTP Anomaly Rank](https://portswigger.net/research/introducing-http-anomaly-rank): Novel HTTP analysis methodology.
+
+- [WebSocket Turbo Intruder: Unearthing the WebSocket Goldmine](https://portswigger.net/research/websocket-turbo-intruder-unearthing-the-websocket-goldmine): Advanced WebSocket security testing techniques.
+
+- [Cookie Chaos: Bypassing __Host and __Secure (2025)](https://portswigger.net/research/cookie-chaos-how-to-bypass-host-and-secure-cookie-prefixes): A masterclass in bypassing modern cookie security prefixes using browser-specific quirks.
+
+- [Drag and Pwnd](https://portswigger.net/research/drag-and-pwnd-leverage-ascii-characters-to-exploit-vs-code): Exploiting VS Code (2025): How ASCII character discrepancies can lead to remote code execution through the VS Code UI.
+
+- [Listen to the Whispers](https://portswigger.net/research/listen-to-the-whispers-web-timing-attacks-that-actually-work): Web Timing Attacks (2024): James Kettle’s research into making web-based timing side-channels practical and repeatable.
+---
 ## Notable Research Pillars
 
 ### Protocol Interference

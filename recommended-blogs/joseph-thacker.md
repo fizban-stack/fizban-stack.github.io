@@ -21,6 +21,22 @@ rss_feed: https://josephthacker.com/feed.xml
 ## The AI Frontier
 Joseph (rez0) is a pioneer in **AI Security**. His blog is the go-to resource for understanding how to hack LLM-integrated applications and the future of "AI-Powered Reconnaissance."
 
+--- 
+
+## Recommended Posts
+
+- [How to Hack AI Agents and Applications](https://josephthacker.com/hacking/2025/02/25/how-to-hack-ai-apps.html): Comprehensive guide to attacking AI-integrated applications.
+
+- [Prompt Injection Isn't a Vulnerability](https://josephthacker.com/ai/2025/11/24/prompt-injection-isnt-a-vulnerability.html): Nuanced analysis of prompt injection classification.
+
+- [Metanarrative Prompt Injection](https://josephthacker.com/hacking/2025/10/20/metanarrative-prompt-injection.html): Novel prompt injection technique research.
+
+- [AI Comprehension Gaps: When Humans and AI See Different Things](https://josephthacker.com/ai/2025/09/24/ai-comprehension-gaps.html): Analysis of AI perception vulnerabilities.
+
+- [The Quest for the Shortest Domain](https://josephthacker.com/hacking/2025/08/19/quest-for-the-shortest-domain.html): Creative research into domain name security.
+
+---
+
 ## Why Follow This Blog
 
 Joseph Thacker combines active bug bounty hunting with cutting-edge AI security research. His practical approach to hacking LLM-integrated applications and his exploration of AI-powered security tools makes his blog essential reading for security professionals adapting to the AI era.

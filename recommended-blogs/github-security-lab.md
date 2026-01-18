@@ -20,6 +20,16 @@ rss_feed: https://github.blog/tag/github-security-lab/feed/
 
 GitHub Security Lab represents a unique intersection of security research and open-source ecosystem protection. Their focus on securing the software supply chain through innovative tooling and coordinated disclosure makes them essential reading for anyone concerned with modern software security.
 
+---
+
+## Recommended Posts
+
+- [UAF in Arm Mali GPU (GHSL-2024-356)](https://securitylab.github.com/advisories/GHSL-2024-356_Arm_Mali/): Technical analysis of a critical Use-After-Free exploit in mobile GPUs.
+
+- [Sign in as Anyone](https://securitylab.github.com/advisories/GHSL-2024-329_GHSL-2024-330_ruby-saml/): SAML SSO Bypass: Research into parser differentials in Ruby-SAML allowing authentication bypass.
+
+---
+
 ## Why Follow This Blog
 
 GitHub Security Lab provides unparalleled insights into supply chain security, CodeQL-powered vulnerability discovery, and responsible disclosure practices. Their research directly impacts millions of projects across the open-source ecosystem.

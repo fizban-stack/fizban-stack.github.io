@@ -20,6 +20,20 @@ rss_feed: https://msrc.microsoft.com/blog/rss/
 
 The Microsoft Security Response Center (MSRC) provides unparalleled insights into Windows security, Microsoft cloud platforms, and emerging areas like AI security. As the team responsible for securing one of the world's largest software ecosystems, their guidance directly impacts billions of users.
 
+--- 
+
+## Recommended Posts
+
+- [RedirectionGuard](https://www.microsoft.com/en-us/msrc/blog/2025/06/redirectionguard-mitigating-unsafe-junction-traversal-in-windows/): Junction Traversal Mitigations: Defeating filesystem redirection attacks in Windows.
+
+- [Jailbreaking is Simpler Than You Think](https://www.microsoft.com/en-us/msrc/blog/2025/03/jailbreaking-is-mostly-simpler-than-you-think/): Research into low-complexity jailbreak methods for AI systems.
+
+- [Weaponizing Cross-Site Scripting](https://www.microsoft.com/en-us/msrc/blog/2025/11/weaponizing-cross-site-scripting-when-one-bug-isnt-enough): Demonstrating how XSS can be a gateway to system-level compromise.
+
+- [Microsoft's Secure Future Initiative](https://www.microsoft.com/en-us/security/blog/2025/10/07/new-microsoft-secure-future-initiative-sfi-patterns-and-practices-practical-guides-to-strengthen-security/): Strategic update on internal engineering shifts to prioritize security at scale.
+
+--- 
+
 ## Why Follow This Blog
 
 MSRC's position at the center of Microsoft's security operations provides unique visibility into Windows internals, vulnerability trends, and security architecture decisions. Their content is essential for anyone working with Microsoft technologies.

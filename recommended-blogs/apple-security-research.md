@@ -20,6 +20,22 @@ rss_feed: https://security.apple.com/blog/feed.rss
 
 The Apple Security Research blog provides an unprecedented look into the internals of one of the world's most hardened operating systems. 
 
+--- 
+
+## Recommended Posts
+
+- [Memory Integrity Enforcement](https://security.apple.com/blog/memory-integrity-enforcement): Industry-first, always-on memory safety protection combining secure allocators, Enhanced Memory Tagging Extension, and Tag Confidentiality Enforcement.
+
+- [iMessage with PQ3](https://security.apple.com/blog/imessage-pq3): Groundbreaking post-quantum cryptographic protocol for iMessage with quantum-resistant encryption.
+
+- [Security research on Private Cloud Compute](https://security.apple.com/blog/pcc-security-research): Tools and resources for researchers to verify Apple Intelligence infrastructure security.
+
+- [What if we had the SockPuppet vulnerability in iOS 16?](https://security.apple.com/blog/what-if-we-had-sockpuppet-in-ios16): XNU kernel memory safety analysis against use-after-free vulnerabilities.
+
+- [Towards the next generation of XNU memory safety: kalloc_type](https://security.apple.com/blog/towards-the-next-generation-of-xnu-memory-safety): Hardened memory allocator improvements in the iOS kernel.
+
+--- 
+
 ## Research Methodology
 
 ### Memory Safety & Swift

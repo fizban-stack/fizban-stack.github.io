@@ -20,6 +20,24 @@ rss_feed: https://www.zerodayinitiative.com/blog?format=rss
 
 ZDI provides unmatched data on vulnerability trends and the technical mechanics of the world's most sophisticated exploits.
 
+--- 
+
+## Recommended Posts
+
+- [The January 2026 Security Update Review](https://www.zerodayinitiative.com/blog/2026/1/13/the-january-2026-security-update-review): Monthly Patch Tuesday analysis with notable vulnerabilities.
+
+- [Breaking Down the Attack Surface of the Kenwood DNR1007XR – Part Two](https://www.zerodayinitiative.com/blog/2026/1/8/breaking-down-the-attack-surface-of-the-kenwood-dnr1007xr-part-two): Automotive infotainment system security research.
+
+- [Breaking Down the Attack Surface of the Kenwood DNR1007XR – Part One](https://www.zerodayinitiative.com/blog/2026/1/6/breaking-down-the-attack-surface-of-the-kenwood-dnr1007xr-part-one): Automotive security vulnerability analysis.
+
+- [Pwn2Own Ireland 2025: Day One Results](https://www.zerodayinitiative.com/blog/2025/10/21/pwn2own-ireland-2025-day-one-results): Competition coverage and exploit highlights.
+
+- [The December 2025 Security Update Review](https://www.zerodayinitiative.com/blog/2025/12/9/the-december-2025-security-update-review): Monthly security update analysis.
+
+- [Pwn2Own Ireland 2024 Results](https://www.zerodayinitiative.com/blog/2024/10/22/pwn2own-ireland-day-one-the-results)Writeups on exploits against WhatsApp, Synology, and Sonos hardware.
+
+--- 
+
 ## Highlights
 - **Pwn2Own Retrospectives**: Deep dives into the exploit chains used to hack Tesla, Windows, and Chrome.
 - **Vulnerability Data**: Statistical analysis of bug classes and vendor response times.

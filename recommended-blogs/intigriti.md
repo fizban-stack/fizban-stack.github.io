@@ -20,6 +20,28 @@ rss_feed: https://blog.intigriti.com/feed/
 
 Intigriti’s "Bug Bytes" is the premier "meta-blog" for the bug bounty community. It serves as a curated intelligence report, distilling the chaotic world of security Twitter (X), GitHub, and personal blogs into a structured weekly briefing.
 
+---
+
+## Recommended Posts
+
+- [Testing JS Files for Hunters](https://www.intigriti.com/researchers/blog/hacking-tools/testing-javascript-files-for-bug-bounty-hunters): A deep-dive methodology for finding vulnerabilities in client-side code.
+
+- [Mastering GraphQL Security](https://www.intigriti.com/researchers/blog/hacking-tools/five-easy-ways-to-hack-graphql-targets): Technical guide on enumerating and exploiting common GraphQL flaws.
+
+- [The Art of Finding IDORs](https://www.intigriti.com/blog/news/idor-a-complete-guide-to-exploiting-advanced-idor-vulnerabilities): Tactical walkthrough on discovering Insecure Direct Object References in APIs.
+
+- [Intigriti insights: React2Shell CVE-2025-55182](https://www.intigriti.com/blog/business-insights/intigriti-insights-react2shell-cve-2025-55182): Technical analysis of the React Server Components RCE vulnerability.
+
+- [From the first bug to financial independence: Hacker Spotlight](https://www.intigriti.com/blog/business-insights/hacker-spotlight-isira): Community spotlight on successful bug bounty hunting.
+
+- [How AI is leveraged to enhance the platform](https://www.intigriti.com/blog/news/how-ai-is-leveraged-to-enhance-the-intigriti-platform): AI integration in bug bounty workflows.
+
+- [Understanding signal-to-noise for vulnerability management](https://www.intigriti.com/blog/business-insights/understanding-signal-to-noise-for-vulnerability-management-success): Best practices for vulnerability triage.
+
+- [Reflecting on 2025, shaping 2026](https://www.intigriti.com/blog/business-insights/a-fireside-chat-with-intigriti-leadership): Fireside chat with Intigriti leadership on the future of bug bounty.
+
+---
+
 ## Why Follow This Blog
 
 For a professional hunter in 2026, staying updated is a full-time job. Bug Bytes solves this by hand-picking the most impactful research, ensuring you never miss a novel bypass or a new reconnaissance tool.

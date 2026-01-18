@@ -20,6 +20,22 @@ rss_feed: https://blog.assetnote.io/feed.xml
 
 Assetnote is world-renowned for their ability to find critical zero-day vulnerabilities in enterprise-grade software. Their blog is a masterclass in attacking the "unattackable" infrastructure that powers the Fortune 500.
 
+---
+
+## Recommended Posts
+
+- [Doing the Due Diligence: Analyzing the Next.js Middleware Bypass](https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927): Deep technical analysis of the Next.js middleware bypass vulnerability CVE-2025-29927.
+
+- [Nginx/Apache Path Confusion to Auth Bypass in PAN-OS](https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os): Exploitation of path confusion vulnerabilities leading to authentication bypass in Palo Alto Networks PAN-OS.
+
+- [How an obscure PHP footgun led to RCE in Craft CMS](https://www.assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms): Reverse engineering and exploitation of PHP-specific vulnerabilities in Craft CMS.
+
+- [Advisory: Next.js SSRF (CVE-2024-34351)](https://www.assetnote.io/resources/research/advisory-next-js-ssrf-cve-2024-34351): Server-side request forgery vulnerability in Next.js applications.
+
+- [Citrix Denial of Service: Analysis of CVE-2024-8534](https://www.assetnote.io/resources/research/citrix-denial-of-service-analysis-of-cve-2024-8534): Technical breakdown of Citrix vulnerability and exploitation techniques.
+
+---
+
 ## Research Highlights
 
 ### Enterprise Zero-Days

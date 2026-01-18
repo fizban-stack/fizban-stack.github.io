@@ -20,6 +20,22 @@ rss_feed: https://embracethered.com/blog/index.xml
 
 Embrace The Red is a critical resource for understanding the security implications of the AI revolution and modern Azure environments.
 
+--- 
+
+## Recommended Posts
+
+- [Minting Next.js Authentication Cookies](https://embracethered.com/blog/posts/2026/minting-next-auth-nextjs-auth-cookies-react2shell-threat/): Analysis of Next.js authentication security and React2Shell threats.
+
+- [Agentic ProbLLMs: Exploiting AI Computer-Use And Coding Agents](https://embracethered.com/blog/posts/2025/39c3-agentic-probllms-exploiting-computer-use-and-coding-agents/): 39C3 presentation on attacking AI agents.
+
+- [The Normalization of Deviance in AI](https://embracethered.com/blog/posts/2025/the-normalization-of-deviance-in-ai/): Analysis of systemic AI security risks.
+
+- [Antigravity Grounded! Security Vulnerabilities in Google's Latest IDE](https://embracethered.com/blog/posts/2025/security-keeps-google-antigravity-grounded/): Security research into Google's development tools.
+
+- [Claude Pirate: Abusing Anthropic's File API For Data Exfiltration](https://embracethered.com/blog/posts/2025/claude-abusing-network-access-and-anthropic-api-for-data-exfiltration/): Research into AI agent data exfiltration risks.
+
+--- 
+
 ## Key Research Areas
 - **Prompt Injection**: Discovering and defending against indirect prompt injection in LLMs.
 - **AI Agent Security**: Exploiting autonomous agents and integrated AI systems.

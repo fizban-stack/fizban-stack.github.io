@@ -20,6 +20,24 @@ rss_feed: https://www.blackhillsinfosec.com/feed/
 
 Black Hills Information Security (BHIS) has become a cornerstone of the security community through their commitment to education, tool development, and accessible training. Founded by John Strand, BHIS is known for democratizing offensive security knowledge.
 
+---
+
+## Recommended Posts
+
+- [The Top Ten List of Why You Got Hacked This Year (2023/2024)](https://www.blackhillsinfosec.com/top-ten-list-of-why-you-got-hacked-this-year-2023-2024/): A comprehensive analysis of the most common entry points identified during hundreds of real-world penetration tests.
+
+- [DomCat: A Domain Categorization Tool](https://www.blackhillsinfosec.com/domcat-a-domain-categorization-tool/): Release of a new tool designed to help red teams find expired domains with "safe" categorizations to bypass web filters.
+
+- [Deceptive-Auditing: An Active Directory Honeypots Tool](https://www.google.com/search?q=https://www.blackhillsinfosec.com/deceptive-auditing-an-active-directory-honeypots-tool/): A guide to deploying "honeypot" objects in Active Directory to detect unauthorized enumeration and lateral movement.
+
+- [Bypassing WAFs Using Oversized Requests](https://www.blackhillsinfosec.com/bypassing-wafs-using-oversized-requests/): Research into how large payloads can cause Web Application Firewalls to fail open or skip inspection.
+
+- [GraphRunner Cheatsheet](https://www.blackhillsinfosec.com/graphrunner-cheatsheet/): A quick-reference guide for using GraphRunner to interact with the Microsoft Graph API for post-exploitation.
+
+- [DNS Triage Cheatsheet](https://www.blackhillsinfosec.com/dns-triage-cheatsheet/): A methodology and reference for rapidly identifying high-value targets within an organization's DNS records.
+
+---
+
 ## Why Follow This Blog
 
 BHIS stands out for making complex security topics accessible while maintaining technical depth. Their "pay what you can" training model and extensive free content have helped countless security professionals advance their careers.

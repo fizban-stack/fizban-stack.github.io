@@ -20,6 +20,28 @@ rss_feed: https://research.checkpoint.com/feed/
 
 Check Point Research (CPR) delivers some of the most detailed malware analysis and vulnerability research in the industry. Their team consistently uncovers sophisticated threats and provides comprehensive technical breakdowns that benefit the entire security community.
 
+---
+
+## Recommended Posts
+
+- [Sicarii Ransomware: Truth vs Myth](https://research.checkpoint.com/2026/sicarii-ransomware-truth-vs-myth/): Analysis of ransomware operations and debunking common misconceptions.
+
+- [Unveiling VoidLink: A Stealthy, Cloud-Native Linux Malware Framework](https://research.checkpoint.com/2026/voidlink-the-cloud-native-malware-framework/): Technical deep dive into cloud-native malware targeting Linux environments.
+
+- [Inside GoBruteforcer: AI-Generated Server Defaults and Crypto-Focused Campaigns](https://research.checkpoint.com/2026/inside-gobruteforcer-ai-generated-server-defaults-weak-passwords-and-crypto-focused-campaigns/): Analysis of brute-force attack campaigns leveraging AI-generated credentials.
+
+- [GachiLoader: Defeating Node.js Malware with API Tracing](https://research.checkpoint.com/2025/gachiloader-node-js-malware-with-api-tracing/): Reverse engineering Node.js-based malware using API tracing techniques.
+
+- [Inside Ink Dragon: Revealing the Relay Network of a Stealthy Offensive Operation](https://research.checkpoint.com/2025/ink-dragons-relay-network-and-offensive-operation/): Deep technical analysis of advanced persistent threat infrastructure.
+
+- [The Truman Show Scam: Trapped in an AI-Generated Reality](https://blog.checkpoint.com/mobile/the-truman-show-scam-trapped-in-an-ai-generated-reality/): Investigation into a sophisticated investment scam using AI to generate fake experts, peers, and market data to deceive victims.
+
+- [A Closer Look at Q3 2024: 75% Surge in Cyber Attacks Worldwide](https://blog.checkpoint.com/research/a-closer-look-at-q3-2024-75-surge-in-cyber-attacks-worldwide/): definitive statistics on global attack trends, highlighting a massive spike in activity across education and government sectors.
+
+- [Phishing Campaign Leverages Trusted Google Cloud Automation](https://blog.checkpoint.com/research/phishing-campaign-leverages-trusted-google-cloud-automation-capabilities-to-evade-detection/): How attackers weaponize legitimate cloud features to bypass email security filters and deliver payloads.
+
+---
+
 ## Why Follow This Blog
 
 CPR excels at deep technical analysis, transforming complex malware specimens and vulnerabilities into understandable, actionable intelligence. Their research frequently makes headlines and influences defensive strategies globally.

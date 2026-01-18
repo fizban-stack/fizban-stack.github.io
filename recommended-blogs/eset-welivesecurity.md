@@ -20,6 +20,22 @@ rss_feed: https://www.welivesecurity.com/en/rss/feed/
 
 ESET's WeLiveSecurity blog showcases decades of malware research expertise, with particular strength in areas few others cover well: UEFI threats, bootkit analysis, and sophisticated mobile malware. Their European perspective also provides valuable insights into regional threat landscapes.
 
+---
+
+## Recommended Posts
+
+- [Revisiting CVE-2025-50165: A critical flaw in Windows Imaging Component](https://www.welivesecurity.com/en/eset-research/revisiting-cve-2025-50165-critical-flaw-windows-imaging-component/): Technical analysis of a critical Windows vulnerability.
+
+- [LongNosedGoblin tries to sniff out governmental affairs in Southeast Asia and Japan](https://www.welivesecurity.com/en/eset-research/longnosedgoblin-tries-sniff-out-governmental-affairs-southeast-asia-japan/): APT research targeting government entities.
+
+- [ESET Threat Report H2 2025](https://www.welivesecurity.com/en/eset-research/eset-threat-report-h2-2025/): Comprehensive threat landscape analysis from ESET's research team.
+
+- [MuddyWater: Snakes by the riverbank](https://www.welivesecurity.com/en/eset-research/muddywater-snakes-riverbank/): Iranian threat actor campaign analysis.
+
+- [PlushDaemon compromises network devices for adversary-in-the-middle attacks](https://www.welivesecurity.com/en/eset-research/plushdaemon-compromises-network-devices-for-adversary-in-the-middle-attacks/): Network device exploitation and AITM techniques.
+
+---
+
 ## Why Follow This Blog
 
 ESET's research team excels at analyzing the most sophisticated low-level threats, including UEFI rootkits and bootkits that most vendors struggle to detect. Their comprehensive coverage of mobile threats and unique regional visibility add further value.

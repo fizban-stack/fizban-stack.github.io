@@ -20,6 +20,24 @@ rss_feed: https://blog.cloudflare.com/rss/
 
 Cloudflare's engineering blog provides unparalleled insights into internet infrastructure security, from BGP routing to DDoS mitigation. Their position as a major internet infrastructure provider gives them unique visibility into threats targeting the global internet.
 
+--- 
+
+## Recommended Posts
+
+- [The 2025 Cloudflare Radar Year in Review](https://blog.cloudflare.com/radar-2025-year-in-review/): Analysis of AI trends, post-quantum cryptography, and record-breaking DDoS attacks.
+
+- [Defending QUIC from acknowledgement-based DDoS attacks](https://blog.cloudflare.com/defending-quic-from-acknowledgement-based-ddos-attacks/): Technical deep dive into QUIC protocol security.
+
+- [Introducing Merkle Tree Certificates](https://blog.cloudflare.com/bootstrap-mtc/): Keeping the Internet fast and secure with new certificate infrastructure.
+
+- [Detecting CGNAT to reduce collateral damage](https://blog.cloudflare.com/detecting-cgn-to-reduce-collateral-damage/): Handling IP address sharing to minimize false positives.
+
+- [How Workers VPC Services connects to your private networks](https://blog.cloudflare.com/workers-vpc-open-beta/): Technical design of Cloudflare's private network connectivity.
+
+- [The Growth of Post-Quantum Cryptography](https://blog.cloudflare.com/pq-2025/): Technical analysis showing the rapid shift toward quantum-resistant encryption.
+
+--- 
+
 ## Why Follow This Blog
 
 Cloudflare's massive scale and central position in internet infrastructure provide visibility and experience that few organizations possess. Their technical depth and willingness to share detailed engineering insights makes their blog essential reading.

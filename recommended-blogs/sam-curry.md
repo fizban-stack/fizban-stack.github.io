@@ -21,6 +21,22 @@ rss_feed: https://samcurry.net/rss
 ## Impact
 Sam Curry's blog is essential for hunters looking to approach **unconventional targets**. His work on the automotive industry and global rewards programs demonstrates how to find vulnerabilities in the interconnected systems of the physical world.
 
+---
+
+## Recommended Posts
+
+- [Hacking the World Poker Tour: Inside ClubWPT Gold's Back Office](https://samcurry.net/hacking-clubwpt-gold): Security research into online gaming platforms.
+
+- [Hacking Subaru: Tracking and Controlling Cars via the STARLINK Admin Panel](https://samcurry.net/hacking-subaru): Comprehensive automotive security research exposing vehicle tracking vulnerabilities.
+
+- [Hacking Kia: Remotely Controlling Cars With Just a License Plate](https://samcurry.net/hacking-kia): Remote vehicle control vulnerabilities in Kia systems.
+
+- [Hacking Millions of Modems (and Investigating Who Hacked My Modem)](https://samcurry.net/hacking-millions-of-modems): Large-scale ISP infrastructure vulnerabilities.
+
+- [Leaked Secrets and Unlimited Miles: Hacking the Largest Airline and Hotel Rewards Platform](https://samcurry.net/points-com): Points.com security research exposing loyalty program vulnerabilities.
+
+---
+
 ## Why Follow This Blog
 
 Sam Curry represents a new generation of security researchers who think beyond traditional web applications. His collaborative approach to large-scale research projects, combined with his willingness to tackle industries that few others touch, produces some of the most impactful vulnerability disclosures in the bug bounty space.

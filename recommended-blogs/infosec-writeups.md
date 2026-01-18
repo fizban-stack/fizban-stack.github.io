@@ -20,6 +20,14 @@ rss_feed: https://medium.com/feed/bugbountywriteup/tagged/bug-bounty
 
 Info-sec Writeups on Medium is the central nervous system for the bug bounty community, hosting a massive archive of successful vulnerability reports.
 
+---
+
+## Recommended Posts
+
+Visit [Infosec Writeups on Medium](https://infosecwriteups.com/) for the latest bug bounty writeups, covering IDOR chains, SSRF exploitation, GraphQL authorization bypasses, OAuth misconfigurations, and more from the community.
+
+---
+
 ## Key Topics Covered
 - **Web Vulnerability Write-ups**: IDOR, SQLi, and XSS in modern frameworks.
 - **Reconnaissance Methodology**: How elite hunters map attack surfaces.

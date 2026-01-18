@@ -20,6 +20,20 @@ rss_feed: https://joaxcar.com/blog/feed/
 
 Johan Carlsson (joaxcar) is renowned for his ability to find high-impact bugs in platforms like GitLab.
 
+---
+
+## Recommended Posts
+
+- [Solving Turb0's XSS challenge using recursive object attributes](https://joaxcar.com/blog/2025/12/02/solving-turb0s-xss-challenge-using-recursive-object-attributes/): Advanced XSS challenge solution using novel techniques.
+
+- [Confetti: Solution to my Intigriti May 2025 XSS Challenge](https://joaxcar.com/blog/2025/05/20/confetti-solution-to-my-intigriti-may-xss-challenge/): Detailed walkthrough of an Intigriti XSS challenge.
+
+- [Sideloading external scripts: a code golf challenge](https://joaxcar.com/blog/2024/12/20/sideloading-external-scripts-a-code-golf-challenge/): Creative script injection techniques.
+
+- [Sandbox-iframe XSS challenge solution](https://joaxcar.com/blog/2024/05/16/sandbox-iframe-xss-challenge-solution/): Escaping iframe sandbox restrictions.
+
+---
+
 ## Highlights
 - **GitLab Security**: Extensive research into CI/CD pipelines and repository-based attacks.
 - **JavaScript Internals**: Analyzing prototype pollution and other framework-specific vulnerabilities.

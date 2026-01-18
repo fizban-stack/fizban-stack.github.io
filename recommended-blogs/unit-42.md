@@ -20,6 +20,26 @@ rss_feed: https://unit42.paloaltonetworks.com/feed/
 
 Unit 42 is Palo Alto Networks' global threat intelligence team, combining elite researchers with massive telemetry from one of the world's largest security vendors. Their research shapes how the industry understands and responds to cyber threats.
 
+---
+
+## Recommended Posts
+
+- [Anatomy of an Attack: The Payroll Pirates and the Power of Social Engineering](https://unit42.paloaltonetworks.com/social-engineering-payroll-pirates/): Social engineering attack analysis and payroll fraud techniques.
+
+- [Threat Brief: MongoDB Vulnerability (CVE-2025-14847)](https://unit42.paloaltonetworks.com/mongobleed-cve-2025-14847/): Critical MongoDB vulnerability analysis.
+
+- [Remote Code Execution With Modern AI/ML Formats and Libraries](https://unit42.paloaltonetworks.com/rce-vulnerabilities-in-ai-python-libraries/): AI/ML library security vulnerabilities.
+
+- [VVS Discord Stealer Using Pyarmor for Obfuscation](https://unit42.paloaltonetworks.com/vvs-stealer/): Malware analysis of obfuscated Discord credential stealers.
+
+- [Securing Vibe Coding Tools: Scaling Productivity Without Scaling Risk](https://unit42.paloaltonetworks.com/securing-vibe-coding-tools/): Developer tool security guidance.
+
+- [2025 Unit 42 Global Incident Response Report](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report): Comprehensive analysis of over 500 major cyberattacks, highlighting a shift toward extortion without encryption.
+
+- [LANDFALL: New Android Spyware](https://unit42.paloaltonetworks.com/landfall-is-new-commercial-grade-android-spyware/): In-depth analysis of a sophisticated new commercial-grade spyware family targeting mobile devices.
+
+---
+
 ## Why Follow This Blog
 
 Unit 42's combination of deep technical expertise and vast visibility into global threats produces intelligence that few organizations can match. Their research directly influences defensive strategies across enterprises worldwide.

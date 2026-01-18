@@ -20,6 +20,24 @@ rss_feed: https://blog.projectdiscovery.io/rss/
 
 ProjectDiscovery has revolutionized the speed at which hunters scan the internet. Their blog explains the "why" behind tools like Nuclei, Subfinder, and HTTPX.
 
+---
+
+## Recommended Posts
+
+- [Year in Review: The Vulnerabilities That Defined 2025](https://projectdiscovery.io/blog/year-in-review-the-vulnerabilities-that-defined-2025): Annual vulnerability landscape analysis.
+
+- [Introducing Neo, an AI security engineer for complex security tasks](https://projectdiscovery.io/blog/introducing-neo): AI-powered security automation.
+
+- [How to Research & Reverse Web Vulnerabilities 101](https://projectdiscovery.io/blog/how-to-research-web-vulnerabilities): Comprehensive guide to vulnerability research methodology.
+
+- [Remote Code Execution in DELMIA Apriso](https://projectdiscovery.io/blog/remote-code-execution-in-delmia-apriso): Technical RCE vulnerability analysis.
+
+- [Authentication Bypass to RCE in Versa Concerto](https://projectdiscovery.io/blog/versa-concerto-authentication-bypass-rce): Critical authentication bypass research.
+
+- [Mastering Nuclei for Modern Recon](https://projectdiscovery.io/blog/ultimate-nuclei-guide): How to build custom templates for rapid, large-scale vulnerability scanning.
+
+---
+
 ## Key Topics
 - **Template-Based Scanning**: How to write effective Nuclei templates for 2026 vulnerabilities.
 - **Cloud Recon**: Techniques for scanning massive IP ranges efficiently.

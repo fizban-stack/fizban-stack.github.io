@@ -20,6 +20,20 @@ rss_feed: https://feeds.feedburner.com/TroyHunt
 
 Troy Hunt has become one of the most recognized voices in web security, known for creating Have I Been Pwned (HIBP) and consistently producing accessible, technically accurate content about security. His blog combines practical guidance with data breach analysis and web security expertise.
 
+---
+
+## Recommended Posts
+
+- [Passkeys for Normal People 2025](https://www.troyhunt.com/passkeys-for-normal-people/): A definitive non-technical guide to the future of passwordless authentication.
+
+- [Inside the National Public Data Breach](https://www.troyhunt.com/inside-the-3-billion-people-national-public-data-breach/): Detailed breakdown of one of the largest personal data leaks in history.
+
+- [The Data Breach Disclosure Conundrum](https://www.troyhunt.com/the-data-breach-disclosure-conundrum/): Strategic thoughts on why companies struggle with honesty during incidents.
+
+- [The Ethics of Using Leaked Data](https://www.troyhunt.com/the-ethics-of-running-a-data-breach-search-service/): Discussing the balance between security research and privacy.
+
+---
+
 ## Why Follow This Blog
 
 Hunt's unique position as the creator of HIBP, combined with his engaging communication style and technical expertise, makes his blog essential for understanding data breaches and web security. His ability to make complex topics accessible benefits security professionals and general audiences alike.

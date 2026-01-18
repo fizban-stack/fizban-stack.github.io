@@ -20,6 +20,22 @@ rss_feed: https://starlabs.sg/blog/index.xml
 
 STAR Labs is synonymous with technical excellence, frequently dominating international hacking competitions. Their blog details the methodologies behind their most complex exploits.
 
+---
+
+## Recommended Posts
+
+- [8th Anniversary: Embrace the new but don't forget the old](https://starlabs.sg/blog/2026/01-embrace-the-new-but-dont-forget-the-old/): Reflections on 8 years of security research.
+
+- [2025: WE BROKE THINGS, WE BUILT THINGS, WE BROKE EVEN MORE THINGS](https://starlabs.sg/blog/2025/12-2025-reflection/): Annual retrospective of Pwn2Own victories and research highlights.
+
+- [Breaking Into a Brother (MFC-J1010DW): Three Security Flaws in a Printer](https://starlabs.sg/blog/2025/11-breaking-into-a-brother-mfc-j1010dw/): Detailed printer vulnerability research and exploitation.
+
+- [Summer Pwnables: lz1 Solution](https://starlabs.sg/blog/2025/09-lz1-solution/): Technical challenge solution and exploitation techniques.
+
+- [Send()-ing Myself Belated Christmas Gifts](https://starlabs.sg/blog/2024/04-sending-myself-github-com-environment-variables-and-ghes-shell/): A walkthrough of discovering CVE-2024-0200, a critical vulnerability in GitHub Enterprise Server leading to RCE.
+
+---
+
 ## Notable Research Series
 
 ### Browser Exploitation

@@ -20,6 +20,24 @@ rss_feed: https://security.lauritz-holtmann.de/index.xml
 
 Lauritz Holtmann’s blog is a go-to resource for high-quality, technical write-ups on modern web security. His research often focuses on the intersection of identity protocols and complex web architectures.
 
+---
+
+## Recommended Posts
+
+- [Sign-in with World ID: XSS and ATO via OIDC Form Post Response Mode](https://security.lauritz-holtmann.de/advisories/tfh-form_post-xss-ato/): Account takeover via OpenID Connect vulnerabilities.
+
+- [Personal Access Token Disclosure in Asana Desktop Application](https://security.lauritz-holtmann.de/advisories/asana-desktop-credential-disclosure/): Credential disclosure vulnerability in Asana.
+
+- [Flickr Account Takeover](https://security.lauritz-holtmann.de/advisories/flickr-account-takeover/): OAuth implementation flaw leading to full account compromise.
+
+- [Android App Links Hijacking Authentication](https://security.lauritz-holtmann.de/post/sso-android-autoverify/): Deep dive into bypassing SSO flows on mobile platforms. 
+
+- [POST to XSS: Leveraging Pseudo Protocols (2024)](https://security.lauritz-holtmann.de/post/sso-security-redirect-uri-iii/): Cross-protocol vulnerabilities in SAML and OAuth (CVE-2024-21637). 
+
+- [Sign-in with World ID: XSS and ATO (2024)](https://security.lauritz-holtmann.de/advisories/tfh-form_post-xss-ato/): Exploiting OIDC Form Post Response Mode for account takeover. 
+
+---
+
 ## Why Follow This Blog
 
 Lauritz provides exceptionally clear documentation of sophisticated bugs. His work on SSO and OAuth is foundational for hunters looking to understand how authentication flows can be manipulated in enterprise environments.

@@ -20,6 +20,14 @@ rss_feed: https://grahamcluley.com/feed/
 
 Graham Cluley provides an accessible yet deeply informed perspective on the latest security breaches and privacy scandals.
 
+---
+
+## Recommended Posts
+
+- [RomCom Group Targets US Firms 2025](https://www.cybersecuritydive.com/news/russia-hackers-us-company-attack-ukraine-war/806423/): News analysis of sophisticated Russian state-linked cyber activity.
+
+---
+
 ## Key Topics
 - **Cybercrime Trends**: Analysis of major hacks and data breaches.
 - **Social Engineering**: How attackers manipulate human behavior.

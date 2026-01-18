@@ -20,6 +20,22 @@ rss_feed: https://filestore.fortinet.com/fortiguard/rss/threatsignal.xml
 
 FortiGuard Labs offers a high-level view of the global threat landscape, providing critical data for blue teams and threat hunters.
 
+---
+
+## Recommended Posts
+
+- [New Remcos Campaign Distributed Through Fake Shipping Document](https://www.fortinet.com/blog/threat-research/new-remcos-campaign-distributed-through-fake-shipping-document): Analysis of Remcos RAT delivery campaigns.
+
+- [Uncovering Hidden Forensic Evidence in Windows: The Mystery of AutoLogger-Diagtrack-Listener.etl](https://www.fortinet.com/blog/threat-research/uncovering-hidden-forensic-evidence-in-windows-mystery-of-autologger): Windows forensics and hidden evidence discovery.
+
+- [UDPGangster Campaigns Target Multiple Countries](https://www.fortinet.com/blog/threat-research/udpgangster-campaigns-target-multiple-countries): Botnet campaign analysis targeting global infrastructure.
+
+- [New eBPF Filters for Symbiote and BPFdoor Malware](https://www.fortinet.com/blog/threat-research/new-ebpf-filters-for-symbiote-and-bpfdoor-malware): Linux-based malware using eBPF for evasion.
+
+- [ShadowV2 Casts a Shadow Over IoT Devices](https://www.fortinet.com/blog/threat-research/shadowv2-casts-a-shadow-over-iot-devices): IoT-targeting malware analysis.
+
+---
+
 ## Intelligence Pillars
 - **Ransomware Analysis**: Tracking the evolution of major ransomware families.
 - **Botnet Tracking**: Monitoring global botnet activity and C2 infrastructure.

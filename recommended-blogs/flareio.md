@@ -20,6 +20,22 @@ rss_feed: https://flare.io/learn/resources/blog/feed/
 
 Flare.io has emerged as a leader in Identity Intelligence and Threat Exposure Management (TEM). Their research team provides unmatched visibility into the cybercrime world, monitoring millions of stealer logs and illicit channels to detect threats before they escalate into full-scale breaches.
 
+---
+
+## Recommended Posts
+
+- [Ransomware Recap of 2025 So Far](https://flare.io/learn/resources/blog/ransomware-recap-of-2025-so-far-and-context-from-2024/): Comprehensive intelligence report on RansomHub, Medusa, and the RaaS ecosystem.
+
+- [Modern Golang SSH Brute-Force Malware](https://flare.io/learn/resources/blog/modern-golang-ssh-brute-force-malware/): Technical breakdown of high-speed, multi-platform Golang implants.
+
+- [Investigating Black Basta’s Infrastructure](https://flare.io/learn/resources/blog/deciphering-black-bastas-infrastructure-from-the-chat-leak/): Deep dive into the TTPs and hosting of the Black Basta ransomware group.
+
+- [Threat of Stealer Logs in 2025](https://flare.io/glossary/stealer-logs/): Analysis of how infostealer data is fueling corporate account takeovers.
+
+- [Rise of Initial Access Markets](https://flare.io/learn/resources/initial-access-brokers-russian-hacking-forums-the-underground-corporate-access-economy/): Investigating specialized brokers selling corporate network access.
+
+---
+
 ## Why Follow This Blog
 
 Flare’s research is essential for understanding the "human" side of cybercrime—how credentials are traded, how phishing kits are distributed, and how threat actors communicate on platforms like Telegram. Their analysis helps security teams move beyond traditional IOCs to focus on the actual exposures that precede an attack.

@@ -20,6 +20,20 @@ rss_feed: https://www.bleepingcomputer.com/feed/
 
 BleepingComputer has established itself as one of the most reliable sources for technically accurate security news, with particular strength in ransomware coverage. Their combination of breaking news and technical depth makes them essential for staying current on threats.
 
+---
+
+## Recommended Posts
+
+- [Windows React2Shell Patching Crisis](https://www.bleepingcomputer.com/news/security/react2shell-flaw-exploited-to-breach-30-orgs-77k-ip-addresses-vulnerable/): Coverage of the critical RCE that triggered a worldwide patching emergency.
+
+- [Massive 'Aisuru' Botnet DDoS](https://www.bleepingcomputer.com/news/security/aisuru-botnet-behind-new-record-breaking-297-tbps-ddos-attack/): Reporting on hyper-volumetric attacks breaking previous global records.
+
+- [New Chrome Feature Blocks Cookie Theft](https://www.bleepingcomputer.com/news/security/new-chrome-feature-aims-to-stop-hackers-from-using-stolen-cookies/): Coverage of technical mitigations Google is adding to protect sessions.
+
+- [Critical Flaws in Microsoft Exchange](https://www.bleepingcomputer.com/news/microsoft/microsoft-december-2025-patch-tuesday-fixes-3-zero-days-57-flaws/): Detailed reporting on active exploitation of mail server flaws.
+
+---
+
 ## Why Follow This Blog
 
 BleepingComputer consistently delivers accurate, technically detailed reporting on security events faster than most mainstream media. Their focus on ransomware and malware provides depth that general news sources cannot match.

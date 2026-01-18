@@ -20,6 +20,20 @@ rss_feed: https://connormcgarr.github.io/feed.xml
 
 Connor McGarr specializes in the "art of the exploit." His blog is essential reading for those looking to move beyond simple PoCs to stable, production-grade exploit chains.
 
+---
+
+## Recommended Posts
+
+- [Windows ARM64 Internals](https://connormcgarr.github.io/arm64-windows-internals-basics/): Interrupt Handling: Deep dive into the mechanics of interrupts on Windows for ARM.
+
+- [Kernel Mode Shadow Stacks: Intel CET](https://connormcgarr.github.io/km-shadow-stacks/): Technical analysis of hardware-enforced control flow protection on Windows.
+
+- [Windows ARM64 PAC: Exploit Development](https://connormcgarr.github.io/windows-pac-arm64/): Research into Pointer Authentication and its impact on exploit reliability.
+
+- [Exploit Development: Modern Browser Internals](https://connormcgarr.github.io/browser1/): A look at mitigations and attack surfaces of Chromium-based browsers.
+
+---
+
 ## Technical Depth
 - **Windows Kernel**: Exploiting pool overflows and understanding internal structures.
 - **Mitigation Bypasses**: Analyzing CET (Control-flow Enforcement Technology) and XFG.

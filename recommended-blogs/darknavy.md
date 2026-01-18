@@ -20,6 +20,27 @@ rss_feed: https://www.darknavy.org/index.xml
 
 DarkNavy produces some of the most sophisticated analysis on the interaction between hardware and software security.
 
+--- 
+
+## Recommended Posts
+
+- [How And Why We Hacked Cypherock Hardware Wallet: The Full Story](https://www.darknavy.org/blog/how_and_why_we_hacked_cypherock_hardware_wallet_the_full_story/): Comprehensive hardware wallet security analysis and exploitation.
+
+- [Argusee: A Multi-Agent Collaborative Architecture for Automated Vulnerability Discovery](https://www.darknavy.org/blog/argusee_a_multi_agent_collaborative_architecture_for_automated_vulnerability_discovery/): AI-driven multi-agent system for automated security research.
+
+- [If the Person Who Finds a Web3 Hardware Wallet is a Hacker](https://www.darknavy.org/blog/if_the_person_who_finds_a_web3_hardware_wallet_is_a_hacker/): Physical security analysis of Web3 hardware wallets.
+
+- [Fatal Vulnerabilities Compromising DJI Control Devices](https://www.darknavy.org/blog/fatal_vulnerabilities_compromising_dji_control_devices/): Critical vulnerabilities in DJI drone control hardware.
+
+- [CVE-2024-5274: A Minor Flaw in V8 Parser Leading to Catastrophes](https://www.darknavy.org/blog/cve_2024_5274_a_minor_flaw_in_v8_parser_leading_to_catastrophes/): Technical analysis of V8 JavaScript engine vulnerability.
+
+- [The Most Prominent Privacy Trend of 2024](https://www.darknavy.org/darknavy_insight/the_most_prominent_privacy_security_trend_of_2024/): Analysis of confidential computing and the future of cloud privacy.
+
+- [Offensive Trend](https://www.darknavy.org/darknavy_insight/the_most_unstoppable_offensive_and_defensive_trend_of_2024/): Logic Flaws Over Memory: Why the "future spear" lies in supply chain and logic-based bugs.
+
+- [The Risk of Security Software (EDR/AV)](https://www.darknavy.org/darknavy_insight/the_most_secure_defenders_of_2024/): How defensive software itself is becoming a primary attack vector.
+--- 
+
 ## 2026 Research Focus
 - **Argusee Architecture**: Developing multi-agent systems for automated vulnerability research.
 - **Hardware-Level Exploitation**: Breaking trust boundaries in specialized silicon and IoT devices.
