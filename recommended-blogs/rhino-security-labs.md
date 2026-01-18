@@ -21,6 +21,22 @@ rss_feed: https://rhinosecuritylabs.com/feed/
 ## Cloud Mastery
 Rhino Security Labs is essential for understanding **Cloud Post-Exploitation**. They provide the scripts and methodologies to turn a single leaked IAM key into full cloud environment dominance.
 
+---
+
+## Recommended Posts
+
+- [Multiple CVEs in Infoblox NetMRI: RCE, Auth Bypass, SQLi, and File Read Vulnerabilities](https://rhinosecuritylabs.com/research/infoblox-multiple-cves/) - Discovery of six vulnerabilities in Infoblox NetMRI including unauthenticated command injection and SQL injection leading to full appliance compromise
+
+- [CVE-2025-26147: Authenticated RCE In Denodo Scheduler](https://rhinosecuritylabs.com/research/cve-2025-26147-authenticated-rce-in-denodo/) - Technical analysis of a path traversal vulnerability in Keytab file uploads allowing arbitrary file write and subsequent RCE via JSP web shell
+
+- [CVE-2025-0693: AWS IAM User Enumeration](https://rhinosecuritylabs.com/research/unauthenticated-username-enumeration-in-aws/) - Identification of timing-based username enumeration flaws in the AWS Console login flow for users without MFA enabled
+
+- [CVE-2024-55963: Unauthenticated RCE in Default-Install of Appsmith](https://rhinosecuritylabs.com/research/cve-2024-55963-unauthenticated-rce-in-appsmith/) - Exploiting a misconfigured default PostgreSQL instance in Appsmith to achieve unauthenticated remote code execution via SQL queries
+
+- [Referral Beware, Your Rewards are Mine (Part 1)](https://rhinosecuritylabs.com/research/referral-beware-your-rewards-are-mine-part-1/) - Research into logic flaws within referral reward programs, detailing attacks like cookie injection, CRLF injection, and referral hijacking
+
+---
+
 ## Why Follow This Blog
 
 Rhino Security Labs has established itself as a leading voice in cloud security research, particularly for AWS. Their development of Pacu (the AWS exploitation framework) and consistent publication of cloud attack techniques makes their blog essential for anyone working in cloud security.

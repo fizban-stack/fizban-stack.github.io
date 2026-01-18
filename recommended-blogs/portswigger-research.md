@@ -24,6 +24,16 @@ PortSwigger Research doesn't just find bugs; they define new classes of vulnerab
 
 ## Recommended Posts
 
+- [Functional PoCs in less than a minute? Julen Garrido Estévez puts Burp AI to the test](https://portswigger.net/blog/functional-pocs-in-less-than-a-minute) - Methodology for using Burp AI's free-form prompts to generate functional Proofs of Concept (PoCs) for vulnerabilities like SSTI and IDOR in under a minute
+
+- [How to detect React2Shell with Burp Suite](https://portswigger.net/blog/how-to-detect-react2shell-with-burp-suite) - Guidance on detecting the critical React2Shell vulnerabilities (CVE-2025-55182/CVE-2025-66478) using Burp Suite's ActiveScan++ and custom Bambda scripts
+
+- [How to join the desync endgame: Practical tips from pentester Tom Stacey](https://portswigger.net/blog/how-to-join-the-desync-endgame-practical-tips-from-pentester-tom-stacey) - Technical guide on identifying parser discrepancies to find HTTP request smuggling vulnerabilities, leveraging the "HTTP/1.1 Must Die" research methodology
+
+- [HTTP/1.1 must die: Dafydd Stuttard on what this means for enterprise security](https://portswigger.net/blog/http-1-1-must-die-dafydd-stuttard-on-what-this-means-for-enterprise-security) - Analysis of the systemic risks of HTTP/1.1, arguing for a strategic shift to HTTP/2 to eliminate request smuggling classes entirely
+
+- [Hacking smarter with Burp AI: NahamSec puts Burp AI to the test](https://portswigger.net/blog/hacking-smarter-with-burp-ai-nahamsec-puts-burp-ai-to-the-test) - Demonstration of using Burp AI's agentic capabilities within Repeater and Scanner to accelerate vulnerability validation and reduce false positives
+
 - [The Fragile Lock: Novel Bypasses For SAML Authentication](https://portswigger.net/research/the-fragile-lock): Groundbreaking SAML authentication bypass research.
 
 - [Introducing the URL validation bypass cheat sheet](https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet): Comprehensive URL validation bypass techniques.

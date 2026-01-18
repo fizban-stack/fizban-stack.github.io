@@ -20,6 +20,22 @@ rss_feed: https://www.sophos.com/en-us/blog/feed
 
 Sophos News provides "boots-on-the-ground" data from incident response engagements.
 
+---
+
+## Recommended Posts
+
+- [The State of Ransomware in Enterprise 2025](https://www.sophos.com/en-us/blog/the-state-of-ransomware-in-enterprise-2025) - Survey of 1,733 enterprises showing encryption rates at five-year low while exploited vulnerabilities lead attack causes at 29%
+
+- [Human-in-the-Loop Security Will Define 2026](https://www.sophos.com/en-us/blog/human-in-the-loop-security-will-define-2026-predictions-from-sophos-experts) - Expert predictions on AI as force multiplier, human burnout risks, and the critical role of MDR in cyber insurance
+
+- [I Am Not a Robot: ClickFix Used to Deploy StealC and Qilin](https://www.sophos.com/en-us/blog/i-am-not-a-robot-clickfix-used-to-deploy-stealc-and-qilin) - Fake verification prompts installing NetSupport Manager leading to infostealer and ransomware deployment via VPN
+
+- [TamperedChef Serves Bad Ads with Infostealers as the Main Course](https://www.sophos.com/en-us/blog/tamperedchef-serves-bad-ads-with-infostealers-as-the-main-course) - Malvertising campaign using trojanized PDF editor with 56-day dormancy period affecting 100+ systems across 19 countries
+
+- [React2Shell Flaw (CVE-2025-55182) Exploited for Remote Code Execution](https://www.sophos.com/en-us/blog/react2shell-flaw-cve-2025-55182-exploited-for-remote-code-execution) - Critical React Server Components vulnerability enabling unauthenticated RCE exploited by state-sponsored actors
+
+---
+
 ## Highlights
 - **Active Adversary Reports**: Analyzing how attackers move laterally through modern networks.
 - **MDR Insights**: Lessons learned from managing security for thousands of organizations.

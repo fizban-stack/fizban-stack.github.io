@@ -20,6 +20,24 @@ rss_feed: https://th4ntis.com/feed.xml
 
 th4ntis provides deep technical insights for red teamers and offensive security professionals.
 
+---
+
+## Recommended Posts
+
+- [Ludus and GOAD Pentest Environment](https://th4ntis.com/guide/2025/09/09/Ludus-and-GOAD-Pentest-Environment.html) - Setting up a home pentesting lab with Ludus and Game of Active Directory on Proxmox
+
+- [Wireless Pentesting with HCXDumptool](https://th4ntis.com/guide/2025/02/06/Wireless-Pentesting-HCXDumptool.html) - Capturing PMKID and EAPOL handshakes for password cracking with Hashcat
+
+- [Wireless Pentesting with Aircrack](https://th4ntis.com/guide/2025/02/06/Wireless-Pentesting-Aircrack.html) - Capturing handshakes and PMKIDs using Aircrack-ng with deauthentication attacks
+
+- [WiFi Pineapple Basics](https://th4ntis.com/guide/2024/03/26/WiFi-Pineapple-Basics.html) - Introduction to the Hak5 WiFi Pineapple wireless auditing platform setup and configuration
+
+- [Setting up a Pwnagotchi](https://th4ntis.com/guide/2024/03/05/Pwnagotchi-Setup.html) - Installing and configuring an AI-powered Pwnagotchi on Raspberry Pi Zero 2W for WiFi handshake capture
+
+- [Wireless Pentesting with Bettercap](https://th4ntis.com/guide/2024/03/01/Wireless-Pentesting-Bettercap.html) - Handshake capture and PMKID extraction using Bettercap with Hashcat cracking
+
+---
+
 ## Technical Depth
 - **Active Directory Exploitation**: Advanced techniques for abusing AD and ADCS.
 - **EDR Evasion**: Developing custom payloads and syscall-based evasion techniques.

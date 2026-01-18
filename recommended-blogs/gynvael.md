@@ -10,11 +10,25 @@ category: Low-Level Research
 description: Deep dives into the underlying firmware, virtualization layers, and binary internals of modern systems.
 image: recommended-blogs/gynvael.webp
 website: https://gynvael.coldwind.pl/
-rss_feed: https://gynvael.coldwind.pl/rss
+rss_feed: https://feeds.feedburner.com/GynvaelColdwindPL
 ---
 
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
+
+---
+
+## Recommended Posts
+
+- [Hello World under the microscope](https://gynvael.coldwind.pl/?id=754) - Tracing Python's print statement through CPython, Windows console, font rendering, DWM, and GPU pipeline
+
+- [Draconian Fear vulnerability (NETGEAR smart switches)](https://gynvael.coldwind.pl/?id=741) - Race condition allowing session hijacking on ~20 NETGEAR switch models via IP and browser ID guessing
+
+- [Making numbers out of thin air, Python bytecode edition](https://gynvael.coldwind.pl/?id=739) - Using genetic algorithms to discover shortest Python bytecode sequences for integer constants in CTF
+
+- [Dev Log: Moving contacts from Android to MaxCom MM721](https://gynvael.coldwind.pl/?id=760) - Automating contact transfer via AT modem commands and custom Python parsers
+
+- [Paged Out! prints and CFP](https://gynvael.coldwind.pl/?id=805) - Announcement of the technical security zine in print form with call for submissions
 
 ---
 

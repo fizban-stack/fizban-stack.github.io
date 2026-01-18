@@ -20,6 +20,22 @@ rss_feed: https://labs.watchtowr.com/rss/
 
 watchTowr Labs is known for its "no-nonsense" approach to security research, often revealing critical flaws in enterprise infrastructure software.
 
+---
+
+## Recommended Posts
+
+- [SOAPwn: Pwning .NET Framework Applications Through HTTP Client Proxies And WSDL](https://labs.watchtowr.com/soapwn-pwning-net-framework-applications-through-http-client-proxies-and-wsdl/) - Exploiting .NET Framework's HTTP client proxy classes to achieve arbitrary file writes and RCE through malicious WSDL files
+
+- [Stop Putting Your Passwords Into Random Websites](https://labs.watchtowr.com/stop-putting-your-passwords-into-random-websites-yes-seriously-you-are-the-problem/) - Discovering 80,000+ exposed secrets including AD credentials and API keys from online code formatting tools
+
+- [8 Million Requests Later, We Made The SolarWinds Supply Chain Attack Look Amateur](https://labs.watchtowr.com/8-million-requests-later-we-made-the-solarwinds-supply-chain-attack-look-amateur/) - Registering 150 abandoned S3 buckets and receiving millions of requests from governments and Fortune 500s seeking software updates
+
+- [We Spent $20 To Achieve RCE And Accidentally Became The Admins Of .MOBI](https://labs.watchtowr.com/we-spent-20-to-achieve-rce-and-accidentally-became-the-admins-of-mobi/) - Registering an expired WHOIS domain and discovering CAs still using it for certificate validation
+
+- [Bypassing Authentication Like It's The '90s - Pre-Auth RCE Chain(s) in Kentico Xperience CMS](https://labs.watchtowr.com/bypassing-authentication-like-its-the-90s-pre-auth-rce-chain-s-in-kentico-xperience-cms/) - Multiple authentication bypasses and RCE via outdated WSE3 library in Kentico CMS
+
+---
+
 ## Key Focus Areas
 - **Appliance Vulnerabilities**: RCEs in VPNs, firewalls, and gateway devices.
 - **Supply Chain Risks**: Identifying vulnerabilities in common third-party libraries.
@@ -127,8 +143,6 @@ Real-world risk context for decision-making.
 - Inventory perimeter devices
 - Track vendor security history
 - Plan for emergency patching
-
-## Recommended Posts
 
 ### Must-Read Research
 1. **"Fortinet FortiGate Pre-Auth RCE"** - Critical vulnerability in widely-deployed firewall appliances

@@ -25,6 +25,22 @@ This blog is essential for hunters who want to understand **Defensive Bypass**. 
 
 jub0bs (Julien Cretel) provides exceptionally detailed analysis of web security mechanisms that most resources only cover superficially. His deep expertise in security headers, CORS, and Go security makes this blog invaluable for both offensive and defensive security practitioners.
 
+---
+
+## Recommended Posts
+
+- [A smorgasbord of a bug chain: postMessage, JSONP, WAF bypass, DOM-based XSS, CORS, CSRF](https://jub0bs.com/posts/2023-05-05-smorgasbord-of-a-bug-chain/) - Multi-vulnerability chain exploiting insecure message listener, JSONP, and permissive CORS to achieve CSRF
+
+- [Scraping the bottom of the CORS barrel (part 1)](https://jub0bs.com/posts/2022-08-04-scraping-the-bottom-of-the-cors-barrel-part1/) - Advanced CORS testing techniques including resource-level testing, origin enumeration, and regexp exploitation
+
+- [CVE-2022-21703: cross-origin request forgery against Grafana](https://jub0bs.com/posts/2022-02-08-cve-2022-21703-writeup/) - Exploiting weak content-type validation and SameSite cookie limitations for privilege escalation
+
+- [Abusing Slack's file-sharing functionality to de-anonymise fellow workspace members](https://jub0bs.com/posts/2021-10-12-xsleak-stack/) - XSLeak technique bypassing SameSite cookies using CSP form-action directive
+
+- [Leveraging an SSRF to leak a secret API key](https://jub0bs.com/posts/2020-06-23-ssrf/) - SSRF via URL authority bypass to intercept CoinMarketCap API credentials
+
+---
+
 ## Key Topics Covered
 
 ### Security Headers

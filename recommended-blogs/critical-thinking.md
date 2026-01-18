@@ -20,6 +20,22 @@ rss_feed: https://rss.beehiiv.com/feeds/SQSpYiG1E1.xml
 
 Associated with the popular Critical Thinking podcast, HackerNotes provides the "soft skills" and rigorous methodologies required to transition from a hobbyist to a professional bug hunter.
 
+---
+
+## Recommended Posts
+
+- [[HackerNotes Ep. 151]: Client-Side Advanced Topics with Rhynorater](https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-151-client-side-advanced-topics-with-rhynorater) - Advanced client-side exploitation techniques including cookie partitioning, iframe vulnerabilities, URL parsing edge cases, and client-side routing exploitation
+
+- [[HackerNotes Ep. 148] MCP Hacking Guide](https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-148-mcp-hacking-guide) - A crash course on Model Context Protocol and its security implications
+
+- [[HackerNotes Ep. 147]: Stupid, Simple, Hacking Workflow Tips](https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-147-stupid-simple-hacking-workflow-tips) - Efficiency techniques to streamline security testing and discover more vulnerabilities
+
+- [[HackerNotes Ep. 120] SpaceRaccoon - From Day Zero to Zero Day](https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-120-spaceraccoon-from-day-zero-to-zero-day) - Eugene Lim discusses vulnerability research and reverse engineering including binary analysis, taint analysis, and fuzzing
+
+- [[HackerNotes Ep.102] Building Web Hacking Micro Agents with Jason Haddix](https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-102-building-web-hacking-micro-agents-with-jason-haddix) - AI-powered micro-agents for web fuzzing, WAF bypasses, and effective LLM prompting techniques
+
+---
+
 ## Core Philosophical Themes
 
 ### The Business of Hunting

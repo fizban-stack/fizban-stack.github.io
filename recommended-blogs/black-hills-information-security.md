@@ -24,11 +24,21 @@ Black Hills Information Security (BHIS) has become a cornerstone of the security
 
 ## Recommended Posts
 
+- [Deceptive-Auditing: An Active Directory Honeypots Tool](https://www.blackhillsinfosec.com/deceptive-auditing/) - Release of a PowerShell toolset to deploy Active Directory honeypots and automate auditing rules, simplifying the creation of deceptive user and computer objects
+
+- [The Curious Case of the Comburglar](https://www.blackhillsinfosec.com/the-curious-case-of-the-comburglar/) - Investigation of a stealthy persistence technique (UKC-1230) where threat actors modified scheduled tasks to execute malicious COM objects via surrogate DLLs
+
+- [Abusing Delegation with Impacket (Part 1): Unconstrained Delegation](https://www.blackhillsinfosec.com/abusing-delegation-with-impacket-part-1/) - Comprehensive guide on exploiting Unconstrained Delegation using Impacket tools (addspn.py, dnstool.py, krbrelayx), detailing attack paths for both user and machine accounts to capture TGTs from coerced domain controllers and perform DCSync
+
+- [Abusing Delegation with Impacket (Part 2): Constrained Delegation](https://www.blackhillsinfosec.com/abusing-delegation-with-impacket-part-2/) - Technical walkthrough for abusing Constrained Delegation with and without protocol transition using Impacket to impersonate users and compromise services
+
+- [Abusing Delegation with Impacket (Part 3): Resource-Based Constrained Delegation](https://www.blackhillsinfosec.com/abusing-delegation-with-impacket-part-3/) - Detailed guide on exploiting Resource-Based Constrained Delegation (RBCD) using Impacket, covering CVE-2019-1040 and GenericWrite abuse for privilege escalation
+
+- [Why You Got Hacked – 2025 Super Edition](https://www.blackhillsinfosec.com/why-you-got-hacked-2025/) - Statistical analysis of over 850 penetration tests identifying top vulnerabilities, with weak ADCS configurations and unpatched software emerging as leading causes of compromise
+
 - [The Top Ten List of Why You Got Hacked This Year (2023/2024)](https://www.blackhillsinfosec.com/top-ten-list-of-why-you-got-hacked-this-year-2023-2024/): A comprehensive analysis of the most common entry points identified during hundreds of real-world penetration tests.
 
 - [DomCat: A Domain Categorization Tool](https://www.blackhillsinfosec.com/domcat-a-domain-categorization-tool/): Release of a new tool designed to help red teams find expired domains with "safe" categorizations to bypass web filters.
-
-- [Deceptive-Auditing: An Active Directory Honeypots Tool](https://www.google.com/search?q=https://www.blackhillsinfosec.com/deceptive-auditing-an-active-directory-honeypots-tool/): A guide to deploying "honeypot" objects in Active Directory to detect unauthorized enumeration and lateral movement.
 
 - [Bypassing WAFs Using Oversized Requests](https://www.blackhillsinfosec.com/bypassing-wafs-using-oversized-requests/): Research into how large payloads can cause Web Application Firewalls to fail open or skip inspection.
 

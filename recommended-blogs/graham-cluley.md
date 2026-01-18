@@ -26,6 +26,12 @@ Graham Cluley provides an accessible yet deeply informed perspective on the late
 
 - [RomCom Group Targets US Firms 2025](https://www.cybersecuritydive.com/news/russia-hackers-us-company-attack-ukraine-war/806423/): News analysis of sophisticated Russian state-linked cyber activity.
 
+- [WEF: AI Overtakes Ransomware as Fastest-Growing Cyber Risk](https://www.fortra.com/blog/wef-ai-overtakes-ransomware-fastest-growing-cyber-risk) - Summary of the WEF "Global Cybersecurity Outlook 2026" highlighting AI vulnerabilities as the top emerging threat, outpacing ransomware due to expanded attack surfaces and agentic AI risks
+
+- [Hackers get hacked, as BreachForums database is leaked](https://www.bitdefender.com/en-us/blog/hotforsecurity/hackers-get-hacked-as-breachforums-database-is-leaked) - Coverage of the BreachForums database leak exposing 323k+ user records and IP addresses, released by an actor named "James" alongside internal doxxing of ShinyHunters members
+
+- [Man jailed for teaching criminals how to use malware](https://www.bitdefender.com/en-us/blog/hotforsecurity/man-jailed-for-teaching-criminals-how-to-use-malware) - Details the 5.5-year sentencing of a malware instructor in Singapore who created video tutorials on deploying the Spymax Android RAT for banking fraud and device hijacking
+
 ---
 
 ## Key Topics

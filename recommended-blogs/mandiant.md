@@ -20,6 +20,22 @@ rss_feed: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
 
 Mandiant (now part of Google Cloud) has been at the forefront of threat intelligence and incident response for decades. Their APT naming conventions and attribution methodologies have become industry standards, and their research consistently reveals some of the most sophisticated threats facing organizations.
 
+---
+
+## Recommended Posts
+
+- [Releasing Rainbow Tables to Accelerate Protocol Deprecation](https://cloud.google.com/blog/topics/threat-intelligence/net-ntlmv1-deprecation-rainbow-tables) - Releasing rainbow tables to demonstrate Net-NTLMv1 insecurity and accelerate protocol deprecation
+
+- [Sanctioned but Still Spying: Intellexa's Prolific Zero-Day Exploits Continue](https://cloud.google.com/blog/topics/threat-intelligence/intellexa-zero-day-exploits-continue) - Investigation into Intellexa's evasion of sanctions and continued zero-day exploitation against mobile browsers
+
+- [Multiple Threat Actors Exploit React2Shell (CVE-2025-55182)](https://cloud.google.com/blog/topics/threat-intelligence/threat-actors-exploit-react2shell-cve-2025-55182) - Analysis of critical RCE in React Server Components exploited by widespread threat clusters including espionage groups
+
+- [Unauthenticated Remote Access via Triofox Vulnerability CVE-2025-12480](https://cloud.google.com/blog/topics/threat-intelligence/triofox-vulnerability-cve-2025-12480) - Technical deep dive into unauthenticated access vulnerability allowing arbitrary payload upload and execution
+
+- [Beyond the Watering Hole: APT24's Pivot to Multi-Vector Attacks](https://cloud.google.com/blog/topics/threat-intelligence/apt24-pivot-to-multi-vector-attacks) - Tracking PRC-nexus actor pivoting to multi-vector attacks including supply chain compromise and BADAUDIO malware
+
+---
+
 ## Why Follow This Blog
 
 Mandiant's combination of frontline incident response experience and dedicated threat research produces intelligence unmatched in depth and accuracy. Their APT research has defined how the industry understands nation-state threats.

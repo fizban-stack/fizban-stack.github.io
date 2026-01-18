@@ -20,6 +20,22 @@ rss_feed: https://www.synack.com/feed/
 
 Synack bridges the gap between traditional pentesting and bug bounty programs.
 
+---
+
+## Recommended Posts
+
+- [Applying Agentic AI to Pentesting: Insights from Synack's New eBook](https://www.synack.com/blog/applying-agentic-ai-to-pentesting-insights-from-synacks-new-ebook/) - A complete guide to integrating agentic AI into penetration testing practices
+
+- [Best Practices to Achieve the Benefits of Agentic AI in Pentesting](https://www.synack.com/blog/best-practices-to-achieve-the-benefits-of-agentic-ai-in-pentesting/) - Safe and effective integration of AI capabilities into security testing workflows
+
+- [The Future of Cyber Defense: A New Mentality for the AI Age](https://www.synack.com/blog/the-future-of-cyber-defense-a-new-mentality-for-the-ai-age/) - Why human-machine teams are essential for securing digital infrastructure against AI-powered threats
+
+- [OSINT Is for Closers: Hacking the M&A Process](https://www.synack.com/blog/osint-is-for-closers-hacking-the-ma-process/) - Leveraging open-source intelligence during mergers and acquisitions to assess security posture
+
+- [How the OWASP Top 10 for LLM Applications Supports the AI Revolution](https://www.synack.com/blog/how-the-owasp-top-10-for-llm-applications-supports-the-ai-revolution/) - Understanding the updated OWASP framework for defending LLM-based services
+
+---
+
 ## Key Topics
 - **Strategic Hacking**: How to approach large-scale security assessments.
 - **Vulnerability Trends**: Analysis of bugs found across Synack's customer base.

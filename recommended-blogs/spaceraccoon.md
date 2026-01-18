@@ -18,6 +18,20 @@ rss_feed: https://spaceraccoon.dev/feed.xml
 
 ---
 
+## Recommended Posts
+
+- [Universal Code Execution by Chaining Messages in Browser Extensions](https://spaceraccoon.dev/universal-code-execution-browser-extensions/) - Exploiting message-passing vulnerabilities between content scripts and native applications for full system compromise
+
+- [Pwning Millions of Smart Weighing Machines with API and Hardware Hacking](https://spaceraccoon.dev/pwning-millions-smart-weighing-machines-api-hardware-hacking/) - SQL injection and device reassociation flaws affecting over a million IoT devices through API-level attacks
+
+- [Exploiting Improper Validation of Amazon Simple Notification Service SigningCertUrl](https://spaceraccoon.dev/exploiting-improper-validation-amazon-simple-notification-service/) - Forging SNS messages by exploiting certificate URL validation flaws in AWS SDKs
+
+- [Supply Chain Pollution: Hunting a 16 Million Download/Week npm Package Vulnerability](https://spaceraccoon.dev/supply-chain-pollution-hunting-a-16-million-download-week-npm-package/) - Discovering prototype pollution in the popular `ini` package through pattern matching and functionality grouping
+
+- [Remote Code Execution in Three Acts: Chaining Exposed Actuators and H2 Database Aliases in Spring Boot 2](https://spaceraccoon.dev/remote-code-execution-in-three-acts-chaining-exposed-actuators-and-h2-database/) - RCE via exposed actuator endpoints and H2 database alias functionality
+
+---
+
 ## Key Topics
 - **SaaS Tenancy**: Breaking isolation in multi-tenant environments.
 - **Cloud Misconfigurations**: Exploiting AWS/GCP/Azure specific features.

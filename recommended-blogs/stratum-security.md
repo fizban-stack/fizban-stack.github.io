@@ -20,6 +20,22 @@ rss_feed: https://blog.stratumsecurity.com/rss/
 
 Stratum Security provides practical, experience-driven advice for securing the modern cloud stack.
 
+---
+
+## Recommended Posts
+
+- [Azure SSRF with Workflow Designer Feature](https://blog.stratumsecurity.com/2025/08/20/azure-ssrf-with-workflow-designer-feature/) - Exploiting SSRF in workflow designer to extract Azure access tokens with Contributor permissions via Instance Metadata Service
+
+- [Remote Code Execution with GitHub Feature](https://blog.stratumsecurity.com/2025/06/13/remote-code-execution-with-github-feature/) - Command injection through branch name and repository URL parameters bypassing validation logic
+
+- [Bypassing An Industry-Leading WAF and Exploiting SQLi](https://blog.stratumsecurity.com/2023/06/01/sqli-the-road-to-bypassing-an-industry-leading-waf/) - Methodical WAF bypass using alternative operators and payload obfuscation on overlooked parameters
+
+- [Apache Lucene Injection on Auth0 Integration](https://blog.stratumsecurity.com/2023/12/18/apache-lucene-injection-on-auth0-implementation/) - Cross-tenant data extraction through unsanitized Lucene queries in multi-tenant Auth0 applications
+
+- [Privilege Escalations through Integrations](https://blog.stratumsecurity.com/2023/05/04/integration-fails/) - Multiple privilege escalation chains via Okta, Cognito, and Tableau misconfigurations in a financial dashboard
+
+---
+
 ## Key Topics
 - **AWS/Azure/GCP Security**: Best practices and common misconfigurations in the "Big Three."
 - **DevSecOps**: Integrating security into the CI/CD pipeline.

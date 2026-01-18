@@ -30,6 +30,14 @@ Flare.io has emerged as a leader in Identity Intelligence and Threat Exposure Ma
 
 - [Investigating Black Basta’s Infrastructure](https://flare.io/learn/resources/blog/deciphering-black-bastas-infrastructure-from-the-chat-leak/): Deep dive into the TTPs and hosting of the Black Basta ransomware group.
 
+- [Cryptomining Supply-Chain Abuse on Docker Hub: Hiding Malware in Plain Sight](https://flare.io/learn/resources/blog/cryptomining-supply-chain-abuse-docker-hub/) - Investigation into malicious container images on Docker Hub used for cryptomining, highlighting techniques used to evade detection and persist within supply chains
+
+- [90% of SafePay Ransomware Victims are SMBs: What We Learned from our Analysis of 500 Attacks](https://flare.io/learn/resources/blog/safepay-ransomware-analysis-smbs/) - Statistical breakdown and TTP analysis of the SafePay ransomware group, focusing on their targeting of Small to Medium Businesses and extortion methodologies
+
+- [New Threat Actor Group PayTool Targets Canadians with Traffic Scams](https://flare.io/learn/resources/blog/paytool-threat-actor-group-targets-canadians/) - Threat intelligence report on "PayTool," a group leveraging SMS phishing and fake traffic violation notices to harvest credentials and financial data from Canadian targets
+
+- [The Threat Behind Personal Data Leaks on the Dark Web](https://flare.io/learn/resources/blog/threat-personal-data-leaks-dark-web/) - Examination of the lifecycle of stolen personal data on dark web marketplaces, from initial breach to monetization and its impact on enterprise security
+
 - [Threat of Stealer Logs in 2025](https://flare.io/glossary/stealer-logs/): Analysis of how infostealer data is fueling corporate account takeovers.
 
 - [Rise of Initial Access Markets](https://flare.io/learn/resources/initial-access-brokers-russian-hacking-forums-the-underground-corporate-access-economy/): Investigating specialized brokers selling corporate network access.

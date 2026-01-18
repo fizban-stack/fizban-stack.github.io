@@ -24,7 +24,15 @@ Info-sec Writeups on Medium is the central nervous system for the bug bounty com
 
 ## Recommended Posts
 
-Visit [Infosec Writeups on Medium](https://infosecwriteups.com/) for the latest bug bounty writeups, covering IDOR chains, SSRF exploitation, GraphQL authorization bypasses, OAuth misconfigurations, and more from the community.
+- [Mastering SQLMap and Ghauri: A Practical Guide to WAF Bypass Techniques](https://infosecwriteups.com/mastering-sqlmap-and-ghauri-a-practical-guide-to-waf-bypass-techniques-1aaa9eee9d32) - Practical techniques for bypassing web application firewalls during SQL injection testing
+
+- [Bypassing SSRF Protections: A $10,000 Lesson from Slack](https://infosecwriteups.com/bypassing-ssrf-protections-a-10-000-lesson-from-slack-6cff022a44a6) - High-value SSRF exploitation bypassing protection mechanisms in Slack
+
+- [From Failure to $32,000: My Bug Bounty Journey](https://infosecwriteups.com/from-failure-to-32-000-my-bug-bounty-journey-84eac429e2d0) - Personal journey from beginner struggles to significant bounty earnings with lessons learned
+
+- [This Endpoint Was "Read-Only" — Until I Read Everything](https://infosecwriteups.com/this-endpoint-was-read-only-until-i-read-everything-c157154bdb99) - Exploiting supposedly restricted endpoints to access sensitive data
+
+- [When a Checkout Page Leaks Your Session](https://infosecwriteups.com/when-a-checkout-page-leaks-your-session-f08885668ae7) - Session leakage vulnerability discovered in e-commerce checkout flow
 
 ---
 

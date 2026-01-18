@@ -23,6 +23,14 @@ TrustedSec is one of the most respected names in offensive security consulting, 
 ---
 ## Recommended Posts
 
+- [Updating the Sysmon Community Guide: Lessons Learned from the Front Lines](https://trustedsec.com/blog/updating-the-sysmon-community-guide-lessons-learned-from-the-front-lines) - Insights from updating the Sysmon Community Guide, focusing on practical configuration tuning to reduce noise and improve detection efficacy based on real-world engagement data
+
+- [Limiting Domain Controller Attack Surface: Why Less Services, Less Software, Less Agents = Less Exposure](https://trustedsec.com/blog/limiting-domain-controller-attack-surface) - Architectural guidance on hardening Domain Controllers by strictly minimizing installed software and agents to reduce the attack surface available for exploitation
+
+- [Detecting Password-Spraying in Entra ID Using a Honeypot Account](https://trustedsec.com/blog/detecting-password-spraying-in-entra-id-using-a-honeypot-account) - Methodology for deploying honeypot accounts within Entra ID to specifically detect and alert on password spraying attacks before they impact legitimate users
+
+- [There's More than One Way to Trigger a Windows Service](https://trustedsec.com/blog/theres-more-than-one-way-to-trigger-a-windows-service) - Technical exploration of Windows service triggers that allow low-privilege users to start high-privilege services like Remote Registry, useful for stealthy persistence or escalation
+
 - [Holy Shuck! Weaponizing NTLM Hashes as a Wordlist](https://trustedsec.com/blog/holy-shuck-weaponizing-ntlm-hashes-as-a-wordlist): Detailed research on using NTLM hashes as a wordlist to identify password reuse and lateral movement paths without cracking.
 
 - [Managing Privileged Roles in Microsoft Entra ID: A Pragmatic Approach](https://trustedsec.com/blog/managing-privileged-roles-in-microsoft-entra-id-a-pragmatic-approach): A custom model and tactical guide for auditing and hardening privileged roles in Azure/Entra ID environments. 

@@ -20,6 +20,24 @@ rss_feed: https://danielmiessler.com/feed.rss
 
 Daniel Miessler's Unsupervised Learning has become essential reading for security professionals navigating the intersection of artificial intelligence and cybersecurity. His unique blend of technical depth and strategic thinking helps readers understand how AI is transforming the security landscape.
 
+---
+
+## Recommended Posts
+
+- [Claude Code Addiction is Addiction to Creation](https://danielmiessler.com/blog/claude-code-addiction-is-creativity) - Arguing that AI coding tool enthusiasm is actually a healthy addiction to creative output rather than passive consumption
+
+- [Cybersecurity Changes I Expect in 2026](https://danielmiessler.com/blog/cybersecurity-ai-changes-2026) - Predictions on how AI agents will transform security operations, talent dynamics, and tool consolidation
+
+- [Progressive Web Scraping with a Four-Tier Fallback System](https://danielmiessler.com/blog/progressive-web-scraping-four-tier-system) - A technical architecture that automatically escalates through four scraping methods from WebFetch to Bright Data
+
+- [AI Index](https://danielmiessler.com/blog/ai) - A comprehensive curated collection of AI research, frameworks, and implementation guides spanning architecture, security, and economic impact
+
+- [How to Talk to AI](https://danielmiessler.com/blog/how-to-talk-to-ai) - Arguing that clear thinking matters more than prompt engineering techniques
+
+- [A Personal AI Maturity Model (PAIMM)](https://danielmiessler.com/blog/personal-ai-maturity-model) - A 9-tier framework charting the evolution of personal AI systems from chatbots to proactive assistants
+
+---
+
 ## Why Follow This Blog
 
 Miessler combines decades of security experience with deep engagement in AI developments, producing analysis that is both technically grounded and strategically insightful. His content helps security professionals prepare for an AI-transformed future.
