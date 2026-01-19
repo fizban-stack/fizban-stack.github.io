@@ -16,25 +16,21 @@ rss_feed: https://doublepulsar.com/feed
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Kevin Beaumont, known as "GossiTheDog," provides some of the most timely and practical analysis of major cybersecurity events. His combination of technical depth, operational experience, and willingness to call out industry problems makes his blog essential reading.
+
+---
+
+## Recommended Posts
+
+- [Inside Copilot+ Recall: Stealing Everything](https://doublepulsar.com/recall-stealing-everything-youve-ever-typed-or-viewed-on-your-own-windows-pc-is-now-possible-da3e12e9465e): The definitive critical analysis of Windows Recall security.
+
+- [CyberSlop — Meet the New Threat Actor](https://doublepulsar.com/cyberslop-meet-the-new-threat-actor-mit-and-safe-security-d250d19d02a4): Technical teardown of AI-generated junk data as a primary security risk.
+
+- [Global Impact of the CrowdStrike Outage](https://doublepulsar.com/what-i-learned-from-the-microsoft-global-it-outage-d6138c06ebdb): A boots-on-the-ground look at the reality of 2024 recovery efforts.
+
+---
 
 ## Why Follow This Blog
 

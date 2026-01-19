@@ -16,25 +16,33 @@ rss_feed: https://flare.io/learn/resources/blog/feed/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Flare.io has emerged as a leader in Identity Intelligence and Threat Exposure Management (TEM). Their research team provides unmatched visibility into the cybercrime world, monitoring millions of stealer logs and illicit channels to detect threats before they escalate into full-scale breaches.
+
+---
+
+## Recommended Posts
+
+- [Ransomware Recap of 2025 So Far](https://flare.io/learn/resources/blog/ransomware-recap-of-2025-so-far-and-context-from-2024/): Comprehensive intelligence report on RansomHub, Medusa, and the RaaS ecosystem.
+
+- [Modern Golang SSH Brute-Force Malware](https://flare.io/learn/resources/blog/modern-golang-ssh-brute-force-malware/): Technical breakdown of high-speed, multi-platform Golang implants.
+
+- [Investigating Black Basta’s Infrastructure](https://flare.io/learn/resources/blog/deciphering-black-bastas-infrastructure-from-the-chat-leak/): Deep dive into the TTPs and hosting of the Black Basta ransomware group.
+
+- [Cryptomining Supply-Chain Abuse on Docker Hub: Hiding Malware in Plain Sight](https://flare.io/learn/resources/blog/cryptomining-supply-chain-abuse-docker-hub/) - Investigation into malicious container images on Docker Hub used for cryptomining, highlighting techniques used to evade detection and persist within supply chains
+
+- [90% of SafePay Ransomware Victims are SMBs: What We Learned from our Analysis of 500 Attacks](https://flare.io/learn/resources/blog/safepay-ransomware-analysis-smbs/) - Statistical breakdown and TTP analysis of the SafePay ransomware group, focusing on their targeting of Small to Medium Businesses and extortion methodologies
+
+- [New Threat Actor Group PayTool Targets Canadians with Traffic Scams](https://flare.io/learn/resources/blog/paytool-threat-actor-group-targets-canadians/) - Threat intelligence report on "PayTool," a group leveraging SMS phishing and fake traffic violation notices to harvest credentials and financial data from Canadian targets
+
+- [The Threat Behind Personal Data Leaks on the Dark Web](https://flare.io/learn/resources/blog/threat-personal-data-leaks-dark-web/) - Examination of the lifecycle of stolen personal data on dark web marketplaces, from initial breach to monetization and its impact on enterprise security
+
+- [Threat of Stealer Logs in 2025](https://flare.io/glossary/stealer-logs/): Analysis of how infostealer data is fueling corporate account takeovers.
+
+- [Rise of Initial Access Markets](https://flare.io/learn/resources/initial-access-brokers-russian-hacking-forums-the-underground-corporate-access-economy/): Investigating specialized brokers selling corporate network access.
+
+---
 
 ## Why Follow This Blog
 

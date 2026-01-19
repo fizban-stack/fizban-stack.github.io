@@ -16,25 +16,23 @@ rss_feed: https://msrc.microsoft.com/blog/rss/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 The Microsoft Security Response Center (MSRC) provides unparalleled insights into Windows security, Microsoft cloud platforms, and emerging areas like AI security. As the team responsible for securing one of the world's largest software ecosystems, their guidance directly impacts billions of users.
+
+--- 
+
+## Recommended Posts
+
+- [RedirectionGuard](https://www.microsoft.com/en-us/msrc/blog/2025/06/redirectionguard-mitigating-unsafe-junction-traversal-in-windows/): Junction Traversal Mitigations: Defeating filesystem redirection attacks in Windows.
+
+- [Jailbreaking is Simpler Than You Think](https://www.microsoft.com/en-us/msrc/blog/2025/03/jailbreaking-is-mostly-simpler-than-you-think/): Research into low-complexity jailbreak methods for AI systems.
+
+- [Weaponizing Cross-Site Scripting](https://www.microsoft.com/en-us/msrc/blog/2025/11/weaponizing-cross-site-scripting-when-one-bug-isnt-enough): Demonstrating how XSS can be a gateway to system-level compromise.
+
+- [Microsoft's Secure Future Initiative](https://www.microsoft.com/en-us/security/blog/2025/10/07/new-microsoft-secure-future-initiative-sfi-patterns-and-practices-practical-guides-to-strengthen-security/): Strategic update on internal engineering shifts to prioritize security at scale.
+
+--- 
 
 ## Why Follow This Blog
 

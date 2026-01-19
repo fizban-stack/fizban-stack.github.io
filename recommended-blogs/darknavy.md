@@ -16,27 +16,151 @@ rss_feed: https://www.darknavy.org/index.xml
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 DarkNavy produces some of the most sophisticated analysis on the interaction between hardware and software security.
+
+--- 
+
+## Recommended Posts
+
+- [How And Why We Hacked Cypherock Hardware Wallet: The Full Story](https://www.darknavy.org/blog/how_and_why_we_hacked_cypherock_hardware_wallet_the_full_story/): Comprehensive hardware wallet security analysis and exploitation.
+
+- [Argusee: A Multi-Agent Collaborative Architecture for Automated Vulnerability Discovery](https://www.darknavy.org/blog/argusee_a_multi_agent_collaborative_architecture_for_automated_vulnerability_discovery/): AI-driven multi-agent system for automated security research.
+
+- [If the Person Who Finds a Web3 Hardware Wallet is a Hacker](https://www.darknavy.org/blog/if_the_person_who_finds_a_web3_hardware_wallet_is_a_hacker/): Physical security analysis of Web3 hardware wallets.
+
+- [Fatal Vulnerabilities Compromising DJI Control Devices](https://www.darknavy.org/blog/fatal_vulnerabilities_compromising_dji_control_devices/): Critical vulnerabilities in DJI drone control hardware.
+
+- [CVE-2024-5274: A Minor Flaw in V8 Parser Leading to Catastrophes](https://www.darknavy.org/blog/cve_2024_5274_a_minor_flaw_in_v8_parser_leading_to_catastrophes/): Technical analysis of V8 JavaScript engine vulnerability.
+
+- [The Most Prominent Privacy Trend of 2024](https://www.darknavy.org/darknavy_insight/the_most_prominent_privacy_security_trend_of_2024/): Analysis of confidential computing and the future of cloud privacy.
+
+- [Offensive Trend](https://www.darknavy.org/darknavy_insight/the_most_unstoppable_offensive_and_defensive_trend_of_2024/): Logic Flaws Over Memory: Why the "future spear" lies in supply chain and logic-based bugs.
+
+- [The Risk of Security Software (EDR/AV)](https://www.darknavy.org/darknavy_insight/the_most_secure_defenders_of_2024/): How defensive software itself is becoming a primary attack vector.
+--- 
 
 ## 2026 Research Focus
 - **Argusee Architecture**: Developing multi-agent systems for automated vulnerability research.
 - **Hardware-Level Exploitation**: Breaking trust boundaries in specialized silicon and IoT devices.
 - **Mobile Firmware**: In-depth analysis of baseband and low-level mobile components.
+
+## Why Follow This Blog
+
+DarkNavy occupies a unique space in security research, focusing on the intersection of hardware, firmware, and software security. Their work on mobile device security and AI-assisted vulnerability discovery represents the cutting edge of automated security research.
+
+## Key Topics Covered
+
+### Mobile Security Research
+- **Baseband Exploitation**: Cellular modem vulnerabilities
+- **TEE Security**: Trusted Execution Environment attacks
+- **Bootloader Analysis**: Boot chain security research
+- **Android Internals**: Deep Android platform security
+- **iOS Research**: Apple mobile platform analysis
+
+### Hardware Security
+- **IoT Exploitation**: Connected device vulnerabilities
+- **Chip-Level Security**: Silicon security mechanisms
+- **Firmware Analysis**: Embedded system security
+- **Side-Channel Attacks**: Physical security research
+- **Secure Elements**: Hardware security module analysis
+
+### AI-Driven Security Research
+- **Automated Vulnerability Discovery**: ML-assisted bug finding
+- **Multi-Agent Systems**: Coordinated AI research tools
+- **Fuzzing Innovation**: AI-enhanced fuzzing techniques
+- **Pattern Recognition**: Vulnerability pattern identification
+- **Research Automation**: Scaling security analysis
+
+### Low-Level Exploitation
+- **Memory Corruption**: Advanced exploitation techniques
+- **Kernel Security**: Operating system vulnerabilities
+- **Driver Exploitation**: Hardware driver security
+- **Privilege Escalation**: System-level attacks
+
+## Research Methodology
+
+### Hardware-Software Integration
+DarkNavy's approach includes:
+- Understanding hardware architecture
+- Firmware reverse engineering
+- Protocol analysis
+- Physical security assessment
+
+### AI Research Integration
+Innovation through:
+- Machine learning application
+- Automated analysis pipelines
+- Multi-agent coordination
+- Scalable research processes
+
+## Notable Research Areas
+
+### Mobile Baseband Security
+Groundbreaking work on:
+- Cellular modem vulnerabilities
+- Over-the-air exploitation
+- Protocol stack security
+- Carrier integration issues
+
+### Automated Vulnerability Discovery
+Advancing the field through:
+- AI-assisted bug hunting
+- Large-scale fuzzing
+- Pattern-based detection
+- Research automation
+
+## Who Should Follow
+
+### Mobile Security Researchers
+Essential for understanding advanced mobile platform security.
+
+### Hardware Security Engineers
+Critical insights into chip and device security.
+
+### AI/ML Security Researchers
+Guidance on applying AI to security research.
+
+### Firmware Analysts
+Deep technical content on embedded system security.
+
+### Security Researchers
+Cutting-edge methodology and research directions.
+
+## Best Practices for Following
+
+### Build Foundations
+- Understand mobile platform architecture
+- Learn hardware security fundamentals
+- Study AI/ML basics for security applications
+
+### Hands-On Practice
+- Set up mobile security research environments
+- Experiment with firmware analysis
+- Explore AI-assisted security tools
+
+### Stay Current
+- Follow emerging research directions
+- Track AI security tool development
+- Engage with the research community
+
+## Recommended Posts
+
+### Must-Read Research
+1. **"Mobile Baseband Security Analysis"** - Comprehensive research into cellular modem vulnerabilities and exploitation
+2. **"Argusee: Multi-Agent Vulnerability Research"** - AI-driven automated security research architecture
+3. **"TEE Security: Breaking Trusted Execution"** - Analysis of trusted execution environment vulnerabilities
+4. **"IoT Hardware Exploitation"** - Practical techniques for attacking connected devices
+5. **"AI-Assisted Fuzzing Innovation"** - Applying machine learning to vulnerability discovery
+
+### For Mobile Security Researchers
+Start with the baseband and TEE research for deep mobile platform understanding.
+
+### For AI/Security Researchers
+Focus on the Argusee and automation posts for cutting-edge methodology.
+
+### For Hardware Security Practitioners
+Study the IoT and chip-level security research for practical techniques.
+
+DarkNavy's blog represents the frontier of security research where hardware, mobile, and AI intersect, providing essential insights for researchers working on the most challenging security problems.

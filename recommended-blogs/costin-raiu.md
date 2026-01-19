@@ -16,24 +16,21 @@ rss_feed: https://medium.com/feed/@costin.raiu
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
 ---
 
 Costin Raiu, former director of Kaspersky's Global Research and Analysis Team (GReAT), brings decades of elite APT research experience to his independent writing. His insights into nation-state operations and sophisticated malware represent some of the most informed perspectives available.
+
+---
+
+## Recommended Posts
+
+- [The Cybersecurity Booklist](https://medium.com/@costin.raiu/the-cybersecurity-booklist-11-must-reads-for-2026-from-the-three-buddy-problem-podcast-ef8216958bd3): 11 Must-Reads for 2026 from The Three Buddy Problem Podcast
+
+- [Looking Back at 2025’s Landscape](https://medium.com/@costin.raiu/looking-back-at-2025s-cybersecurity-landscape-key-trends-to-watch-in-2026-25d27a3b2b1c): Strategic trends including AI-orchestrated cyber-espionage.
+
+- [The Best Cybersecurity Stories of 2025](https://medium.com/@costin.raiu/the-best-cybersecurity-stories-of-2025-13e111bf358a): A curated list of the year's top technical research papers from the community.
+
+---
 
 ## Why Follow This Blog
 

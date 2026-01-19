@@ -16,25 +16,23 @@ rss_feed: https://www.schneier.com/feed/atom/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Bruce Schneier has been one of the most influential voices in security for decades. His blog combines deep technical expertise in cryptography with broader insights into security policy, privacy, and the societal implications of technology.
+
+---
+
+## Recommended Posts
+
+- [Understanding Agentic AI Behavior](https://www.schneier.com/blog/archives/2025/10/autonomous-ai-hacking-and-the-future-of-cybersecurity.html): Technical exploration of how autonomous agents make security-critical decisions.
+
+- [The CrowdStrike Outage and Brittleness](https://www.schneier.com/blog/archives/2024/07/the-crowdstrike-outage-and-market-driven-brittleness.html): Lessons on systemic risk in the global software supply chain.
+
+- [Rethinking Democracy for the Age of AI](https://www.schneier.com/blog/archives/2025/01/third-interdisciplinary-workshop-on-reimagining-democracy-iword-2024.html): Bruce Schneier's philosophical take on AI's impact on democratic governance.
+
+- [The Future of Hacking: AI vs. AI](https://www.schneier.com/blog/archives/2025/10/autonomous-ai-hacking-and-the-future-of-cybersecurity.html): Predicting a world where most of the offensive and defensive maneuvers are automated.
+
+---
 
 ## Why Follow This Blog
 

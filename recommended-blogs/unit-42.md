@@ -16,25 +16,41 @@ rss_feed: https://unit42.paloaltonetworks.com/feed/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Unit 42 is Palo Alto Networks' global threat intelligence team, combining elite researchers with massive telemetry from one of the world's largest security vendors. Their research shapes how the industry understands and responds to cyber threats.
+
+---
+
+## Recommended Posts
+
+- [Exploitation of Critical Vulnerability in React Server Components (Updated December 12)](https://unit42.paloaltonetworks.com/cve-2025-55182-react-and-cve-2025-66478-next/) - Analysis of critical RCE vulnerabilities (CVE-2025-55182) in the React Flight protocol allowing unauthenticated attackers to execute arbitrary code via insecure deserialization
+
+- [VVS Discord Stealer Using Pyarmor for Obfuscation and Detection Evasion](https://unit42.paloaltonetworks.com/vvs-stealer/) - Technical breakdown of the VVS information stealer, focusing on its use of Pyarmor for bytecode obfuscation and techniques to extract the payload from PyInstaller packages
+
+- ["Shai-Hulud" Worm Compromises npm Ecosystem in Supply Chain Attack](https://unit42.paloaltonetworks.com/npm-supply-chain-attack/) - Investigation into a self-replicating worm targeting the npm ecosystem that steals credentials to programmatically create malicious GitHub repositories and publish infected packages
+
+- [From Linear to Complex: An Upgrade in RansomHouse Encryption](https://unit42.paloaltonetworks.com/ransomhouse-encryption-upgrade/) - Details the evolution of the RansomHouse encryptor 'Mario' from linear processing to a complex chunked encryption scheme designed to hinder static analysis
+
+- [Hamas-Affiliated Ashen Lepus Targets Middle Eastern Diplomatic Entities With New AshTag Malware Suite](https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/) - Analysis of a cyberespionage campaign by Ashen Lepus (WIRTE) deploying the new 'AshTag' malware suite via benign PDF decoys and HTML tag embedding
+
+- [01flip: Multi-Platform Ransomware Written in Rust](https://unit42.paloaltonetworks.com/new-ransomware-01flip-written-in-rust/) - Discovery of a new Rust-based ransomware family targeting Windows and Linux systems, featuring cross-compilation capabilities and simple anti-sandbox evasion techniques
+
+- [Anatomy of an Attack: The Payroll Pirates and the Power of Social Engineering](https://unit42.paloaltonetworks.com/social-engineering-payroll-pirates/): Social engineering attack analysis and payroll fraud techniques.
+
+- [Threat Brief: MongoDB Vulnerability (CVE-2025-14847)](https://unit42.paloaltonetworks.com/mongobleed-cve-2025-14847/): Critical MongoDB vulnerability analysis.
+
+- [Remote Code Execution With Modern AI/ML Formats and Libraries](https://unit42.paloaltonetworks.com/rce-vulnerabilities-in-ai-python-libraries/): AI/ML library security vulnerabilities.
+
+- [VVS Discord Stealer Using Pyarmor for Obfuscation](https://unit42.paloaltonetworks.com/vvs-stealer/): Malware analysis of obfuscated Discord credential stealers.
+
+- [Securing Vibe Coding Tools: Scaling Productivity Without Scaling Risk](https://unit42.paloaltonetworks.com/securing-vibe-coding-tools/): Developer tool security guidance.
+
+- [2025 Unit 42 Global Incident Response Report](https://www.paloaltonetworks.com/resources/research/unit-42-incident-response-report): Comprehensive analysis of over 500 major cyberattacks, highlighting a shift toward extortion without encryption.
+
+- [LANDFALL: New Android Spyware](https://unit42.paloaltonetworks.com/landfall-is-new-commercial-grade-android-spyware/): In-depth analysis of a sophisticated new commercial-grade spyware family targeting mobile devices.
+
+---
 
 ## Why Follow This Blog
 

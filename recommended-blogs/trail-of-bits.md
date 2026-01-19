@@ -16,25 +16,29 @@ rss_feed: https://blog.trailofbits.com/feed/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Trail of Bits has established itself as one of the premier security research and consulting firms, known for tackling the most challenging problems in software security. Their blog showcases cutting-edge research in code auditing, cryptography, and formal verification.
+
+--- 
+
+## Recommended Posts
+
+- [Lack of isolation in agentic browsers resurfaces old vulnerabilities](https://blog.trailofbits.com/2026/01/13/lack-of-isolation-in-agentic-browsers-resurfaces-old-vulnerabilities/): Security analysis of AI-powered browser agents.
+
+- [Detect Go's silent arithmetic bugs with go-panikint](https://blog.trailofbits.com/2025/12/31/detect-gos-silent-arithmetic-bugs-with-go-panikint/): Go security tooling for arithmetic bug detection.
+
+- [Can chatbots craft correct code?](https://blog.trailofbits.com/2025/12/19/can-chatbots-craft-correct-code/): Analysis of AI code generation security.
+
+- [Use GWP-ASan to detect exploits in production environments](https://blog.trailofbits.com/2025/12/16/use-gwp-asan-to-detect-exploits-in-production-environments/): Memory safety exploit detection techniques.
+
+- [Catching malicious package releases using a transparency log](https://blog.trailofbits.com/2025/12/12/catching-malicious-package-releases-using-a-transparency-log/): Supply chain security monitoring.
+
+- [Constant-time support for LLVM](https://blog.trailofbits.com/2025/12/02/introducing-constant-time-support-for-llvm-to-protect-cryptographic-code/): Protecting cryptographic code from timing attacks during compilation.
+
+- [Formal Verification for Critical Software](https://blog.trailofbits.com/2024/03/22/why-fuzzing-over-formal-verification/): Using mathematical proofs to ensure the correctness of security-critical code.
+
+--- 
 
 ## Why Follow This Blog
 

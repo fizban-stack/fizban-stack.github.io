@@ -16,25 +16,21 @@ rss_feed: https://offsec.com/rss.xml
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
-OffSec (formerly Offensive Security) is synonymous with practical security training and the "Try Harder" philosophy. As creators of Kali Linux and the OSCP certification, their blog provides insights directly from the organization that defines offensive security education standards.
+## Recommended Posts
+
+- [Thinking Like an Attacker: How Attackers Target AI Systems](https://www.offsec.com/blog/thinking-like-an-attacker-how-attackers-target-ai-systems/): Offensive security perspective on AI vulnerabilities.
+
+- [Offensive Security in the Age of AI: Red Teaming LLM](https://www.offsec.com/blog/red-teaming-llm/): Techniques for attacking large language models.
+
+- [CVE-2025-55182 – React Server Components RCE via Flight Payload](https://www.offsec.com/blog/cve-2025-55182/): Technical analysis of the React Server Components vulnerability.
+
+- [Blue Team vs Red Team: Should Defenders Learn Offensive Skills?](https://www.offsec.com/blog/should-defenders-learn-offensive-skills/): Perspective on cross-training for security professionals.
+
+- [How Will AI Affect Cybersecurity?](https://www.offsec.com/blog/how-will-ai-affect-cybersecurity/): Analysis of AI's impact on the security landscape.
+
+---
 
 ## Why Follow This Blog
 

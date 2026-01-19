@@ -16,25 +16,21 @@ rss_feed: https://krebsonsecurity.com/feed/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Brian Krebs has established himself as the preeminent investigative journalist covering cybercrime. His deep-dive investigations into criminal organizations, fraud schemes, and the underground economy provide insights unavailable from any other source.
+
+---
+
+## Recommended Posts
+
+- [Dismantling Defenses: US Cyber Policy](https://krebsonsecurity.com/2025/12/dismantling-defenses-trump-2-0-cyber-year-in-review/): Investigative look at shifts in federal cybersecurity strategy.
+
+- [Record Fine Against Cryptomus 2025](https://krebsonsecurity.com/2025/10/canada-fines-cybercrime-friendly-cryptomus-176m/): Investigating preferred payment processor for Russian cybercrime groups.
+
+- [The Rise of 'Pig Butchering' Scams](https://krebsonsecurity.com/2022/07/massive-losses-define-epidemic-of-pig-butchering/): Investigative series into global human trafficking and crypto fraud ecosystem.
+
+---
 
 ## Why Follow This Blog
 

@@ -16,25 +16,23 @@ rss_feed: https://feeds.feedburner.com/TroyHunt
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Troy Hunt has become one of the most recognized voices in web security, known for creating Have I Been Pwned (HIBP) and consistently producing accessible, technically accurate content about security. His blog combines practical guidance with data breach analysis and web security expertise.
+
+---
+
+## Recommended Posts
+
+- [Passkeys for Normal People 2025](https://www.troyhunt.com/passkeys-for-normal-people/): A definitive non-technical guide to the future of passwordless authentication.
+
+- [Inside the National Public Data Breach](https://www.troyhunt.com/inside-the-3-billion-people-national-public-data-breach/): Detailed breakdown of one of the largest personal data leaks in history.
+
+- [The Data Breach Disclosure Conundrum](https://www.troyhunt.com/the-data-breach-disclosure-conundrum/): Strategic thoughts on why companies struggle with honesty during incidents.
+
+- [The Ethics of Using Leaked Data](https://www.troyhunt.com/the-ethics-of-running-a-data-breach-search-service/): Discussing the balance between security research and privacy.
+
+---
 
 ## Why Follow This Blog
 

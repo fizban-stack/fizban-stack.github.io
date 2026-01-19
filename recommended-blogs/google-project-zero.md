@@ -16,24 +16,31 @@ rss_feed: https://projectzero.google/feed.xml
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
 ---
 
 Google Project Zero represents the pinnacle of vulnerability research, consistently discovering and documenting some of the most sophisticated security flaws in widely-used software. Their blog serves as a masterclass in advanced exploitation and security research methodologies.
+
+---
+
+## Recommended Posts
+
+- [A 0-click exploit chain for the Pixel 9 Part 1: Decoding Dolby](https://projectzero.google/2026/01/pixel-0-click-part-1.html): First part of a comprehensive Pixel 9 zero-click exploit chain analysis.
+
+- [A 0-click exploit chain for the Pixel 9 Part 2: Cracking the Sandbox with a Big Wave](https://projectzero.google/2026/01/pixel-0-click-part-2.html): Sandbox escape techniques in the Pixel 9 exploit chain.
+
+- [A 0-click exploit chain for the Pixel 9 Part 3: Where do we go from here?](https://projectzero.google/2026/01/pixel-0-click-part-3.html): Conclusions and implications of the Pixel 9 research.
+
+- [Windows Exploitation Techniques: Winning Race Conditions with Path Lookups](https://projectzero.google/2025/12/windows-exploitation-techniques.html): Advanced Windows exploitation research.
+
+- [Defeating KASLR by Doing Nothing at All](https://projectzero.google/2025/11/defeating-kaslr-by-doing-nothing-at-all.html): Novel KASLR bypass techniques.
+
+- [Hello 0-Days, My Old Friend: A 2024 Zero-Day Exploitation Analysis](https://cloud.google.com/blog/topics/threat-intelligence/2024-zero-day-trends): Extensive data-driven report analyzing the 75 zero-day vulnerabilities exploited in the wild during 2024. 
+
+- [Multiple Threat Actors Exploit React2Shell (CVE-2025-55182)](https://cloud.google.com/blog/topics/threat-intelligence/threat-actors-exploit-react2shell-cve-2025-55182): Technical analysis of a critical RCE in React Server Components being exploited by both cybercrime and espionage groups.
+
+- [Secure by Design: Quick Share](https://security.googleblog.com/2025/11/android-quick-share-support-for-airdrop-security.html): Analysis of the security architecture behind Android's Quick Share and its interoperability features.
+
+--- 
 
 ## Why Follow This Blog
 

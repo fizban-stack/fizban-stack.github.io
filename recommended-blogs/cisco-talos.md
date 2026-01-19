@@ -16,25 +16,25 @@ rss_feed: https://blog.talosintelligence.com/rss/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Cisco Talos is one of the largest commercial threat intelligence teams in the world, leveraging Cisco's global infrastructure to provide unprecedented visibility into cyber threats. Their research informs defensive strategies for organizations worldwide.
+
+---
+
+## Recommended Posts
+
+- [UAT-8837 targets critical infrastructure sectors in North America](https://blog.talosintelligence.com/uat-8837/): Technical analysis of threat actor targeting critical infrastructure.
+
+- [UAT-7290 targets high value telecommunications infrastructure in South Asia](https://blog.talosintelligence.com/uat-7290/): Deep dive into telecom-focused APT activity.
+
+- [Microsoft Patch Tuesday for January 2026](https://blog.talosintelligence.com/microsoft-patch-tuesday-january-2026/): Snort rules and analysis of prominent vulnerabilities.
+
+- [How Cisco Talos powers the solutions protecting your organization](https://blog.talosintelligence.com/how-cisco-talos-powers-the-solutions-protecting-your-organization/): Overview of Talos threat intelligence integration.
+
+- [Predicting 2026](https://blog.talosintelligence.com/predicting-2026/): Threat landscape predictions and emerging attack trends.
+
+---
 
 ## Why Follow This Blog
 

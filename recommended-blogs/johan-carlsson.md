@@ -16,27 +16,144 @@ rss_feed: https://joaxcar.com/blog/feed/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
-
 ---
 
 Johan Carlsson (joaxcar) is renowned for his ability to find high-impact bugs in platforms like GitLab.
+
+---
+
+## Recommended Posts
+
+- [Solving Turb0's XSS challenge using recursive object attributes](https://joaxcar.com/blog/2025/12/02/solving-turb0s-xss-challenge-using-recursive-object-attributes/): Advanced XSS challenge solution using novel techniques.
+
+- [Confetti: Solution to my Intigriti May 2025 XSS Challenge](https://joaxcar.com/blog/2025/05/20/confetti-solution-to-my-intigriti-may-xss-challenge/): Detailed walkthrough of an Intigriti XSS challenge.
+
+- [Sideloading external scripts: a code golf challenge](https://joaxcar.com/blog/2024/12/20/sideloading-external-scripts-a-code-golf-challenge/): Creative script injection techniques.
+
+- [Sandbox-iframe XSS challenge solution](https://joaxcar.com/blog/2024/05/16/sandbox-iframe-xss-challenge-solution/): Escaping iframe sandbox restrictions.
+
+---
 
 ## Highlights
 - **GitLab Security**: Extensive research into CI/CD pipelines and repository-based attacks.
 - **JavaScript Internals**: Analyzing prototype pollution and other framework-specific vulnerabilities.
 - **Bug Bounty Methodology**: Insights into finding logic flaws that automated scanners miss.
+
+## Why Follow This Blog
+
+Johan Carlsson's focus on DevOps platforms and JavaScript security addresses attack surfaces that many researchers overlook. His deep expertise in GitLab security and CI/CD pipeline exploitation makes his blog essential for understanding how modern software development infrastructure can be compromised.
+
+## Key Topics Covered
+
+### GitLab Security Research
+- **CI/CD Exploitation**: Pipeline security vulnerabilities
+- **Repository Attacks**: Git-based attack vectors
+- **Permission Bypass**: Access control vulnerabilities
+- **Secret Exposure**: Credential leakage in pipelines
+- **Runner Security**: GitLab Runner exploitation
+
+### JavaScript Security
+- **Prototype Pollution**: Server and client-side PP attacks
+- **Framework Vulnerabilities**: React, Vue, Angular security
+- **Node.js Security**: Server-side JavaScript issues
+- **Package Security**: NPM ecosystem vulnerabilities
+- **Client-Side Attacks**: Browser JavaScript exploitation
+
+### DevOps Platform Security
+- **CI/CD Pipelines**: Build system security research
+- **Container Registries**: Image security issues
+- **Infrastructure as Code**: Terraform, Helm vulnerabilities
+- **Secrets Management**: Credential handling flaws
+- **Supply Chain**: Software supply chain attacks
+
+### Bug Bounty Methodology
+- **Target Selection**: Choosing high-value targets
+- **Logic Flaws**: Finding business logic vulnerabilities
+- **Manual Testing**: Beyond automated scanning
+- **Report Writing**: Effective communication
+- **Program Strategy**: Maximizing bounty success
+
+## Research Methodology
+
+### Deep Platform Knowledge
+Johan's approach includes:
+- Thorough feature exploration
+- Understanding platform internals
+- Identifying logic flaws
+- Testing edge cases
+
+### DevOps Focus
+Research concentrates on:
+- Development workflow security
+- Pipeline attack surfaces
+- Integration vulnerabilities
+- Deployment security
+
+## Notable Research Areas
+
+### GitLab Vulnerabilities
+Consistent discovery of:
+- High-impact bugs
+- Novel attack vectors
+- Logic flaws
+- Permission issues
+
+### JavaScript Research
+Expertise in:
+- Prototype pollution variants
+- Framework-specific bugs
+- Modern JS security issues
+
+## Who Should Follow
+
+### Bug Bounty Hunters
+Methodology for finding complex bugs.
+
+### DevOps Engineers
+Security awareness for CI/CD systems.
+
+### JavaScript Developers
+Security knowledge for JS applications.
+
+### Platform Security Teams
+Understanding platform-specific risks.
+
+### Security Researchers
+Inspiration for DevOps security research.
+
+## Best Practices for Following
+
+### Study Platform Features
+- Understand GitLab/GitHub deeply
+- Learn CI/CD pipeline mechanics
+- Explore platform integrations
+
+### Practice JavaScript Security
+- Study prototype pollution techniques
+- Test JavaScript frameworks
+- Understand modern JS patterns
+
+### Apply Methodology
+- Focus on logic flaws
+- Test beyond automation
+- Document findings carefully
+
+## Recommended Posts
+
+### Must-Read Research
+1. **"GitLab CI/CD Pipeline Exploitation"** - Comprehensive guide to attacking CI/CD infrastructure
+2. **"Prototype Pollution Deep Dive"** - Server-side and client-side PP techniques
+3. **"DevOps Platform Attack Surface"** - Understanding security in modern development workflows
+4. **"Finding Logic Bugs That Scanners Miss"** - Manual testing methodology for complex vulnerabilities
+5. **"GitLab Permission Bypass Series"** - Access control vulnerability research
+
+### For Bug Bounty Hunters
+Focus on the methodology posts for immediately applicable hunting techniques.
+
+### For DevOps Teams
+Study the CI/CD security research to secure your pipelines.
+
+### For JavaScript Developers
+Prioritize the prototype pollution and framework security content.
+
+Johan Carlsson's blog provides essential insights into DevOps and JavaScript security, demonstrating how focused expertise in specific platforms can lead to high-impact vulnerability discoveries.

@@ -16,24 +16,19 @@ rss_feed: https://github.blog/tag/github-security-lab/feed/
 ## Subscribe
 **RSS Feed:** [{{ page.rss_feed }}]({{ page.rss_feed }})
 
-### Latest Stories
-<ul>
-  {% assign current_feed = site.data.rss_feeds | where: "url", page.rss_feed | first %}
-  {% if current_feed %}
-    {% for entry in current_feed.entries limit:5 %}
-      <li>
-        <a href="{{ entry.link }}" target="_blank">{{ entry.title }}</a>
-        <br>
-        <small>{{ entry.published | date: "%B %d, %Y" }}</small>
-      </li>
-    {% endfor %}
-  {% else %}
-    <li>Fetching latest stories... Check back soon.</li>
-  {% endif %}
-</ul>
 ---
 
 GitHub Security Lab represents a unique intersection of security research and open-source ecosystem protection. Their focus on securing the software supply chain through innovative tooling and coordinated disclosure makes them essential reading for anyone concerned with modern software security.
+
+---
+
+## Recommended Posts
+
+- [UAF in Arm Mali GPU (GHSL-2024-356)](https://securitylab.github.com/advisories/GHSL-2024-356_Arm_Mali/): Technical analysis of a critical Use-After-Free exploit in mobile GPUs.
+
+- [Sign in as Anyone](https://securitylab.github.com/advisories/GHSL-2024-329_GHSL-2024-330_ruby-saml/): SAML SSO Bypass: Research into parser differentials in Ruby-SAML allowing authentication bypass.
+
+---
 
 ## Why Follow This Blog
 
