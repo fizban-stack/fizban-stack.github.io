@@ -34,7 +34,7 @@ description: Technical blog posts about cybersecurity, home labs, and technology
               <h5 class="card-title">
                 <a href="{{ post.url | relative_url }}" style="color: var(--accent-cyan); text-decoration: none;">{{ post.title }}</a>
               </h5>
-              <div class="post-meta" style="font-size: 0.8rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <div class="post-meta" style="font-size: 0.8rem; margin-bottom: 0.75rem; font-color: blue; display: flex; flex-wrap: wrap; gap: 0.5rem;">
                 {% if post.category %}
                   <span class="post-category" style="padding: 0.125rem 0.5rem; background: var(--accent-green-20); border-radius: 4px; color: var(--accent-green);">{{ post.category }}</span>
                 {% endif %}
