@@ -19,9 +19,9 @@ description: Technical blog posts about cybersecurity, home labs, and technology
     <button class="filter-pill active" data-filter="recent">Recent Posts</button>
     <button class="filter-pill" data-filter="all">All Posts</button>
     {% for category_group in posts_by_category %}
-      <a href="/blog/{{ category_group.name | default: 'uncategorized' | slugify }}/" class="filter-pill">
+      <button class="filter-pill" data-filter="category" data-category="{{ category_group.name }}">
         {{ category_group.name | default: "Uncategorized" }}
-      </a>
+      </button>
     {% endfor %}
   </div>
 
@@ -69,7 +69,26 @@ description: Technical blog posts about cybersecurity, home labs, and technology
     const filterPills = document.querySelectorAll('.filter-pill');
     const noResults = document.getElementById('no-posts-results');
 
+    // Check URL parameters for initial filter
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get('filter');
+    const categoryParam = urlParams.get('category');
+
     let currentFilter = 'recent';
+    let currentCategory = null;
+
+    // Set initial state based on URL parameters
+    if (categoryParam) {
+      currentFilter = 'category';
+      currentCategory = categoryParam;
+      filterPills.forEach(p => p.classList.remove('active'));
+      const categoryPill = document.querySelector(`[data-category="${categoryParam}"]`);
+      if (categoryPill) categoryPill.classList.add('active');
+    } else if (filterParam === 'all') {
+      currentFilter = 'all';
+      filterPills.forEach(p => p.classList.remove('active'));
+      document.querySelector('[data-filter="all"]').classList.add('active');
+    }
 
     // All posts data from Jekyll
     const allPosts = [
@@ -134,7 +153,16 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 
     function performSearch() {
       const query = searchInput.value.toLowerCase().trim();
-      let postsToFilter = currentFilter === 'recent' ? allPosts.slice(0, 12) : allPosts;
+
+      // Get posts based on current filter
+      let postsToFilter;
+      if (currentFilter === 'recent') {
+        postsToFilter = allPosts.slice(0, 12);
+      } else if (currentFilter === 'category' && currentCategory) {
+        postsToFilter = allPosts.filter(post => post.category === currentCategory);
+      } else {
+        postsToFilter = allPosts;
+      }
 
       if (query === '') {
         renderPosts(postsToFilter);
@@ -162,6 +190,19 @@ description: Technical blog posts about cybersecurity, home labs, and technology
         filterPills.forEach(p => p.classList.remove('active'));
         this.classList.add('active');
         currentFilter = this.getAttribute('data-filter');
+        currentCategory = this.getAttribute('data-category') || null;
+
+        // Update URL without reloading
+        const url = new URL(window.location);
+        url.searchParams.delete('filter');
+        url.searchParams.delete('category');
+        if (currentFilter === 'all') {
+          url.searchParams.set('filter', 'all');
+        } else if (currentFilter === 'category' && currentCategory) {
+          url.searchParams.set('category', currentCategory);
+        }
+        window.history.replaceState({}, '', url);
+
         performSearch();
       });
     });
@@ -173,5 +214,10 @@ description: Technical blog posts about cybersecurity, home labs, and technology
       performSearch();
       searchInput.focus();
     });
+
+    // Initial render based on URL parameters
+    if (filterParam || categoryParam) {
+      performSearch();
+    }
   });
 </script>
