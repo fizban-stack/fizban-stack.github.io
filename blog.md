@@ -14,41 +14,41 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 
   {% assign posts_by_category = site.posts | group_by: "category" | sort: "name" %}
 
-  <!-- Category Navigation -->
-  <nav class="category-nav">
-    {% for category_group in posts_by_category %}
-      <a href="/blog/{{ category_group.name | default: 'uncategorized' | slugify }}/" class="category-nav-link">
-        {{ category_group.name | default: "Uncategorized" }}
-      </a>
-    {% endfor %}
-  </nav>
-
-  <!-- Post Filter -->
+  <!-- Category Navigation and Post Filter -->
   <div class="category-filters mb-4">
     <button class="filter-pill active" data-filter="recent">Recent Posts</button>
     <button class="filter-pill" data-filter="all">All Posts</button>
+    {% for category_group in posts_by_category %}
+      <a href="/blog/{{ category_group.name | default: 'uncategorized' | slugify }}/" class="filter-pill">
+        {{ category_group.name | default: "Uncategorized" }}
+      </a>
+    {% endfor %}
   </div>
 
   {% if site.posts.size > 0 %}
-    <div class="posts-grid">
+    <div class="row g-4" id="posts-grid">
       {% for post in site.posts limit:12 %}
-        <article class="post-preview">
-          <h3>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          <div class="content-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date: "%B %d, %Y" }}
-            </time>
-            {% if post.category %}
-              <span class="content-category">{{ post.category }}</span>
-            {% endif %}
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
+            <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
+              <h5 class="card-title">
+                <a href="{{ post.url | relative_url }}" style="color: var(--accent-cyan); text-decoration: none;">{{ post.title }}</a>
+              </h5>
+              <div class="post-meta" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 0.75rem;">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                {% if post.category %}
+                  <span class="post-category" style="margin-left: 0.5rem; padding: 0.125rem 0.5rem; background: var(--accent-green-20); border-radius: 4px; color: var(--accent-green);">{{ post.category }}</span>
+                {% endif %}
+              </div>
+              {% if post.excerpt %}
+                <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+              {% endif %}
+              <div class="mt-auto">
+                <a href="{{ post.url | relative_url }}" class="btn btn-dark" style="width: 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem;">Read More</a>
+              </div>
+            </div>
           </div>
-          {% if post.excerpt %}
-            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-          {% endif %}
-          <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
-        </article>
+        </div>
       {% endfor %}
     </div>
   {% else %}
@@ -56,16 +56,18 @@ description: Technical blog posts about cybersecurity, home labs, and technology
   {% endif %}
 </div>
 
+<div id="no-posts-results" class="no-results" style="display: none;">
+  <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No posts found</p>
+  <p style="font-size: 0.9rem;">Try adjusting your search or filter criteria</p>
+</div>
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('blog-search');
     const clearBtn = document.getElementById('blog-search-clear');
-    const postsGrid = document.querySelector('.posts-grid');
+    const postsGrid = document.getElementById('posts-grid');
     const filterPills = document.querySelectorAll('.filter-pill');
-    const noResults = document.createElement('div');
-    noResults.className = 'no-results';
-    noResults.textContent = 'No posts found matching your search.';
-    postsGrid.appendChild(noResults);
+    const noResults = document.getElementById('no-posts-results');
 
     let currentFilter = 'recent';
 
@@ -84,48 +86,49 @@ description: Technical blog posts about cybersecurity, home labs, and technology
     ];
 
     function renderPosts(postsToShow) {
-      // Clear existing posts but keep noResults
-      const existingPosts = postsGrid.querySelectorAll('.post-preview');
-      existingPosts.forEach(post => post.remove());
+      // Clear existing posts
+      postsGrid.innerHTML = '';
 
       if (postsToShow.length === 0) {
-        noResults.classList.add('show');
+        noResults.style.display = 'block';
         return;
       }
 
-      noResults.classList.remove('show');
+      noResults.style.display = 'none';
 
       postsToShow.forEach(post => {
-        const article = document.createElement('article');
-        article.className = 'post-preview';
+        const col = document.createElement('div');
+        col.className = 'col-md-6 col-lg-4';
 
-        let html = `
-          <h3>
-            <a href="${post.url}">${post.title}</a>
-          </h3>
-          <div class="content-meta">
-            <time datetime="${post.datetime}">
-              ${post.date}
-            </time>`;
-
+        let categoryHtml = '';
         if (post.category) {
-          html += `
-            <span class="content-category">${post.category}</span>`;
+          categoryHtml = `<span class="post-category" style="margin-left: 0.5rem; padding: 0.125rem 0.5rem; background: var(--accent-green-20); border-radius: 4px; color: var(--accent-green);">${post.category}</span>`;
         }
 
-        html += `
-          </div>`;
-
+        let excerptHtml = '';
         if (post.excerpt) {
-          html += `
-          <p class="post-excerpt">${post.excerpt}</p>`;
+          excerptHtml = `<p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">${post.excerpt}</p>`;
         }
 
-        html += `
-          <a href="${post.url}" class="read-more">Read more →</a>`;
+        col.innerHTML = `
+          <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
+            <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
+              <h5 class="card-title">
+                <a href="${post.url}" style="color: var(--accent-cyan); text-decoration: none;">${post.title}</a>
+              </h5>
+              <div class="post-meta" style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 0.75rem;">
+                <time datetime="${post.datetime}">${post.date}</time>
+                ${categoryHtml}
+              </div>
+              ${excerptHtml}
+              <div class="mt-auto">
+                <a href="${post.url}" class="btn btn-dark" style="width: 100%; text-align: center; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem;">Read More</a>
+              </div>
+            </div>
+          </div>
+        `;
 
-        article.innerHTML = html;
-        postsGrid.insertBefore(article, noResults);
+        postsGrid.appendChild(col);
       });
     }
 
