@@ -34,11 +34,11 @@ description: Technical blog posts about cybersecurity, home labs, and technology
               <h5 class="card-title">
                 <a href="{{ post.url | relative_url }}" style="color: var(--accent-cyan); text-decoration: none;">{{ post.title }}</a>
               </h5>
-              <div class="post-meta" style="font-size: 0.8rem; margin-bottom: 0.75rem; font-color: blue; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <div class="post-meta" style="font-size: 0.8rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
                 {% if post.category %}
                   <span class="post-category" style="padding: 0.125rem 0.5rem; background: var(--accent-green-20); border-radius: 4px; color: var(--accent-green);">{{ post.category }}</span>
                 {% endif %}
-                <time datetime="{{ post.date | date_to_xmlschema }}" style="padding: 0.125rem 0.5rem; background: var(--bg-tertiary); border-radius: 4px; color: var(--text-tertiary);">{{ post.date | date: "%B %d, %Y" }}</time>
+                <time datetime="{{ post.date | date_to_xmlschema }}" style="padding: 0.125rem 0.5rem; background: var(--bg-tertiary); border-radius: 4px; color: var(--text-secondary);">{{ post.date | date: "%B %d, %Y" }}</time>
               </div>
               {% if post.excerpt %}
                 <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
@@ -137,7 +137,7 @@ description: Technical blog posts about cybersecurity, home labs, and technology
               </h5>
               <div class="post-meta" style="font-size: 0.8rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
                 ${categoryHtml}
-                <time datetime="${post.datetime}" style="padding: 0.125rem 0.5rem; background: var(--bg-tertiary); border-radius: 4px; color: var(--text-tertiary);">${post.date}</time>
+                <time datetime="${post.datetime}" style="padding: 0.125rem 0.5rem; background: var(--bg-tertiary); border-radius: 4px; color: var(--text-secondary);">${post.date}</time>
               </div>
               ${excerptHtml}
               <div class="mt-auto">

@@ -1,120 +1,120 @@
 - title: LiveOverflow
   category: Binary Exploitation & CTF
-  image: channels/liveoverflow.webp
+  image: recommended-youtube-channels/liveoverflow.webp
   description: Deep technical dives into CTFs, reverse engineering, binary exploitation, and understanding vulnerability roots.
   website: https://www.youtube.com/@LiveOverflow
   id: liveoverflow
 - title: IppSec
   category: CTF Walkthroughs
-  image: channels/ippsec.webp
+  image: recommended-youtube-channels/ippsec.webp
   description: The gold standard for Hack The Box walkthroughs, focusing on methodology, enumeration, and privilege escalation.
   website: https://www.youtube.com/@ippsec
   id: ippsec
 - title: John Hammond
   category: Malware Analysis & Security Research
-  image: channels/john-hammond.webp
+  image: recommended-youtube-channels/john-hammond.webp
   description: Malware analysis, CTF challenges, dark web research, and practical demonstrations of new CVEs.
   website: https://www.youtube.com/@_JohnHammond
   id: john-hammond
 - title: The Cyber Mentor
   category: Ethical Hacking Education
-  image: channels/the-cyber-mentor.webp
+  image: recommended-youtube-channels/the-cyber-mentor.webp
   description: Zero to Hero courses on ethical hacking, penetration testing, and career advice for aspiring professionals.
   website: https://www.youtube.com/@TCMSecurityAcademy
   id: the-cyber-mentor
 - title: NahamSec
   category: Bug Bounty & Recon
-  image: channels/nahamsec.webp
+  image: recommended-youtube-channels/nahamsec.webp
   description: Bug bounty hunting, reconnaissance workflows, and interviews with top hackers in the community.
   website: https://www.youtube.com/@NahamSec
   id: nahamsec
 - title: PwnFunction
   category: Web Vulnerability Visualization
-  image: channels/pwnfunction.webp
+  image: recommended-youtube-channels/pwnfunction.webp
   description: High-quality animated explanations of complex web vulnerabilities like XSS, CSRF, and Prototype Pollution.
   website: https://www.youtube.com/@PwnFunction
   id: pwnfunction
 - title: STÖK
   category: Bug Bounty Lifestyle
-  image: channels/stok.webp
+  image: recommended-youtube-channels/stok.webp
   description: High-energy educational vlogs, technical tips, and methodology breakdowns for the bug bounty community.
   website: https://www.youtube.com/@STOKfredrik
   id: stok
 - title: Bug Bounty Reports Explained
   category: Vulnerability Case Studies
-  image: channels/bug-bounty-reports-explained.webp
+  image: recommended-youtube-channels/bug-bounty-reports-explained.webp
   description: Breakdowns of real-world bug bounty reports, explaining the vulnerability, exploit, and fix in detail.
   website: https://www.youtube.com/@BugBountyReportsExplained
   id: bug-bounty-reports-explained
 - title: MalwareTech
   category: Reverse Engineering & Botnets
-  image: channels/malwaretech.webp
+  image: recommended-youtube-channels/malwaretech.webp
   description: Deep technical analysis of malware, botnets, and reverse engineering from the researcher who stopped WannaCry.
   website: https://www.youtube.com/@MalwareTechBlog
   id: malwaretech
 - title: HackerSploit
   category: Red Team & Linux
-  image: channels/hackersploit.webp
+  image: recommended-youtube-channels/hackersploit.webp
   description: Penetration testing labs, Red Team operations, and step-by-step tutorials on Linux security tools.
   website: https://www.youtube.com/@HackerSploit
   id: hackersploit
 - title: InsiderPhD
   category: API Hacking & Academia
-  image: channels/insiderphd.webp
+  image: recommended-youtube-channels/insiderphd.webp
   description: Educational content focusing on API hacking, logic bugs, and bridging the gap between academia and bug bounties.
   website: https://www.youtube.com/@InsiderPhD
   id: insiderphd
 - title: 13Cubed
   category: Digital Forensics & Incident Response
-  image: channels/13cubed.webp
+  image: recommended-youtube-channels/13cubed.webp
   description: Technical deep dives into Blue Team topics, including memory analysis, Windows logs, and digital forensics artifacts.
   website: https://www.youtube.com/@13Cubed
   id: 13cubed
 - title: Computerphile
   category: Computer Science Theory
-  image: channels/computerphile.webp
+  image: recommended-youtube-channels/computerphile.webp
   description: Foundational computer science theory covering password cracking, encryption, buffer overflows, and security protocols.
   website: https://www.youtube.com/@Computerphile
   id: computerphile
 - title: Hak5
   category: Hardware Hacking
-  image: channels/hak5.webp
+  image: recommended-youtube-channels/hak5.webp
   description: Long-running show focusing on hardware hacking gadgets, WiFi security, and tech news.
   website: https://www.youtube.com/@hak5
   id: hak5
 - title: Black Hat
   category: Security Conference
-  image: channels/black-hat.webp
+  image: recommended-youtube-channels/black-hat.webp
   description: High-level research presentations and talks from the world's leading information security event.
   website: https://www.youtube.com/@BlackHatOfficialYT
   id: black-hat
 - title: DEFCONConference
   category: Hacker Conference
-  image: channels/defcon.webp
+  image: recommended-youtube-channels/defcon.webp
   description: Talks from the world's largest hacker convention, covering everything from lockpicking to satellite hacking.
   website: https://www.youtube.com/@DEFCONConference
   id: defcon-conference
 - title: The XSS Rat
   category: Web Exploitation & Courses
-  image: channels/the-xss-rat.webp
+  image: recommended-youtube-channels/the-xss-rat.webp
   description: Dedicated to bug bounty hunting mental models and specific web vulnerabilities like XSS.
   website: https://www.youtube.com/@TheXSSrat
   id: the-xss-rat
 - title: David Bombal
   category: Networking & Automation
-  image: channels/david-bombal.webp
+  image: recommended-youtube-channels/david-bombal.webp
   description: Networking fundamentals, Python automation, and interviews with key figures in the hacking industry.
   website: https://www.youtube.com/@davidbombal
   id: david-bombal
 - title: Null Byte
   category: Practical Hacking Tutorials
-  image: channels/null-byte.webp
+  image: recommended-youtube-channels/null-byte.webp
   description: Short, practical tutorials on using specific hacking tools, scripts, and executing common attacks.
   website: https://www.youtube.com/@NullByteWHT
   id: null-byte
 - title: Black Hills Information Security
   category: Infosec Webcasts
-  image: channels/black-hills-infosec.webp
+  image: recommended-youtube-channels/black-hills-infosec.webp
   description: Training-grade webcasts, incident response games, and security news from active professionals.
   website: https://www.youtube.com/@BlackHillsInformationSecurity
   id: black-hills-information-security
