@@ -224,12 +224,8 @@ main.container-fluid {
 
 .card-img-top {
   border-bottom: 1px solid var(--border-color);
-  aspect-ratio: 16 / 9;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
-  background-color: var(--bg-secondary);
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-title {
@@ -568,7 +564,7 @@ article h2 {
   }
 
   .card-img-top {
-    aspect-ratio: 16 / 9;
+    height: 150px;
   }
 
   .btn {
