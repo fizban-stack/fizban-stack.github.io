@@ -23,8 +23,11 @@ description: Technical blog posts about cybersecurity, home labs, and technology
     {% endfor %}
   </nav>
 
-  <!-- Recent Posts -->
-  <h2 class="section-title">Recent Posts</h2>
+  <!-- Post Filter -->
+  <div class="category-filters mb-4">
+    <button class="filter-pill active" data-filter="recent">Recent Posts</button>
+    <button class="filter-pill" data-filter="all">All Posts</button>
+  </div>
 
   {% if site.posts.size > 0 %}
     <div class="posts-grid">
@@ -58,10 +61,13 @@ description: Technical blog posts about cybersecurity, home labs, and technology
     const searchInput = document.getElementById('blog-search');
     const clearBtn = document.getElementById('blog-search-clear');
     const postsGrid = document.querySelector('.posts-grid');
+    const filterPills = document.querySelectorAll('.filter-pill');
     const noResults = document.createElement('div');
     noResults.className = 'no-results';
     noResults.textContent = 'No posts found matching your search.';
     postsGrid.appendChild(noResults);
+
+    let currentFilter = 'recent';
 
     // All posts data from Jekyll
     const allPosts = [
@@ -125,18 +131,18 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 
     function performSearch() {
       const query = searchInput.value.toLowerCase().trim();
+      let postsToFilter = currentFilter === 'recent' ? allPosts.slice(0, 12) : allPosts;
 
       if (query === '') {
-        // Show recent 12 posts (default view)
-        renderPosts(allPosts.slice(0, 12));
+        renderPosts(postsToFilter);
         clearBtn.style.display = 'none';
         return;
       }
 
       clearBtn.style.display = 'block';
 
-      // Search through all posts
-      const matchedPosts = allPosts.filter(post => {
+      // Search through posts based on current filter
+      const matchedPosts = postsToFilter.filter(post => {
         const title = post.title.toLowerCase();
         const excerpt = post.excerpt.toLowerCase();
         const category = post.category.toLowerCase();
@@ -146,6 +152,16 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 
       renderPosts(matchedPosts);
     }
+
+    // Filter pill click handlers
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', function() {
+        filterPills.forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        currentFilter = this.getAttribute('data-filter');
+        performSearch();
+      });
+    });
 
     searchInput.addEventListener('input', performSearch);
 
