@@ -10,6 +10,7 @@ permalink: /blog/homelab/
 
   <!-- Category Navigation -->
   <div class="category-filters mb-4">
+    <a href="/blog/" class="filter-pill">Recent Posts</a>
     <a href="/blog/" class="filter-pill">All Posts</a>
     {% assign posts_by_category = site.posts | group_by: "category" | sort: "name" %}
     {% for category_group in posts_by_category %}
