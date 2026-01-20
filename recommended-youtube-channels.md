@@ -27,7 +27,7 @@ description: A curated collection of cybersecurity YouTube channels covering CTF
 <div class="row g-4" id="youtube-grid">
 {% for channel in site.data.youtube %}
   <div class="col-md-6 col-lg-4" data-category="{{ channel.category }}">
-    <div class="card youtube-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
+    <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
       <img src="{{ '/assets/images/' | append: channel.image | relative_url }}" class="card-img-top" alt="{{ channel.title }}" style="height: 200px; object-fit: cover;" loading="lazy">
       <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
         <h5 class="card-title">{{ channel.title }}</h5>
@@ -60,7 +60,7 @@ description: A curated collection of cybersecurity YouTube channels covering CTF
   initFilterSearch({
     searchInputId: 'youtube-search',
     clearBtnId: 'youtube-search-clear',
-    cardSelector: '.youtube-card',
+    cardSelector: '.project-card',
     containerSelector: '#youtube-grid > div[data-category]',
     noResultsId: 'no-youtube-results',
     filterPillSelector: '.filter-pill'
