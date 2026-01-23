@@ -5,6 +5,13 @@
   blog: /homelab/2026/01/07/opnsense/
   github: https://github.com/opnsense/core
 
+- title: Apache Guacamole
+  category: "Infrastructure"
+  image: self-hosted/guacamole.webp
+  description: Clientless remote desktop gateway supporting VNC, RDP, and SSH through a web browser. Enables centralized access to all my servers and even air-gapped malware analysis VMs via Proxmox VNC sockets.
+  blog: /homelab/2026/01/22/guacamole/
+  github: https://github.com/apache/guacamole-server
+
 - title: Graylog
   category: "Security"
   image: self-hosted/graylog.webp
