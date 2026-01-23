@@ -206,6 +206,33 @@ main.container-fluid {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2300ff41' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+.dropdown-menu {
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent-green);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+}
+
+.dropdown-item {
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background: rgba(0, 255, 65, 0.1);
+  color: var(--accent-green);
+}
+
+.dropdown-item.active {
+  background: rgba(0, 255, 65, 0.15);
+  color: var(--accent-green);
+}
+
+.dropdown-divider {
+  border-color: var(--border-color);
+}
+
 /* Card Styling */
 .card {
   background: var(--card-bg);
@@ -526,11 +553,13 @@ article h2 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991.98px) {
   body {
     padding-top: 4rem;
   }
+}
 
+@media (max-width: 768px) {
   .navbar-brand {
     font-size: 1.25rem;
   }

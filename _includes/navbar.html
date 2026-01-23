@@ -15,32 +15,31 @@
         <li class="nav-item">
           <a class="nav-link {% if page.url contains '/projects' %}active{% endif %}" href="{{ '/projects' | relative_url }}">Projects</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/about' %}active{% endif %}" href="{{ '/about' | relative_url }}">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/certifications' %}active{% endif %}" href="{{ '/certifications' | relative_url }}">Certifications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/timeline' %}active{% endif %}" href="{{ '/timeline' | relative_url }}">Timeline</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle {% if page.url contains '/about' or page.url contains '/certifications' or page.url contains '/timeline' %}active{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item {% if page.url contains '/about' %}active{% endif %}" href="{{ '/about' | relative_url }}">About Me</a></li>
+            <li><a class="dropdown-item {% if page.url contains '/certifications' %}active{% endif %}" href="{{ '/certifications' | relative_url }}">Certifications</a></li>
+            <li><a class="dropdown-item {% if page.url contains '/timeline' %}active{% endif %}" href="{{ '/timeline' | relative_url }}">Timeline</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link {% if page.url contains '/self-hosted' %}active{% endif %}" href="{{ '/self-hosted' | relative_url }}">Self-Hosted</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/training' %}active{% endif %}" href="{{ '/training' | relative_url }}">Free Cybersecurity Training</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/vulnerable-labs' %}active{% endif %}" href="{{ '/vulnerable-labs' | relative_url }}">Free Vulnerable Labs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/podcasts' %}active{% endif %}" href="{{ '/podcasts' | relative_url }}">Podcasts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/recommended-youtube-channels' %}active{% endif %}" href="{{ '/recommended-youtube-channels' | relative_url }}">Recommended YouTube Channels</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/recommended-blogs' %}active{% endif %}" href="{{ '/recommended-blogs' | relative_url }}">Recommended Blogs</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle {% if page.url contains '/training' or page.url contains '/vulnerable-labs' or page.url contains '/podcasts' or page.url contains '/recommended-youtube-channels' or page.url contains '/recommended-blogs' %}active{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item {% if page.url contains '/training' %}active{% endif %}" href="{{ '/training' | relative_url }}">Free Cybersecurity Training</a></li>
+            <li><a class="dropdown-item {% if page.url contains '/vulnerable-labs' %}active{% endif %}" href="{{ '/vulnerable-labs' | relative_url }}">Free Vulnerable Labs</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item {% if page.url contains '/podcasts' %}active{% endif %}" href="{{ '/podcasts' | relative_url }}">Podcasts</a></li>
+            <li><a class="dropdown-item {% if page.url contains '/recommended-youtube-channels' %}active{% endif %}" href="{{ '/recommended-youtube-channels' | relative_url }}">YouTube Channels</a></li>
+            <li><a class="dropdown-item {% if page.url contains '/recommended-blogs' %}active{% endif %}" href="{{ '/recommended-blogs' | relative_url }}">Blogs</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link {% if page.url contains '/blog' %}active{% endif %}" href="{{ '/blog' | relative_url }}">Blog</a>
