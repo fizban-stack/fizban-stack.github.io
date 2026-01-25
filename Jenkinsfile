@@ -1,10 +1,10 @@
 pipeline {
-    agent any
+    agent { label 'remote-web-server' } 
+
     stages {
         stage('Install Dependencies') {
             steps {
-                sh 'gem install bundler'
-                sh 'bundle install'
+                sh 'bundle install' 
             }
         }
         stage('Build Site') {
@@ -14,9 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sshagent(['web-server-deploy-key']) {
-                    sh 'rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./_site/ root@192.168.0.50:/var/www/html'
-                }
+                sh 'cp -r ./_site/* /var/www/html/'
             }
         }
     }
