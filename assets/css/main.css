@@ -334,14 +334,27 @@ article h2 {
 }
 
 /* Universal Video Styling */
+.video-container {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0 2rem;
+  isolation: isolate;
+}
+
+.video-container video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+}
+
 video {
   width: 100%;
   aspect-ratio: 16 / 9;
   background: var(--bg-secondary);
   border-radius: var(--radius-md);
   margin: 1rem 0 2rem;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
 }
 
 /* Timeline Styling */
