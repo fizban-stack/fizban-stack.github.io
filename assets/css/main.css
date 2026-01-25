@@ -340,6 +340,8 @@ video {
   background: var(--bg-secondary);
   border-radius: var(--radius-md);
   margin: 1rem 0 2rem;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 /* Timeline Styling */
