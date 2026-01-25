@@ -30,7 +30,7 @@ I have recently added a Self-Hosted page that I have listed a few of my favorite
 <p>This video provides a short tour of the homelab services that I am currently running. It has been a kind of obsession of mine. There are so many things to learn and each project is a piece of the puzzle. I have tried many other projects I found on sites like <a href="https://selfh.st">selfh.st</a> and <a href="https://awesome-selfhosted.net/">Awesome Self-Hosted</a>. I was also introduced to several projects listening to the <a href="./podcasts/self-hosted.html">Self-Hosted Podcast</a> and the <a href="./podcasts/the-homelab-show.html">Homelab Show</a>. Both of these podcasts have stopped releasing episodes, but the hosts of Self-Hosted discuss homelab projects sometimes on the <a href="https://linuxunplugged.com/">Linux Unplugged</a> podcast. In my Docker Compose repository, I have over 200 yaml files. I am currently running about 100 docker containers, including databases. I have been thinking about trying to cut down on the number of database containers, but so many projects only work with a certain database or a certain version of that database.</p>
 
 <div class="video-container">
-  <video autoplay loop muted playsinline>
+  <video autoplay loop muted playsinline preload="auto">
     <source src="{{ '/assets/videos/homepage.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
