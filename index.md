@@ -20,7 +20,7 @@ Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, fath
 ---
 
 ## Homelab Video Tour
-This video provides a short tour of the homelab services that I am currently running. It has been a kind of obsession of mine. There are so many things to learn and each project is a piece of the puzzle.  I have tried many other projects I found on sites like [selfh.st](https://selfh.st) and [Awesome Self-Hosted](https://awesome-selfhosted.net/). In my Docker Compose repository, I have over 200 yaml files.  I am currently running about 100 docker containers, including databases. I have been thinking about trying to cut down on the number of database containers, but so many projects only work with a certain database or a certain version of that database. 
+This video provides a short tour of the homelab services that I am currently running. It has been a kind of obsession of mine. There are so many things to learn and each project is a piece of the puzzle.  I have tried many other projects I found on sites like [selfh.st](https://selfh.st) and [Awesome Self-Hosted](https://awesome-selfhosted.net/). I was also introduced to several projects listening to the [Self-Hosted Podcast](./podcasts/self-hosted.md) and the [Homelab Show](./podcasts/the-homelab-show.md). Both of these podcasts have stopped releasing episodes, but the hosts of Self-Hosted discuss homelab projects sometimes on the Linux Unplugged podcast.  In my Docker Compose repository, I have over 200 yaml files.  I am currently running about 100 docker containers, including databases. I have been thinking about trying to cut down on the number of database containers, but so many projects only work with a certain database or a certain version of that database. 
 
 ---
 <article>
