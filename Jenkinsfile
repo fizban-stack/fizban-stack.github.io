@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'cp -r ./_site/* /var/www/html/'
+                sh 'rsync -av --delete ./_site/* /var/www/html/'
             }
         }
     }
