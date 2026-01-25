@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'rsync -av --delete ./_site/* /var/www/html/'
+                sh 'rsync -av --delete --chown=www-data:www-data ./_site/* /var/www/html/'
             }
         }
     }
