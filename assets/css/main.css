@@ -333,6 +333,14 @@ article h2 {
   margin-bottom: 1rem;
 }
 
+article video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  margin-top: 1rem;
+}
+
 /* Timeline Styling */
 .timeline {
   position: relative;
