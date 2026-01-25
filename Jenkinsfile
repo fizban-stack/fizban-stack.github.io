@@ -14,6 +14,7 @@ pipeline {
                 sh 'bundle exec jekyll build'
             }
         }
+    }    
 stage('Deploy') {
     steps {
         // 'web-server-deploy-key' matches the ID you set in Step 3
