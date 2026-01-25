@@ -19,7 +19,7 @@ Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, fath
 
 ---
 
-## Homelab Tour
+## Homelab Video Tour
 This video provides a short tour of the homelab services that I am currently running. I have tried so many other projects. In my Docker Compose repository, I have over 200 yaml files.  I am currently running about 100 docker containers, including databases. I have been thinking about trying to cut down on the number of database containers, but so many projects only work with a certain database or a certain version of that database. 
 
 ---
