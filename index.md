@@ -17,6 +17,10 @@ description: The personal portfolio of James Wells, an aspiring cybersecurity pr
 
 Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, father of three, and home lab enthusiast. I have dedicated a large amount of time and money over the last five years to these projects and plan on using this space to present them. I want to do this not only to help my career, but also for my own learning documentation. I started a blog using Ghost a little while ago, but recently transitioned to hosting my posts on this site. I hope that you can gain something from this site. It might be a new training platform or podcast that really has nothing to do with my site, but I want to help build a better cybersecurity community, especially in my area where there is not any kind of technical community. A link to my resume can be found on my <a href="/contact/">contact</a> page.
 
+---
+## Homelab Tour
+
+---
 <article>
   <h2>Self-Hosted</h2>
   <p>I have recently added a Self-Hosted page that I have listed a few of my favorite self-hosted applications. This is by no means a comprehensive list, but does include most of the core applications that I use daily. I plan on adding more to this list when I have more time to go through my Docker stack and build pages for the applications. I will say that if I had to choose just one of these services to keep, it would be Proxmox. I have tried using Virtual Box, VMware Workstation Pro, and Hyper V, but I liked the idea of having a remote always on box that was not my daily driver. I used TrueNAS for a while and experimented with XCP-ng, but I also ended up coming back to Proxmox. It has a WebUI that can be as simple or as complex as you want it to be. You can only create and edit VMs or you can dive into Software-Defined Networking, VM Templates, and more complex topics. I have been using it for years and have used it in many different configurations, from high-availability clusters to a couple of standalone nodes.</p>
