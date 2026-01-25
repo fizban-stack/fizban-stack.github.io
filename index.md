@@ -23,7 +23,7 @@ Hello, My name is James Wells. I am an aspiring cybersecurity practitioner, fath
 <h2>Self-Hosted</h2>
 
 I have recently added a Self-Hosted page that I have listed a few of my favorite self-hosted applications. This is by no means a comprehensive list, but does include most of the core applications that I use daily. I plan on adding more to this list when I have more time to go through my Docker stack and build pages for the applications. I will say that if I had to choose just one of these services to keep, it would be Proxmox. I have tried using Virtual Box, VMware Workstation Pro, and Hyper V, but I liked the idea of having a remote always on box that was not my daily driver. I used TrueNAS for a while and experimented with XCP-ng, but I also ended up coming back to Proxmox. It has a WebUI that can be as simple or as complex as you want it to be. You can only create and edit VMs or you can dive into Software-Defined Networking, VM Templates, and more complex topics. I have been using it for years and have used it in many different configurations, from high-availability clusters to a couple of standalone nodes.
-
+</article>
 <h3>Homelab Video Tour</h3>
 
 This video provides a short tour of the homelab services that I am currently running. It has been a kind of obsession of mine. There are so many things to learn and each project is a piece of the puzzle. I have tried many other projects I found on sites like [selfh.st](https://selfh.st) and [Awesome Self-Hosted](https://awesome-selfhosted.net/). I was also introduced to several projects listening to the [Self-Hosted Podcast](./podcasts/self-hosted.md) and the [Homelab Show](./podcasts/the-homelab-show.md). Both of these podcasts have stopped releasing episodes, but the hosts of Self-Hosted discuss homelab projects sometimes on the [Linux Unplugged](https://linuxunplugged.com/) podcast. In my Docker Compose repository, I have over 200 yaml files. I am currently running about 100 docker containers, including databases. I have been thinking about trying to cut down on the number of database containers, but so many projects only work with a certain database or a certain version of that database.
@@ -33,7 +33,7 @@ This video provides a short tour of the homelab services that I am currently run
   Your browser does not support the video tag.
 </video>
 
-</article>
+
 
 <article>
 <h2>Free Cybersecurity Training</h2>
