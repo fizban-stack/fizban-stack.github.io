@@ -128,7 +128,7 @@ chmod +x install.sh
 
 - [Official Documentation](https://docs.ludus.cloud)
 - [GitLab Repository](https://gitlab.com/badsectorlabs/ludus)
-- [Environment Guides](https://docs.ludus.cloud/docs/environment-guides)
+- [Environment Guides](https://docs.ludus.cloud/docs/category/environment-guides)
 - Discord community for support
 
 Ludus is an essential tool for anyone running a homelab focused on security research, CTF practice, or professional development in cybersecurity.
