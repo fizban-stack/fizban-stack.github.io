@@ -86,3 +86,10 @@
   description: This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use.
   blog: /homelab/2025/10/21/proxmox-virtual-environment/
   github: https://github.com/proxmox
+
+- title: Ludus
+  category: "Security"
+  image: blog/ludus/ludus.webp
+  description: Open-source cyber range automation platform built on Proxmox using Packer and Ansible. Deploy complex Active Directory labs, vulnerable environments, and testing ranges from a single YAML configuration file.
+  blog: /homelab/2026/02/01/ludus/
+  github: https://gitlab.com/badsectorlabs/ludus

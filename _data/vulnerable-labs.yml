@@ -270,3 +270,13 @@
   focus: Android security fundamentals and exploitation
   description: Educational vulnerable Android app covering basic to advanced Android security concepts including reversing, runtime manipulation, and common mobile vulnerabilities.
   github: https://github.com/Lance0312/VulnerableAndroidAppOracle
+
+- id: ludus
+  title: Ludus
+  image: blog/ludus/ludus.webp
+  type: Lab Platform
+  category: Enterprise & Active Directory
+  focus: Automated cyber range deployment and management
+  description: Open-source infrastructure automation platform for deploying complex cyber labs on Proxmox. Features pre-built environments including GOAD, ADCS, Elastic Security, Malware Labs, and more with WireGuard remote access.
+  github: https://gitlab.com/badsectorlabs/ludus
+  website: https://ludus.cloud
