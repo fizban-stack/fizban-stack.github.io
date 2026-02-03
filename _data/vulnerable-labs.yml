@@ -280,3 +280,12 @@
   description: Open-source infrastructure automation platform for deploying complex cyber labs on Proxmox. Features pre-built environments including GOAD, ADCS, Elastic Security, Malware Labs, and more with WireGuard remote access.
   github: https://gitlab.com/badsectorlabs/ludus
   website: https://ludus.cloud
+
+- id: wififorge
+  title: WifiForge
+  image: vulnerable-labs/wififorge.webp
+  type: Virtual Lab
+  category: Wireless Security
+  focus: WiFi security and exploitation techniques
+  description: Black Hills InfoSec's educational platform for learning wireless security concepts. Built on mininet-wifi, it simulates WiFi networks for practicing attacks without specialized hardware.
+  github: https://github.com/blackhillsinfosec/WifiForge
