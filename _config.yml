@@ -16,6 +16,9 @@ author:
   email: contact@wellslabs.org
   bio: Information Technology Security Professional at RBR Alliance
 
+# Open Graph / Social sharing image (shows when links are shared)
+logo: /assets/images/icons/favicon.webp
+
 # Social links
 social:
   blog: https://blog.wellslabs.org
