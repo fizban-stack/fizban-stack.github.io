@@ -188,3 +188,11 @@
     App).
   website: https://github.com/The-Art-of-Hacking/websploit
   id: websploit-labs
+- title: Just Hacking
+  category: Hands-on Labs
+  image: training/justhacking.webp
+  description: Technical cybersecurity training platform by John Hammond offering
+    courses, free upskill challenges, hack-alongs, and CTF competitions for all skill
+    levels.
+  website: https://www.justhacking.com
+  id: just-hacking
