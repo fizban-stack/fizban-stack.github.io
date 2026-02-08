@@ -18,152 +18,47 @@ OWASP WebGoat is a deliberately insecure web application maintained by OWASP des
 
 ## Overview
 
-WebGoat has been teaching web security since the early 2000s. The current version (8.x) is built with Spring Boot and provides an interactive learning experience with lessons, hints, and solutions.
+WebGoat has been teaching web security since the early 2000s. The current version (8.x) is built with Spring Boot and provides an interactive learning experience with step-by-step lessons, progressive hints, and solutions. It includes a companion tool called WebWolf that simulates an attacker website for exercises requiring an external malicious site.
 
 ## Key Features
 
-- **Interactive Lessons**: Step-by-step security tutorials
-- **OWASP Top 10 Coverage**: Complete coverage of major vulnerabilities
-- **Built-in Hints**: Progressive help system
-- **Progress Tracking**: Monitor your learning journey
-- **Modern Architecture**: Spring Boot with responsive UI
+- **Interactive Lessons**: Step-by-step security tutorials with progressive hints
+- **OWASP Top 10 Coverage**: Complete coverage of major vulnerability categories
+- **Progress Tracking**: Monitor your learning journey through all lessons
 - **Standalone Application**: No external dependencies needed
+- **WebWolf Companion**: Built-in attacker simulation tool
+- **Modern Architecture**: Spring Boot 3.x with Java 17+, H2 in-memory database
 
-## Deployment
+## Getting Started
 
 ```bash
 # Docker (Recommended)
 docker run -it -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 \
   webgoat/webgoat
 
-# Java JAR
-java -jar webgoat-2023.8.jar
-
-# Access at http://localhost:8080/WebGoat
+# Access WebGoat at http://localhost:8080/WebGoat
+# Access WebWolf at http://localhost:9090/WebWolf
 ```
 
-## Lesson Categories
+## Vulnerability Categories
 
-### General
-- HTTP Basics
-- HTTP Proxies
-- Developer Tools
-- CIA Triad
-
-### Injection
-- SQL Injection (Intro)
-- SQL Injection (Advanced)
-- SQL Injection (Mitigation)
+- SQL Injection (Intro, Advanced, Mitigation)
 - Path Traversal
 - XXE (XML External Entities)
-
-### Authentication
-- Authentication Bypasses
-- JWT Tokens
-- Password Reset
-- Secure Passwords
-
-### Client-Side
-- Bypass Front-end Restrictions
-- HTML Tampering
-- Client-Side Filtering
-- DOM-Based XSS
-
-### Cryptography
-- Encoding vs Encryption
-- Hashing
-- Cryptographic Failures
-- Signing
-
-### Insecure Deserialization
-- Object Serialization
-- Insecure Deserialization Attacks
-
-### Access Control
-- Insecure Direct Object References (IDOR)
-- Missing Function Level Access Control
-- Spoofing Authentication Cookies
-
-### Request Forgeries
+- Authentication Bypasses and Password Reset Flaws
+- JWT Token Vulnerabilities
+- Client-Side Filtering and DOM-Based XSS
+- HTML Tampering and Front-end Restriction Bypass
+- Cryptographic Failures (Encoding, Hashing, Signing)
+- Insecure Deserialization
+- IDOR and Missing Function Level Access Control
 - Cross-Site Request Forgery (CSRF)
 - Server-Side Request Forgery (SSRF)
-
-### Vulnerable Components
-- Known Vulnerabilities
-- Outdated Components
-
-### Challenge Scenarios
-- Multi-step challenges
-- Real-world scenarios
-- Advanced exploitation
-
-## Learning Approach
-
-### For Beginners
-1. Start with General lessons
-2. Learn HTTP basics and developer tools
-3. Progress through Injection basics
-4. Master authentication concepts
-
-### For Intermediate
-1. Advanced injection techniques
-2. Complex access control scenarios
-3. Cryptography implementation
-4. Client-side security
-
-### For Advanced
-1. Challenge scenarios
-2. Multi-stage attacks
-3. Custom exploit development
+- Vulnerable and Outdated Components
 
 ## Use Cases
 
-### Security Training
-- Developer security awareness
-- Secure coding practices
-- Vulnerability identification
-
-### Educational Settings
-- University courses
-- Boot camps
-- Self-paced learning
-
-### Professional Development
-- Security team training
-- Certification preparation (CEH, OSCP)
-- Interview practice
-
-## Companion Tool: WebWolf
-
-WebWolf is a simulated attacker website that helps with certain lessons. It runs alongside WebGoat to facilitate exercises requiring an external malicious site.
-
-```bash
-# WebWolf runs automatically with WebGoat
-# Access at http://localhost:9090/WebWolf
-```
-
-## Technical Details
-
-- **Framework**: Spring Boot 3.x
-- **Frontend**: Thymeleaf, jQuery, Bootstrap
-- **Database**: H2 (in-memory)
-- **Language**: Java 17+
-
-## Best Practices
-
-- Run locally or in isolated environments
-- Never expose to the internet
-- Use for learning, not as a honeypot
-- Complete lessons sequentially
-- Read the hints before solutions
-- Experiment with different approaches
-
-## Community and Support
-
-- Active GitHub repository
-- Regular updates and new lessons
-- Community-contributed content
-- Slack channel for questions
-- Conference workshops
-
-WebGoat remains one of the most effective tools for learning web application security fundamentals in a hands-on, practical way.
+- **Developer Security Awareness**: Learn secure coding practices through hands-on exercises
+- **Educational Settings**: University courses, boot camps, and self-paced learning
+- **Certification Preparation**: CEH, OSCP, and related security certifications
+- **Team Training**: Security team onboarding and regular skill assessment

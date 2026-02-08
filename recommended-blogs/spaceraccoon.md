@@ -18,6 +18,10 @@ rss_feed: https://spaceraccoon.dev/feed.xml
 
 ---
 
+Spaceraccoon is a key resource for understanding **cloud-native attack surfaces**. Eugene's research into SaaS tenancy, webhook security, and supply chain attacks covers the vulnerabilities unique to modern, integration-heavy architectures.
+
+---
+
 ## Recommended Posts
 
 - [Universal Code Execution by Chaining Messages in Browser Extensions](https://spaceraccoon.dev/universal-code-execution-browser-extensions/) - Exploiting message-passing vulnerabilities between content scripts and native applications for full system compromise
@@ -31,11 +35,6 @@ rss_feed: https://spaceraccoon.dev/feed.xml
 - [Remote Code Execution in Three Acts: Chaining Exposed Actuators and H2 Database Aliases in Spring Boot 2](https://spaceraccoon.dev/remote-code-execution-in-three-acts-chaining-exposed-actuators-and-h2-database/) - RCE via exposed actuator endpoints and H2 database alias functionality
 
 ---
-
-## Key Topics
-- **SaaS Tenancy**: Breaking isolation in multi-tenant environments.
-- **Cloud Misconfigurations**: Exploiting AWS/GCP/Azure specific features.
-- **Webhook Security**: Analyzing the "set and forget" vulnerabilities in modern integrations.
 
 ## Why Follow This Blog
 
@@ -61,94 +60,8 @@ Spaceraccoon (Eugene Lim) focuses on the security challenges unique to modern cl
 - **GraphQL Security**: Query manipulation and information disclosure
 - **REST API Flaws**: Endpoint security weaknesses
 
-### Modern Application Security
-- **Serverless Security**: Lambda, Cloud Functions, and Azure Functions
-- **Container Vulnerabilities**: Docker and Kubernetes security
+### Supply Chain & Application Security
+- **npm/Package Attacks**: Dependency confusion and prototype pollution
+- **Browser Extensions**: Message-passing and privilege escalation
 - **CI/CD Pipeline Attacks**: Build system compromise
-- **Infrastructure as Code**: Terraform, CloudFormation issues
-
-## Research Methodology
-
-### Real-World Focus
-Spaceraccoon's approach includes:
-- Bug bounty program participation
-- Production environment testing
-- Practical exploitation demonstration
-- Responsible disclosure
-
-### Modern Stack Understanding
-Deep knowledge of:
-- Cloud provider architectures
-- SaaS platform internals
-- Integration patterns
-- DevOps tooling
-
-## Notable Research Areas
-
-### SaaS Security Research
-Analysis of vulnerabilities in:
-- Enterprise collaboration tools
-- Development platforms
-- Marketing automation
-- Business intelligence software
-
-### Webhook Attack Surface
-Comprehensive coverage of:
-- Webhook authentication bypass
-- SSRF through webhooks
-- Callback URL manipulation
-- Event injection attacks
-
-## Who Should Follow
-
-### Cloud Security Engineers
-Essential for understanding modern cloud attack vectors.
-
-### Bug Bounty Hunters
-Practical techniques for SaaS and cloud targets.
-
-### DevOps Engineers
-Security awareness for CI/CD and infrastructure.
-
-### Product Security Teams
-Guidance for securing modern application architectures.
-
-### SaaS Developers
-Understanding vulnerabilities to build more secure products.
-
-## Best Practices for Following
-
-### Hands-On Practice
-- Set up cloud lab environments
-- Practice techniques safely
-- Understand cloud provider specifics
-
-### Stay Current
-- Cloud platforms evolve rapidly
-- New services create new attack surfaces
-- Follow vendor security documentation
-
-### Apply to Work
-- Audit webhook implementations
-- Review multi-tenant isolation
-- Test cloud configurations
-
-## Recommended Posts
-
-### Must-Read Research
-1. **"Exploiting Multi-Tenant SaaS Applications"** - Comprehensive guide to tenant isolation bypass techniques
-2. **"Webhook Security: The Hidden Attack Surface"** - Analysis of common webhook vulnerabilities and exploitation
-3. **"AWS IAM Privilege Escalation"** - Techniques for escalating privileges in AWS environments
-4. **"GraphQL Security Research"** - Vulnerabilities in GraphQL API implementations
-5. **"CI/CD Pipeline Attacks"** - Compromising software delivery through build systems
-
-### For Cloud Security Beginners
-Start with the AWS-specific posts to understand cloud security fundamentals.
-
-### For Bug Bounty Hunters
-Focus on the SaaS and webhook research for immediately applicable techniques.
-
-### For Defenders
-Study the attack patterns to improve detection and prevention capabilities.
-
-Spaceraccoon's blog is essential reading for anyone working with or securing modern cloud-native applications, providing practical insights into the unique security challenges of SaaS and cloud architectures.
+- **IoT Security**: Hardware and API-level exploitation

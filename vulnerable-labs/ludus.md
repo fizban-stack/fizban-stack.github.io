@@ -22,113 +22,26 @@ Built on Proxmox and leveraging Packer and Ansible, Ludus transforms what would 
 
 ## Key Features
 
-### Automated Deployment
-- Deploy complex networks with a single command
-- YAML-based configuration
-- Infrastructure-as-code approach
-- Reproducible and shareable lab configurations
+- **Automated Deployment**: Deploy complex networks from YAML-based configurations
+- **Rich Template System**: Builtin templates for Debian, Kali, Windows 11, Server 2022, plus community templates for Commando VM, FLARE VM, REMnux, and more
+- **Flexible Networking**: Up to 255 VLANs with customizable firewall rules and internal DNS
+- **Secure Remote Access**: Built-in WireGuard server with SSH, RDP, VNC, and KasmVNC
+- **VM Isolation**: Internet isolation, snapshot management, and selective domain/IP allowlisting
+- **Pre-Built Environments**: GOAD, ADCS, Elastic Security, Malware Labs, Pivot Labs, CTF environments, and SANS workshop configurations
 
-### Template System
-- Templates built from scratch using ISO files
-- Builtin: Debian 11/12, Kali Linux, Windows 11, Windows Server 2022
-- Community: Windows 10, Server 2012 R2/2016/2019, Rocky 9, Ubuntu
-- Specialized: Commando VM, FLARE VM, REMnux
+## Getting Started
 
-### Network and Connectivity
-- Up to 255 VLANs with customizable firewall rules
-- Internal DNS with domain rewrite capabilities
-- Direct access via SSH, RDP, VNC, or KasmVNC
-- Built-in WireGuard server for secure remote access
-
-### Security and OPSEC
-- VM isolation from internet connectivity
-- Snapshot management before/after isolation
-- Selective domain/IP allowlisting
-- Telemetry containment capabilities
-
-## Pre-Built Environment Guides
-
-### Active Directory Labs
-- **Game of Active Directory (GOAD)** - Comprehensive AD lab with 150+ attack paths
-- **GOAD - NHA** - Network variant
-- **GOAD - SCCM** - Includes System Center Configuration Manager
-- **Basic Active Directory Network** - Simpler setup for beginners
-- **ADCS** - Certificate Services attacks
-- **SANS Workshop: Active Directory** - Based on SANS training materials
-
-### CTF and Workshop Labs
-- **BarbHack CTF 2024** - Gotham City themed AD CTF
-- **Netexec Workshop (leHACK 2024/2025)** - Lateral movement and credential testing
-
-### Security Research Labs
-- **Malware Lab (xz backdoor)** - CVE-2024-3094 analysis environment
-- **Elastic Security** - SIEM and blue team training
-- **Pivot Lab** - Network pivoting techniques
-
-## Installation on Proxmox
-
-### System Requirements
-- x86_64 CPU with Passmark score exceeding 6,000
-- Debian 12/13 or Proxmox 8/9 host
-- Minimum 32GB RAM per user/range
-- At least 200GB storage initially
-- Wired internet connectivity
-
-### Quick Install
 ```bash
+# Quick install on Proxmox 8/9 or Debian 12/13
 curl -s https://ludus.cloud/install | bash
-```
 
-### Verify Script First
-```bash
-curl https://ludus.cloud/install > install.sh
-cat install.sh
-chmod +x install.sh
-./install.sh
+# Requirements: x86_64 CPU (Passmark 6000+), 32GB+ RAM, 200GB+ storage
 ```
-
-### What Gets Installed
-- Files extracted to `/opt/ludus`
-- Packages: ansible, packer, dnsmasq, sshpass, curl, jq, iptables-persistent
-- Python packages: proxmoxer, requests, netaddr, pywinrm, dnspython, jmespath
-- Proxmox groups, pools, networking interfaces, and system services
 
 ## Use Cases
 
-### Red Team Training
-- Practice AD attack chains
-- Test exploitation techniques
-- Develop custom attack scenarios
-
-### Blue Team Training
-- Detection engineering with Elastic Security
-- Incident response practice
-- SIEM query development
-
-### CTF Preparation
-- Deploy challenge environments quickly
-- Practice specific vulnerability classes
-- Test tooling and techniques
-
-### Security Research
-- Malware analysis in isolated environments
-- Vulnerability research
-- Tool development and testing
-
-## Learning Path
-
-1. **Install Ludus** on Proxmox following the quick start guide
-2. **Build Templates** for your required operating systems
-3. **Deploy GOAD** or Basic AD Network to start practicing
-4. **Connect via WireGuard** for remote lab access
-5. **Explore Other Labs** as your skills progress
-6. **Create Custom Ranges** for specific scenarios
-
-## Documentation Resources
-
-- [Official Documentation](https://docs.ludus.cloud)
-- [GitLab Repository](https://gitlab.com/badsectorlabs/ludus)
-- [Environment Guides](https://docs.ludus.cloud/docs/category/environment-guides)
-- Discord community for support
-
-Ludus is an essential tool for anyone running a homelab focused on security research, CTF practice, or professional development in cybersecurity.
+- **Red Team Training**: Practice AD attack chains and exploitation techniques
+- **Blue Team Training**: Detection engineering with Elastic Security and SIEM query development
+- **CTF Preparation**: Rapidly deploy challenge environments
+- **Security Research**: Malware analysis and vulnerability research in isolated environments
+- **Custom Lab Creation**: Build tailored ranges for specific training scenarios

@@ -18,42 +18,24 @@ DVWS-Node (Damn Vulnerable Web Sockets - Node) is a vulnerable application speci
 
 ## Overview
 
-As WebSockets become increasingly common in modern web applications, DVWS-Node provides a dedicated platform for learning about WebSocket-specific security issues that traditional web application scanners might miss.
+As WebSockets become increasingly common in modern web applications -- powering chat apps, real-time gaming, live dashboards, trading platforms, and IoT device communication -- DVWS-Node provides a dedicated platform for learning about WebSocket-specific security issues that traditional web application scanners often miss.
+
+## Key Features
+
+- **WebSocket-Focused**: Dedicated platform for WS-specific vulnerabilities
+- **Multiple Challenge Types**: Authentication, injection, business logic, and information disclosure
+- **Real-Time Attack Surface**: Bidirectional communication exploitation
+- **Lightweight**: Simple Node.js and Socket.io setup
+- **Tool Testing**: Validate WebSocket support in security tools
+- **Practical Relevance**: Covers an often-overlooked attack surface in modern apps
 
 ## Technology Stack
 
 - **Backend**: Node.js with Socket.io
 - **Frontend**: HTML, JavaScript
-- **WebSocket**: Socket.io library
-- **Real-time**: Bidirectional communication
+- **Communication**: Bidirectional WebSocket via Socket.io
 
-## WebSocket Vulnerabilities
-
-### Authentication & Authorization
-- Missing authentication checks
-- Weak authentication implementation
-- Authorization bypass via WebSocket
-- Session hijacking through WebSocket connections
-
-### Input Validation
-- **XSS via WebSocket**: Injecting scripts through WebSocket messages
-- **Command Injection**: OS command execution via WebSocket
-- **SQL Injection**: Database attacks through WebSocket
-- **Path Traversal**: File system access
-
-### Business Logic
-- Message tampering
-- Race conditions
-- Event manipulation
-- Protocol abuse
-
-### Information Disclosure
-- Sensitive data in WebSocket messages
-- Error message exposure
-- Debugging information leakage
-- User enumeration
-
-## Deployment
+## Getting Started
 
 ```bash
 # Docker
@@ -63,83 +45,25 @@ docker run -p 8080:8080 vulnerables/dvws-node
 # From Source
 git clone https://github.com/interference-security/DVWS-node.git
 cd DVWS-node
-npm install
-npm start
+npm install && npm start
 ```
 
-## Challenge Categories
+## Vulnerability Categories
 
-1. **Basic WebSocket Communication**: Understanding WS protocol
-2. **Authentication Bypass**: Circumvent authentication
-3. **XSS through WebSocket**: Inject malicious scripts
-4. **Command Injection**: Execute system commands
-5. **SQL Injection**: Database exploitation
-6. **Authorization Issues**: Access control bypass
-7. **Message Tampering**: Manipulate WebSocket messages
-8. **Rate Limiting**: Abuse WebSocket connections
-
-## Testing Tools
-
-### Burp Suite
-- WebSocket history
-- Message interception
-- Message manipulation
-- Automated testing
-
-### Browser DevTools
-- WebSocket frame inspection
-- Message monitoring
-- Connection debugging
-
-### Custom Scripts
-- Python with websocket-client
-- Node.js scripts
-- Automated exploitation
-
-## Learning Objectives
-
-- Understand WebSocket protocol
-- Identify WebSocket vulnerabilities
-- Learn WS-specific attack techniques
-- Practice secure WebSocket implementation
-- Test security tools for WebSocket support
-
-## Security Testing Approach
-
-1. **Enumeration**: Identify WebSocket endpoints
-2. **Authentication**: Test auth mechanisms
-3. **Message Analysis**: Inspect message structure
-4. **Input Validation**: Test injection points
-5. **Authorization**: Check access controls
-6. **Fuzzing**: Automated testing
+- Missing WebSocket Authentication and Authorization
+- XSS via WebSocket Messages
+- Command Injection through WebSocket
+- SQL Injection via WebSocket
+- Path Traversal through WebSocket Messages
+- WebSocket Message Tampering
+- Race Conditions and Event Manipulation
+- Sensitive Data in WebSocket Messages
+- Session Hijacking through WebSocket Connections
+- Missing Rate Limiting on WebSocket Connections
 
 ## Use Cases
 
-- **WebSocket Security Training**: Specialized learning
-- **Tool Development**: Test WS security tools
-- **Penetration Testing**: Practice real-time app testing
-- **Developer Training**: Secure coding for WebSockets
-- **Research**: Understand WS attack vectors
-
-## Real-World Relevance
-
-WebSockets are used in:
-- Chat applications
-- Real-time gaming
-- Live dashboards
-- Trading platforms
-- Collaborative tools
-- IoT device communication
-
-Understanding WebSocket security is crucial for testing modern web applications.
-
-## Best Practices Taught
-
-- Proper WebSocket authentication
-- Message validation and sanitization
-- Rate limiting implementations
-- Secure message handling
-- Origin checking
-- TLS/SSL for WebSocket connections (WSS)
-
-DVWS-Node fills a critical gap in web application security training by focusing exclusively on WebSocket vulnerabilities, a often-overlooked attack surface in modern applications.
+- **WebSocket Security Training**: Specialized learning for real-time application testing
+- **Tool Development**: Test and build WebSocket security tools
+- **Penetration Testing Practice**: Learn to assess real-time web applications
+- **Developer Training**: Secure WebSocket coding patterns and message validation

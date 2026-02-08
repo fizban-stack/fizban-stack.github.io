@@ -18,108 +18,26 @@ vAPI (Vulnerable Adversely Programmed Interface) is a self-hostable vulnerable A
 
 ## Overview
 
-Created by roottusk, vAPI provides a comprehensive API security testing environment with focus on realistic business logic vulnerabilities and OWASP API Security Top 10.
+Created by roottusk, vAPI simulates a mobile-like API for an e-commerce platform with user management, product catalog, shopping cart, order processing, inventory, and simulated payment handling. It provides a realistic environment for practicing OWASP API Security Top 10 vulnerabilities along with business logic flaws in an accessible, self-contained format.
+
+## Key Features
+
+- **OWASP API Security Top 10**: Full coverage of all ten categories
+- **E-Commerce Context**: Realistic business logic with users, products, carts, orders, and payments
+- **Business Logic Flaws**: Price manipulation, inventory bypass, and discount abuse
+- **Multiple Difficulty Levels**: Beginner through expert challenges
+- **Self-Contained**: Easy Docker deployment with PHP and MySQL
+- **Active Community**: Regular updates and community writeups
 
 ## Technology Stack
 
 - **Backend**: PHP
 - **Database**: MySQL
-- **API Type**: RESTful
-- **Authentication**: Token-based
+- **API Type**: RESTful with token-based authentication
 
-## Application Context
-
-vAPI simulates a mobile-like API for an e-commerce platform, providing realistic business scenarios:
-
-- User management
-- Product catalog
-- Shopping cart
-- Order processing
-- Inventory system
-- Payment handling (simulated)
-
-## Covered Vulnerabilities
-
-### OWASP API Security Top 10
-
-1. **Broken Object Level Authorization**:
-   - Access other users' orders
-   - View unauthorized user profiles
-   - Manipulate others' cart items
-
-2. **Broken User Authentication**:
-   - Weak password policies
-   - JWT vulnerabilities
-   - Session management issues
-   - Token leakage
-
-3. **Excessive Data Exposure**:
-   - Verbose error messages
-   - Unnecessary data in responses
-   - Information disclosure
-   - PII exposure
-
-4. **Lack of Resources & Rate Limiting**:
-   - No rate limiting
-   - Resource exhaustion
-   - Brute force opportunities
-   - API abuse scenarios
-
-5. **Broken Function Level Authorization**:
-   - Admin endpoint access
-   - Privilege escalation
-   - Function-level bypass
-
-6. **Mass Assignment**:
-   - Modify admin status
-   - Price manipulation
-   - Discount abuse
-   - Role elevation
-
-7. **Security Misconfiguration**:
-   - Default credentials
-   - Verbose errors
-   - Debug mode
-   - Information leakage
-
-8. **Injection**:
-   - SQL injection
-   - Command injection
-   - LDAP injection
-   - NoSQL injection
-
-9. **Improper Assets Management**:
-   - Legacy API versions
-   - Deprecated endpoints
-   - Undocumented APIs
-
-10. **Insufficient Logging & Monitoring**:
-   - Missing audit logs
-   - No attack detection
-   - Insufficient monitoring
-
-## Additional Vulnerabilities
-
-- **Business Logic Flaws**:
-  - Price manipulation
-  - Inventory bypass
-  - Discount abuse
-  - Order manipulation
-
-- **IDOR (Insecure Direct Object References)**:
-  - User data access
-  - Order information
-  - Payment details
-
-- **SSRF (Server-Side Request Forgery)**:
-  - Internal service access
-  - Port scanning
-  - Cloud metadata access
-
-## Deployment
+## Getting Started
 
 ```bash
-# Docker (Recommended)
 git clone https://github.com/roottusk/vapi.git
 cd vapi
 docker-compose up -d
@@ -127,65 +45,25 @@ docker-compose up -d
 # Access at http://localhost/vapi
 ```
 
-## API Endpoints
+## Vulnerability Categories
 
-The API includes endpoints for:
-- User registration and authentication
-- User profile management
-- Product browsing and search
-- Shopping cart operations
-- Order creation and management
-- Payment processing
-- Admin functions
-
-## Testing Workflow
-
-1. **Setup**: Deploy and access API documentation
-2. **Reconnaissance**: Map all endpoints
-3. **Authentication**: Test login mechanisms
-4. **Authorization**: Test BOLA/BFLA
-5. **Injection**: Test input validation
-6. **Business Logic**: Explore workflow flaws
-7. **Rate Limiting**: Test abuse scenarios
-
-## Testing Tools
-
-Compatible with:
-- Burp Suite (with API analysis extensions)
-- Postman/Insomnia
-- OWASP ZAP
-- curl/HTTPie
-- Custom Python/JavaScript scripts
-
-## Learning Resources
-
-- Detailed README documentation
-- Endpoint documentation
-- Vulnerability hints
-- Example exploit scenarios
-- Community writeups
+- Broken Object Level Authorization (BOLA/IDOR)
+- Broken User Authentication and JWT Vulnerabilities
+- Excessive Data Exposure and PII Leakage
+- Missing Rate Limiting and Brute Force Opportunities
+- Broken Function Level Authorization and Privilege Escalation
+- Mass Assignment (Admin Status, Price, Role Elevation)
+- Security Misconfiguration and Default Credentials
+- SQL Injection, Command Injection, and LDAP Injection
+- Legacy API Versions and Undocumented Endpoints
+- Insufficient Logging and Monitoring
+- Business Logic Flaws (Price Manipulation, Inventory Bypass)
+- SSRF and Internal Service Access
 
 ## Use Cases
 
-- **API Penetration Testing Practice**: Real-world scenarios
-- **Bug Bounty Preparation**: Common API patterns
-- **Security Training**: Corporate workshops
-- **Tool Development**: Test API security scanners
-- **Certification Prep**: OSWE, BSCP, etc.
-
-## Difficulty Levels
-
-- **Beginner**: Basic authentication and authorization
-- **Intermediate**: Injection and mass assignment
-- **Advanced**: Complex business logic flaws
-- **Expert**: Chaining multiple vulnerabilities
-
-## What Makes vAPI Unique
-
-- **Business Context**: E-commerce platform simulation
-- **Realistic Scenarios**: Real-world business logic
-- **PHP/MySQL Stack**: Common production stack
-- **Self-Contained**: Easy deployment
-- **Active Community**: Regular updates
-
-vAPI provides an excellent middle ground between simple vulnerable APIs and complex platforms like crAPI, offering realistic business scenarios in an accessible format.
+- **API Penetration Testing Practice**: Real-world e-commerce API scenarios
+- **Bug Bounty Preparation**: Common API vulnerability patterns
+- **Security Training**: Corporate workshops and team exercises
+- **Tool Development**: Test and validate API security scanners
+- **Certification Preparation**: OSWE, BSCP, and related exams

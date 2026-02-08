@@ -24,4 +24,4 @@ LINUX Unplugged is a community-driven Linux podcast that covers Linux news, dist
 
 ## Why I Recommend It
 
-LINUX Unplugged provides excellent coverage of the Linux ecosystem and community. While not strictly cybersecurity-focused, understanding Linux is essential for security professionals, and this podcast helps build that foundation.
+LINUX Unplugged provides excellent coverage of the Linux ecosystem and community. While not strictly cybersecurity-focused, understanding Linux is essential for security professionals, and this podcast helps build that foundation. They also include some self-hosted content.

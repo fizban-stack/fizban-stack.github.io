@@ -18,114 +18,47 @@ OWASP Security Shepherd is a gamified web and mobile application security traini
 
 ## Overview
 
-Security Shepherd provides a comprehensive learning environment with gamification elements, making security training engaging and competitive while covering a wide range of security topics.
+Security Shepherd provides a comprehensive learning environment with gamification elements including points, badges, leaderboards, and team competition, making security training engaging and competitive. It covers web application security, mobile security (Android and iOS), cryptography, and advanced topics like race conditions, business logic flaws, and insecure deserialization. An admin dashboard allows training managers to configure challenges, monitor progress, and manage teams.
 
 ## Key Features
 
-- **Gamification**: Points, badges, and leaderboards
-- **Progress Tracking**: Monitor learning advancement
-- **Multiple Difficulty Levels**: From beginner to expert
-- **Team Competition**: Support for group training
-- **Customizable**: Configure challenges and difficulty
-- **Multi-Language**: International support
-- **Admin Dashboard**: Training management interface
+- **Gamification**: Points, badges, leaderboards, and team competition
+- **Progress Tracking**: Monitor learning advancement across all challenges
+- **Multiple Difficulty Levels**: From beginner to expert challenges
+- **Admin Dashboard**: Training management, user administration, and score configuration
+- **Multi-Language Support**: International accessibility
+- **Customizable**: Enable/disable challenges, set custom scoring, and add content
+- **Enterprise Integration**: LDAP/AD authentication and LMS integration
 
-## Challenge Categories
+## Getting Started
 
-### Web Application Security
-- SQL injection
-- XSS (Cross-Site Scripting)
-- CSRF (Cross-Site Request Forgery)
-- Session management
-- Authentication flaws
-- Authorization issues
-- Cryptographic failures
-
-### Mobile Security
-- Android vulnerabilities
-- iOS security issues
-- Mobile API security
-- Reverse engineering
-- Insecure data storage
-- Weak cryptography
-
-### Cryptography
-- Hash cracking
-- Encryption/decryption
-- Certificate validation
-- Protocol security
-
-### Advanced Topics
-- Race conditions
-- Business logic flaws
-- XML external entities
-- Insecure deserialization
-- Server-side request forgery
-
-## Deployment
-
-### Docker (Recommended)
 ```bash
+# Docker (Recommended)
 docker pull owasp/security-shepherd
 docker run -p 80:80 -p 443:443 owasp/security-shepherd
-```
 
-### Manual Installation
-```bash
+# Manual Installation
 git clone https://github.com/OWASP/SecurityShepherd.git
 # Follow setup instructions for Tomcat deployment
 ```
 
+## Vulnerability Categories
+
+- SQL Injection and XSS (Cross-Site Scripting)
+- CSRF (Cross-Site Request Forgery)
+- Session Management and Authentication Flaws
+- Authorization and Access Control Issues
+- Cryptographic Failures (Hash Cracking, Encryption, Certificate Validation)
+- Android and iOS Mobile Vulnerabilities
+- Mobile API Security and Reverse Engineering
+- Insecure Data Storage and Weak Cryptography
+- XML External Entities and Insecure Deserialization
+- Race Conditions and Business Logic Flaws
+- Server-Side Request Forgery
+
 ## Use Cases
 
-### Corporate Training
-- Developer security awareness
-- Team-building exercises
-- Onboarding security training
-- Regular skill assessment
-
-### Educational Institutions
-- University courses
-- Boot camp curricula
-- CTF competitions
-- Student engagement
-
-### Individual Learning
-- Self-paced training
-- Certification preparation
-- Skill development
-- Portfolio building
-
-## Admin Features
-
-- User management
-- Challenge configuration
-- Progress monitoring
-- Custom challenges
-- Score management
-- Team administration
-
-## Gamification Elements
-
-- **Scoring System**: Points for completed challenges
-- **Leaderboards**: Competition ranking
-- **Badges**: Achievement awards
-- **Difficulty Tiers**: Progressive learning
-- **Time Tracking**: Speed challenges
-
-## Customization
-
-- Configure difficulty levels
-- Enable/disable specific challenges
-- Set custom scoring
-- Brand the platform
-- Add custom content
-
-## Integration
-
-- LDAP/AD authentication
-- LMS integration
-- API for external systems
-- Reporting capabilities
-
-Security Shepherd is ideal for organizations wanting to build a security-aware culture through engaging, competitive training that resonates with development teams.
+- **Corporate Training**: Developer security awareness, team-building exercises, and onboarding
+- **Educational Institutions**: University courses, boot camps, and CTF competitions
+- **Individual Learning**: Self-paced training, certification preparation, and skill development
+- **Team Assessments**: Regular security skill evaluation with leaderboards and scoring
