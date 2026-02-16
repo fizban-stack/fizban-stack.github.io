@@ -45,3 +45,7 @@ curl -s https://ludus.cloud/install | bash
 - **CTF Preparation**: Rapidly deploy challenge environments
 - **Security Research**: Malware analysis and vulnerability research in isolated environments
 - **Custom Lab Creation**: Build tailored ranges for specific training scenarios
+
+## My Blog Post
+
+- [Ludus: Instant Cyber Labs on Proxmox](/ludus/) - Introduction to Ludus, available labs, setup instructions, and my workflow improvements

@@ -25,3 +25,7 @@ TCM Security Academy offers practical, hands-on penetration testing and security
 ## Why I Recommend It
 
 TCM Security Academy provides excellent value with practical, hands-on training. The courses focus on real-world skills and are taught by experienced penetration testers.
+
+## My Blog Post
+
+- [TCM Security PWPA](/tcm-security-pwpa/) - My experience with the TCM Security PWPA exam and testing methodology

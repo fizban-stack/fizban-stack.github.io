@@ -26,3 +26,7 @@ OPNsense is an open-source, easy-to-use, and easy-to-build FreeBSD-based firewal
 ## Why I Use It
 
 OPNsense secures my entire network with enterprise-grade features. The intuitive interface makes complex networking tasks manageable while keeping everything secure.
+
+## My Blog Post
+
+- [OPNsense](/opnsense/) - Comprehensive guide covering Unbound DNS, IDS/IPS, VLANs, Tailscale integration, Crowdsec, and more

@@ -9,7 +9,7 @@
   category: "Infrastructure"
   image: self-hosted/guacamole.webp
   description: Clientless remote desktop gateway supporting VNC, RDP, and SSH through a web browser. Enables centralized access to all my servers and even air-gapped malware analysis VMs via Proxmox VNC sockets.
-  blog: /homelab/2026/01/22/guacamole/
+  blog: /Homelab/2026/01/22/guacamole/
   github: https://github.com/apache/guacamole-server
 
 - title: Graylog
@@ -86,6 +86,27 @@
   description: This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use.
   blog: /homelab/2025/10/21/proxmox-virtual-environment/
   github: https://github.com/proxmox
+
+- title: Jenkins
+  category: "Infrastructure"
+  image: blog/jenkins/jenkinsfile.webp
+  description: Open-source automation server for CI/CD pipelines. Automates my site deployments by monitoring Forgejo for changes and building and deploying updates automatically.
+  blog: /homelab/2026/01/24/jenkins/
+  github: https://github.com/jenkinsci/jenkins
+
+- title: Bloodhound
+  category: "Security"
+  image: blog/bloodhound/domainAdmin.webp
+  description: Active Directory attack path mapping tool. Visualizes permissions, group memberships, and trust relationships to plan and execute attack paths through AD environments.
+  blog: /cyber-security/2026/02/11/bloodhound/
+  github: https://github.com/SpecterOps/BloodHound
+
+- title: Velociraptor
+  category: "Security"
+  image: blog/velociraptor/show-hosts.webp
+  description: Open-source endpoint visibility and digital forensics tool for incident response. Collect artifacts, hunt for indicators of compromise, and monitor endpoint activity using the Velociraptor Query Language.
+  blog: /cyber-security/2026/02/15/velociraptor/
+  github: https://github.com/Velocidex/velociraptor
 
 - title: Ludus
   category: "Security"

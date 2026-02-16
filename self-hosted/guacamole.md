@@ -26,3 +26,7 @@ Apache Guacamole is a clientless remote desktop gateway that supports standard p
 ## Why I Use It
 
 Guacamole lets me access all my servers and desktops through a web browser without installing client software. Perfect for accessing my lab from any device.
+
+## My Blog Post
+
+- [Apache Guacamole](/guacamole/) - Features, drive mapping, session recording, keylogging, and accessing air-gapped VMs via Proxmox VNC sockets
