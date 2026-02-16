@@ -30,7 +30,7 @@ This page showcases some of my favorite self-hosted applications that I use in m
 {% for app in site.data.selfhosted %}
   <div class="col-md-6 col-lg-4" data-category="{{ app.category }}">
     <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}" style="height: 200px; object-fit: cover;" loading="lazy">
+      <img src="{{ '/assets/images/' | append: app.image | relative_url }}" class="card-img-top" alt="{{ app.title }}" style="height: 200px; object-fit: contain;" loading="lazy">
       <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
         <h5 class="card-title">{{ app.title }}</h5>
         <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0.75rem;">{{ app.subtitle }}</p>

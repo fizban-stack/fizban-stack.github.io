@@ -29,7 +29,7 @@ description: Self-hostable vulnerable machines, containers, and cloud environmen
 {% for lab in site.data.vulnerable-labs %}
   <div class="col-md-6 col-lg-4" data-category="{{ lab.category }}">
     <div class="card lab-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="{{ '/assets/images/' | append: lab.image | relative_url }}" class="card-img-top" alt="{{ lab.title }}" style="height: 200px; object-fit: cover;">
+      <img src="{{ '/assets/images/' | append: lab.image | relative_url }}" class="card-img-top" alt="{{ lab.title }}" style="height: 200px; object-fit: contain;">
       <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.5rem;">
           <h5 class="card-title" style="margin: 0; flex: 1;">{{ lab.title }}</h5>

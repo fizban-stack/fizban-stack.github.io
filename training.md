@@ -28,7 +28,7 @@ description: Free cybersecurity training sites and resources curated by James We
 {% for training in site.data.training %}
   <div class="col-md-6 col-lg-4" data-category="{{ training.category }}">
     <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="{{ '/assets/images/' | append: training.image | relative_url }}" class="card-img-top" alt="{{ training.title }}" style="height: 200px; object-fit: cover;" loading="lazy">
+      <img src="{{ '/assets/images/' | append: training.image | relative_url }}" class="card-img-top" alt="{{ training.title }}" style="height: 200px; object-fit: contain;" loading="lazy">
       <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
         <h5 class="card-title">{{ training.title }}</h5>
         <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ training.description }}</p>
