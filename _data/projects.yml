@@ -9,7 +9,7 @@
   category: "Infrastructure"
   image: self-hosted/guacamole.webp
   description: Clientless remote desktop gateway supporting VNC, RDP, and SSH through a web browser. Enables centralized access to all my servers and even air-gapped malware analysis VMs via Proxmox VNC sockets.
-  blog: /Homelab/2026/01/22/guacamole/
+  blog: /homelab/2026/01/07/guacamole/
   github: https://github.com/apache/guacamole-server
 
 - title: Graylog
