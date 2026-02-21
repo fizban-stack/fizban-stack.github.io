@@ -1,0 +1,16 @@
+body { font-family: system-ui, sans-serif; padding: 1rem; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+
+#search-area { margin-top: 38vh; text-align: center; transition: margin-top 0.4s ease; }
+body.has-results #search-area { margin-top: 1.5rem; }
+
+#controls { display: inline-flex; gap: 0.5rem; margin-bottom: 1rem; }
+#cve-search { width: 40ch; padding: 0.5rem; font-size: 0.9rem; }
+
+#results { text-align: left; width: 100%; }
+article { border: 1px solid #ccc; border-radius: 4px; padding: 1rem; margin-bottom: 0.75rem; }
+
+.sev-CRITICAL { color: red;       font-weight: bold; }
+.sev-HIGH     { color: orangered; font-weight: bold; }
+.sev-MEDIUM   { color: orange;    font-weight: bold; }
+.sev-LOW      { color: green;     font-weight: bold; }
+.sev-UNKNOWN  { color: gray; }
