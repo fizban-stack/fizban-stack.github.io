@@ -43,6 +43,7 @@ exclude:
   - node_modules/
   - vendor/
   - Jenkinsfile
+  - _1-posts-in-progress/
 
 # Include files
 include:
