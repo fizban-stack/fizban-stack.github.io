@@ -35,11 +35,14 @@ openssl passwd password
 ```
 
 This command creates a hash from the password entered in the same format of the shadow file hashes. Then, if the passwd file is writable by your user, you can paste the password over the x in the root user entry.
-
+**Before**
 ```
 root:x:0:0:root:/root:/bin/bash
 ```
-
+**After**
+```
+root:$1$Zm1Axq.q$irMQ0l07xqITqjF7AbNWC0:0:0:root:/root:/bin/bash
+```
 This effectively changes the root password for that Linux machine. Linux prioritizes the entry in the passwd file since it links to the shadow file. Then a simple `su root` and voila root access.
 
 I also came away with a new vulnerable VM, Stapler. The instructor said that he included it for people that want to go beyond the scope of the workshop on their own time. I was also reminded of a few things that I learned in the HTB Academy. They were that the SMTP `VRFY` command should be disabled because it will allow you to enumerate email addresses. The next thing was how RPC worked. I had forgotten that it wasn't so much calling commands on the host, but calling commands in other programs. The last thing was that there are very powerful commands in Linux to format data anyway you want to. The following command can be used to only display a list of open ports with each port on its own line. In this example, the chain is being called against a text file with nmap scan results in it.
