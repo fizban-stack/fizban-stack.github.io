@@ -2,7 +2,7 @@
 layout: post
 title: "NVD Scanner"
 date: 2026-02-21
-category: Cyber Security
+category: Cybersecurity
 author: James Wells
 ---
 

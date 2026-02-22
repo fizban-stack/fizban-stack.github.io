@@ -2,7 +2,7 @@
 layout: post
 title: "Bloodhound"
 date: 2026-02-11
-category: Cyber Security
+category: Cybersecurity
 author: James Wells
 ---
 

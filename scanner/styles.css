@@ -55,6 +55,10 @@ body.has-results #search-area {
   box-shadow: var(--shadow-glow);
 }
 
+#search-area + p {
+  text-align: center;
+}
+
 #results {
   text-align: left;
   width: 100%;

@@ -51,10 +51,11 @@
         .map(d => d.value);
 
       return {
-        id:          cve.id,
-        description: cve.descriptions.find(d => d.lang === 'en')?.value || 'No description available',
-        published:   new Date(cve.published).toLocaleDateString(),
-        status:      cve.vulnStatus,
+        id:           cve.id,
+        description:  cve.descriptions.find(d => d.lang === 'en')?.value || 'No description available',
+        publishedRaw: new Date(cve.published),
+        published:    new Date(cve.published).toLocaleDateString(),
+        status:       cve.vulnStatus,
         cvss,
         cwes,
         pocs,
@@ -166,6 +167,14 @@
     // Transform raw API data into structured vulnerability objects.
     const vulns = processVulnerabilities(data.vulnerabilities);
     console.log('Processed vulnerabilities:', vulns);
+
+    // Sort by severity (CRITICAL first) then by published date (newest first).
+    const SEVERITY_ORDER = { CRITICAL: 0, HIGH: 1, MEDIUM: 2, LOW: 3, UNKNOWN: 4 };
+    vulns.sort((a, b) => {
+      const sevDiff = (SEVERITY_ORDER[a.cvss.severity] ?? 4) - (SEVERITY_ORDER[b.cvss.severity] ?? 4);
+      if (sevDiff !== 0) return sevDiff;
+      return b.publishedRaw - a.publishedRaw;
+    });
 
     statusMsg.textContent = '';
     renderVulnerabilities(vulns);

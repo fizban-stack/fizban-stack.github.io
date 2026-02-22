@@ -2,7 +2,7 @@
 layout: post
 title: "Velociraptor"
 date: 2026-02-15
-category: Cyber Security
+category: Cybersecurity
 author: James Wells
 ---
 

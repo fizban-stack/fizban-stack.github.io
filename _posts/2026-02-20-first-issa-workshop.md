@@ -2,7 +2,7 @@
 layout: post
 title: "My First ISSA Workshop"
 date: 2026-02-20
-category: Cyber Security
+category: Cybersecurity
 author: James Wells
 ---
 
