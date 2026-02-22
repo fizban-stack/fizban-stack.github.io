@@ -1,16 +1,68 @@
-body { font-family: system-ui, sans-serif; padding: 1rem; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+/* Scanner-specific styles — inherits variables and base from main.css */
 
-#search-area { margin-top: 38vh; text-align: center; transition: margin-top 0.4s ease; }
-body.has-results #search-area { margin-top: 1.5rem; }
+#search-area {
+  margin-top: 25vh;
+  text-align: center;
+  transition: margin-top 0.4s ease;
+}
 
-#controls { display: inline-flex; gap: 0.5rem; margin-bottom: 1rem; }
-#cve-search { width: 40ch; padding: 0.5rem; font-size: 0.9rem; }
+body.has-results #search-area {
+  margin-top: 1.5rem;
+}
 
-#results { text-align: left; width: 100%; }
-article { border: 1px solid #ccc; border-radius: 4px; padding: 1rem; margin-bottom: 0.75rem; }
+#controls {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
 
-.sev-CRITICAL { color: red;       font-weight: bold; }
-.sev-HIGH     { color: orangered; font-weight: bold; }
-.sev-MEDIUM   { color: orange;    font-weight: bold; }
-.sev-LOW      { color: green;     font-weight: bold; }
-.sev-UNKNOWN  { color: gray; }
+#cve-search {
+  width: 40ch;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  transition: var(--transition-standard);
+}
+
+#cve-search:focus {
+  outline: none;
+  border-color: var(--accent-green);
+  box-shadow: 0 0 0 2px var(--accent-green-20);
+}
+
+#cve-search::placeholder {
+  color: var(--text-muted);
+}
+
+#search-btn {
+  padding: 0.5rem 1.25rem;
+  background: var(--accent-green);
+  color: var(--bg-primary);
+  border: 1px solid var(--accent-green);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-standard);
+}
+
+#search-btn:hover {
+  background: transparent;
+  color: var(--accent-green);
+  box-shadow: var(--shadow-glow);
+}
+
+#results {
+  text-align: left;
+  width: 100%;
+}
+
+/* Severity badge colours tuned for dark background */
+.sev-CRITICAL { color: var(--accent-red);    font-weight: bold; }
+.sev-HIGH     { color: #ff6b35;              font-weight: bold; }
+.sev-MEDIUM   { color: #ffb347;              font-weight: bold; }
+.sev-LOW      { color: var(--accent-green);  font-weight: bold; }
+.sev-UNKNOWN  { color: var(--text-muted); }
