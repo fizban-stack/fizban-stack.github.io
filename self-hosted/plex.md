@@ -25,4 +25,4 @@ Plex is a comprehensive media server solution that organizes your personal media
 
 ## Why I Use It
 
-Plex organizes and streams my entire media library beautifully. The metadata fetching and app ecosystem make it the most polished media server experience.
+Plex is how my media library actually gets used. It pulls metadata, artwork, and descriptions automatically so everything looks clean and organized, and the apps are available on essentially every platform — smart TVs, phones, tablets, web browsers — without me having to do anything. Hardware transcoding means it handles converting formats on the fly without taxing the CPU, which matters when multiple people are streaming at once. The polish of the Plex experience is hard to match, and sharing access with family is straightforward.

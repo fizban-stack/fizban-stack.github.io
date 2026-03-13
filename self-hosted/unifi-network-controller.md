@@ -25,4 +25,4 @@ UniFi Network Controller is Ubiquiti's centralized management platform for UniFi
 
 ## Why I Use It
 
-UniFi Controller manages all my UniFi network equipment from a single interface. The insights and control it provides are essential for maintaining my network.
+Running the UniFi controller self-hosted rather than relying on Ubiquiti's cloud means I have full control over my network management without an external dependency. All my UniFi access points and switches are managed from one place, and the traffic analytics and client visibility it provides are genuinely useful for understanding what is on my network. The VLAN management and deep packet inspection let me segment and monitor traffic in ways that would be much harder with consumer gear. Self-hosting the controller also means it keeps working if Ubiquiti's servers ever have an outage.

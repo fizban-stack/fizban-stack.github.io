@@ -25,4 +25,4 @@ Ansible Semaphore is a modern UI for Ansible that makes it easier to run playboo
 
 ## Why I Use It
 
-Semaphore makes running Ansible playbooks easier with a clean web interface. The scheduling and RBAC features are perfect for team collaboration.
+Ansible is powerful but running playbooks from the command line gets repetitive, especially when you want to track what ran, when, and what the output was. Semaphore puts a web interface on top of Ansible that makes triggering playbooks, managing inventories, and reviewing run history much more convenient. Scheduled tasks mean I can automate recurring configuration checks or maintenance without having to remember to kick them off manually. It fits naturally alongside my Forgejo setup — I can store playbooks in version control and pull them into Semaphore.

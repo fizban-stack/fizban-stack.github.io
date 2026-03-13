@@ -25,4 +25,4 @@ Paperless-ngx is a document management system that transforms your physical docu
 
 ## Why I Use It
 
-Paperless-ngx digitizes and organizes all my documents. The OCR and automatic tagging make it easy to find any document instantly while going paperless.
+Physical documents pile up fast — tax forms, insurance paperwork, receipts, manuals, anything that shows up on paper and needs to be kept. Paperless-ngx is where all of that ends up. I scan or import documents and the OCR engine indexes the full text, so finding anything later is just a search rather than digging through folders. The automatic tagging and correspondent detection mean most documents organize themselves without me having to touch them. Going paperless was something I kept putting off, but once it was set up the workflow became second nature.

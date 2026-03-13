@@ -24,4 +24,4 @@ Synology DiskStation Manager (DSM) is a feature-rich operating system for Synolo
 
 ## Why I Use It
 
-Synology DSM provides enterprise-grade storage with a polished interface. The extensive package ecosystem turns a NAS into a complete self-hosting platform.
+My Synology NAS is the storage backbone of my homelab. It handles bulk file storage, media, and backups from other systems, and DSM makes managing all of that straightforward with a polished web interface. The Docker support means I can also run lighter containerized services directly on it, and the backup and replication tools give me confidence that data is protected. It is one of the most reliable pieces of hardware in my setup and DSM keeps getting better with each update.

@@ -25,4 +25,4 @@ Homepage is a highly customizable application dashboard that provides a beautifu
 
 ## Why I Use It
 
-Homepage provides a beautiful dashboard for accessing all my self-hosted services. The service integration widgets show me at-a-glance status of everything in my homelab.
+Homepage is the first thing I see when I open a browser in my homelab. It gives me one place to get to any service without memorizing ports or sub-domains, but it goes beyond just being a link list — the widgets pull live data directly from services like Proxmox, Grafana, Sonarr, and others, so I can see resource usage, active downloads, service health, and more at a glance without opening each one. The Docker integration means services can even register themselves automatically. It is fast, clean, and the configuration is simple enough that adding a new service takes under a minute.

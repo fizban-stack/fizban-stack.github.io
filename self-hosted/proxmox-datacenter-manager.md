@@ -24,4 +24,4 @@ Proxmox Datacenter Manager provides centralized management and monitoring for mu
 
 ## Why I Use It
 
-Proxmox Datacenter Manager gives me a single pane of glass for managing multiple Proxmox clusters. Essential for scaling beyond a single cluster.
+As my lab has grown across multiple nodes, jumping between individual Proxmox interfaces gets old quickly. Proxmox Datacenter Manager gives me one place to see all of them — resource usage, VM and container status, and overall cluster health — without having to log into each node separately. It is still fairly new software but it is maturing fast and already makes multi-node management noticeably more convenient.

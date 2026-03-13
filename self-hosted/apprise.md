@@ -24,4 +24,4 @@ Apprise is a universal notification service that allows you to send notification
 
 ## Why I Use It
 
-Apprise consolidates all my notification needs into one service. Instead of configuring each application separately, I can send alerts to Discord, email, Slack, and more through a single endpoint.
+Apprise acts as a universal notification translator in my homelab. Rather than configuring each application with its own notification settings — separate webhook URLs, SMTP configs, or API keys for every service — I point everything at Apprise and let it handle the routing. It supports over 90 notification services, so if I ever want to change where alerts land, I update one place rather than hunting through every service's settings. The main reason I set it up was to bridge the gap for services that do not natively support Gotify — Apprise accepts whatever format they send and forwards it through, which is how I get a unified notification stream regardless of what a service does or does not support natively.

@@ -25,4 +25,4 @@ ChangeDetection.io is a self-hosted tool that monitors websites for changes and 
 
 ## Why I Use It
 
-ChangeDetection helps me track important updates on websites that don't offer RSS feeds or notifications. Perfect for monitoring price changes, stock availability, or content updates.
+A lot of the things I want to keep tabs on don't come with a convenient RSS feed or notification system. I use ChangeDetection to watch GitHub repositories for activity — releases, README updates, anything worth knowing about — as well as blogs and sites that post irregularly but matter enough that I don't want to miss something. It fills the gap that RSS can't always cover, and since it's self-hosted I can monitor as many targets as I want without hitting limits or paying for a service. When something changes, I get notified and can see exactly what was different.

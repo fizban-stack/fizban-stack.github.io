@@ -25,4 +25,4 @@ InfluxDB is a purpose-built time-series database designed for handling high writ
 
 ## Why I Use It
 
-InfluxDB stores all my time-series data from monitoring systems. It handles high-frequency metrics efficiently and integrates perfectly with Grafana for visualization.
+InfluxDB handles time-series data that works better with a push model — things like network device metrics, sensor readings, and data from services that write out to InfluxDB natively. Grafana queries it alongside Prometheus, so I can mix data sources within a single dashboard. The retention policies let me keep high-resolution data for a short window and automatically downsample older data, which keeps storage from growing unbounded. It is a focused tool that does one thing well and integrates cleanly with the rest of my monitoring stack.

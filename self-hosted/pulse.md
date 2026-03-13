@@ -23,4 +23,4 @@ Pulse is a simple and elegant server monitoring dashboard that provides real-tim
 
 ## Why I Use It
 
-Pulse provides a clean, at-a-glance view of my server health. The minimal design makes it perfect for displaying on a dedicated monitoring screen.
+Pulse is what I use when I want a simple, immediate overview of server health without opening a full Grafana dashboard. It is minimal by design — CPU, memory, disk, and network at a glance — which makes it perfect for a quick sanity check or for displaying on a secondary screen. It does not replace deeper monitoring but it fills the gap between a full observability stack and having nothing at all visible at a moment's notice.

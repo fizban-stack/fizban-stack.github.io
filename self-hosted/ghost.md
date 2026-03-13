@@ -25,4 +25,4 @@ Ghost is a powerful open-source publishing platform designed for modern creators
 
 ## Why I Use It
 
-Ghost provides a professional publishing platform for blogging and content creation. The clean interface and built-in features make it easy to focus on writing.
+I started hearing about Ghost through the cybersecurity community — Daniel Miessler uses it for his Unsupervised Learning newsletter, and a few others I follow were running it too. That got me curious enough to try it, and it turned out to be exactly what I wanted. It's not packed with customization options, but that's kind of the point — it's just straightforward to use, the editor gets out of your way, and publishing something feels frictionless. Sometimes a tool doesn't need to do everything, it just needs to do its thing well.

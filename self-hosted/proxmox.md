@@ -25,7 +25,7 @@ Proxmox VE is a complete open-source platform for enterprise virtualization that
 
 ## Why I Use It
 
-This wasn't the first virtualization platform that I tried, but it is the one that I will continue to use. It is open-source, feature-rich, and free for personal and business use. Proxmox is the foundation of my entire homelab infrastructure.
+Getting to Proxmox was not a straight line. I started out on TrueNAS Scale, then jumped to XCP-NG hoping it would suit me better, then switched back, then switched again — a couple of back-and-forth cycles before I finally landed on Proxmox and stayed. Now I genuinely cannot imagine running my lab on anything else. It is intuitive enough to get productive quickly but deep enough that there is always more to learn, and the fact that it delivers enterprise-grade features completely free is hard to overstate. Creating templates, spinning up new virtual machines and LXC containers, configuring backups, and managing storage all feel natural in the interface. More recently I have been learning how to deploy infrastructure as code on Proxmox, and it has been a genuine game changer in how I think about and architect lab environments. The ability to quickly build something, test it, and tear it down entirely has shifted my mindset away from obsessing over backups and worrying about the stability of individual lab systems. If something breaks, I just rebuild it — and that freedom has made experimentation a lot more enjoyable.
 
 ## My Blog Post
 

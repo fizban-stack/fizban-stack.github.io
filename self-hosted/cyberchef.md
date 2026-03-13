@@ -25,4 +25,4 @@ CyberChef is a web application for encryption, encoding, compression, and data a
 
 ## Why I Use It
 
-CyberChef is essential for CTF challenges and security work. The recipe system makes complex data transformations simple, and hosting it locally ensures sensitive data stays private.
+CyberChef is one of those tools that shows up constantly once you know it exists. In CTFs it's indispensable — chaining together base64 decodes, XOR operations, hex conversions, and hash lookups into a single recipe is exactly the kind of thing that turns a frustrating challenge into a solved one. Outside of CTFs I reach for it whenever I need to quickly inspect or manipulate data: decoding a JWT, analyzing a suspicious string, converting between formats, or just checking what an encoded blob actually says. The recipe system is what makes it so powerful — you can build up multi-step transformations visually and reuse them. Having it self-hosted means I'm not pasting anything sensitive into a public instance.

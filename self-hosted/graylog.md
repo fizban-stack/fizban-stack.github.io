@@ -25,4 +25,4 @@ Graylog is a powerful log management platform that centralizes logs from all you
 
 ## Why I Use It
 
-Graylog centralizes logs from all my servers and applications, making troubleshooting and monitoring much easier. The powerful search and alerting features help me catch issues quickly.
+I originally set Graylog up at work as the first syslog server the organization had ever implemented — partly to centralize firewall logs from a Cisco Meraki that was dropping entries constantly, and partly because having a real log management platform changes how you approach troubleshooting entirely. Once logs from OPNsense and other systems started flowing in, I could actually search and correlate events instead of grepping through files. One of the standout features is the GeoIP integration — after pulling in the MaxMind city and ASN databases (free account), you can build dashboards that show geographically where connections are coming from and where your network is reaching out to, which is genuinely useful for spotting anomalies. I wrote a full walkthrough of the setup if you want to dig into the details: [Setting Up Graylog](/2025/12/25/graylog).

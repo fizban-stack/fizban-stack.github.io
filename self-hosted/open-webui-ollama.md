@@ -25,4 +25,4 @@ Open WebUI is a feature-rich ChatGPT-like interface that works with local LLMs v
 
 ## Why I Use It
 
-Open WebUI with Ollama gives me a private AI assistant running entirely on my hardware. No data leaves my network and I have complete control over the models.
+Running LLMs locally means I can use AI assistance without sending any of my prompts or documents to a third-party API. Open WebUI gives me a polished ChatGPT-style interface that connects to Ollama on the backend, where I can pull and run different models depending on what I need — a smaller fast model for quick tasks or a larger one when quality matters more. Everything stays on my hardware and nothing leaves the network. For working with code, documentation, or anything sensitive, having a local option that I fully control is genuinely valuable.

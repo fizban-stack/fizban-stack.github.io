@@ -24,4 +24,4 @@ Nessus is an industry-leading vulnerability assessment solution that helps ident
 
 ## Why I Use It
 
-Nessus helps me identify security vulnerabilities in my infrastructure. Regular scans ensure my systems stay secure and compliant with best practices.
+Nessus is one of the most widely used vulnerability scanners in professional security work, and running it in my homelab means I can apply the same assessment methodology to my own infrastructure that gets used in real engagements. Regular scans against my network catch misconfigured services, outdated software, weak credentials, and known CVEs before they become a problem. It is also an excellent learning tool — the detailed findings and remediation guidance explain not just what is vulnerable but why, which builds a deeper understanding of how vulnerabilities work. The free Essentials license is more than enough for a home network.

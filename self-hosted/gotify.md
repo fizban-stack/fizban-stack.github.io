@@ -25,4 +25,4 @@ Gotify is a simple server for sending and receiving push notifications, allowing
 
 ## Why I Use It
 
-Gotify delivers push notifications from my scripts and services directly to my phone. It's simple, lightweight, and doesn't rely on third-party services like Firebase.
+Gotify was the first notification service I set up in my homelab, and it became the central hub for alerts across everything. Proxmox supports it natively, so backup results, node alerts, and other system events flow straight in. For services that don't have built-in Gotify support, I route them through Apprise, which acts as a bridge — it speaks whatever notification format a service uses and forwards it to Gotify. That combination means pretty much anything can send me a notification, regardless of whether it knows what Gotify is. There is even a app available on the Google Play store.

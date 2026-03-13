@@ -25,4 +25,4 @@ Home Assistant is a powerful open-source home automation platform that puts loca
 
 ## Why I Use It
 
-Home Assistant centralizes control of all my smart home devices with local processing and no cloud dependencies. The automation capabilities are incredibly powerful.
+Home Assistant is the hub that ties my smart home together — lights, switches, sensors, and anything else that speaks a protocol it understands all come together in one interface. The thing that matters most to me is that all of it runs locally. There is no cloud dependency, no subscription, and no third party sitting between me and my own devices. If my internet goes down, everything still works. The automation engine is where it really shines: I can build logic that reacts to time, presence, sensor state, or any combination of conditions, and tie that into notifications or other services running in my homelab.

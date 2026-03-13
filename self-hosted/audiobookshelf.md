@@ -25,4 +25,4 @@ Audiobookshelf is a self-hosted audiobook and podcast server that gives you comp
 
 ## Why I Use It
 
-Audiobookshelf gives me complete control over my audiobook collection. I can listen to my library from any device while tracking progress seamlessly across all of them.
+Audiobookshelf is where my audiobook and podcast library lives, and the key thing is that I own all of it. There is no subscription, no platform deciding to remove something from my library, and no dependency on a service staying in business. Progress syncs across devices through the app, so I can pick up on my phone exactly where I left off on my laptop. Podcasts work the same way — I subscribe, episodes download automatically, and I listen on my own terms. I am the platform.

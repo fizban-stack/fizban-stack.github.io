@@ -66,11 +66,11 @@
   github: https://github.com/snipe/snipe-it
   official: https://snipeitapp.com
 
-- id: trillium
+- id: trilium
   category: "Productivity"
-  title: Trillium
+  title: Trilium
   subtitle: Hierarchical Note-Taking
-  image: self-hosted/trillium.webp
+  image: self-hosted/trilium.webp
   description: Hierarchical note-taking application.
   github: https://github.com/TriliumNext/Trilium
 

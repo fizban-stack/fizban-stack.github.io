@@ -24,4 +24,4 @@ File Explorer Quantum is a modern, feature-rich web-based file manager that prov
 
 ## Why I Use It
 
-File Explorer Quantum provides a clean web interface for browsing and managing files on my servers. It's perfect for quick file access without needing SSH or FTP.
+I use File Explorer Quantum primarily for file storage and sharing — it gives me a straightforward place to drop files and access them from anywhere without overcomplicating things. What I appreciate most is how lightweight it is; it runs comfortably on machines where resources are tight, without the overhead that heavier solutions bring. When I just need something to serve files cleanly and reliably without a lot of setup or resource cost, this is what I reach for.

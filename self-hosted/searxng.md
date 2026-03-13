@@ -25,4 +25,4 @@ SearXNG is a free internet metasearch engine that aggregates results from variou
 
 ## Why I Use It
 
-SearXNG gives me private search results without tracking. It aggregates results from multiple engines while keeping my searches completely anonymous.
+Search engines know a lot about you just from your queries — what you are researching, what you are worried about, what you are buying. Running SearXNG means that information stays with me. It pulls results from multiple engines and presents them without building a profile or personalizing results based on history. For security research especially, I do not want my searches for vulnerability details or malware analysis to be tied back to an account or IP. SearXNG gives me a fast, clean search interface with none of that baggage.

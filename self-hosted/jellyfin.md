@@ -25,4 +25,4 @@ Jellyfin is the volunteer-built media solution that puts you in control of your 
 
 ## Why I Use It
 
-Jellyfin is my completely free alternative to Plex. It streams all my media to any device without tracking, ads, or subscription fees.
+Jellyfin is fully open-source and completely free — there are no features locked behind a premium tier, no account required, and nothing phoning home. I run it alongside Plex and use it when I want a no-strings-attached media server, particularly for users who do not need the full Plex ecosystem. The hardware transcoding support means it handles format conversion without issues, and the app support across platforms is solid. It has matured a lot in recent years and is a legitimate alternative for anyone who does not want to deal with Plex's account requirements or subscription model.

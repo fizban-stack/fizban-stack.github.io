@@ -24,4 +24,4 @@ ConvertX is a self-hosted universal file converter that supports a wide range of
 
 ## Why I Use It
 
-ConvertX handles all my file conversion needs locally. No need to upload files to online converters or worry about file size limits.
+ConvertX gets more use than I expected. Every image on this site was converted through it — taking screenshots and various source images and converting them to WebP to keep file sizes down without sacrificing quality. But it goes well beyond images; I regularly use it for audio, video, and documents too. Having a local converter means no file size caps, no waiting on an upload, and no handing files off to some third-party service. Whatever the format, ConvertX almost certainly handles it.

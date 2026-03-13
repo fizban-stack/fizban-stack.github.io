@@ -23,7 +23,7 @@ Beszel is a lightweight server monitoring solution that provides real-time insig
 
 ## Why I Use It
 
-Beszel provides a simple way to keep track of all my servers in one place. The lightweight nature means it doesn't consume resources while monitoring them.
+Beszel is what I recommend to anyone who wants server monitoring without the setup overhead of a full Prometheus and Grafana stack. Installing an agent on each host and pointing it at the Beszel server is genuinely all it takes — the metrics start flowing immediately and the dashboard just works. The trade-off compared to Grafana is flexibility: you can not build completely custom queries or panels, but for standard CPU, memory, disk, and network monitoring, everything you need is already there out of the box. Agent-to-server communication is encrypted, it runs in Docker with minimal resources, and it does not get in the way of what it is monitoring.
 
 ## Installation Notes
 

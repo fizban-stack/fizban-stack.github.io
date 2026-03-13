@@ -25,4 +25,4 @@ Prometheus is an open-source systems monitoring and alerting toolkit with a powe
 
 ## Why I Use It
 
-Prometheus collects metrics from all my services and infrastructure. Combined with Grafana, it provides comprehensive monitoring and alerting for my entire homelab.
+Prometheus is the metrics collection engine behind most of my Grafana dashboards. It scrapes exporters running on my systems — node exporters on Linux hosts, the Proxmox exporter, and application-specific exporters for various services — and stores all of that as time-series data that Grafana can query. The pull-based model means adding a new monitoring target is as simple as adding a scrape config and pointing at the right exporter. PromQL is powerful enough that I can build exactly the queries I need for custom dashboards rather than being limited to preset views.

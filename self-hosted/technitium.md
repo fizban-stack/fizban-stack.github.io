@@ -25,4 +25,4 @@ Technitium DNS Server is an open-source authoritative and recursive DNS server w
 
 ## Why I Use It
 
-Technitium gives me complete control over DNS for my network. The ad blocking and query logging help me understand and secure network traffic.
+Running my own DNS server gives me control over name resolution across my entire network that you simply cannot get from using an upstream resolver. Technitium handles split-horizon DNS so my internal services resolve to private IPs from inside the network, custom local records for services and VMs, and conditional forwarding for different domains. The built-in ad and tracker blocking works at the DNS level across every device on the network without needing client-side software. The query logging and analytics show me exactly what every device is resolving, which is useful both for troubleshooting and for spotting anything unexpected on the network.
