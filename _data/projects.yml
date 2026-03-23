@@ -118,7 +118,6 @@
 
 - title: NVD Scanner
   category: "Security"
-  #image: 
+  image: projects/nvdscanner.webp
   description: This is a scanner that I created for a JavaScript course. It scans the NVD API and returns results based on a keyword search.
   blog: /cybersecurity/2026/02/21/nvd-scanner/
-  github: https://github.com/fizban-stack/nvd-scanner
