@@ -10,8 +10,6 @@ author: James Wells
 
 This 10-part series provides comprehensive coverage of the essential tools and techniques used in Active Directory penetration testing and security assessments. Each post explores a critical tool in the offensive security toolkit, covering its history, installation, practical usage, and real-world application in lab environments like Game of Active Directory (GOAD).
 
-Perfect for penetration testers, red teamers, security researchers, and anyone conducting authorized Active Directory security assessments in 2026.
-
 ## What You'll Learn
 
 Master the complete Active Directory offensive security toolkit:

