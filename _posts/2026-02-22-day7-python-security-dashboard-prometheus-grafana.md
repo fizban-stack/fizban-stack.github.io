@@ -529,6 +529,7 @@ volumes:
 
 **2. Create Grafana alerts:**
 
+{% raw %}
 ```yaml
 # grafana_alerts.yml
 groups:
@@ -558,6 +559,7 @@ groups:
         annotations:
           summary: "SSL certificate for {{ $labels.domain }} expires in {{ $value }} days"
 ```
+{% endraw %}
 
 **3. Dashboard JSON example:**
 

@@ -14,6 +14,7 @@ Using scikit-learn for classification and the MITRE ATT&CK framework for threat 
 
 ## The Code
 
+{% raw %}
 ```python
 #!/usr/bin/env python3
 """
@@ -457,6 +458,7 @@ if __name__ == "__main__":
     import os
     main()
 ```
+{% endraw %}
 
 ## How It Works
 

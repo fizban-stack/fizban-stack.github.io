@@ -14,6 +14,7 @@ Using Flask for web serving, smtplib for email delivery, and Jinja2 for template
 
 ## The Code
 
+{% raw %}
 ```python
 #!/usr/bin/env python3
 """
@@ -589,6 +590,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+{% endraw %}
 
 ## How It Works
 
@@ -617,6 +619,7 @@ Realistic Office 365 login page mimicking:
 
 ## Installation & Setup
 
+{% raw %}
 ```bash
 # Install dependencies
 pip install flask
@@ -649,6 +652,7 @@ cat > targets.json << 'EOF'
 ]
 EOF
 ```
+{% endraw %}
 
 ## Usage Examples
 

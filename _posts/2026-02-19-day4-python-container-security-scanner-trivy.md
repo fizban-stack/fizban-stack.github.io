@@ -14,6 +14,7 @@ The scanner automatically analyzes images, generates compliance reports, enforce
 
 ## The Code
 
+{% raw %}
 ```python
 #!/usr/bin/env python3
 """
@@ -479,6 +480,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+{% endraw %}
 
 ## How It Works
 
