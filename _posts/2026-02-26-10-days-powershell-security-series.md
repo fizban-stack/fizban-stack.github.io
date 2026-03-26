@@ -35,7 +35,7 @@ Audit Active Directory for security weaknesses: excessive Domain Admins, AS-REP 
 **Use Cases:** AD security audits, penetration test preparation, compliance
 **Code:** 600+ lines
 
-[Read Day 1 →](2026-04-11-day1-powershell-ad-security-posture-dashboard.md)
+[Read Day 1 →]({% post_url 2026-02-27-day1-powershell-ad-security-posture-dashboard %})
 
 ---
 
@@ -49,7 +49,7 @@ Scan and enforce 200+ CIS Benchmark controls for Windows Server 2025: password p
 **Use Cases:** Compliance audits, SOC 2 prep, infrastructure hardening
 **Code:** 650+ lines
 
-[Read Day 2 →](2026-04-12-day2-powershell-windows-server-cis-compliance.md)
+[Read Day 2 →]({% post_url 2026-02-28-day2-powershell-windows-server-cis-compliance %})
 
 ---
 
@@ -63,7 +63,7 @@ Monitor Windows Security, Sysmon, and PowerShell logs in real-time for suspiciou
 **Use Cases:** Threat hunting, SOC automation, insider threat detection
 **Code:** 550+ lines
 
-[Read Day 3 →](2026-04-13-day3-powershell-threat-hunting-event-collector.md)
+[Read Day 3 →]({% post_url 2026-03-01-day3-powershell-threat-hunting-event-collector %})
 
 ---
 
@@ -77,7 +77,7 @@ Automate Azure Defender operations across 50+ subscriptions: security posture tr
 **Use Cases:** Cloud security, DevSecOps, multi-cloud compliance
 **Code:** 700+ lines
 
-[Read Day 4 →](2026-04-14-day4-powershell-azure-defender-automation.md)
+[Read Day 4 →]({% post_url 2026-03-02-day4-powershell-azure-defender-automation %})
 
 ---
 
@@ -91,7 +91,7 @@ Execute 50+ MITRE ATT&CK techniques via Atomic Red Team and validate detection i
 **Use Cases:** Purple team testing, EDR tuning, detection validation
 **Code:** 600+ lines
 
-[Read Day 5 →](2026-04-15-day5-powershell-edr-detection-validation.md)
+[Read Day 5 →]({% post_url 2026-03-03-day5-powershell-edr-detection-validation %})
 
 ---
 
@@ -105,7 +105,7 @@ Capture approved baselines (registry, services, firewall, GPOs) and continuously
 **Use Cases:** Configuration management, compliance, insider threat detection
 **Code:** 650+ lines
 
-[Read Day 6 →](2026-04-16-day6-powershell-infrastructure-drift-detection.md)
+[Read Day 6 →]({% post_url 2026-03-04-day6-powershell-infrastructure-drift-detection %})
 
 ---
 
@@ -119,7 +119,7 @@ Audit Azure AD, Exchange Online, SharePoint, and Teams for security gaps: MFA en
 **Use Cases:** M365 security, cloud compliance, GDPR/HIPAA audits
 **Code:** 550+ lines
 
-[Read Day 7 →](2026-04-17-day7-powershell-m365-security-audit.md)
+[Read Day 7 →]({% post_url 2026-03-05-day7-powershell-m365-security-audit %})
 
 ---
 
@@ -133,7 +133,7 @@ Collect comprehensive forensic artifacts in 5-30 minutes: memory dumps, event lo
 **Use Cases:** Incident response, forensic investigations, malware analysis
 **Code:** 600+ lines
 
-[Read Day 8 →](2026-04-18-day8-powershell-dfir-artifact-collector.md)
+[Read Day 8 →]({% post_url 2026-03-06-day8-powershell-dfir-artifact-collector %})
 
 ---
 
@@ -147,7 +147,7 @@ Deploy Wazuh SIEM across Windows environments: automated agent deployment, custo
 **Use Cases:** SIEM deployment, log aggregation, threat detection
 **Code:** 500+ lines
 
-[Read Day 9 →](2026-04-19-day9-powershell-mini-siem-wazuh.md)
+[Read Day 9 →]({% post_url 2026-03-07-day9-powershell-mini-siem-wazuh %})
 
 ---
 
@@ -161,7 +161,7 @@ Transform insecure Windows systems into defensible infrastructure: 200+ CIS Benc
 **Use Cases:** Infrastructure hardening, compliance, security baseline deployment
 **Code:** 650+ lines
 
-[Read Day 10 →](2026-04-20-day10-powershell-security-hardening-playbook.md)
+[Read Day 10 →]({% post_url 2026-03-08-day10-powershell-security-hardening-playbook %})
 
 ---
 
@@ -397,7 +397,7 @@ James Wells is a security engineer specializing in Windows infrastructure securi
 
 ---
 
-**Start Learning:** [Begin with Day 1: Active Directory Security Posture Dashboard →](2026-04-11-day1-powershell-ad-security-posture-dashboard.md)
+**Start Learning:** [Begin with Day 1: Active Directory Security Posture Dashboard →]({% post_url 2026-02-27-day1-powershell-ad-security-posture-dashboard %})
 
 ---
 

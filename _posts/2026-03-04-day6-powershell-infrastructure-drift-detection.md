@@ -1330,6 +1330,6 @@ Perfect for infrastructure teams maintaining security baselines across enterpris
 ---
 
 **Related Posts:**
-- [Day 2: Windows Server CIS Compliance](2026-04-12-day2-powershell-windows-server-cis-compliance.md)
-- [Day 4: Azure Defender Automation](2026-04-14-day4-powershell-azure-defender-automation.md)
+- [Day 2: Windows Server CIS Compliance]({% post_url 2026-02-28-day2-powershell-windows-server-cis-compliance %})
+- [Day 4: Azure Defender Automation]({% post_url 2026-03-02-day4-powershell-azure-defender-automation %})
 - [Day 7: M365 Security Audit Automation](#) (coming next)

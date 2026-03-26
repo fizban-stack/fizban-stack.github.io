@@ -599,5 +599,5 @@ Perfect for incident responders and forensic analysts in 2026!
 ---
 
 **Related Posts:**
-- [Day 3: Threat Hunting Event Collector](2026-04-13-day3-powershell-threat-hunting-event-collector.md)
+- [Day 3: Threat Hunting Event Collector]({% post_url 2026-03-01-day3-powershell-threat-hunting-event-collector %})
 - [Day 9: Mini-SIEM with Wazuh](#) (coming next)

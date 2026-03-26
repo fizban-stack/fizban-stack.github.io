@@ -36,7 +36,7 @@ Build an intelligent SIEM using Isolation Forest machine learning to detect secu
 **Use Cases:** SOC automation, anomaly detection, log analysis
 **Code:** 350+ lines
 
-[Read Day 1 →](2026-04-01-day1-python-ai-siem-llm-log-analysis.md)
+[Read Day 1 →]({% post_url 2026-02-16-day1-python-ai-siem-llm-log-analysis %})
 
 ---
 
@@ -50,7 +50,7 @@ Aggregate Indicators of Compromise from VirusTotal, AlienVault OTX, and MISP. De
 **Use Cases:** Threat intel feeds, IOC management, SIEM enrichment
 **Code:** 400+ lines
 
-[Read Day 2 →](2026-04-02-day2-python-threat-intelligence-aggregator.md)
+[Read Day 2 →]({% post_url 2026-02-17-day2-python-threat-intelligence-aggregator %})
 
 ---
 
@@ -64,7 +64,7 @@ Combine Nmap port scanning with NVD vulnerability lookups to identify exposed se
 **Use Cases:** Network discovery, vulnerability assessment, penetration testing
 **Code:** 450+ lines
 
-[Read Day 3 →](2026-04-03-day3-python-network-recon-vulnerability-scanner.md)
+[Read Day 3 →]({% post_url 2026-02-18-day3-python-network-recon-vulnerability-scanner %})
 
 ---
 
@@ -78,7 +78,7 @@ Automate container security scanning with Trivy integration. Detect vulnerabilit
 **Use Cases:** DevSecOps, container security, CI/CD integration
 **Code:** 420+ lines
 
-[Read Day 4 →](2026-04-04-day4-python-container-security-scanner-trivy.md)
+[Read Day 4 →]({% post_url 2026-02-19-day4-python-container-security-scanner-trivy %})
 
 ---
 
@@ -92,7 +92,7 @@ Test REST APIs for the OWASP API Security Top 10 vulnerabilities: broken authent
 **Use Cases:** API pentesting, security validation, DevSecOps
 **Code:** 480+ lines
 
-[Read Day 5 →](2026-04-05-day5-python-api-security-testing-framework.md)
+[Read Day 5 →]({% post_url 2026-02-20-day5-python-api-security-testing-framework %})
 
 ---
 
@@ -106,7 +106,7 @@ Reduce SOC alert fatigue by 60% with machine learning-powered triage. Automatica
 **Use Cases:** SOC automation, alert triage, false positive reduction
 **Code:** 380+ lines
 
-[Read Day 6 →](2026-04-06-day6-python-soc-alert-triage-automation.md)
+[Read Day 6 →]({% post_url 2026-02-21-day6-python-soc-alert-triage-automation %})
 
 ---
 
@@ -120,7 +120,7 @@ Build custom Prometheus exporters for security metrics: failed logins, firewall 
 **Use Cases:** Security monitoring, metrics visualization, alerting
 **Code:** 340+ lines
 
-[Read Day 7 →](2026-04-07-day7-python-security-dashboard-prometheus-grafana.md)
+[Read Day 7 →]({% post_url 2026-02-22-day7-python-security-dashboard-prometheus-grafana %})
 
 ---
 
@@ -134,7 +134,7 @@ Create ethical phishing campaigns to measure organizational susceptibility. Trac
 **Use Cases:** Security awareness, phishing training, compliance
 **Code:** 460+ lines
 
-[Read Day 8 →](2026-04-08-day8-python-phishing-simulation-platform.md)
+[Read Day 8 →]({% post_url 2026-02-23-day8-python-phishing-simulation-platform %})
 
 ---
 
@@ -148,7 +148,7 @@ Discover IoT devices on your network, fingerprint manufacturers, test default cr
 **Use Cases:** IoT security, home lab monitoring, network assessment
 **Code:** 390+ lines
 
-[Read Day 9 →](2026-04-09-day9-python-iot-device-security-monitor.md)
+[Read Day 9 →]({% post_url 2026-02-24-day9-python-iot-device-security-monitor %})
 
 ---
 
@@ -162,7 +162,7 @@ Perform incident response with live process analysis, memory dump capture, and V
 **Use Cases:** Incident response, malware analysis, digital forensics
 **Code:** 440+ lines
 
-[Read Day 10 →](2026-04-10-day10-python-memory-forensics-incident-response.md)
+[Read Day 10 →]({% post_url 2026-02-25-day10-python-memory-forensics-incident-response %})
 
 ---
 
@@ -346,4 +346,4 @@ James Wells is a security engineer specializing in automation, threat detection,
 
 ---
 
-**Start Learning:** [Begin with Day 1: AI-Powered SIEM →](2026-04-01-day1-python-ai-siem-llm-log-analysis.md)
+**Start Learning:** [Begin with Day 1: AI-Powered SIEM →]({% post_url 2026-02-16-day1-python-ai-siem-llm-log-analysis %})

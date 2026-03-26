@@ -36,7 +36,7 @@ Revolutionize AD security assessment with BloodHound's graph theory approach. Ma
 **Use Cases:** Attack path analysis, privilege escalation, security posture assessment
 **Key Techniques:** DCSync paths, Kerberoastable user chains, local admin mapping
 
-[Read Day 1 →](2026-02-05-day1-bloodhound-ad-attack-path-visualization.md)
+[Read Day 1 →]({% post_url 2026-02-05-day1-bloodhound-ad-attack-path-visualization %})
 
 ---
 
@@ -50,7 +50,7 @@ Master the foundational Python library for AD penetration testing. Perform DCSyn
 **Use Cases:** Credential dumping, lateral movement, Linux-based AD attacks
 **Key Scripts:** secretsdump.py, GetUserSPNs.py, ntlmrelayx.py, psexec.py
 
-[Read Day 2 →](2026-02-06-day2-impacket-python-ad-protocol-toolkit.md)
+[Read Day 2 →]({% post_url 2026-02-06-day2-impacket-python-ad-protocol-toolkit %})
 
 ---
 
@@ -64,7 +64,7 @@ Execute sophisticated Kerberos attacks with the premier .NET toolkit. Perform AS
 **Use Cases:** Kerberos exploitation, credential theft, persistence
 **Key Techniques:** AS-REP Roasting, Kerberoasting, Golden/Silver Tickets, S4U2Self abuse
 
-[Read Day 3 →](2026-02-07-day3-rubeus-kerberos-attack-toolkit.md)
+[Read Day 3 →]({% post_url 2026-02-07-day3-rubeus-kerberos-attack-toolkit %})
 
 ---
 
@@ -78,7 +78,7 @@ Master the legendary tool that changed Windows security forever. Extract plainte
 **Use Cases:** Credential harvesting, privilege escalation, persistence
 **Key Techniques:** sekurlsa::logonpasswords, lsadump::dcsync, kerberos::golden
 
-[Read Day 4 →](2026-02-08-day4-mimikatz-credential-extraction-legend.md)
+[Read Day 4 →]({% post_url 2026-02-08-day4-mimikatz-credential-extraction-legend %})
 
 ---
 
@@ -92,7 +92,7 @@ Automate lateral movement and post-exploitation with the Swiss Army knife of net
 **Use Cases:** Network enumeration, mass credential dumping, lateral movement
 **Key Features:** Password spraying, SMB relay integration, SOCKS proxy pivoting
 
-[Read Day 5 →](2026-02-09-day5-netexec-network-execution-toolkit.md)
+[Read Day 5 →]({% post_url 2026-02-09-day5-netexec-network-execution-toolkit %})
 
 ---
 
@@ -106,7 +106,7 @@ Exploit Active Directory Certificate Services vulnerabilities to achieve privile
 **Use Cases:** Privilege escalation via certificates, long-term persistence
 **Key Vulnerabilities:** ESC1-ESC8 template misconfigurations, certificate theft
 
-[Read Day 6 →](2026-02-10-day6-certipy-adcs-exploitation-toolkit.md)
+[Read Day 6 →]({% post_url 2026-02-10-day6-certipy-adcs-exploitation-toolkit %})
 
 ---
 
@@ -120,7 +120,7 @@ Deploy a professional-grade C2 framework with advanced evasion, encrypted commun
 **Use Cases:** Long-term access, stealthy post-exploitation, red team operations
 **Key Features:** In-memory execution, process injection, SOCKS proxying, credential harvesting
 
-[Read Day 7 →](2026-02-11-day7-sliver-c2-framework.md)
+[Read Day 7 →]({% post_url 2026-02-11-day7-sliver-c2-framework %})
 
 ---
 
@@ -134,7 +134,7 @@ Exploit Windows name resolution protocols to capture NTLMv2 hashes. Poison LLMNR
 **Use Cases:** Initial access, credential harvesting, NTLM relay setup
 **Key Techniques:** LLMNR poisoning, WPAD injection, SMB authentication capture
 
-[Read Day 8 →](2026-02-12-day8-responder-credential-capture.md)
+[Read Day 8 →]({% post_url 2026-02-12-day8-responder-credential-capture %})
 
 ---
 
@@ -148,7 +148,7 @@ Leverage WinRM for stealthy post-exploitation and lateral movement. Upload/downl
 **Use Cases:** Post-exploitation, lateral movement, living-off-the-land techniques
 **Key Features:** Pass-the-Hash via WinRM, DLL injection, AMSI bypass, in-memory execution
 
-[Read Day 9 →](2026-02-13-day9-evil-winrm-post-exploitation-shell.md)
+[Read Day 9 →]({% post_url 2026-02-13-day9-evil-winrm-post-exploitation-shell %})
 
 ---
 
@@ -162,7 +162,7 @@ Force authentication from target systems using 20+ protocol coercion techniques.
 **Use Cases:** NTLM relay, forced authentication, credential theft
 **Key Techniques:** PetitPotam, PrinterBug, ShadowCoerce, DFSCoerce
 
-[Read Day 10 →](2026-02-14-day10-coercer-authentication-coercion.md)
+[Read Day 10 →]({% post_url 2026-02-14-day10-coercer-authentication-coercion %})
 
 ---
 
@@ -434,7 +434,7 @@ James Wells is a security engineer specializing in Active Directory security, pe
 
 ---
 
-**Start Learning:** [Begin with Day 1: BloodHound - AD Attack Path Visualization →](2026-02-05-day1-bloodhound-ad-attack-path-visualization.md)
+**Start Learning:** [Begin with Day 1: BloodHound - AD Attack Path Visualization →]({% post_url 2026-02-05-day1-bloodhound-ad-attack-path-visualization %})
 
 ---
 

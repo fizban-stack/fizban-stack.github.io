@@ -1241,6 +1241,6 @@ Perfect for cloud security engineers managing enterprise Azure estates in 2026!
 ---
 
 **Related Posts:**
-- [Day 3: Threat Hunting Event Collector](2026-04-13-day3-powershell-threat-hunting-event-collector.md)
+- [Day 3: Threat Hunting Event Collector]({% post_url 2026-03-01-day3-powershell-threat-hunting-event-collector %})
 - [Day 5: EDR Detection Validation Framework](#) (coming next)
-- [Python Day 7: Security Metrics Dashboard](2026-04-07-day7-python-security-dashboard-prometheus-grafana.md)
+- [Python Day 7: Security Metrics Dashboard]({% post_url 2026-02-22-day7-python-security-dashboard-prometheus-grafana %})

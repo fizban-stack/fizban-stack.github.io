@@ -549,6 +549,6 @@ Perfect for system administrators deploying secure Windows environments in 2026!
 ---
 
 **Related Posts:**
-- [Day 2: Windows Server CIS Compliance](2026-04-12-day2-powershell-windows-server-cis-compliance.md)
-- [Day 6: Infrastructure Drift Detection](2026-04-16-day6-powershell-infrastructure-drift-detection.md)
+- [Day 2: Windows Server CIS Compliance]({% post_url 2026-02-28-day2-powershell-windows-server-cis-compliance %})
+- [Day 6: Infrastructure Drift Detection]({% post_url 2026-03-04-day6-powershell-infrastructure-drift-detection %})
 - [PowerShell Security Series Landing Page](#)

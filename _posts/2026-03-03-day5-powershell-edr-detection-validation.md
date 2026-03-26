@@ -1336,6 +1336,6 @@ Perfect for security engineers building robust defensive capabilities in 2026!
 ---
 
 **Related Posts:**
-- [Day 3: Threat Hunting Event Collector](2026-04-13-day3-powershell-threat-hunting-event-collector.md)
-- [Day 4: Azure Defender Automation](2026-04-14-day4-powershell-azure-defender-automation.md)
+- [Day 3: Threat Hunting Event Collector]({% post_url 2026-03-01-day3-powershell-threat-hunting-event-collector %})
+- [Day 4: Azure Defender Automation]({% post_url 2026-03-02-day4-powershell-azure-defender-automation %})
 - [Day 6: Infrastructure Drift Detection](#) (coming next)

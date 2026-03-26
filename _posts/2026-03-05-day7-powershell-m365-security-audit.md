@@ -884,6 +884,6 @@ Perfect for cloud administrators securing Microsoft 365 environments in 2026!
 ---
 
 **Related Posts:**
-- [Day 4: Azure Defender Automation](2026-04-14-day4-powershell-azure-defender-automation.md)
-- [Day 6: Infrastructure Drift Detection](2026-04-16-day6-powershell-infrastructure-drift-detection.md)
+- [Day 4: Azure Defender Automation]({% post_url 2026-03-02-day4-powershell-azure-defender-automation %})
+- [Day 6: Infrastructure Drift Detection]({% post_url 2026-03-04-day6-powershell-infrastructure-drift-detection %})
 - [Day 8: DFIR Artifact Collector](#) (coming next)

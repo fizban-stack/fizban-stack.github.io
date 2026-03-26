@@ -546,6 +546,6 @@ Perfect for budget-conscious security teams building SIEM capabilities in 2026!
 ---
 
 **Related Posts:**
-- [Day 3: Threat Hunting Event Collector](2026-04-13-day3-powershell-threat-hunting-event-collector.md)
-- [Day 8: DFIR Artifact Collector](2026-04-18-day8-powershell-dfir-artifact-collector.md)
+- [Day 3: Threat Hunting Event Collector]({% post_url 2026-03-01-day3-powershell-threat-hunting-event-collector %})
+- [Day 8: DFIR Artifact Collector]({% post_url 2026-03-06-day8-powershell-dfir-artifact-collector %})
 - [Day 10: Security Hardening Playbook](#) (coming next)
