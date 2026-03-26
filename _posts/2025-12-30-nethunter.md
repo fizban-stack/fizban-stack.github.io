@@ -10,7 +10,7 @@ NetHunter is Kali Linux's mobile penetration testing platform designed specifica
 
 What sets NetHunter apart from simply running Kali in a VM is its integration with mobile-specific attack vectors. The platform supports USB HID keyboard attacks (rubber ducky style payloads), BadUSB MITM attacks, one-click MANA Evil Access Point setups, and software-defined radio capabilities on supported hardware. For wireless assessments, NetHunter supports external wireless adapters that enable monitor mode and packet injection—capabilities not available with stock Android WiFi chips. The NetHunter App provides a streamlined interface for configuring these attacks and managing common tasks, while the NetHunter Store offers a curated selection of compatible apps. It's particularly valuable for physical penetration tests, social engineering engagements, and situations where carrying a laptop would be impractical or conspicuous.
 
-NetHunter can be found on the <a href=https://www.kali.org/get-kali/?ref=blog.wellslabs.org#kali-mobile>Kali</a> website. There is a Pro version and an open-source version.
+NetHunter can be found on the <a href="https://www.kali.org/get-kali/#kali-mobile">Kali</a> website. There is a Pro version and an open-source version.
 
 I had wanted to install NetHunter on a phone for a few years but I could never get it to work with the phones I had. I finally got it up and running on a OnePlus 6. I managed to root it by installing Magisk and then installing NetHunter.
 
