@@ -4,6 +4,7 @@ title: "NVD Scanner"
 date: 2026-02-21
 category: Cybersecurity
 author: James Wells
+tags: [NVD, CVE, Vulnerability, JavaScript]
 ---
 
 For my final project in a JavaScript course at Champlain College, I create a dynamic webpage that can perform a keyword search on the [NVD website](https://nvd.nist.gov/vuln/detail).  It will return the CVE name with a link to that NVD page. It also returns a description, severity, PoCs if linked on NVD page, and CWE with a link to that CWE's description on [Mitre's website](https://cwe.mitre.org/data/index.html). 

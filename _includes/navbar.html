@@ -23,10 +23,17 @@
             <li><a class="dropdown-item {% if page.url contains '/about' %}active{% endif %}" href="{{ '/about' | relative_url }}">About Me</a></li>
             <li><a class="dropdown-item {% if page.url contains '/certifications' %}active{% endif %}" href="{{ '/certifications' | relative_url }}">Certifications</a></li>
             <li><a class="dropdown-item {% if page.url contains '/timeline' %}active{% endif %}" href="{{ '/timeline' | relative_url }}">Timeline</a></li>
+            <li><a class="dropdown-item {% if page.url contains '/now' %}active{% endif %}" href="{{ '/now' | relative_url }}">Now</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/self-hosted' %}active{% endif %}" href="{{ '/self-hosted' | relative_url }}">Self-Hosted</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle {% if page.url contains '/self-hosted' or page.url contains '/homelab' %}active{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Homelab
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item {% if page.url == '/homelab/' %}active{% endif %}" href="{{ '/homelab' | relative_url }}">Homelab Hub</a></li>
+            <li><a class="dropdown-item {% if page.url contains '/self-hosted' %}active{% endif %}" href="{{ '/self-hosted' | relative_url }}">Self-Hosted Apps</a></li>
+          </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle {% if page.url contains '/training' or page.url contains '/vulnerable-labs' or page.url contains '/podcasts' or page.url contains '/recommended-youtube-channels' or page.url contains '/recommended-blogs' %}active{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -43,8 +50,15 @@
             <li><a class="dropdown-item {% if page.url contains '/scanner' %}active{% endif %}" href="{{ '/scanner' | relative_url }}">CVE Scanner</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {% if page.url contains '/blog' %}active{% endif %}" href="{{ '/blog' | relative_url }}">Blog</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle {% if page.url contains '/blog' or page.url contains '/writeups' or page.url contains '/tags' %}active{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item {% if page.url == '/blog/' %}active{% endif %}" href="{{ '/blog' | relative_url }}">All Posts</a></li>
+            <li><a class="dropdown-item {% if page.url contains '/writeups' %}active{% endif %}" href="{{ '/writeups' | relative_url }}">Write-ups</a></li>
+            <li><a class="dropdown-item {% if page.url contains '/tags' %}active{% endif %}" href="{{ '/tags' | relative_url }}">Tags</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link {% if page.url contains '/comments' %}active{% endif %}" href="{{ '/comments' | relative_url }}">Comments</a>
@@ -53,6 +67,29 @@
           <a class="nav-link {% if page.url contains '/contact' %}active{% endif %}" href="{{ '/contact' | relative_url }}">Contact</a>
         </li>
       </ul>
+      <button class="theme-toggle ms-2" id="theme-toggle" title="Toggle light/dark mode" aria-label="Toggle theme">
+        <span id="theme-icon">☀️</span>
+      </button>
     </div>
   </div>
 </nav>
+
+<script>
+  (function() {
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      document.body.classList.add('light-mode');
+      var icon = document.getElementById('theme-icon');
+      if (icon) icon.textContent = '🌙';
+    }
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var isLight = document.body.classList.toggle('light-mode');
+        var icon = document.getElementById('theme-icon');
+        if (icon) icon.textContent = isLight ? '🌙' : '☀️';
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      });
+    }
+  })();
+</script>

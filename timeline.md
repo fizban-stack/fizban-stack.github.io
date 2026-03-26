@@ -21,3 +21,35 @@ description: The professional learning journey and timeline of James Wells.
   </div>
 {% endfor %}
 </div>
+
+---
+
+## Where I'm Heading
+
+<div class="row g-4 mt-2">
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 style="color: var(--accent-cyan);">Certifications in Progress</h3>
+        <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 0;">
+          <li>PNPT (Practical Network Penetration Tester) — TCM Security</li>
+          <li>eJPT (eLearnSecurity Junior Penetration Tester)</li>
+          <li>OSCP — longer-term goal</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 style="color: var(--accent-cyan);">Skills Being Developed</h3>
+        <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 0;">
+          <li>PowerShell security scripting and automation</li>
+          <li>Active Directory attack paths and hardening</li>
+          <li>Threat hunting and DFIR workflows</li>
+          <li>Python for security tooling</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

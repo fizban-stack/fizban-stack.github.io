@@ -15,7 +15,7 @@ description: Explore the cybersecurity and homelab projects of James Wells.
 <!-- Category Filter Pills -->
 <div class="category-filters mb-4">
   <button class="filter-pill active" data-category="all">All Projects</button>
-  <button class="filter-pill" data-category="Security">Security</button>
+  <button class="filter-pill" data-category="Security">Cybersecurity Tools</button>
   <button class="filter-pill" data-category="Networking">Networking</button>
   <button class="filter-pill" data-category="Infrastructure">Infrastructure</button>
   <button class="filter-pill" data-category="Hardware">Hardware</button>

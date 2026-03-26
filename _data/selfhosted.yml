@@ -3,7 +3,7 @@
   title: Beszel
   subtitle: Lightweight Server Monitoring Dashboard
   image: self-hosted/beszel.webp
-  description: Server monitoring software.
+  description: Lightweight server monitoring with a clean dashboard for tracking CPU, memory, disk, and network across multiple hosts. My go-to for a quick health overview.
   github: https://github.com/henrygd/beszel
   official: https://beszel.dev
 
@@ -20,7 +20,7 @@
   title: Forgejo
   subtitle: Self-Hosted Git Service
   image: self-hosted/forgejo.webp
-  description: GitHub Alternative
+  description: Self-hosted Git service that mirrors the GitHub interface. I use it to keep private repos off the cloud and as a local mirror for projects I'm actively developing.
   official: https://codeberg.org/forgejo
 
 - id: grafana
@@ -53,7 +53,7 @@
   title: Proxmox Virtual Environment
   subtitle: Enterprise Virtualization Platform
   image: self-hosted/proxmox.webp
-  description: Open-source server virtualization management.
+  description: The backbone of my homelab. I run two Proxmox nodes hosting VMs and LXC containers for everything from Docker stacks to isolated cyber lab environments. If I had to keep only one service, it would be Proxmox.
   github: https://github.com/proxmox
   official: https://www.proxmox.com
 
@@ -182,7 +182,7 @@
   title: Graylog
   subtitle: Log Management Platform
   image: self-hosted/graylog.webp
-  description: Centralized log management and analysis.
+  description: Centralized SIEM and log management platform. I've configured custom extractors for OPNsense firewall logs, syslog from network devices, and Windows event forwarding. Also deployed at work as our first syslog server.
   github: https://github.com/Graylog2/graylog2-server
   official: https://graylog.org
 
@@ -285,7 +285,7 @@
   title: OPNsense
   subtitle: Open Source Firewall
   image: self-hosted/opnsense.webp
-  description: Enterprise-grade open-source firewall and routing platform.
+  description: My network gateway and security perimeter. Running Suricata IDS/IPS, WireGuard VPN, multi-VLAN routing, and GeoIP blocking. Replaced a consumer router and dramatically improved my visibility into network traffic.
   github: https://github.com/opnsense
   official: https://opnsense.org
 

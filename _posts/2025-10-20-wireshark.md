@@ -4,6 +4,7 @@ title: "Wireshark"
 date: 2025-10-20
 category: Cybersecurity
 author: James Wells
+tags: [Wireshark, Packet Analysis, Networking]
 ---
 
 I began using Wireshark at work a few months ago to help troubleshoot network issues. The first time I used it was to diagnose some DHCP issues. It took me about five minutes to figure out that someone had plugged in another Wi-Fi router thinking it would help with the internet speed in their group home.

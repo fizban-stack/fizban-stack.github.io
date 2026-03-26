@@ -16,8 +16,8 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 
   <!-- Category Navigation and Post Filter -->
   <div class="category-filters mb-4">
-    <button class="filter-pill active" data-filter="recent">Recent Posts</button>
-    <button class="filter-pill" data-filter="all">All Posts</button>
+    <button class="filter-pill active" data-filter="all">All Posts</button>
+    <button class="filter-pill" data-filter="recent">Recent Posts</button>
     {% for category_group in posts_by_category %}
       <button class="filter-pill" data-filter="category" data-category="{{ category_group.name }}">
         {{ category_group.name | default: "Uncategorized" }}
@@ -27,7 +27,7 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 
   {% if site.posts.size > 0 %}
     <div class="row g-4" id="posts-grid">
-      {% for post in site.posts limit:12 %}
+      {% for post in site.posts %}
         <div class="col-md-6 col-lg-4">
           <div class="card project-card h-100 d-flex flex-column" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;">
             <div class="card-body d-flex flex-column" style="padding: 1.5rem;">
@@ -39,6 +39,7 @@ description: Technical blog posts about cybersecurity, home labs, and technology
                   <span class="post-category" style="padding: 0.125rem 0.5rem; background: var(--accent-green-20); border-radius: 4px; color: var(--accent-green);">{{ post.category }}</span>
                 {% endif %}
                 <time datetime="{{ post.date | date_to_xmlschema }}" style="padding: 0.125rem 0.5rem; background: var(--bg-tertiary); border-radius: 4px; color: var(--text-secondary);">{{ post.date | date: "%B %d, %Y" }}</time>
+                <span style="padding: 0.125rem 0.5rem; color: var(--text-muted);">{{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
               </div>
               {% if post.excerpt %}
                 <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; flex-grow: 1;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
@@ -74,7 +75,7 @@ description: Technical blog posts about cybersecurity, home labs, and technology
     const filterParam = urlParams.get('filter');
     const categoryParam = urlParams.get('category');
 
-    let currentFilter = 'recent';
+    let currentFilter = 'all';
     let currentCategory = null;
 
     // Set initial state based on URL parameters
@@ -84,10 +85,10 @@ description: Technical blog posts about cybersecurity, home labs, and technology
       filterPills.forEach(p => p.classList.remove('active'));
       const categoryPill = document.querySelector(`[data-category="${categoryParam}"]`);
       if (categoryPill) categoryPill.classList.add('active');
-    } else if (filterParam === 'all') {
-      currentFilter = 'all';
+    } else if (filterParam === 'recent') {
+      currentFilter = 'recent';
       filterPills.forEach(p => p.classList.remove('active'));
-      document.querySelector('[data-filter="all"]').classList.add('active');
+      document.querySelector('[data-filter="recent"]').classList.add('active');
     }
 
     // All posts data from Jekyll
@@ -99,7 +100,8 @@ description: Technical blog posts about cybersecurity, home labs, and technology
         date: {{ post.date | date: "%B %d, %Y" | jsonify }},
         datetime: {{ post.date | date_to_xmlschema | jsonify }},
         category: {{ post.category | default: "" | jsonify }},
-        excerpt: {{ post.excerpt | strip_html | truncatewords: 30 | jsonify }}
+        excerpt: {{ post.excerpt | strip_html | truncatewords: 30 | jsonify }},
+        readTime: {{ post.content | number_of_words | divided_by: 200 | plus: 1 }}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
@@ -138,6 +140,7 @@ description: Technical blog posts about cybersecurity, home labs, and technology
               <div class="post-meta" style="font-size: 0.8rem; margin-bottom: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
                 ${categoryHtml}
                 <time datetime="${post.datetime}" style="padding: 0.125rem 0.5rem; background: var(--bg-tertiary); border-radius: 4px; color: var(--text-secondary);">${post.date}</time>
+                <span style="padding: 0.125rem 0.5rem; color: var(--text-muted);">${post.readTime} min read</span>
               </div>
               ${excerptHtml}
               <div class="mt-auto">

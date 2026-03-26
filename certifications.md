@@ -101,3 +101,47 @@ description: A comprehensive list of professional certifications held by James W
   </div>
 
 </div>
+
+---
+
+## What's Next
+
+<article>
+<p>My certification journey is ongoing. Here's what I'm currently working toward:</p>
+</article>
+
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 style="color: var(--accent-cyan);">Near-Term</h3>
+        <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 0;">
+          <li>PNPT — TCM Security</li>
+          <li>eJPT — eLearnSecurity</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 style="color: var(--accent-cyan);">Mid-Term</h3>
+        <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 0;">
+          <li>OSCP — OffSec</li>
+          <li>CEH — EC-Council</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 style="color: var(--accent-cyan);">Long-Term</h3>
+        <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 0;">
+          <li>CISSP</li>
+          <li>AWS Security Specialty</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

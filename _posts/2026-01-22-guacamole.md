@@ -4,6 +4,8 @@ title: "Apache Guacamole"
 date: 2026-01-07
 category: Homelab
 author: James Wells
+image: /assets/images/blog/guacamole/active-sessions.webp
+tags: [Guacamole, Remote Access, Homelab]
 ---
 
 ## About Apache Guacamole

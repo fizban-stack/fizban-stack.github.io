@@ -4,6 +4,7 @@ title: "My First Cyber Incident"
 date: 2025-10-19
 category: Cybersecurity
 author: James Wells
+image: /assets/images/blog/first-incident/ransom-desktop.webp
 ---
 
 ## The Alerts

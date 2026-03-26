@@ -4,6 +4,7 @@ title: "Machine Learning Network Traffic Analysis with Nvidia Jetson Orin Nano S
 date: 2026-01-05
 category: Cybersecurity
 author: James Wells
+tags: [Machine Learning, Netflow, Networking, Homelab]
 ---
 
 When I purchased the Nvidia Jetson Orin Nano Super developer kit, I wanted to explore practical machine learning applications for cybersecurity. Instead of running it with a desktop environment, I configured it as a headless server dedicated to analyzing network traffic using NetFlow data and machine learning models. This post documents my journey setting up an ML-powered network threat detection system.

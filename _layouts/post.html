@@ -1,5 +1,6 @@
 ---
 layout: default
+extra_js: /assets/js/post-enhancements.js
 ---
 
 <article class="blog-post">
@@ -19,19 +20,185 @@ layout: default
         <span class="post-author">by {{ page.author }}</span>
       {% endif %}
 
+      {% assign words = content | number_of_words %}
+      {% assign read_time = words | divided_by: 200 | plus: 1 %}
+      <span class="post-read-time"> · {{ read_time }} min read</span>
+
       {% if page.category %}
         <span class="content-category">
-          <a href="{{ '/blog' | relative_url }}">{{ page.category }}</a>
+          <a href="{{ '/blog' | relative_url }}?category={{ page.category }}">{{ page.category }}</a>
         </span>
       {% endif %}
     </div>
+
+    {% if page.tags and page.tags.size > 0 %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+          <a href="{{ '/tags' | relative_url }}#tag-{{ tag | slugify }}" class="tag-pill">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
   </header>
 
-  <div class="page-content">
+  <div id="toc-container" class="toc-container" style="display:none">
+    <strong class="toc-title">Contents</strong>
+    <nav id="toc"></nav>
+  </div>
+
+  <div class="page-content" id="post-content">
     {{ content }}
   </div>
 
+  <div class="related-posts" id="related-posts" style="display:none">
+    <h3>Related Posts</h3>
+    <div class="row g-3" id="related-posts-grid"></div>
+  </div>
+
+  <script>
+    window.POST_DATA = {
+      currentUrl: {{ page.url | relative_url | jsonify }},
+      category: {{ page.category | default: "" | jsonify }},
+      relatedPosts: [
+        {% assign cat_posts = site.categories[page.category] %}
+        {% for p in cat_posts limit:4 %}
+          {% unless p.url == page.url %}
+            { title: {{ p.title | jsonify }}, url: {{ p.url | relative_url | jsonify }}, date: {{ p.date | date: "%B %d, %Y" | jsonify }} }{% unless forloop.last %},{% endunless %}
+          {% endunless %}
+        {% endfor %}
+      ].filter(Boolean).slice(0, 3)
+    };
+  </script>
+
+  <div class="post-comments">
+    <h3>Comments</h3>
+
+    <form id="post-comment-form" class="mb-4" novalidate>
+      <div style="display:none;" aria-hidden="true">
+        <input type="text" id="pc_hp" name="hp_field" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="mb-3">
+        <label for="pc_name" class="form-label" style="color: var(--accent-cyan); font-family: var(--font-mono);">Name</label>
+        <input type="text" id="pc_name" required placeholder="Your name"
+               style="background: rgba(0,0,0,0.5); border: 1px solid rgba(0,217,255,0.3); color: var(--text-primary); border-radius: var(--radius-sm); padding: 0.5rem 0.75rem; width: 100%;">
+      </div>
+      <div class="mb-3">
+        <label for="pc_message" class="form-label" style="color: var(--accent-cyan); font-family: var(--font-mono);">Message</label>
+        <textarea id="pc_message" required rows="4" placeholder="Your message..."
+                  style="background: rgba(0,0,0,0.5); border: 1px solid rgba(0,217,255,0.3); color: var(--text-primary); border-radius: var(--radius-sm); padding: 0.5rem 0.75rem; width: 100%; resize: vertical;"></textarea>
+      </div>
+      <div id="pc-success" style="display:none; background: rgba(0,255,65,0.1); border: 1px solid #00ff41; color: #00ff41; padding: 0.5rem 1rem; border-radius: var(--radius-sm); margin-bottom: 0.75rem; font-family: var(--font-mono);">✓ Comment submitted!</div>
+      <div id="pc-error" style="display:none; background: rgba(255,50,50,0.1); border: 1px solid #ff3232; color: #ff6b6b; padding: 0.5rem 1rem; border-radius: var(--radius-sm); margin-bottom: 0.75rem; font-family: var(--font-mono);">✗ Submission failed. Please try again.</div>
+      <button type="submit" id="pc-submit" class="btn btn-dark">Submit Comment</button>
+    </form>
+
+    <div id="pc-list"><p style="color: var(--text-secondary); font-family: var(--font-mono);">Loading comments...</p></div>
+
+    <script>
+    (function() {
+      var SUPABASE_URL = 'https://haguppcsmhltxopnduqz.supabase.co';
+      var SUPABASE_ANON_KEY = 'sb_publishable_z2TeI9nzRdr8fjBHKH12aQ_kc5xMrT-';
+      var ENDPOINT = SUPABASE_URL + '/rest/v1/comments';
+      var HEADERS = {
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+        'Content-Type': 'application/json'
+      };
+      var SOURCE_PAGE = {{ page.url | relative_url | jsonify }};
+      var fmt = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+
+      function esc(s) {
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+      }
+
+      function cardHtml(c) {
+        return '<div class="card mb-3 comment-card" style="background:rgba(0,0,0,0.4);border-color:rgba(0,217,255,0.2);">' +
+          '<div class="card-body">' +
+          '<div class="d-flex justify-content-between mb-2">' +
+          '<span style="font-family:var(--font-mono);color:var(--accent-green);font-weight:600;">' + esc(c.name) + '</span>' +
+          '<span style="font-size:0.8rem;color:var(--text-secondary);font-family:var(--font-mono);">' + fmt.format(new Date(c.created_at)) + '</span>' +
+          '</div>' +
+          '<p class="mb-0" style="color:var(--text-secondary);">' + esc(c.message) + '</p>' +
+          '</div></div>';
+      }
+
+      function loadComments() {
+        var list = document.getElementById('pc-list');
+        fetch(ENDPOINT + '?select=*&source_page=eq.' + encodeURIComponent(SOURCE_PAGE) + '&order=created_at.desc', { headers: HEADERS })
+          .then(function(r) { return r.ok ? r.json() : Promise.reject(r.status); })
+          .then(function(rows) {
+            list.innerHTML = rows.length ? rows.map(cardHtml).join('') : '<p style="color:var(--text-secondary);font-family:var(--font-mono);">No comments yet. Be the first!</p>';
+          })
+          .catch(function() {
+            list.innerHTML = '<p style="color:#ff6b6b;font-family:var(--font-mono);">Failed to load comments.</p>';
+          });
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        loadComments();
+
+        var form = document.getElementById('post-comment-form');
+        var submitBtn = document.getElementById('pc-submit');
+        var sending = false;
+
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          if (sending) return;
+          var hp = document.getElementById('pc_hp');
+          if (hp && hp.value) return;
+          var name = document.getElementById('pc_name').value.trim();
+          var message = document.getElementById('pc_message').value.trim();
+          if (!name || !message) return;
+
+          document.getElementById('pc-success').style.display = 'none';
+          document.getElementById('pc-error').style.display = 'none';
+          sending = true;
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Submitting...';
+
+          fetch(ENDPOINT, {
+            method: 'POST',
+            headers: Object.assign({}, HEADERS, { 'Prefer': 'return=minimal' }),
+            body: JSON.stringify({ name: name, message: message, source_page: SOURCE_PAGE })
+          })
+          .then(function(r) { if (!r.ok) throw r.status; })
+          .then(function() {
+            form.reset();
+            document.getElementById('pc-success').style.display = 'block';
+            var list = document.getElementById('pc-list');
+            var wrapper = document.createElement('div');
+            wrapper.innerHTML = cardHtml({ name: name, message: message, created_at: new Date().toISOString() });
+            if (list.querySelector('p')) list.innerHTML = '';
+            list.insertBefore(wrapper.firstElementChild, list.firstChild);
+          })
+          .catch(function() {
+            document.getElementById('pc-error').style.display = 'block';
+          })
+          .finally(function() {
+            sending = false;
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit Comment';
+          });
+        });
+      });
+    })();
+    </script>
+  </div>
+
   <footer class="content-footer">
-    <a href="{{ '/blog' | relative_url }}" class="back-nav-link">← Back to Blog</a>
+    <div class="post-nav">
+      <div class="post-nav-prev">
+        {% if page.previous %}
+          <a href="{{ page.previous.url | relative_url }}" class="back-nav-link">← {{ page.previous.title | truncatewords: 6 }}</a>
+        {% endif %}
+      </div>
+      <div class="post-nav-center">
+        <a href="{{ '/blog' | relative_url }}" class="back-nav-link">↑ All Posts</a>
+      </div>
+      <div class="post-nav-next">
+        {% if page.next %}
+          <a href="{{ page.next.url | relative_url }}" class="back-nav-link">{{ page.next.title | truncatewords: 6 }} →</a>
+        {% endif %}
+      </div>
+    </div>
   </footer>
 </article>
