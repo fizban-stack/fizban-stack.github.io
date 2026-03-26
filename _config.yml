@@ -44,6 +44,8 @@ exclude:
   - Jenkinsfile
   - _1-posts-in-progress/
   - glance
+  - MEMORY/
+  - Plans/
 
 # Include files
 include:
