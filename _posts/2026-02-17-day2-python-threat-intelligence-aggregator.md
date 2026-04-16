@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Day 2 - Threat Intelligence Aggregation Plat
 date: 2026-02-17
 category: Python Security
 author: James Wells
+excerpt: "Day 2: Automated threat intelligence aggregation from VirusTotal, AlienVault OTX, and MISP with Python."
+tags: [Python, Threat Intelligence, MISP, Python Security Series]
 ---
-
 ## Project Overview
 
 Modern cyber threats evolve at unprecedented speed. Security teams need automated systems to collect, normalize, and distribute Indicators of Compromise (IOCs) from multiple threat intelligence sources. This project demonstrates building a production-ready threat intelligence aggregator that pulls data from VirusTotal, AlienVault OTX, and MISP, normalizes the data, and exports to SIEM platforms like Elasticsearch.

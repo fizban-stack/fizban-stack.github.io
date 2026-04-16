@@ -5,7 +5,7 @@
 title: James Wells
 tagline: Cybersecurity Professional & Ethical Hacker
 description: >-
-  Personal portfolio of James Wells, an aspiring cybersecurity practitioner
+  Personal portfolio of James Wells, IT Security Professional
   and home lab enthusiast. Explore projects, certifications, and my professional journey.
 baseurl: ""
 url: "https://fizban-stack.github.io"
@@ -13,7 +13,7 @@ url: "https://fizban-stack.github.io"
 # Author information
 author:
   name: James Wells
-  email: contact@wellslabs.org
+  email: james@wellslabs.org
   bio: Information Technology Security Professional at RBR Alliance
 
 # Open Graph / Social sharing image (shows when links are shared)
@@ -22,7 +22,7 @@ logo: /assets/images/icons/favicon.webp
 # Social links
 social:
   github: fizban-stack
-  linkedin: # Add your LinkedIn if desired
+  linkedin: james-wells-122170164
 
 # Build settings
 markdown: kramdown

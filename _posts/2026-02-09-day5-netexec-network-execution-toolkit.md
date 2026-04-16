@@ -4,8 +4,9 @@ title: "10 Days of AD Security: Day 5 - NetExec"
 date: 2026-02-09
 category: Active Directory Security
 author: James Wells
+excerpt: "Day 5: NetExec (CrackMapExec successor) for network-wide credential validation, enumeration, and lateral movement."
+tags: [NetExec, CrackMapExec, Active Directory, Red Team, AD Security Series]
 ---
-
 ## History and Overview
 
 NetExec (NXC) is the official successor to the legendary CrackMapExec (CME), which was archived in December 2023 after years of being the go-to tool for post-exploitation in Active Directory environments. When CrackMapExec's original maintainer byt3bl33d3r stepped back, the community fork led by Pennyw0rth evolved into NetExec, bringing modernization, active development, and expanded protocol support. NetExec is a network execution toolkit that excels at automated password spraying, credential validation, SMB enumeration, and lateral movement across large Windows networks. The tool supports multiple protocols including SMB, SSH, LDAP, WinRM, RDP, MSSQL, NFS, and FTP, making it incredibly versatile. What sets NetExec apart is its modular architecture with over 100 community-contributed modules for specific tasks like BloodHound data collection, credential dumping, and certificate abuse. NetExec can operate at scale, testing credentials across hundreds of systems simultaneously, automatically identifying where privileges are elevated, and even marking compromised systems in BloodHound graphs. With 5.4k GitHub stars and inclusion in Kali Linux as of 2025, NetExec has firmly established itself as the spiritual successor to CrackMapExec.

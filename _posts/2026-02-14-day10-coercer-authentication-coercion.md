@@ -4,8 +4,9 @@ title: "10 Days of AD Security: Day 10 - Coercer"
 date: 2026-02-14
 category: Active Directory Security
 author: James Wells
+excerpt: "Day 10: Coercer for automated NTLM authentication coercion across 20+ Windows RPC protocols."
+tags: [Coercer, NTLM Relay, Active Directory, Red Team, AD Security Series]
 ---
-
 ## History and Overview
 
 Coercer is an automated authentication coercion tool created by Podalirius (@podalirius_) and released in 2022. The tool emerged from research into Windows protocols that can be abused to force remote systems to authenticate back to an attacker-controlled server, enabling NTLM relay attacks. While tools like PetitPotam (MS-EFSRPC abuse) and PrinterBug (MS-RPRN abuse) demonstrated individual coercion techniques, Coercer unified these attacks into a single framework supporting over 20 different Windows RPC protocols. The tool works by calling specific RPC functions on target systems that trigger outbound authentication attempts, which can then be relayed to other systems for privilege escalation or authentication. Coercer automates the discovery of which protocols are available on target systems and which specific RPC calls are most likely to succeed, significantly reducing the manual effort required for coercion attacks. With 2.2k GitHub stars and moderate activity through October 2023, Coercer represents the systematization of coercion attacks, making them accessible to penetration testers who may not understand the low-level RPC protocol details. The tool supports both SMB and HTTP authentication coercion, targeting different relay opportunities depending on the environment configuration.

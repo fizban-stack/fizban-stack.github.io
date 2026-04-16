@@ -5,8 +5,8 @@ date: 2025-10-21
 category: Homelab
 author: James Wells
 tags: [Proxmox, Virtualization, Homelab]
+excerpt: "My experience with Proxmox VE — from VirtualBox migration to CEPH clusters and back to a simpler multi-node setup."
 ---
-
 Proxmox Virtual Environment (VE) is an open-source server management platform designed for enterprise virtualization. Based on Debian GNU/Linux, it allows you to easily manage virtual machines (VMs) and containers from a single, centralized web-based interface. It integrates two powerful virtualization technologies: KVM (Kernel-based Virtual Machine) for managing heavyweight, full-hardware virtual machines, and LXC (Linux Containers) for lightweight, operating-system-level virtualization.
 
 This combination makes Proxmox incredibly flexible, suitable for both large-scale enterprise deployments and small home labs. Key features include the ability to cluster multiple Proxmox servers together, enabling high availability (HA) for critical workloads and live migration of running VMs between physical hosts without downtime. It also has robust, built-in support for various storage solutions, including local storage like ZFS and networked or distributed storage like Ceph, making it a comprehensive and cost-effective solution.

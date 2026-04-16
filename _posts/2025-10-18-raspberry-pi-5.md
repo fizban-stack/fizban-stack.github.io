@@ -4,8 +4,9 @@ title: "Raspberry Pi 5"
 date: 2025-10-18
 category: Homelab
 author: James Wells
+excerpt: "Setting up a Raspberry Pi 5 with PoE, NVMe SSD, Tailscale, and portable tools for on-the-go homelab access."
+tags: [Raspberry Pi, Homelab, Hardware, Tailscale]
 ---
-
 ## Initial Configuration
 
 This is a Raspberry Pi 5 that I setup to have access to tools no matter which network I attach it to. The Raspberry Pi is the 8GB model and I used a PoE hat that included the SSD slot.

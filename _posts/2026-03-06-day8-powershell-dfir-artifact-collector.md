@@ -4,8 +4,9 @@ title: "Day 8: DFIR Artifact Collector - Rapid Incident Response Forensics"
 date: 2026-03-06
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 8: DFIR artifact collector for rapid incident response — memory dumps, event logs, persistence mechanisms, and timeline generation."
+tags: [PowerShell, DFIR, Incident Response, Forensics, PowerShell Security Series]
 ---
-
 ## Overview
 
 When a security incident occurs, the first 30 minutes determine investigation success. This DFIR (Digital Forensics and Incident Response) artifact collector rapidly gathers critical forensic evidence from compromised Windows systems before attackers can cover their tracks. Designed for speed and completeness, it collects memory dumps, event logs, network connections, persistence mechanisms, and malware artifacts—packaged for analysis.

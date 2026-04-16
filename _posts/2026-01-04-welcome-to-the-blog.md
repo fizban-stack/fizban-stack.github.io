@@ -4,8 +4,9 @@ title: "Welcome to the Blog"
 date: 2026-01-04
 category: General
 author: James Wells
+excerpt: "Welcome post for the blog — what to expect covering cybersecurity, homelab projects, and technology."
+tags: [General, Blog]
 ---
-
 Welcome to my technical blog! This is where I'll be sharing my experiences, insights, and tutorials related to cybersecurity, home labs, and technology.
 
 ## What to Expect

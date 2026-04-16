@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: The personal portfolio of James Wells, an aspiring cybersecurity practitioner and home lab enthusiast.
+description: The personal portfolio of James Wells, IT Security Professional and home lab enthusiast.
 ---
 
 <div class="container home_2col">
@@ -12,7 +12,7 @@ description: The personal portfolio of James Wells, an aspiring cybersecurity pr
     <div class="col-md-6">
       <h1>James Wells</h1>
       <p class="hero-tagline">IT Security Professional &nbsp;·&nbsp; Homelab Enthusiast &nbsp;·&nbsp; Lifelong Learner</p>
-      <p class="hero-bio">I build and break things in my homelab, earn certifications, and document the journey. My goal is to grow as a cybersecurity practitioner and help build a stronger security community.</p>
+      <p class="hero-bio">I build and break things in my homelab, earn certifications, and document the journey. I work as an IT Security Professional and am focused on building a stronger security community.</p>
       <div class="hero-ctas">
         <a href="{{ '/projects' | relative_url }}" class="btn btn-dark">View Projects →</a>
         <a href="{{ '/blog' | relative_url }}" class="btn btn-outline-secondary ms-2">Read the Blog →</a>

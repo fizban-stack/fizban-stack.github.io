@@ -4,8 +4,9 @@ title: "Home Lab Redesign pt. 1 Hardware"
 date: 2025-08-14
 category: Homelab
 author: James Wells
+excerpt: "Mapping out the hardware for a homelab redesign — Sophos firewall, managed switches, Synology NAS, and multiple mini PCs."
+tags: [Homelab, Hardware, Network Design]
 ---
-
 The first part of my home lab that I am going to map out is the hardware. I think that having a pre-defined plan for the hardware will help prevent me from sprawling apps across various machines. Most of my hardware was bought second hand off of eBay and most of it is consumer equipment. My home lab will feature the following hardware:
 
 - APC UPS

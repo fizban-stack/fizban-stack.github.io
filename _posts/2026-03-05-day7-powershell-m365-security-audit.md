@@ -4,8 +4,9 @@ title: "Day 7: M365 Security Audit Automation - Cloud Security Posture"
 date: 2026-03-05
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 7: Microsoft 365 security audit automation — Azure AD, Exchange Online, SharePoint, and Teams hardening."
+tags: [PowerShell, Microsoft 365, Azure AD, Cloud Security, PowerShell Security Series]
 ---
-
 ## Overview
 
 Microsoft 365 environments are prime targets for attackers: weak MFA enforcement, overprivileged OAuth apps, misconfigured SharePoint, and dormant admin accounts create security gaps. This automated audit framework assesses M365 security posture across Azure AD, Exchange Online, SharePoint, Teams, and more—generating actionable reports for hardening your cloud infrastructure.

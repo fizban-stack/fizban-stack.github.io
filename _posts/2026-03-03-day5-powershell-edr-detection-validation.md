@@ -4,8 +4,9 @@ title: "Day 5: EDR Detection Validation Framework - Purple Team Automation"
 date: 2026-03-03
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 5: Purple team EDR validation framework — simulating MITRE ATT&CK techniques and measuring detection rates."
+tags: [PowerShell, EDR, Purple Team, MITRE ATT&CK, PowerShell Security Series]
 ---
-
 ## Overview
 
 Endpoint Detection and Response (EDR) solutions like Microsoft Defender for Endpoint, CrowdStrike Falcon, and SentinelOne promise comprehensive threat detection. But do they actually catch attacks in **your** environment with **your** configurations? This purple team automation framework validates EDR effectiveness by safely simulating MITRE ATT&CK techniques and measuring detection rates.

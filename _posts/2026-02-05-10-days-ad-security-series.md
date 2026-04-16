@@ -4,8 +4,9 @@ title: "10 Days of Active Directory Security: Complete Series"
 date: 2026-02-05
 category: Active Directory Security
 author: James Wells
+excerpt: "Series overview for the 10 Days of Active Directory Security — ten essential offensive tools from BloodHound to Coercer."
+tags: [Active Directory, Red Team, Series Overview]
 ---
-
 ## Series Overview
 
 This 10-part series provides comprehensive coverage of the essential tools and techniques used in Active Directory penetration testing and security assessments. Each post explores a critical tool in the offensive security toolkit, covering its history, installation, practical usage, and real-world application in lab environments like Game of Active Directory (GOAD).

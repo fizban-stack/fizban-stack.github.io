@@ -1,4 +1,4 @@
-# Jekyll
+# Jekyll build output
 _site/
 .sass-cache/
 .jekyll-cache/
@@ -8,6 +8,10 @@ _site/
 *.gem
 .bundle/
 vendor/
+Gemfile.lock
+
+# Node
+node_modules/
 
 # Logs
 *.log
@@ -15,6 +19,7 @@ vendor/
 # OS Files
 .DS_Store
 Thumbs.db
+ehthumbs.db
 
 # Editor files
 .vscode/
@@ -23,5 +28,13 @@ Thumbs.db
 *.swo
 *~
 
-# Claude
-.claude
+# Claude / PAI artifacts
+.claude/
+MEMORY/
+Plans/
+
+# Drafts (not ready for publication)
+_1-posts-in-progress/
+
+# Local scripts
+deploy.sh

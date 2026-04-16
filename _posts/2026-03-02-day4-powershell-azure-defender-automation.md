@@ -4,8 +4,9 @@ title: "Day 4: Azure Defender Automation Suite - Multi-Cloud Security Orchestrat
 date: 2026-03-02
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 4: Azure Defender automation suite for multi-cloud security posture, compliance monitoring, and alert orchestration."
+tags: [PowerShell, Azure, Cloud Security, PowerShell Security Series]
 ---
-
 ## Overview
 
 Microsoft Defender for Cloud (formerly Azure Security Center/Azure Defender) provides unified security management across Azure, AWS, and on-premises environments. This automation suite orchestrates security posture assessments, compliance monitoring, vulnerability remediation, and alert response across multi-cloud deployments.

@@ -4,8 +4,9 @@ title: "Home Lab Redesign pt. 2"
 date: 2025-08-16
 category: Homelab
 author: James Wells
+excerpt: "Network layout, IP address management tools, and the journey from sticky notes to phpIPAM to Netbox."
+tags: [Homelab, Networking, IPAM, Documentation]
 ---
-
 In the last post, I discussed the hardware that I am using. In this post, I will dive into the network layout, but first I want to discuss the various ways to keep track of network information. Once you get your network setup, it will be hard to keep track of what service is at which IP address. A reverse proxy helps to solve some of these issues, but then if the proxy goes down you are stuck trying to find the IP address again.
 
 The first option that I used was just a pen and a piece of paper, it was actually a sticky note. I began to write the network address on the top and then the host addresses by the service name. This worked okay at first, but if I had any changes my sticky note would be covered in scribbles or I would have to start a new note and copy everything over to it. It didn't take me long to realize that this was not a good method. I then started a note in Trillium Notes that allowed me to make modifications without starting over.

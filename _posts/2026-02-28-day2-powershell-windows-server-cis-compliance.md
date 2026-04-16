@@ -4,8 +4,9 @@ title: "10 Days of PowerShell Security: Day 2 - Windows Server 2025 CIS Baseline
 date: 2026-02-28
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 2: Automated CIS Benchmark compliance enforcer for Windows Server 2025 with DSC and registry auditing."
+tags: [PowerShell, CIS Benchmarks, Compliance, PowerShell Security Series]
 ---
-
 ## Project Overview
 
 CIS (Center for Internet Security) Benchmarks provide industry-standard security configuration baselines for Windows Server. Manual compliance checking is error-prone and time-consuming. This project builds an automated CIS Benchmark compliance enforcer that audits Windows Server 2025 configurations, detects drift from security baselines, and remediates violations with rollback capabilities.

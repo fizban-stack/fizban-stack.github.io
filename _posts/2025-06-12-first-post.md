@@ -4,8 +4,9 @@ title: "1st Post"
 date: 2025-06-12
 category: Personal Growth
 author: James Wells
+excerpt: "My first blog post — on stepping out of my comfort zone as a father of three pursuing cybersecurity."
+tags: [Personal Growth, Career]
 ---
-
 This is my first blog post and honestly I don't know how I feel about it. I am a more reserved person and have some social anxiety. I have a hard time being comfortable around anyone, but I need to put myself out into the world. I need to start living instead of just waking up, going through the motion, and going to sleep. I also need to show my children that there is a large world out there and if they are determined enough, they can do anything they want.
 
 I am a father of three children ages 11, 14, and 17. I am in my mid-30's and woke up one day to realize that my life was slipping by. I love my children and am proud of them, but I don't want them to be my only accomplishments. I spent most of my adult life working in construction or operating a CNC machine in a small factory. I dropped out of college to work full-time when my girlfriend was pregnant with our first child and I did work full-time. I would say that on average over 15 years, I worked over 50 hours/week. I think the constant work might have been what kept me from thinking about my dreams so much. It wasn't really until I was talking with my oldest daughter about college that I realized, I had my own aspirations. They had been quietly sitting back there all of this time, just waiting for me to get the "time" to pursue them.

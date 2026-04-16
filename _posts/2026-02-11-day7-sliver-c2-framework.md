@@ -4,8 +4,9 @@ title: "10 Days of AD Security: Day 7 - Sliver"
 date: 2026-02-11
 category: Active Directory Security
 author: James Wells
+excerpt: "Day 7: Sliver C2 framework by BishopFox — cross-platform implants, mTLS/DNS/HTTP beacons, and BOF execution."
+tags: [Sliver, C2, Red Team, AD Security Series]
 ---
-
 ## History and Overview
 
 Sliver is an open-source command and control (C2) framework developed and maintained by BishopFox, one of the leading offensive security firms. Released in 2019, Sliver was created to provide red teams and penetration testers with a modern, capable alternative to commercial C2 platforms like Cobalt Strike. Written in Go, Sliver supports cross-platform operations across Windows, Linux, and macOS, with implants that can communicate over mutual TLS (mTLS), HTTP(S), DNS, and WireGuard. What distinguishes Sliver from other C2 frameworks is its focus on operational security (OPSEC), featuring strong encryption by default, minimal forensic footprints, and in-memory execution capabilities. By Q2 2025, Kaspersky reported Sliver as the most-used C2 framework in actual attacks, surpassing even Cobalt Strike—a testament to its effectiveness and the impact of Fortra's Operation Morpheus which reduced unauthorized Cobalt Strike copies by 80%. With 10.9k GitHub stars and active development, Sliver includes advanced features like process injection, DPAPI credential extraction, Kerberoasting, token manipulation, and BOF (Beacon Object File) execution compatibility. Its multi-user server architecture allows red team collaboration, and the framework's modular design enables custom extensions through armory packages.

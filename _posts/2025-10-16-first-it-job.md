@@ -4,8 +4,9 @@ title: "First IT Job"
 date: 2025-10-16
 category: Personal Growth
 author: James Wells
+excerpt: "Landing my first IT role at RBR Alliance — managing M365 tenants, Active Directory, and learning on the job."
+tags: [Career, Active Directory, Microsoft 365]
 ---
-
 After close to a year of applying for IT jobs with no success, I finally landed a role at a local non-profit, RBR Alliance. I was hired on in April 2024 as an IT assistant. My duties were basically to handle any tasks that my boss tasked me with.
 
 RBR Alliance is a non-profit that performs administration duties for three other non-profits, Blue River Services, Rauch Incorporated, and First Chance Center. Between all four companies there are close to 1000 employees and a total of three IT roles. When I was hired, only the IT director role was filled.

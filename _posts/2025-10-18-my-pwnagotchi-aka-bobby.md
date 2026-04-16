@@ -5,8 +5,8 @@ date: 2025-10-18
 category: Cybersecurity
 author: James Wells
 tags: [Pwnagotchi, WiFi, Hardware Hacking]
+excerpt: "Building a Pwnagotchi on a Raspberry Pi Zero W — AI-powered Wi-Fi handshake capture, community plugins, and why Bobby can never go outside."
 ---
-
 I recently set up a Pwnagotchi, an AI-powered Wi-Fi security research tool that runs on a Raspberry Pi Zero W. Built by Simone Margaritelli (evilsocket), Pwnagotchi uses deep reinforcement learning to learn from its Wi-Fi environment and autonomously capture WPA handshakes from nearby networks. Think of it as a Tamagotchi, but instead of feeding it, you're training an AI to become better at WiFi reconnaissance. The project displays adorable ASCII faces that change based on its mood and success rate, making security research surprisingly endearing.
 
 My configuration leverages several community plugins from repositories by jayofelony, Sniffleupagus, and others. I've enabled the grid plugin for sharing statistics with the Pwnagotchi community, along with auto-tune to optimize the AI's learning parameters automatically. The session-stats plugin tracks my device's performance over time, helping me see how well my Pwnagotchi is learning. I'm running it with the web interface enabled for remote management, which makes it easy to check in on its progress and download captured handshakes.

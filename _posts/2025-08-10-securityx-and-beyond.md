@@ -4,8 +4,9 @@ title: "SecurityX and Beyond"
 date: 2025-08-10
 category: Personal Growth
 author: James Wells
+excerpt: "Passing the CompTIA SecurityX (formerly CASP+) and figuring out what comes next after earning every CompTIA cybersecurity cert."
+tags: [Certifications, CompTIA, Career]
 ---
-
 After my last post, I thought to myself why not go ahead and take the SecurityX exam. I had a retest in case I failed, but I ended up not needing it. I wanted to attempt the exam and get some idea of what the questions looked like. I think that the momentum that is built by taking the lower level exams only makes the higher level exam easier.
 
 I wasn't sure what to expect from the rebranded CASP+ exam, but it did not fail to disappoint. Each question provided a scenario that guided you towards the answer. There were questions that had several correct answer, but there was only one that fit the given scenario. This exam also included the use of a virtual machine to test the hands-on ability of the test taker.

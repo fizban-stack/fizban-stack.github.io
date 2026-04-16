@@ -4,8 +4,9 @@ title: "Day 10: Automated Security Hardening Playbook - Zero to Secure in 30 Min
 date: 2026-03-08
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 10: Automated Windows security hardening — CIS Benchmarks, DISA STIGs, and NIST 800-53 controls in 30 minutes."
+tags: [PowerShell, Hardening, CIS Benchmarks, Compliance, PowerShell Security Series]
 ---
-
 ## Overview
 
 A freshly installed Windows server is vulnerable by default: SMBv1 enabled, weak password policies, no audit logging, disabled firewall, and countless attack vectors. This automated security hardening playbook transforms an insecure system into a defensible one in under 30 minutes—implementing CIS Benchmarks, DISA STIGs, and NIST 800-53 controls via PowerShell DSC and group policy.

@@ -6,8 +6,8 @@ category: Cybersecurity
 author: James Wells
 image: /assets/images/blog/bloodhound/domainAdmin.webp
 tags: [BloodHound, Active Directory, Red Team, DFIR]
+excerpt: "Hands-on with BloodHound CE on the Game of Active Directory (GOAD) — finding attack paths, ACL abuse, and planning domain compromise."
 ---
-
 I had heard about bloodhound and watched a couple of videos with it being used, but I had never taken the time to slow down and dig around in it.  I thought that it was cool, but also thought I could find that information out quicker from the command-line. Then I was watching some videos from the Certified Red Team Operator course and saw how powerful Bloodhound is. You might be able to find that information quicker someplace else, but Bloodhound makes planning an attack path, the most important part, so much easier.  You can view what has permissions over an object, what the object has permissions over, and what kind of permissions they are.  It has a planning section that makes it easy to craft an attack plan from the bottom to the top, ever move can be planned out.  
 
 ## Using Bloodhound

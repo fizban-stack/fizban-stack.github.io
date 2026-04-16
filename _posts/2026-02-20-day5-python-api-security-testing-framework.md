@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Day 5 - API Security Testing Framework (OWAS
 date: 2026-02-20
 category: Python Security
 author: James Wells
+excerpt: "Day 5: API security testing framework targeting the OWASP API Top 10 with Python fuzzing and automated reporting."
+tags: [Python, API Security, OWASP, Python Security Series]
 ---
-
 ## Project Overview
 
 APIs are the backbone of modern applications, and they're also a primary attack vector. The OWASP API Security Top 10 identifies the most critical API vulnerabilities. This project builds an automated security testing framework that probes REST APIs for broken authentication, excessive data exposure, injection flaws, and other API-specific vulnerabilities.

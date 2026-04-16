@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Day 6 - SOC Alert Triage Automation with ML"
 date: 2026-02-21
 category: Python Security
 author: James Wells
+excerpt: "Day 6: SOC alert triage automation with ML classification, MITRE ATT&CK mapping, and false positive reduction."
+tags: [Python, SOC, Machine Learning, MITRE ATT&CK, Python Security Series]
 ---
-
 ## Project Overview
 
 Security Operations Centers (SOCs) are drowning in alerts. The average SOC analyst investigates 200+ alerts daily, with 75% being false positives. This project builds an intelligent alert triage system using machine learning to automatically classify, prioritize, and enrich security alerts, reducing analyst workload by 60%.

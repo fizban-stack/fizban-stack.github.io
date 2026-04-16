@@ -4,8 +4,9 @@ title: "10 Days of PowerShell Security: Day 3 - Real-Time Threat Hunting Event C
 date: 2026-03-01
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 3: Real-time threat hunting event collector with MITRE ATT&CK mappings for credential dumping and lateral movement."
+tags: [PowerShell, Threat Hunting, MITRE ATT&CK, Sysmon, PowerShell Security Series]
 ---
-
 ## Project Overview
 
 Threat hunting requires visibility into Windows Security Events, Sysmon telemetry, and PowerShell script block logging. Manual event log analysis is slow and misses real-time threats. This project builds a real-time event collector that monitors critical security events, correlates suspicious activity, and generates threat intelligence reports with MITRE ATT&CK mappings.

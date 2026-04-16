@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Complete Series"
 date: 2026-02-15
 category: Python Security
 author: James Wells
+excerpt: "Series overview for 10 Days of Python Security — production-ready tools from AI-powered SIEM to memory forensics."
+tags: [Python, Security Automation, Series Overview]
 ---
-
 ## Series Overview
 
 This 10-part series provides production-ready Python security tools covering the entire spectrum of cybersecurity operations: from threat detection and incident response to vulnerability scanning and security monitoring. Each post includes complete working code, practical examples, and home lab integration guidance.

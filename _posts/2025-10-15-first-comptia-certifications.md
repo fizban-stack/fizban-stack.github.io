@@ -4,8 +4,9 @@ title: "First CompTIA Certifications"
 date: 2025-10-15
 category: Personal Growth
 author: James Wells
+excerpt: "Passing the CompTIA Network+ and Security+ back to back and doubling down on building a cyber lab."
+tags: [Certifications, CompTIA, Career]
 ---
-
 In June, I used my student email address to get a discount on the Network+ certification. I gave myself one month to study and prepare for the exam, but when it came time for my to take it, I was not overly confident. I had read the study guides a few time by this point and set up my own practice network at home.
 
 The first week of July, I took the Network+ test and passed it. I was so excited that I purchased the Security+ voucher and scheduled the exam for 10 days later. I wanted to build upon my success and was feeling confident. I took and passed the exam. At this point, I knew this was the career path that I wanted to take.

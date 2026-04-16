@@ -4,8 +4,9 @@ title: "10 Days of AD Security: Day 2 - Impacket"
 date: 2026-02-06
 category: Active Directory Security
 author: James Wells
+excerpt: "Day 2: Impacket's Python toolkit for AD protocol exploitation — secretsdump, GetUserSPNs, ntlmrelayx, and more."
+tags: [Impacket, Active Directory, Python, Red Team, AD Security Series]
 ---
-
 ## History and Overview
 
 Impacket is a collection of Python classes that provide low-level programmatic access to network protocols, particularly those used in Windows environments. Created by Core Security Technologies (now Fortra) and maintained since 2015, Impacket has become the foundational toolkit for AD penetration testing from Linux platforms. The library implements dozens of protocols including SMB, MSRPC, NTLM, Kerberos, WMI, and LDAP, allowing security researchers to interact with Windows networks without needing Windows-based tools. What makes Impacket particularly powerful is its collection of example scripts that demonstrate practical attacks: secretsdump.py for credential extraction, GetUserSPNs.py for Kerberoasting, ntlmrelayx.py for relay attacks, and psexec.py for remote code execution. The October 2025 release added support for Windows Server 2025 and included new scripts like badsuccessor.py for delegated Managed Service Account exploitation, demonstrating Impacket's continued evolution.

@@ -5,8 +5,8 @@ date: 2025-10-20
 category: Cybersecurity
 author: James Wells
 tags: [Wireshark, Packet Analysis, Networking]
+excerpt: "Investigating mysterious WPAD traffic with Wireshark and learning about Windows Web Proxy Auto-Discovery on my home network."
 ---
-
 I began using Wireshark at work a few months ago to help troubleshoot network issues. The first time I used it was to diagnose some DHCP issues. It took me about five minutes to figure out that someone had plugged in another Wi-Fi router thinking it would help with the internet speed in their group home.
 
 Since then I have been playing around with it at home trying to learn all I can about the invisible part of networking. The first time I started it up at home, I thought something was terribly wrong. I have a Pangolin instance on a VPS and use it to route traffic to some internal services. It has a wildcard domain DNS entry so that I can spin up and down different service without making DNS changes. Once I stop experimenting with different self-hosted service, I am going to manually enter each host, but it is nice not to have to create and delete entries several times just to try a container or service out.

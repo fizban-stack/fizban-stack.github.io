@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Day 4 - Container Security Scanner with Triv
 date: 2026-02-19
 category: Python Security
 author: James Wells
+excerpt: "Day 4: Container security scanning with Python and Trivy — detecting vulnerabilities, secrets, and misconfigurations in Docker images."
+tags: [Python, Docker, Container Security, Trivy, Python Security Series]
 ---
-
 ## Project Overview
 
 Container vulnerabilities are a leading cause of production breaches in 2026. With 85% of organizations running containerized workloads, automated image scanning is no longer optional. This project builds a container security scanner that integrates Aqua Security's Trivy to detect vulnerabilities, secrets, and misconfigurations in Docker images.

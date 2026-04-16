@@ -4,8 +4,9 @@ title: "TCM Security PWPA"
 date: 2025-08-25
 category: Personal Growth
 author: James Wells
+excerpt: "Taking the TCM Security PWPA exam after bombing the HTB CBBH — lessons on methodology, Burp Suite workflow, and bouncing back."
+tags: [Certifications, Web App Security, Pentesting]
 ---
-
 I bought a voucher for the PWPA a couple of months ago and have been practicing on their docker lab for a while now. Last weekend, I decided that I would go ahead and give the test a try. I had a retest so failing the first attempt would not be the worst thing. It would at least give me some practice and insight. This is the same approach that I took with the CompTIA exams and it worked for me then.
 
 Before I started the test, I was nervous. Last December, I took the Hack the Box CBBH and completely bombed it. I got three out of six goals completed and was taking shots in the dark for most of the time. I even took off work to give myself more time with the exam. I spent over 10 hours a day for seven days, just throwing anything I could think of at it. I didn't even attempt to write the report. I hindsight, I should have so that I could get some feedback. I took the test a two weeks before Christmas and some how when the email saying that I failed came in I missed it. With the Hack the Box exam, you only have two weeks after the failure notification to start the exam again. I feel like I checked my email ten times a day until after the new year and still did not see the notification. So going into the PWPA, I was not overly confident.

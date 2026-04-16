@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Day 8 - Phishing Simulation Platform"
 date: 2026-02-23
 category: Python Security
 author: James Wells
+excerpt: "Day 8: Ethical phishing simulation platform with Flask, email delivery, landing pages, and click tracking."
+tags: [Python, Phishing, Social Engineering, Python Security Series]
 ---
-
 ## Project Overview
 
 Phishing remains the #1 initial access vector in cyber attacks. Security awareness training is ineffective without realistic testing. This project builds a phishing simulation platform that sends crafted emails, hosts convincing landing pages, tracks user interactions, and generates detailed reports on organizational susceptibility.

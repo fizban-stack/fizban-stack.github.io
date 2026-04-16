@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Day 7 - Security Metrics Dashboard with Prom
 date: 2026-02-22
 category: Python Security
 author: James Wells
+excerpt: "Day 7: Security metrics dashboard with Python Prometheus exporters and Grafana visualization."
+tags: [Python, Prometheus, Grafana, Monitoring, Python Security Series]
 ---
-
 ## Project Overview
 
 Security metrics provide visibility into your infrastructure's threat landscape. This project builds a custom security metrics exporter for Prometheus that collects and exposes security-relevant data: failed authentication attempts, firewall blocks, vulnerability counts, certificate expiration, and anomaly detection scores.

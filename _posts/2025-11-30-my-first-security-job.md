@@ -4,8 +4,9 @@ title: "My First Security Job"
 date: 2025-11-30
 category: Personal Growth
 author: James Wells
+excerpt: "Transitioning from IT assistant to IT Security Professional — deploying Meraki firewalls, M365 conditional access, and Graylog."
+tags: [Career, Firewall, Microsoft 365, Graylog]
 ---
-
 ## Firewall
 After a recent cyber incident, my employer realized that cybersecurity should be more important and have more resources that they had budgeted for it. They did not have a cybersecurity position before, but they created the IT Security Administrator position. As a new cybersecurity position, it's responsibilities are just being created. My first task was to replace end-of-life Cisco ASAs with newer Cisco Meraki devices. This was a fairly easy conversion, just transferring rules and assigning ports. It had some new features including inline IDS/IPS and a layer 7 firewall. The first thing that I did was to add Geo-Blocking rules to the firewall and turn on IPS. 
 

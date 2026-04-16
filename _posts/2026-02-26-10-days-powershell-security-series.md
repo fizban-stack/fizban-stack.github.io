@@ -4,8 +4,9 @@ title: "10 Days of PowerShell Security: Complete Series"
 date: 2026-02-26
 category: PowerShell Security
 author: James Wells
+excerpt: "Series overview for 10 Days of PowerShell Security — AD hardening, compliance automation, threat hunting, and incident response."
+tags: [PowerShell, Security Automation, Series Overview]
 ---
-
 ## Series Overview
 
 This 10-part series provides production-ready PowerShell security automation spanning Active Directory, Windows infrastructure, Azure cloud, Microsoft 365, and incident response. Each post includes complete working code, real-world examples, and enterprise deployment guidance.

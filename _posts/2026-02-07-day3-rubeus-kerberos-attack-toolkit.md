@@ -4,8 +4,9 @@ title: "10 Days of AD Security: Day 3 - Rubeus"
 date: 2026-02-07
 category: Active Directory Security
 author: James Wells
+excerpt: "Day 3: Rubeus for Kerberos attacks — Kerberoasting, AS-REP Roasting, ticket manipulation, and Pass-the-Ticket."
+tags: [Rubeus, Kerberos, Active Directory, Red Team, AD Security Series]
 ---
-
 ## History and Overview
 
 Rubeus is a C# toolkit for Kerberos interaction and abuse, created by Will Schroeder (@harmj0y) and Benjamin Delpy as part of the GhostPack collection of offensive security tools. Released in 2018, Rubeus consolidated various Kerberos attack techniques into a single, powerful binary that runs natively on Windows without requiring PowerShell. The tool is named after Rubeus Hagrid from Harry Potter, fitting the magical theme of GhostPack tools. Rubeus implements the full spectrum of Kerberos attacks: Kerberoasting for cracking service account passwords, AS-REP Roasting for accounts without Kerberos pre-authentication, ticket manipulation for Pass-the-Ticket attacks, and even advanced techniques like Golden and Diamond Ticket creation. Unlike Python-based alternatives, Rubeus leverages Windows APIs directly, making it extremely fast and capable of operations that are difficult or impossible from Linux. The tool received major updates in November 2025, adding support for the latest Kerberos encryption types and improved evasion techniques.

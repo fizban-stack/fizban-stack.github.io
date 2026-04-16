@@ -4,8 +4,9 @@ title: "10 Days of AD Security: Day 8 - Responder"
 date: 2026-02-12
 category: Active Directory Security
 author: James Wells
+excerpt: "Day 8: Responder for LLMNR/NBT-NS poisoning and credential capture in Active Directory networks."
+tags: [Responder, NTLM, Active Directory, Red Team, AD Security Series]
 ---
-
 ## History and Overview
 
 Responder is an LLMNR, NBT-NS, and mDNS poisoning attack tool created by Laurent Gaffié (@lgandx) and released in 2013. The tool exploits a fundamental weakness in Windows name resolution: when a system can't resolve a hostname via DNS, it falls back to broadcast protocols LLMNR (Link-Local Multicast Name Resolution) and NBT-NS (NetBIOS Name Service). Responder listens for these broadcast queries and responds poisonous answers, claiming to be the requested resource. When victims attempt to authenticate to Responder, it captures their Net-NTLMv1/v2 hashes, which can then be cracked offline or relayed to other systems for authentication. What makes Responder particularly effective is its passive nature—it simply waits for mistyped share paths, failed DNS lookups, or automatic authentication attempts that occur naturally in Windows environments. The tool also includes rogue authentication servers (HTTP, SMB, SQL, FTP, LDAP, etc.) to capture credentials when victims connect. With 6.4k GitHub stars and continuous updates through January 2025, Responder remains one of the most reliable initial access and credential capture tools in AD penetration testing. Its effectiveness hasn't diminished despite being over a decade old, because the underlying protocols it exploits are still widely enabled in enterprise networks for compatibility.

@@ -4,8 +4,9 @@ title: "10 Days of AD Security: Day 4 - Mimikatz"
 date: 2026-02-08
 category: Active Directory Security
 author: James Wells
+excerpt: "Day 4: Mimikatz for credential extraction — LSASS dumps, NTLM hashes, Kerberos tickets, and DCSync."
+tags: [Mimikatz, Credentials, Active Directory, Red Team, AD Security Series]
 ---
-
 ## History and Overview
 
 Mimikatz is arguably the most famous offensive security tool ever created, fundamentally changing how we think about Windows credential security. Developed by Benjamin Delpy (@gentilkiwi) starting in 2007, Mimikatz began as a proof-of-concept demonstrating weaknesses in Windows authentication. The tool's name is a playful combination of "mimi" (cute in French) and "Katz" (cats in German), reflecting Delpy's lighthearted approach to serious security research. Mimikatz works by extracting plaintexts passwords, NTLM hashes, PIN codes, and Kerberos tickets directly from Windows memory (LSASS process), exploiting the fact that Windows caches credentials to enable Single Sign-On functionality. The tool's revelation that Windows stored reversibly encrypted credentials in memory led Microsoft to implement significant security improvements, including Credential Guard and Protected Process Light. Despite being released in 2011 and having its last major update in September 2022, Mimikatz remains widely used in penetration testing and continues to appear in real-world attacks, with Red Canary reporting it affected 3.1% of monitored customers in 2026 (though most detections are from security testing rather than malicious use). While newer alternatives exist, Mimikatz's legacy and comprehensive feature set ensure its continued relevance.

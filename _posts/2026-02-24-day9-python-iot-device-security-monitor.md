@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Day 9 - IoT Device Security Monitor"
 date: 2026-02-24
 category: Python Security
 author: James Wells
+excerpt: "Day 9: IoT device security monitoring with Scapy, Nmap fingerprinting, default credential detection, and Shodan integration."
+tags: [Python, IoT Security, Scapy, Python Security Series]
 ---
-
 ## Project Overview
 
 The average home contains 25+ IoT devices, many with critical security vulnerabilities. Smart cameras, thermostats, and voice assistants can become attack vectors if left unmonitored. This project builds an IoT security monitoring system that discovers devices, fingerprints manufacturers, detects default credentials, identifies outdated firmware, and alerts on suspicious network behavior.

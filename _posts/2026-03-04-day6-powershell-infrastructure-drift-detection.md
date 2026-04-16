@@ -4,8 +4,9 @@ title: "Day 6: Infrastructure Drift Detection - Configuration Baseline Monitorin
 date: 2026-03-04
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 6: Infrastructure drift detection — continuous configuration baseline monitoring with automated remediation."
+tags: [PowerShell, Configuration Management, Compliance, PowerShell Security Series]
 ---
-
 ## Overview
 
 Infrastructure drift occurs when servers, workstations, or cloud resources deviate from approved baseline configurations. A registry key changes, a firewall rule disappears, an unauthorized service starts running—these small drifts accumulate into security vulnerabilities and compliance failures. This drift detection system continuously monitors configuration state and alerts on unauthorized changes across your entire infrastructure.

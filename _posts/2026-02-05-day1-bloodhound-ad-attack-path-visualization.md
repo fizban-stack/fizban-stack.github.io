@@ -4,8 +4,9 @@ title: "10 Days of AD Security: Day 1 - BloodHound"
 date: 2026-02-05
 category: Active Directory Security
 author: James Wells
+excerpt: "Day 1: Using BloodHound and SharpHound to map Active Directory attack paths with graph-based analysis."
+tags: [BloodHound, Active Directory, Red Team, AD Security Series]
 ---
-
 ## History and Overview
 
 BloodHound revolutionized Active Directory security assessment when it was released by SpecterOps in 2016. Created by Andrew Robbins, Rohan Vazarkar, and Will Schroeder, BloodHound uses graph theory to reveal hidden and often unintended relationships within Active Directory environments. The tool works by collecting data about AD objects, relationships, and permissions using its companion tool SharpHound, then visualizes this data in a Neo4j graph database. This allows penetration testers and red teamers to identify complex attack paths that would be nearly impossible to discover manually. BloodHound has become so influential that it's now considered essential for any serious AD penetration test, with the Community Edition (CE) released in 2023 bringing modern improvements including support for Azure AD/Entra ID environments.

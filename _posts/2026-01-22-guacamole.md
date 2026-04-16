@@ -6,8 +6,8 @@ category: Homelab
 author: James Wells
 image: /assets/images/blog/guacamole/active-sessions.webp
 tags: [Guacamole, Remote Access, Homelab]
+excerpt: "Apache Guacamole as a centralized remote desktop gateway — VNC, RDP, and SSH access through a single web interface."
 ---
-
 ## About Apache Guacamole
 Apache Guacamole is a clientless remote desktop gateway that allows you to access computers from anywhere using just a web browser. Unlike traditional remote desktop tools that require you to install a viewer on your local machine, Guacamole runs on a server and translates remote protocols into HTML5. This means you can access your machines from any device—laptop, tablet, or phone—without needing plugins or client software.
 

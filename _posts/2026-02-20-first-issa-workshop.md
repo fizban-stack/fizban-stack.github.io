@@ -5,8 +5,8 @@ date: 2026-02-20
 category: Cybersecurity
 author: James Wells
 tags: [Community, Career, Networking]
+excerpt: "Attending my first ISSA workshop on network pentesting — discovering searchsploit's --nmap flag and naabu piped to nmap."
 ---
-
 I attended my first ISSA (Information Systems Security Association) workshop today. I joined the ISSA Kentuckiana chapter a few months ago, but I had not been to a meeting yet. I noticed that there was going to be a workshop about network pentesting. I have been trying to study for the CRTP and thought it would fight in perfectly.  I got a discount as a member and it only cost me $50. There were a lot more people at this workshop then I thought there would be, but it was a good time.  We didn't really go through any deep pentesting, but with a room full of knowledgeable people, it was still a great learning experience.
 
 One of my biggest takeaways from this workshop was that searchsploit produces some decent results sometimes. We were copy and pasting the nmap results into the searchsploit command though. We were also talking about using help on the commands to learn syntax. I wasn't really familiar with searchsploit. I thought it basically just grepped for whatever you typed out, but then I saw the --nmap flag. This flag will read the nmap results from an XML file and search for the services automatically.  You have to use the nmap -sV flag for versions and save the output as an XML file.

@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Day 10 - Memory Forensics & Incident Respons
 date: 2026-02-25
 category: Python Security
 author: James Wells
+excerpt: "Day 10: Memory forensics and incident response toolkit with Volatility 3, YARA rules, and IOC extraction."
+tags: [Python, Memory Forensics, DFIR, Volatility, Python Security Series]
 ---
-
 ## Project Overview
 
 When a system is compromised, memory contains the smoking gun: running processes, network connections, decrypted credentials, and malware artifacts that never touch disk. This final project builds a memory forensics and incident response toolkit that captures memory dumps, analyzes running processes, extracts Indicators of Compromise (IOCs), and generates forensic reports suitable for incident investigation.

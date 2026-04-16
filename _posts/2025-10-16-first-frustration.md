@@ -4,8 +4,9 @@ title: "First Frustration"
 date: 2025-10-16
 category: Personal Growth
 author: James Wells
+excerpt: "A year of rejected job applications, zero callbacks, and the Michael Jordan quote taped to my bedroom door."
+tags: [Career, Personal Growth, Job Search]
 ---
-
 I had just obtained the Network+ and Security+ from CompTIA and I thought that I would at least be able to obtain an entry-level job at local companies. I was in for a rude awakening though.
 
 At the time, I was only vaguely familiar with Linux and had a passing knowledge of Windows and Active Directory. I had a lab setup and was working in it at least an hour or two a night. I was enrolled at Champlain College and also had certifications from Microsoft, Cisco, and ISC2. I thought that even though I did not have any professional experience, I would be able to find some kind of IT opportunity.

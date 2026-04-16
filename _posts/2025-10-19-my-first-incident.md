@@ -5,8 +5,9 @@ date: 2025-10-19
 category: Cybersecurity
 author: James Wells
 image: /assets/images/blog/first-incident/ransom-desktop.webp
+excerpt: "Waking up to Qilin ransomware alerts on a Sunday morning — encrypted servers, FBI reporting, and lessons from my first real incident."
+tags: [Incident Response, Ransomware, Blue Team, Career]
 ---
-
 ## The Alerts
 On the Sunday before Labor Day 2025, I woke up in the morning to several email alerts from Sophos EDR. They were all medium alerts that stated a server was trying to encrypt workstations, but the process was stopped by Sophos. The alarming thing was that the attempts were coming from a server and they were attacking every endpoint in that location. Once I arrived at the location, it became apparent quickly that all of our server had been encrypted.  Our hearts dropped when we saw the desktop and the ransom notes in every directory. 
 ![Desktop](/assets/images/blog/first-incident/ransom-desktop.webp)

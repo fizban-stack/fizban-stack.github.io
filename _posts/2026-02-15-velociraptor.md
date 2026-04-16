@@ -5,8 +5,8 @@ date: 2026-02-15
 category: Cybersecurity
 author: James Wells
 tags: [Velociraptor, DFIR, Endpoint, Blue Team]
+excerpt: "Deploying Velociraptor for endpoint visibility and forensics — VQL queries, MSI collectors, and artifact hunting."
 ---
-
 Velociraptor is an open-source endpoint visibility and digital forensics tool built for incident response. It gives you the ability to dig into what is happening on endpoints across your environment by collecting artifacts, hunting for indicators of compromise, and monitoring activity in real time. Think of it as a way to ask very specific questions about what a machine has done, is doing, or has had done to it, and getting detailed answers back fast.
 
 What makes Velociraptor stand out is the Velociraptor Query Language (VQL). It lets you write custom queries to pull exactly the data you need from endpoints. There is also a large library of built-in artifacts that cover everything from process listings and network connections to browser history and event log analysis. Whether you are responding to an incident or proactively hunting, Velociraptor gives you the depth and flexibility to get the job done.

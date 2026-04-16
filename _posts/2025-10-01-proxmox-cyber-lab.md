@@ -4,8 +4,9 @@ title: "Proxmox Cyber Lab"
 date: 2025-10-01
 category: Cybersecurity
 author: James Wells
+excerpt: "Building an isolated cyber lab in Proxmox with Windows domain controllers, Tailscale VPN access, and PowerShell AD management."
+tags: [Proxmox, Active Directory, Cyber Lab, PowerShell]
 ---
-
 I have been working on recreating my cyber lab and I found a solution that I believe I will stick with. I have several VMs on Proxmox that are all connected to an internal network. I was using a Kali VM on Proxmox for all of my testing, but I wanted to be able to reach the cyber lab from different machines. I had been using Tailscale for my VPN for a while, but had never thought of using it for my cyber lab until today.
 
 The first step was to create a Windows 2019 Server with a desktop and then promote it to a domain controller. I took a backup snapshot at this point, so I could always go back to a known good configuration. Then I created a Windows 2022 Server without a desktop and promoted it to a domain controller for the same domain. I had never performed this without a GUI before so it was a learning experience for me. Using the console, it was trivial to change the computer name, setup the network, and add it to the domain. Afterwards, I used PowerShell to promote it to a domain controller using the following commands:

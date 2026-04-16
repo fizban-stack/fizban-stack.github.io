@@ -4,8 +4,9 @@ title: "10 Days of PowerShell Security: Day 1 - Active Directory Security Postur
 date: 2026-02-27
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 1: Active Directory security posture dashboard — auditing accounts, permissions, Kerberos configs, and attack paths."
+tags: [PowerShell, Active Directory, Blue Team, PowerShell Security Series]
 ---
-
 ## Project Overview
 
 Active Directory is the crown jewel of enterprise networks and the primary target for attackers. This project builds a comprehensive AD security posture dashboard that audits user accounts, groups, permissions, password policies, and identifies common misconfigurations that lead to domain compromise.

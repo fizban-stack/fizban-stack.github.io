@@ -4,8 +4,9 @@ title: "Day 9: Mini-SIEM with Wazuh - Open-Source Security Monitoring"
 date: 2026-03-07
 category: PowerShell Security
 author: James Wells
+excerpt: "Day 9: Deploying a mini-SIEM with Wazuh — agent deployment, custom detection rules, and Sysmon integration via PowerShell."
+tags: [PowerShell, Wazuh, SIEM, Blue Team, PowerShell Security Series]
 ---
-
 ## Overview
 
 Enterprise SIEM solutions cost $50K-$500K annually. Wazuh is a free, open-source SIEM and XDR platform providing log aggregation, threat detection, compliance monitoring, and incident response—all deployable in your home lab. This PowerShell automation framework deploys and configures Wazuh for Windows environments, integrating with Active Directory, Sysmon, and custom detection rules.

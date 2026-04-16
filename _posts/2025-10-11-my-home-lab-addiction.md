@@ -4,8 +4,9 @@ title: "My Home Lab Addiction"
 date: 2025-10-11
 category: Homelab
 author: James Wells
+excerpt: "Four years of homelab building — the money, the time, the broken networks, and why it has been worth every frustration."
+tags: [Homelab, Personal Growth, Self-Hosted]
 ---
-
 I started building my home lab four years ago with an HP 210 Desktop PC. It was over 5 years old at the time and was barely running Windows anymore, so I converted it to TrueNAS Scale and began the journey down the rabbit hole of home labbing.
 
 Since then I have spent more money than I would like to admit and definitely enough that some people would look at me like I am crazy. I don't have a world class home lab though. About have of my lab was purchased used and the other half I made payment in order to afford it. There were some pieces that I made an impulsive decision to buy which is why I have begun to refer to my home lab as an addiction.

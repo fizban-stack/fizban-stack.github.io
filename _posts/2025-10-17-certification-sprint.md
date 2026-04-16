@@ -4,8 +4,9 @@ title: "Certification Sprint"
 date: 2025-10-17
 category: Personal Growth
 author: James Wells
+excerpt: "Failing the Pentest+ beta, bouncing back with HTB Academy, and stacking CompTIA certs before my student discount expired."
+tags: [Certifications, CompTIA, Pentesting, Career]
 ---
-
 At the end of 2024, I took the beta test for the CompTIA Pentest+. I was not really prepared, but I thought I would give it a try anyways. This exam was the first cyber security certification test that I failed. Even though I wasn't overly confident going into the test, I still thought I could pass.
 
 After failing this exam, I doubled down on studying offensive techniques. I started doing modules in the Hack the Box Academy. These helped me to get an understanding of tools, but most of the modules walked you through an attack and the asked you to perform the exact same attack. If you were unsure of what to do, you could just scroll up and there the answer was. Not all of the modules were like this though. There were a few that altered the box enough that it was a completely different experience.

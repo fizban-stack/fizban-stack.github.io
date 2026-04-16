@@ -4,8 +4,9 @@ title: "10 Days of Python Security: Day 1 - AI-Powered SIEM"
 date: 2026-02-16
 category: Python Security
 author: James Wells
+excerpt: "Day 1: Building an AI-powered SIEM with Python, Isolation Forest anomaly detection, and LLM log analysis."
+tags: [Python, SIEM, Machine Learning, AI, Python Security Series]
 ---
-
 ## Project Overview
 
 Build an intelligent Security Information and Event Management (SIEM) system using Python, machine learning, and Large Language Models for automated log analysis and anomaly detection. Traditional rule-based SIEM systems achieve approximately 70% detection accuracy, while ML-powered approaches reach 88.5% accuracy in identifying security incidents. This project demonstrates how to leverage AI to process thousands of security events, detect anomalies using Isolation Forest algorithms, and explain findings in natural language using LLMs.
