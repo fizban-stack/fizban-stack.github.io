@@ -17,7 +17,7 @@ description: An overview of James Wells's homelab — hardware, network topology
 ### Compute
 
 | Host | Role | Hardware |
-|------|------|----------|
+|------|--------|----------|
 | **ASUS Desktop** | Daily Driver | i7-14700KF 20-core, 96 GB DDR5, 2x 1 TB NVMe, RTX 4070 Super |
 | **Minisforum MS-A1 (Proxmox Node 1)** | Primary hypervisor / lab | Ryzen 5 8700, 96 GB DDR5, NVIDIA Quadro M6000 |
 | **Beelink SER5 Pro** | Windows jump box | Ryzen 5 5600U, 64 GB DDR4 |
@@ -30,14 +30,14 @@ description: An overview of James Wells's homelab — hardware, network topology
 ### Storage
 
 | Device | Specs |
-|--------|-------|
+|---------|-------|
 | **Synology DS224+** | Storage, Proxmox Backup Server VM | Celeron J4125, 8 GB DDR4, dual-bay NAS |
 | **WD My Cloud EX2 Ultra** | Not in use | 8 TB dual-bay NAS |
 
 ### Networking
 
 | Device | Role |
-|--------|------|
+|----------|------|
 | **OPNsense** | Not in use (Sophos XG 230 hardware) |
 | **Ubiquiti UniFi Dream Machine Pro Max** | Primary Gateway/Network Controller |
 | **Ubiquiti USW-PRO-HD-24-PoE** | Core switch — 24x 2.5G PoE++ / 4x 10G SFP+ |
@@ -52,7 +52,7 @@ description: An overview of James Wells's homelab — hardware, network topology
 ### Single-Board Computers & Edge Devices
 
 | Device | Role |
-|--------|------|
+|----------|------|
 | **NVIDIA Jetson Orin Nano Super** | ML / network flow analysis |
 | **Raspberry Pi 5** (x3) | Edge services, IoT, experimentation |
 | **Raspberry Pi Zero 2W** (x2) | Portable Access Point (PoE hat) / Pwnagotchi |
@@ -65,7 +65,7 @@ description: An overview of James Wells's homelab — hardware, network topology
 ### IoT & Microcontrollers
 
 | Device | Notes |
-|--------|-------|
+|----------|-------|
 | **Waveshare ESP32-S3 (1.69" Touch LCD)** | Testing Open-Source Smart Watch |
 | **Waveshare ESP32-S3 (1.47" Display)** | BadUSB |
 | **ESP-WROOM-32 Dev Boards** (x5) | Testing for understanding ESP32 Capabilities |
@@ -76,7 +76,7 @@ description: An overview of James Wells's homelab — hardware, network topology
 ### Laptops & Workstations
 
 | Device | Specs |
-|--------|-------|
+|----------|-------|
 | **Microsoft Surface Pro (11th Gen)** | School/Travel Computer |
 | **Gigabyte Aorus 17 YE5** | Gaming Computer |
 
@@ -85,7 +85,7 @@ description: An overview of James Wells's homelab — hardware, network topology
 ## Network Topology
 
 | Segment | Purpose |
-|---------|---------|
+|-----------|---------|
 | **Management VLAN** | Hypervisors, switches, AP management |
 | **Server VLAN** | Docker stacks, VMs, self-hosted services |
 | **Cyber Lab VLAN** | Isolated attack/defense lab (Proxmox) |
