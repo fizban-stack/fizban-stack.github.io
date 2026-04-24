@@ -18,36 +18,36 @@ description: An overview of James Wells's homelab — hardware, network topology
 
 | Host | Role | Hardware |
 |------|------|----------|
-| **ASUS Desktop (Proxmox Node 1)** | Primary hypervisor | i7-14700KF 20-core, 96 GB DDR5, 2x 1 TB NVMe, RTX 4070 Super |
-| **Minisforum MS-A1 (Proxmox Node 2)** | Secondary hypervisor / lab | Ryzen 5 8700, 64 GB DDR5 |
-| **Beelink SER5 Pro** | Services / Docker host | Ryzen 5 5600U, 16 GB DDR4 |
-| **Intel NUC 10 (NUC10iFNHN)** | Lightweight services | i5-10210U, 16 GB DDR4 |
-| **Intel NUC 6i5SYH** | Utility node | i5-6260U |
-| **Intel NUC6CAY** | Utility node | Celeron J3455, 8 GB DDR3 |
-| **ATOPNUC MA91** | Utility node | AMD A9-9400, 16 GB DDR4 |
-| **Minisforum TH50** | Utility node | i5-11320H |
+| **ASUS Desktop** | Daily Driver | i7-14700KF 20-core, 96 GB DDR5, 2x 1 TB NVMe, RTX 4070 Super |
+| **Minisforum MS-A1 (Proxmox Node 1)** | Primary hypervisor / lab | Ryzen 5 8700, 96 GB DDR5, NVIDIA Quadro M6000 |
+| **Beelink SER5 Pro** | Windows jump box | Ryzen 5 5600U, 64 GB DDR4 |
+| **Intel NUC 10 (Proxmox Node 2)** | Secondary Hypervisor | i5-10210U, 64 GB DDR4 |
+| **Intel NUC 6i5SYH** | Docker host | i5-6260U, 32 GB DDR4|
+| **Intel NUC6CAY** | Not in use | Celeron J3455, 8 GB DDR3 |
+| **ATOPNUC MA91** | Not in use | AMD A9-9400, 16 GB DDR4 |
+| **Minisforum TH50** | AD DC | i5-11320H, 16 GB DDR4 |
 
 ### Storage
 
 | Device | Specs |
 |--------|-------|
-| **Synology DS224+** | Celeron J4125, 8 GB DDR4, dual-bay NAS |
-| **WD My Cloud EX2 Ultra** | 8 TB dual-bay NAS |
+| **Synology DS224+** | Storage, Proxmox Backup Server VM | Celeron J4125, 8 GB DDR4, dual-bay NAS |
+| **WD My Cloud EX2 Ultra** | Not in use | 8 TB dual-bay NAS |
 
 ### Networking
 
 | Device | Role |
 |--------|------|
-| **OPNsense** | Primary firewall / IDS/IPS (Sophos XG 230 hardware) |
-| **Ubiquiti UniFi Dream Machine Pro Max** | Network controller / secondary gateway |
+| **OPNsense** | Not in use (Sophos XG 230 hardware) |
+| **Ubiquiti UniFi Dream Machine Pro Max** | Primary Gateway/Network Controller |
 | **Ubiquiti USW-PRO-HD-24-PoE** | Core switch — 24x 2.5G PoE++ / 4x 10G SFP+ |
-| **HP Aruba 2530-24G-PoEP** | PoE switch |
-| **Cisco CBS220-24T-4G** | Managed switch |
-| **Tenda TEM2010F** | 2.5G switch |
-| **TP-Link TL-SG608P** | 8-port PoE switch |
-| **Netgear GS108Ev3** | 8-port managed switch |
-| **Netgear GS108v4** | 8-port unmanaged switch |
-| **Ubiquiti U7 Pro** | Wi-Fi 7 access point |
+| **HP Aruba 2530-24G-PoEP** | Not in use |
+| **Cisco CBS220-24T-4G** | Not in use |
+| **Tenda TEM2010F** | Entertainment Rack |
+| **TP-Link TL-SG608P** | Not in use |
+| **Netgear GS108Ev3** | Not in use |
+| **Netgear GS108v4** | Not in use |
+| **Ubiquiti U7 Pro** | Primary Access Point |
 
 ### Single-Board Computers & Edge Devices
 
@@ -55,45 +55,30 @@ description: An overview of James Wells's homelab — hardware, network topology
 |--------|------|
 | **NVIDIA Jetson Orin Nano Super** | ML / network flow analysis |
 | **Raspberry Pi 5** (x3) | Edge services, IoT, experimentation |
-| **Raspberry Pi Zero 2W** (x2) | Lightweight agents / sensors |
+| **Raspberry Pi Zero 2W** (x2) | Portable Access Point (PoE hat) / Pwnagotchi |
 | **Raspberry Pi Pico W** (x2) | Microcontroller projects |
-| **Orange Pi 4 Pro** (x2) | SBC projects |
-| **Orange Pi Zero 1GB** | Lightweight edge node |
-| **Libre Computer ROC-RK3328-CC** | ARM test node — 4-core, 4 GB DDR4 |
-| **Flipper Zero** | Wireless security research / pentesting |
+| **Orange Pi 4 Pro** (x2) | OpenClaw experimentation / Development Box |
+| **Orange Pi Zero 1GB** | Web Server / Family Dashboard |
+| **Libre Computer ROC-RK3328-CC** | Not in use |
+| **Flipper Zero** | Wireless security research |
 
 ### IoT & Microcontrollers
 
 | Device | Notes |
 |--------|-------|
-| **Waveshare ESP32-S3 (1.69" Touch LCD)** | 240x280 display, accelerometer / gyroscope |
-| **Waveshare ESP32-S3 (1.47" Display)** | 172x320 display, RGB LED, WiFi / BLE 5 |
-| **ESP-WROOM-32 Dev Boards** (x5) | Dual-core WiFi + BT, Arduino-compatible |
-| **Seeed Studio XIAO ESP32 S3 Sense** | OV2640 camera, mic, 8 MB PSRAM, BLE 5 |
+| **Waveshare ESP32-S3 (1.69" Touch LCD)** | Testing Open-Source Smart Watch |
+| **Waveshare ESP32-S3 (1.47" Display)** | BadUSB |
+| **ESP-WROOM-32 Dev Boards** (x5) | Testing for understanding ESP32 Capabilities |
+| **Seeed Studio XIAO ESP32 S3 Sense** | Portable Camera |
 | **Heltec LoRa 32** (x2) | Meshtastic long-range radio nodes |
 | **Philips Hue Bridge** | Smart home hub |
-
-### GPUs (Standalone)
-
-| GPU | Use |
-|-----|-----|
-| **NVIDIA RTX 4070 Super** | Primary — in ASUS Desktop (Proxmox Node 1) |
-| **AMD Radeon Instinct Mi50** | ML / compute experimentation |
-| **NVIDIA Quadro M6000** | Secondary compute / passthrough |
-| **Minisforum DEG1 eGPU Dock** | External GPU dock for NUC / laptop use |
 
 ### Laptops & Workstations
 
 | Device | Specs |
 |--------|-------|
-| **Microsoft Surface Pro (Copilot+ PC)** | 13" OLED, Snapdragon X Elite, 16 GB, 512 GB SSD |
-| **Gigabyte Aorus 17 YE5** | i9-12700H, 64 GB DDR5, RTX 3080 Ti |
-| **ASUS ROG Zephyrus 14"** | Ryzen 9 5900HS, 16 GB DDR4, RTX 3060 |
-| **Lenovo Yoga 7 16IML9** | 2-in-1 laptop |
-| **HP Envy 14" 2-in-1** | General use |
-| **Microsoft Surface Pro 11th Ed** | Tablet / laptop |
-
-*Full asset inventory tracked in [Snipe-IT](https://snipeit.wellslabs.org). See individual blog posts below for detailed build documentation.*
+| **Microsoft Surface Pro (11th Gen)** | School/Travel Computer |
+| **Gigabyte Aorus 17 YE5** | Gaming Computer |
 
 ---
 
