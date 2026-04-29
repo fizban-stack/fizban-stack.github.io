@@ -7,6 +7,113 @@ description: Technical blog posts about cybersecurity, home labs, and technology
 <p>This is my blog. Most of these posts are linked on other pages of the site, but after transferring them from my Ghost blog, I wanted to keep them in a centralized location. This allows me to add posts and link them in a similar way, but keep the entire site hosted on GitHub.</p>
 </article>
 
+<section class="series-hub">
+  <h2 class="series-hub-title">10 Days of Series</h2>
+  <p class="series-hub-note">The posts in these series were created by AI for use as personal training and study material.</p>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="series-card h-100 d-flex flex-column">
+        <div class="series-card-accent" style="background: var(--accent-cyan);"></div>
+        <div class="series-card-body d-flex flex-column">
+          <h3 class="series-card-title">10 Days of Active Directory Security</h3>
+          <p class="series-card-desc">Ten essential offensive tools — BloodHound, Impacket, Rubeus, Mimikatz, and more — for AD penetration testing and security assessment.</p>
+          <div class="mt-auto">
+            <a href="{% post_url 2026-02-05-10-days-ad-security-series %}" class="btn btn-dark series-btn">View Series →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="series-card h-100 d-flex flex-column">
+        <div class="series-card-accent" style="background: var(--accent-green);"></div>
+        <div class="series-card-body d-flex flex-column">
+          <h3 class="series-card-title">10 Days of Python Security</h3>
+          <p class="series-card-desc">Production-ready Python tools covering SIEM automation, threat intelligence, container scanning, API security testing, and memory forensics.</p>
+          <div class="mt-auto">
+            <a href="{% post_url 2026-02-15-10-days-python-security-series %}" class="btn btn-dark series-btn">View Series →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="series-card h-100 d-flex flex-column">
+        <div class="series-card-accent" style="background: #c678dd;"></div>
+        <div class="series-card-body d-flex flex-column">
+          <h3 class="series-card-title">10 Days of PowerShell Security</h3>
+          <p class="series-card-desc">Windows-focused automation spanning Active Directory hardening, CIS compliance, Azure Defender, M365 auditing, and incident response.</p>
+          <div class="mt-auto">
+            <a href="{% post_url 2026-02-26-10-days-powershell-security-series %}" class="btn btn-dark series-btn">View Series →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.series-hub {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 217, 255, 0.15);
+  border-radius: 10px;
+}
+.series-hub-title {
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+}
+.series-hub-note {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  margin-bottom: 1.75rem;
+}
+.series-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.series-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 217, 255, 0.5);
+}
+.series-card-accent {
+  height: 4px;
+}
+.series-card-body {
+  padding: 1.5rem;
+  flex: 1;
+}
+.series-card-title {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+.series-card-desc {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
+}
+.series-btn {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+</style>
+
 <div class="blog-index">
   <h1>Blog</h1>
 
