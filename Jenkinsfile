@@ -20,7 +20,7 @@ pipeline {
                 --no-owner \
                 --no-group \
                 --no-times \
-                ./_site/ /var/www/html/
+                ./_site/ /var/www/github-site/
             '''
             }
         }
